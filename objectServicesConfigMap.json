@@ -1,9 +1,16 @@
 {
-    "SKUDemandRequestsSid_DemandRequestSid": {
-        "servicename": "SKUDemandRequestsSid",
-        "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+    "SKUDemandRequests_DemandRequest": {
+        "servicename": "SKUDemandRequests",
+        "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
         "type": "objectsvcs",
-        "objectname": "DemandRequestSid",
-        "objectid": "184212"
+        "objectname": "DemandRequest",
+        "objectid": "598093"
+    },
+    "SKUDemandRequests_Productline": {
+        "servicename": "SKUDemandRequests",
+        "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+        "type": "objectsvcs",
+        "objectname": "Productline",
+        "objectid": "598094"
     }
 }
