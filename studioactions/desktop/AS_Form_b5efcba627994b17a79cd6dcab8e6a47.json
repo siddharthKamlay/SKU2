@@ -1,0 +1,310 @@
+{
+    "AS_Form_b5efcba627994b17a79cd6dcab8e6a47": {
+        "id": "AS_Form_b5efcba627994b17a79cd6dcab8e6a47",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProductLinefrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3c9856e04514d829f4c8106e7ce4669"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_dc380700ac4547798190aa6b65b0c6ba",
+            "selectedOption": "show",
+            "parentId": null,
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "SKUDemandRequests",
+                "type": "objectsvcs",
+                "objectname": "Productline",
+                "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                "methodname": "get"
+            },
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_gd729ecd85144d22a937e3cef16a77b9",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_a51ec4391d9043c081fce152fc3f94f8",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "Productline.opstatus",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "0"
+            }],
+            "parentId": "INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_c17efa5326b14b309acb21cb391244b0",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": "INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_habd84cdb77746daba05126fbc331f15",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "data fetch failed......",
+            "messageType": "constant",
+            "parentId": "_c17efa5326b14b309acb21cb391244b0",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING_hd4484a007c941489ffa40dc5042f5ce",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "records",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segProductline",
+                        "widgetPath": "this.view.segProductline",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "ProductLinefrm",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a8f3f08476374281bcbcb9b7d68cba58": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a8f3f08476374281bcbcb9b7d68cba58",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ProductLine",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"ProductLine\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblProductLine1",
+                        "widgetPath": "this.view.lblProductLine1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "ProductLinefrm",
+                        "parentMappingId": "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "ibb9be82addd4a469aa6244487089de6",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b3b58f15b0fc452aa48a1fc019347a2c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b3b58f15b0fc452aa48a1fc019347a2c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Forecasted",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Forecasted\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblForcasted1",
+                        "widgetPath": "this.view.lblForcasted1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "ProductLinefrm",
+                        "parentMappingId": "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "d0da7c35ac134841935c96d7cc61d384",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b5021c80c8eb40f588cf2714198e9c0c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b5021c80c8eb40f588cf2714198e9c0c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Actual",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Actual\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblActual1",
+                        "widgetPath": "this.view.lblActual1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "ProductLinefrm",
+                        "parentMappingId": "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "b0a95728fb574116a3190b6a93ffc7ac",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c9bd36aa92e64ca69d8975ebd7b67802": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c9bd36aa92e64ca69d8975ebd7b67802",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Variance",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Variance\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblVariance1",
+                        "widgetPath": "this.view.lblVariance1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "ProductLinefrm",
+                        "parentMappingId": "ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "b130dde57b96428389d9c36119824043",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_cd8f4e7755c24892a5f6f711e70e0150", "ME_Mapping_a8f3f08476374281bcbcb9b7d68cba58", "ME_Mapping_b3b58f15b0fc452aa48a1fc019347a2c", "ME_Mapping_b5021c80c8eb40f588cf2714198e9c0c", "ME_Mapping_c9bd36aa92e64ca69d8975ebd7b67802"],
+            "parentId": "_a51ec4391d9043c081fce152fc3f94f8",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET_e0d4228fbd194bdb8f9d842ed67dee66",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {\n    var templateId = self.view.segProductline.rowTemplate;\n    self.view.segProductline.data.forEach(function(row) {\n        row[templateId] = {\n            layoutType: kony.flex.FLOW_VERTICAL\n        };\n        Object.keys(row).forEach(function(key) {\n            if (key.includes(\"lbl\")) {\n                row[key].width = '80%';\n                row[key].height = kony.flex.USE_PREFERRED_SIZE;\n            }\n        });\n    });\n    var clonedWidgetDataMap = self.view.segProductline.widgetDataMap;\n    clonedWidgetDataMap[templateId] = templateId;\n    self.view.segProductline.widgetDataMap = clonedWidgetDataMap;\n    self.view.segProductline.setData(self.view.segProductline.data);\n    self.view.forceLayout();\n}",
+            "parentId": "_a51ec4391d9043c081fce152fc3f94f8",
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION__j58e372a45cc46c6935baceef0870cab",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "barChart",
+            "display": "barChart",
+            "inputparams": [],
+            "parentId": "_a51ec4391d9043c081fce152fc3f94f8",
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}
