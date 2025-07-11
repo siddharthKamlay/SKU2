@@ -12,5 +12,12 @@
         "type": "objectsvcs",
         "objectname": "Productline",
         "objectid": "598094"
+    },
+    "SKUDemandRequestsSid_DemandRequestSid": {
+        "servicename": "SKUDemandRequestsSid",
+        "serviceid": "ecf103e7-16e5-486e-bdcf-485b48b1de9b",
+        "type": "objectsvcs",
+        "objectname": "DemandRequestSid",
+        "objectid": "598349"
     }
 }
