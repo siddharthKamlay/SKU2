@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "SKUDemandRequests_DemandRequest": {
         "servicename": "SKUDemandRequests",
         "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
@@ -19,5 +20,13 @@
         "type": "objectsvcs",
         "objectname": "DemandRequestSid",
         "objectid": "598349"
+=======
+    "SKUDemandRequestsSid_DemandRequestSid": {
+        "servicename": "SKUDemandRequestsSid",
+        "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+        "type": "objectsvcs",
+        "objectname": "DemandRequestSid",
+        "objectid": "184212"
+>>>>>>> 9e893fd8044f774434833abc7040457b95a47666
     }
 }
