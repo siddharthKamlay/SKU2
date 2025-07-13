@@ -35,6 +35,10 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "id": "Image0gfe4886f9cee41",
+<<<<<<< HEAD
+    "ide_onTouchEnd": "AS_Image_f9d46afedb5e4c5aadb7566aa5316213",
+=======
+>>>>>>> 9e893fd8044f774434833abc7040457b95a47666
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

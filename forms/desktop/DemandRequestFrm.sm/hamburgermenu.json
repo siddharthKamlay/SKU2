@@ -1,0 +1,214 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "131.11%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1100dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa21ac74b9064cec8901c0dbcb08d160",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "77.54%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "FlexTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h12b0ccb54024018b6ca6d653a438b5a",
+                "srcKUID": "j88fbc8557a648e6af3eb621e0918e83",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0%"
+                }
+            },
+            "responsiveData": {}
+        },
+        "Labeloverview": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d9838f8bdfa44c8cb1b7778e1e72f211",
+                "srcKUID": "d24f664024184a4fad2b342e6880e1bb",
+                "wType": "Label"
+            },
+            "responsiveData": {},
+            "text": " Demand Planning"
+        },
+        "hamburgermenu": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "b76a5a46f89240ddb6bfe81ee0c0b3cc",
+                "srcKUID": "b656248f66d84e97b8d7890d448a0de2",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "131.11%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "-1100dp"
+                }
+            },
+            "responsiveData": {},
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "77.54%"
+                }
+            }
+        },
+        "segMenu": {
+            "__events__": {
+                "ide_onRowClick": "AS_Segment_cd811289935744a2b8eefde28d193ed7"
+            },
+            "__info__": {
+                "kuid": "a7c1f51b40d942dc9b95c2cd2d9f1228",
+                "srcKUID": "d61e873ddea84d13b8d8263debdd0a6f",
+                "wType": "Segment"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "Imgarrow": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "arrow.png",
+                            "type": "Image"
+                        },
+                        "imgMenuOption": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "overview.png",
+                            "type": "Image"
+                        },
+                        "lblMenuOption": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Overview",
+                            "type": "Label"
+                        }
+                    },
+                    {
+                        "Imgarrow": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "arrow.png",
+                            "type": "Image"
+                        },
+                        "imgMenuOption": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "sop.png",
+                            "type": "Image"
+                        },
+                        "lblMenuOption": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "SOP        ",
+                            "type": "Label"
+                        }
+                    }
+                ]
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0%"
+                }
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "sublabel": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cd4e489171f7462cb601004ee928b082",
+                "srcKUID": "c5220a35fd2642c7a2680543716e3657",
+                "wType": "Label"
+            },
+            "responsiveData": {},
+            "text": "                          Intelligent forecasting"
+        }
+    },
+    "enablescrolling": true,
+    "id": "hamburgermenu",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "b76a5a46f89240ddb6bfe81ee0c0b3cc",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "DemandRequestFrm",
+    "pf": "DemandRequestFrm",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "b656248f66d84e97b8d7890d448a0de2",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}
