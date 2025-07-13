@@ -15,6 +15,13 @@
         "parent": "wcf80c5d51854fe0bfb2df43e3c8b372",
         "type": "D"
     },
+    "w099a0c3d7c1427a8400df8c1ef6244d": {
+        "extension": "js",
+        "kuid": "w099a0c3d7c1427a8400df8c1ef6244d",
+        "name": "chartist-plugin-axistitle.js",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "type": "F"
+    },
     "w0e1b443f3bd4c9aba540d4e3db9a56a": {
         "extension": "html",
         "kuid": "w0e1b443f3bd4c9aba540d4e3db9a56a",
@@ -27,6 +34,13 @@
         "kuid": "w1acede7687949d7bbacaf619b5c07bd",
         "name": "LIC.js",
         "parent": "wa9169b6cb1047788ef8bcd157459b1e",
+        "type": "F"
+    },
+    "w1dacdb8c29644e1a00c0f437661ecc9": {
+        "extension": "js",
+        "kuid": "w1dacdb8c29644e1a00c0f437661ecc9",
+        "name": "chartist.js",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
         "type": "F"
     },
     "w2690a43b6cc4eb1b146345ea07fccc6": {
@@ -113,6 +127,13 @@
         "parent": "we89b2c834b54819a98f09e26a628a98",
         "type": "F"
     },
+    "w745156c329d45459ba3f45d7668de01": {
+        "extension": "js",
+        "kuid": "w745156c329d45459ba3f45d7668de01",
+        "name": "LIC.js",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "type": "F"
+    },
     "w7e4095f1bd640efad697d59a22fc0d1": {
         "extension": "js",
         "kuid": "w7e4095f1bd640efad697d59a22fc0d1",
@@ -191,6 +212,27 @@
         "parent": "we89b2c834b54819a98f09e26a628a98",
         "type": "F"
     },
+    "wb3bd4468ec94018adcf70a64c1ee100": {
+        "extension": "css",
+        "kuid": "wb3bd4468ec94018adcf70a64c1ee100",
+        "name": "chartitst.css",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "type": "F"
+    },
+    "wbe52ffa48dc41edbf7e4c66601435fb": {
+        "children": [
+            "w099a0c3d7c1427a8400df8c1ef6244d",
+            "w1dacdb8c29644e1a00c0f437661ecc9",
+            "wd85ebc95e4d476895b160638ceade99",
+            "wb3bd4468ec94018adcf70a64c1ee100",
+            "w745156c329d45459ba3f45d7668de01",
+            "wcd3b88b79854167959a5fd65a5359ea"
+        ],
+        "kuid": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "name": "Chart_vertical",
+        "parent": "wcf80c5d51854fe0bfb2df43e3c8b372",
+        "type": "D"
+    },
     "wc245201375b470ea516094d6ae980fd": {
         "extension": "html",
         "kuid": "wc245201375b470ea516094d6ae980fd",
@@ -212,16 +254,31 @@
         "parent": "we89b2c834b54819a98f09e26a628a98",
         "type": "F"
     },
+    "wcd3b88b79854167959a5fd65a5359ea": {
+        "extension": "html",
+        "kuid": "wcd3b88b79854167959a5fd65a5359ea",
+        "name": "verticalBarChartist.html",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "type": "F"
+    },
     "wcf80c5d51854fe0bfb2df43e3c8b372": {
         "children": [
             "wa9169b6cb1047788ef8bcd157459b1e",
             "we89b2c834b54819a98f09e26a628a98",
             "w013fcc9044b422b81f5b35da173ba20",
-            "w994457961274a30a69175b46308c4e3"
+            "w994457961274a30a69175b46308c4e3",
+            "wbe52ffa48dc41edbf7e4c66601435fb"
         ],
         "kuid": "wcf80c5d51854fe0bfb2df43e3c8b372",
         "name": "localfiles",
         "type": "L"
+    },
+    "wd85ebc95e4d476895b160638ceade99": {
+        "extension": "js",
+        "kuid": "wd85ebc95e4d476895b160638ceade99",
+        "name": "chartist_VerticalBar.js",
+        "parent": "wbe52ffa48dc41edbf7e4c66601435fb",
+        "type": "F"
     },
     "we89b2c834b54819a98f09e26a628a98": {
         "children": [
