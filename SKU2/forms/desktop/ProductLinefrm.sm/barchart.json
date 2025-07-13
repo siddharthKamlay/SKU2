@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s1720e2843454e7ab1159f17173f0df3",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "highValue": "16000"
+    },
+    "id": "barchart",
+    "info": null,
+    "isvisible": true,
+    "kuid": "i8197bc8f93847698efbd2b7b0840b35",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FlexChart",
+    "pf": "ProductLinefrm",
+    "sourceUserWidget": "ud25b457886348fa894a424d5ab2f1ec",
+    "wType": "UserWidgetInstance"
+}

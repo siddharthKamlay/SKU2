@@ -1,0 +1,9 @@
+{
+    "SKUDemandRequestsSid_DemandRequestSid": {
+        "servicename": "SKUDemandRequestsSid",
+        "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+        "type": "objectsvcs",
+        "objectname": "DemandRequestSid",
+        "objectid": "184212"
+    }
+}
