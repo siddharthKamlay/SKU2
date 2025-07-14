@@ -4,11 +4,11 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "110.99%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,7 +27,7 @@
     "_skin_": "s912bb86964f45a188586c8608e7e5ba",
     "_top_": {
         "type": "string",
-        "value": "-26dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -39,7 +39,7 @@
     "id": "piechart",
     "info": null,
     "isvisible": true,
-    "kuid": "cfcd4ac5b78e4cc7964243a4cfb94956",
+    "kuid": "e288318fa46941968a4aeb957c3d2a0a",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "FlexContainerPieChart",

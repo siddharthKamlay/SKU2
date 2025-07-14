@@ -1,0 +1,140 @@
+{
+    "breakpointInfo": null,
+    "images": [],
+    "screenshotGenerated": true,
+    "skinDefs": {},
+    "sourceChannel": "common",
+    "templateDef": {
+        "DNDConfig": null,
+        "__parentReadjusting__": false,
+        "_height_": {
+            "type": "string",
+            "value": "100%"
+        },
+        "_left_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s1720e2843454e7ab1159f17173f0df3",
+        "_top_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "100%"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "children": [
+            "multiSeriesHbarBrowser"
+        ],
+        "clipbounds": true,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "id": "multiseriesverticalbar",
+        "info": null,
+        "isvisible": true,
+        "kuid": "ud25b457886348fa894a424d5ab2f1ec",
+        "layouttype": 2,
+        "multiSeriesHbarBrowser": {
+            "@class": "com.kony.gen.viz.model.component.KVizBrowser",
+            "DNDConfig": null,
+            "__parentReadjusting__": false,
+            "_height_": {
+                "type": "string",
+                "value": "100%"
+            },
+            "_left_": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "_margin_": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "_padding_": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "_top_": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "_type_": 5,
+            "_width_": {
+                "type": "string",
+                "value": "100%"
+            },
+            "bounces": false,
+            "browserType": 0,
+            "canUpdateUI": true,
+            "containerweight": 69,
+            "detecttelnumber": false,
+            "enablenativecommunication": true,
+            "enablezoom": false,
+            "htmlstring": "Browser",
+            "id": "multiSeriesHbarBrowser",
+            "info": null,
+            "iphone": {
+                "psp": {
+                    "bounces": false,
+                    "browserType": 0
+                }
+            },
+            "isvisible": true,
+            "kuid": "uf50aa34512f4d048382695ba18747b8",
+            "localurl": "w8c6c1df795847368a043af64ff580d3",
+            "margininpixel": false,
+            "method": "get",
+            "name": "kony.ui.Browser",
+            "paddinginpixel": false,
+            "parent": "multiseriesverticalbar",
+            "pf": "uwud2019b2473240bfab79c4797869bb93",
+            "requesturlconfig": {
+                "URL": "",
+                "requestMethod": "get"
+            },
+            "screenlevelwidget": false,
+            "snapshot": {
+                "md5": "+/CPfsuBThX463F5lgleEIfQHfE="
+            },
+            "url": "",
+            "vizProps": {
+                "runJS": true
+            },
+            "wType": "Browser",
+            "zindex": 1
+        },
+        "name": "kony.ui.FlexContainer",
+        "parent": "uwud2019b2473240bfab79c4797869bb93",
+        "pf": "uwud2019b2473240bfab79c4797869bb93",
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "z2wR/hPVgu6ozYuqw70+ryHsvok="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1
+    },
+    "userwidgetKUID": "u40de3580ecb4c3fb4b0e085a6c38892"
+}

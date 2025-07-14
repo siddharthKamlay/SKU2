@@ -20,7 +20,7 @@
         1,
         0
     ],
-    "_skin_": "sde86b62ef46487c836c748e9c5e210a",
+    "_skin_": "s1b6c3df9ac947338a2a3066ac7d81f1",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -58,8 +58,7 @@
     "children": [
         "FlexSKUTable",
         "FlexContainerPieChart",
-        "Image0gfe4886f9cee41",
-        "FlexContainer0hd22342dd69848"
+        "FlexContainerchart"
     ],
     "containerweight": 100,
     "controllerInfo": {

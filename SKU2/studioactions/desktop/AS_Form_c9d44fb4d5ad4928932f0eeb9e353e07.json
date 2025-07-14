@@ -36,10 +36,10 @@
             "mappings": {},
             "mappingsOrder": [],
             "serviceconfig": {
-                "servicename": "SKUDemandRequestsSid",
+                "servicename": "SKUDemandRequests",
                 "type": "objectsvcs",
-                "objectname": "DemandRequestSid",
-                "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                "objectname": "DemandRequest",
+                "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                 "methodname": "get"
             },
             "parentId": null,
@@ -60,7 +60,7 @@
             "type": "IF_CONDITION",
             "conditions": [{
                 "leftValueType": "value",
-                "leftValue": "DemandRequestSid.opstatus",
+                "leftValue": "DemandRequest.opstatus",
                 "operator": "===",
                 "rightValueType": "value",
                 "rightValue": "0"
@@ -71,7 +71,7 @@
         }, {
             "id": "ADD_SNIPPET_g0964aa350c2483f9cc7f870470024db",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "taskData = DemandRequestSid.records;\nkony.print(\"taskData\"+JSON.stringify(taskData));",
+            "codeSnippet": "taskData = DemandRequest.records;\nkony.print(\"taskData\"+JSON.stringify(taskData));",
             "parentId": "_e074e2821b61460a8198ec7965b3c26b",
             "callbackType": null
         }, {
@@ -105,9 +105,9 @@
             "id": "ADD_MAPPING_ec5a2c590a374278bf5d1ed42ca5f138",
             "type": "ADD_MAPPING",
             "mappings": {
-                "ME_Mapping_cca110713f084367afd5c1c89269b692": {
+                "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                    "id": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -117,10 +117,10 @@
                         "dataType": "collection",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -138,9 +138,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_h211f00c171b470386f0ffd5ec51252c": {
+                "ME_Mapping_eab3d63ac38a4ee09b88d4101a495495": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_h211f00c171b470386f0ffd5ec51252c",
+                    "id": "ME_Mapping_eab3d63ac38a4ee09b88d4101a495495",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -152,10 +152,10 @@
                         "propertyPath": "[\"records\"][0][\"SKUID\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -168,7 +168,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "ib80713167c44ca3a27c1ec8d1b149f5",
@@ -176,9 +176,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_e8d66c7b03dc4d7cb2ccd7cf0fe50b5c": {
+                "ME_Mapping_c67494e076ed489e97584d71cade5680": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_e8d66c7b03dc4d7cb2ccd7cf0fe50b5c",
+                    "id": "ME_Mapping_c67494e076ed489e97584d71cade5680",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -190,10 +190,10 @@
                         "propertyPath": "[\"records\"][0][\"Name\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -206,7 +206,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "bf1a984c53904b7b984f9cb1024ed41a",
@@ -214,9 +214,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_gb2908e9b646458d8d410a4abecf2da4": {
+                "ME_Mapping_da9773718f36431d818d283a6fe725b0": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_gb2908e9b646458d8d410a4abecf2da4",
+                    "id": "ME_Mapping_da9773718f36431d818d283a6fe725b0",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -228,10 +228,10 @@
                         "propertyPath": "[\"records\"][0][\"Category\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -244,7 +244,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "g75ac35757e44e5a9b09c34e81e2a8cb",
@@ -252,9 +252,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_d09300ceca7a4689a6865d2ea921d120": {
+                "ME_Mapping_d6099b29fdb648bea0fb63e00416d12f": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_d09300ceca7a4689a6865d2ea921d120",
+                    "id": "ME_Mapping_d6099b29fdb648bea0fb63e00416d12f",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -266,10 +266,10 @@
                         "propertyPath": "[\"records\"][0][\"Stock\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -282,7 +282,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "ec15531e851a416c847f938f96b9b110",
@@ -290,9 +290,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_i7a9a76d366345948e798fdabe5f4528": {
+                "ME_Mapping_ec58d5b1d369487fb9892ccb7db4d7b5": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_i7a9a76d366345948e798fdabe5f4528",
+                    "id": "ME_Mapping_ec58d5b1d369487fb9892ccb7db4d7b5",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -304,10 +304,10 @@
                         "propertyPath": "[\"records\"][0][\"Forecasted\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -320,7 +320,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "a7d6047c591c4e7483a4bfea547eb5b2",
@@ -328,9 +328,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_if24efac69b943f69601ed222ade50b6": {
+                "ME_Mapping_e5f52e13de174827818dcdcccb7bec2b": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_if24efac69b943f69601ed222ade50b6",
+                    "id": "ME_Mapping_e5f52e13de174827818dcdcccb7bec2b",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -342,10 +342,10 @@
                         "propertyPath": "[\"records\"][0][\"EnrichedQTY\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -358,7 +358,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "c0c7ccad8f8243d99bd1b68112d764a4",
@@ -366,9 +366,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_e98f093e21f2469291da2dbab1d83883": {
+                "ME_Mapping_b55aa714feda4d83bfefc90c1146a0c7": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_e98f093e21f2469291da2dbab1d83883",
+                    "id": "ME_Mapping_b55aa714feda4d83bfefc90c1146a0c7",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -380,10 +380,10 @@
                         "propertyPath": "[\"records\"][0][\"Requested\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -396,7 +396,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "dbf27c9da7234d67bede2060b3e77910",
@@ -404,9 +404,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_h97c0ca481de40aca18a8f33b43588ff": {
+                "ME_Mapping_fa0197cf96074fe49e5639fc3b0eaa51": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_h97c0ca481de40aca18a8f33b43588ff",
+                    "id": "ME_Mapping_fa0197cf96074fe49e5639fc3b0eaa51",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -418,10 +418,10 @@
                         "propertyPath": "[\"records\"][0][\"Status\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -434,7 +434,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "e0fbeda48c2d44e9ab1941ff9a0f57ff",
@@ -442,24 +442,24 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_d21a4b0adabc4c728642573198ac80f6": {
+                "ME_Mapping_h751c687661b4d2eabd1190b22673749": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_d21a4b0adabc4c728642573198ac80f6",
+                    "id": "ME_Mapping_h751c687661b4d2eabd1190b22673749",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
                     "source": {
                         "type": "Services",
-                        "propertyName": "RequestedBy",
+                        "propertyName": "RequestedBY",
                         "dataType": "string",
                         "collectionId": "records",
-                        "propertyPath": "[\"records\"][0][\"RequestedBy\"]",
+                        "propertyPath": "[\"records\"][0][\"RequestedBY\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -472,7 +472,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "baa1b07cb3ae4ced8d8110a928edfcfa",
@@ -480,9 +480,9 @@
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_fb40074652a84fe585b902b50ab1d491": {
+                "ME_Mapping_g00462ebfb2c4ba5886a4cc8c5e11e6e": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_fb40074652a84fe585b902b50ab1d491",
+                    "id": "ME_Mapping_g00462ebfb2c4ba5886a4cc8c5e11e6e",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -494,10 +494,10 @@
                         "propertyPath": "[\"records\"][0][\"RequestDate\"]",
                         "forkedPlatform": "all",
                         "serviceconfig": {
-                            "servicename": "SKUDemandRequestsSid",
+                            "servicename": "SKUDemandRequests",
                             "type": "objectsvcs",
-                            "objectname": "DemandRequestSid",
-                            "serviceid": "a9ec3b85-4626-463d-b040-f099ccbd4b0d",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
                             "methodname": "get"
                         }
                     },
@@ -510,7 +510,7 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_cca110713f084367afd5c1c89269b692",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
                         "segmentId": "segDemandRequest",
                         "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
                         "widgetKUID": "h7908ed8f1ac436fa31d64317950c482",
@@ -519,7 +519,7 @@
                     }
                 }
             },
-            "mappingsOrder": ["ME_Mapping_cca110713f084367afd5c1c89269b692", "ME_Mapping_h211f00c171b470386f0ffd5ec51252c", "ME_Mapping_e8d66c7b03dc4d7cb2ccd7cf0fe50b5c", "ME_Mapping_gb2908e9b646458d8d410a4abecf2da4", "ME_Mapping_d09300ceca7a4689a6865d2ea921d120", "ME_Mapping_i7a9a76d366345948e798fdabe5f4528", "ME_Mapping_if24efac69b943f69601ed222ade50b6", "ME_Mapping_e98f093e21f2469291da2dbab1d83883", "ME_Mapping_h97c0ca481de40aca18a8f33b43588ff", "ME_Mapping_d21a4b0adabc4c728642573198ac80f6", "ME_Mapping_fb40074652a84fe585b902b50ab1d491"],
+            "mappingsOrder": ["ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d", "ME_Mapping_eab3d63ac38a4ee09b88d4101a495495", "ME_Mapping_c67494e076ed489e97584d71cade5680", "ME_Mapping_da9773718f36431d818d283a6fe725b0", "ME_Mapping_d6099b29fdb648bea0fb63e00416d12f", "ME_Mapping_ec58d5b1d369487fb9892ccb7db4d7b5", "ME_Mapping_e5f52e13de174827818dcdcccb7bec2b", "ME_Mapping_b55aa714feda4d83bfefc90c1146a0c7", "ME_Mapping_fa0197cf96074fe49e5639fc3b0eaa51", "ME_Mapping_h751c687661b4d2eabd1190b22673749", "ME_Mapping_g00462ebfb2c4ba5886a4cc8c5e11e6e"],
             "parentId": "_e074e2821b61460a8198ec7965b3c26b",
             "callbackType": null,
             "enableMappingEditor": true

@@ -1,0 +1,30 @@
+{
+    "exportType": "component",
+    "info": {
+        "uw_namespace": "com.voltmxmp",
+        "uw_classname": "multiseriesverticalbar",
+        "isLocked": false,
+        "userwidgets": [
+            "com.voltmxmp.multiseriesverticalbar"
+        ],
+        "templates": [],
+        "actions": {},
+        "skins": [
+            "CopyCopyslForm1",
+            "CopyCopyslFbox1",
+            "CopyCopyslTitleBar1"
+        ],
+        "images": [],
+        "fonts": [],
+        "nativeApis": 0,
+        "mfbundle": "services/services.zip",
+        "localFiles": true,
+        "cordova": [],
+        "forms": {},
+        "type": "userwidget",
+        "isMVC": false
+    },
+    "createdOn": "2025-07-14T05:42:12.826Z",
+    "createdVizVersion": "9.5.54",
+    "project_version": "sprint45"
+}
