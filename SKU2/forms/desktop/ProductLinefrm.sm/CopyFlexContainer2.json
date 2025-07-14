@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "880dp"
     },
     "_margin_": [
         0,
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sa326270bd20491ebd560e7d55fdedef",
+    "_skin_": "seb2aa3191644d278b9ae11c23b12abc",
     "_top_": {
         "type": "string",
         "value": "16dp"
@@ -35,17 +35,16 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "Label01",
-        "Label001"
+        "Label03"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer1",
+    "id": "CopyFlexContainer2",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a675834da1ca4b46bcdcf32277b5cf83",
+    "kuid": "c0500c4ffed24b3093d41fc80a922224",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "FlexContainerHeader",

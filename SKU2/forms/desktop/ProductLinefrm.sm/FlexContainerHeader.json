@@ -35,7 +35,9 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "FlexContainer1"
+        "FlexContainer1",
+        "CopyFlexContainer1",
+        "CopyFlexContainer2"
     ],
     "clipbounds": false,
     "containerweight": 100,
