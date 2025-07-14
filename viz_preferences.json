@@ -19,14 +19,39 @@
         "urls": {
             "konyFabricURL": "https://manage.demo-hclvoltmx.com"
         },
-        "codeEditor": {},
+        "codeEditor": {
+            "indentConf": {},
+            "externalEditor": {
+                "displayName": "Sublime"
+            }
+        },
         "proxyConfig": {},
         "remoteMACConfig": {},
         "testRecorder": {
             "port": 9111
         },
-        "AllowLockManagementSettings": false
+        "AllowLockManagementSettings": false,
+        "inlinePreviewEnabled": false,
+        "isHtmlPreviewEnabled": false,
+        "autoCollapsePW": false,
+        "widgetHighlighterActionButtons": false,
+        "isSnapModeEnabled": true,
+        "containerPlaceholders": true,
+        "skipAppSigningRequirements": false,
+        "autoDetectIP": true,
+        "staticIP": "",
+        "autoUpdate": false
     },
     "build": {},
-    "previewMode": "debug"
+    "previewMode": "debug",
+    "starter": {
+        "general": {
+            "enableMetrics": true
+        }
+    },
+    "dx": {
+        "general": {},
+        "dxClient": {}
+    },
+    "vizTheme": "dark"
 }
