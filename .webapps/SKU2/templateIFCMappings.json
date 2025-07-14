@@ -1,0 +1,187 @@
+{
+    "controllerTemplateInfoMapping": {
+        "desktopweb": {
+            "CopyFBoxDemandRequest0ea77f446c59041Controller_desktop": [
+                "CopyFBoxDemandRequest0ea77f446c59041Controller"
+            ],
+            "CopyFBoxProductline0b4828ae3534343Controller_desktop": [
+                "CopyFBoxProductline0b4828ae3534343Controller"
+            ],
+            "CopyFBoxProductline0cfaf586391c248Controller_desktop": [
+                "CopyFBoxProductline0cfaf586391c248Controller"
+            ],
+            "CopyFBoxProductline0g693a35b70844aController_desktop": [
+                "CopyFBoxProductline0g693a35b70844aController"
+            ],
+            "CopyFBoxProductline0he56704eefde49Controller_desktop": [
+                "CopyFBoxProductline0he56704eefde49Controller"
+            ],
+            "flxSampleRowTemplateController_desktop": [
+                "flxSampleRowTemplateController"
+            ],
+            "flxSectionHeaderTemplateController_desktop": [
+                "flxSectionHeaderTemplateController"
+            ],
+            "myflxSegRowWithImageAndLabelController_desktop": [
+                "myflxSegRowWithImageAndLabelController"
+            ]
+        }
+    },
+    "controllerformInfoMapping": {
+        "desktopweb": {
+            "DemandRequestFrmController_desktop": [
+                "DemandRequestFrmController"
+            ],
+            "ProductLinefrmController_desktop": [
+                "ProductLinefrmController"
+            ]
+        }
+    },
+    "formControllerInfoMapping": {
+        "desktopweb": {
+            "DemandRequestFrm": {
+                "controllerActionDir": "DemandRequestFrmController",
+                "controllerChannel": "desktop",
+                "controllerName": "DemandRequestFrmController"
+            },
+            "ProductLinefrm": {
+                "controllerActionDir": "ProductLinefrmController",
+                "controllerChannel": "desktop",
+                "controllerName": "ProductLinefrmController"
+            }
+        }
+    },
+    "formsifcMapping": {
+        "desktopweb": {
+            "DemandRequestFrm": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "DemandRequestFrmController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "DemandRequestFrmController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "DemandRequestFrm",
+                "isMDAForm": false
+            },
+            "ProductLinefrm": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "ProductLinefrmController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "ProductLinefrmController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "ProductLinefrm",
+                "isMDAForm": false
+            }
+        }
+    },
+    "templateControllerInfoMapping": {
+        "desktopweb": {
+            "CopyFBoxDemandRequest0ea77f446c59041": {
+                "controllerActionDir": "CopyFBoxDemandRequest0ea77f446c59041Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxDemandRequest0ea77f446c59041Controller"
+            },
+            "CopyFBoxProductline0b4828ae3534343": {
+                "controllerActionDir": "CopyFBoxProductline0b4828ae3534343Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxProductline0b4828ae3534343Controller"
+            },
+            "CopyFBoxProductline0cfaf586391c248": {
+                "controllerActionDir": "CopyFBoxProductline0cfaf586391c248Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxProductline0cfaf586391c248Controller"
+            },
+            "CopyFBoxProductline0g693a35b70844a": {
+                "controllerActionDir": "CopyFBoxProductline0g693a35b70844aController",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxProductline0g693a35b70844aController"
+            },
+            "CopyFBoxProductline0he56704eefde49": {
+                "controllerActionDir": "CopyFBoxProductline0he56704eefde49Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxProductline0he56704eefde49Controller"
+            },
+            "SampleRowTemplate": {
+                "controllerActionDir": "flxSampleRowTemplateController",
+                "controllerChannel": "desktop",
+                "controllerName": "flxSampleRowTemplateController"
+            },
+            "SampleSectionHeaderTemplate": {
+                "controllerActionDir": "flxSectionHeaderTemplateController",
+                "controllerChannel": "desktop",
+                "controllerName": "flxSectionHeaderTemplateController"
+            },
+            "mytplSegRowWithImageAndLabel": {
+                "controllerActionDir": "myflxSegRowWithImageAndLabelController",
+                "controllerChannel": "desktop",
+                "controllerName": "myflxSegRowWithImageAndLabelController"
+            }
+        }
+    },
+    "templatesifcMapping": {
+        "desktopweb": {
+            "flxSampleRowTemplate": {
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "flxSampleRowTemplateController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "flxSampleRowTemplateController"
+                },
+                "friendlyName": "flxSampleRowTemplate",
+                "templateId": "flxSampleRowTemplate"
+            },
+            "flxSectionHeaderTemplate": {
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "flxSectionHeaderTemplateController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "flxSectionHeaderTemplateController"
+                },
+                "friendlyName": "flxSectionHeaderTemplate",
+                "templateId": "flxSectionHeaderTemplate"
+            },
+            "myflxSegRowWithImageAndLabel": {
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "myflxSegRowWithImageAndLabelController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "myflxSegRowWithImageAndLabelController"
+                },
+                "friendlyName": "myflxSegRowWithImageAndLabel",
+                "templateId": "myflxSegRowWithImageAndLabel"
+            }
+        }
+    },
+    "userwidgetsifcMapping": {
+        "com.hclsoftwareu.hamburgermenu": {
+            "appName": "SKU2",
+            "classname": "hamburgermenu",
+            "namespace": "com.hclsoftwareu"
+        },
+        "com.konymp.linechart": {
+            "appName": "SKU2",
+            "classname": "linechart",
+            "namespace": "com.konymp"
+        },
+        "com.konymp.piechart": {
+            "appName": "SKU2",
+            "classname": "piechart",
+            "namespace": "com.konymp"
+        },
+        "com.konymp.verticalbar": {
+            "appName": "SKU2",
+            "classname": "verticalbar",
+            "namespace": "com.konymp"
+        },
+        "com.voltmxmp.multiseriesverticalbar": {
+            "appName": "SKU2",
+            "classname": "multiseriesverticalbar",
+            "namespace": "com.voltmxmp"
+        }
+    }
+}

@@ -58,7 +58,8 @@
     "children": [
         "FlexSKUTable",
         "FlexContainerPieChart",
-        "FlexContainerchart"
+        "FlexContainerchart",
+        "FlexContaineroverview"
     ],
     "containerweight": 100,
     "controllerInfo": {

@@ -1,0 +1,52 @@
+define(function() {
+    return {
+        "properties": [{
+            "name": "chartTitle",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "enableLegend",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "bgColor",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "chartData",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "titleFontSize",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "legendFontSize",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "enableStaticPreview",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "titleFontColor",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "legendFontColor",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }],
+        "apis": ["createChart"],
+        "events": []
+    }
+});

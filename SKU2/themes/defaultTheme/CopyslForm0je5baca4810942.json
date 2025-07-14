@@ -1,8 +1,6 @@
 {
-  "background_gradient_bottom_color": "a57fb0ff",
-  "background_gradient_top_color": "b7b8e8ff",
-  "background_style": "vg",
-  "bg_type": "two",
+  "background_color": "f7f7f7ff",
+  "bg_type": "one",
   "border_color": "ffffffff",
   "isDefaultSkin": false,
   "kuid": "s1b6c3df9ac947338a2a3066ac7d81f1",
