@@ -21,7 +21,7 @@
     "_text_": " -0.5% from last month",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,7 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Copylbl0b8df5c5f07ed40",
+    "id": "Copylbl06",
     "info": null,
     "ipad": {
         "psp": {

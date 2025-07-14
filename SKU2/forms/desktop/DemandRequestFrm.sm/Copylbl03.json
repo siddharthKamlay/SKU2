@@ -18,10 +18,10 @@
         0
     ],
     "_skin_": "s1b5aea3e0a54e3eb3d090344b096fe7",
-    "_text_": " +0.8x from last month",
+    "_text_": "-1.3% from last month",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,7 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Copylbl0j8fb66b9d2254e",
+    "id": "Copylbl03",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a840d655900547e9a53c68cefd8ad86c",
+    "kuid": "c06d81e876404531adb21a2f51b5abf1",
     "name": "kony.ui.Label",
-    "parent": "flxinventory",
+    "parent": "flxsuppy",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

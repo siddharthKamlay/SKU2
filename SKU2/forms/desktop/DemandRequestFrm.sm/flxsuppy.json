@@ -35,9 +35,9 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "Copylbl0dda76a6f148145",
-        "Copylbl0e8be2529fdf74e",
-        "Copylbl0h5d06b3fee0c4e"
+        "Copylbl01",
+        "Copylbl02",
+        "Copylbl03"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -49,7 +49,7 @@
     "kuid": "b76864337d864c96b8b7f6c5a703eb12",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlexContainer0h987a7c53f0a4c",
+    "parent": "FlexContainerHeader",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

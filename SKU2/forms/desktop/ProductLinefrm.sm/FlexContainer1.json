@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "110dp"
+        "value": "100dp"
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -22,35 +22,31 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s2963ba8faac4c8d8f945ffcb1b52528",
+    "_skin_": "s8c7496960954fe2ac011b871ad3086c",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "16dp"
     },
     "_width_": {
         "type": "string",
-        "value": "20.83%"
+        "value": "30%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "lbl1",
-        "lbl2",
-        "lbl3"
-    ],
+    "children": [],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxforecast",
+    "id": "FlexContainer1",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f85c1fe291c54393ab209cb744b2c194",
-    "layouttype": 4,
+    "kuid": "a675834da1ca4b46bcdcf32277b5cf83",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "FlexContainerHeader",
-    "pf": "DemandRequestFrm",
+    "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

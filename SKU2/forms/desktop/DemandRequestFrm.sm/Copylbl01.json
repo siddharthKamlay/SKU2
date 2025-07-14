@@ -18,7 +18,7 @@
         0
     ],
     "_skin_": "s8c019d2bf5c4e8aa4e885e16ba4bbaf",
-    "_text_": "Inventory Turnover ",
+    "_text_": "Supply Variance",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -40,8 +40,8 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "Copylbl0i2c975de8fec4b",
+    "contentalignment": 5,
+    "id": "Copylbl01",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j3932db6a4fb43fa93315df179edb53d",
+    "kuid": "j45dbe1cbcdd4802913b1de5e59f1e15",
     "name": "kony.ui.Label",
-    "parent": "flxinventory",
+    "parent": "flxsuppy",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

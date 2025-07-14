@@ -17,11 +17,11 @@
         0,
         0
     ],
-    "_skin_": "s8c019d2bf5c4e8aa4e885e16ba4bbaf",
-    "_text_": "Stockout Risk ",
+    "_skin_": "sc500f16c18248649dd39d1efbf6403a",
+    "_text_": "8.7%",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "ref",
@@ -40,8 +40,8 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "Copylbl0fea5063f9d084f",
+    "contentalignment": 5,
+    "id": "Copylbl02",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b42006ee9c4d4346a88cb8be9bfbc19e",
+    "kuid": "e335f9c22c594a9e93468e1e1432f13a",
     "name": "kony.ui.Label",
-    "parent": "flxstock",
+    "parent": "flxsuppy",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

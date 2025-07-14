@@ -5,7 +5,7 @@ define("ProductLinefrm", function() {
             var FlexContainertable = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "460dp",
+                "height": "370dp",
                 "id": "FlexContainertable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
@@ -13,7 +13,7 @@ define("ProductLinefrm", function() {
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0b75c50fb9d0e41",
-                "top": "430dp",
+                "top": "520dp",
                 "width": "92.97%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -305,14 +305,14 @@ define("ProductLinefrm", function() {
             var FlexChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "360dp",
+                "height": "311dp",
                 "id": "FlexChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "630dp",
+                "left": "650dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "30dp",
+                "top": "160dp",
                 "width": "48.32%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -327,7 +327,7 @@ define("ProductLinefrm", function() {
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "CopyCopyslFbox1",
+                "skin": "CopyCopyslFbox0i9ba5738169540",
                 "top": "0dp",
                 "width": "100%",
                 "appName": "SKU2",
@@ -486,15 +486,15 @@ define("ProductLinefrm", function() {
             var FlexContainerLinechart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "35%",
+                "height": "35.19%",
                 "id": "FlexContainerLinechart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "46dp",
+                "left": "40dp",
                 "isModalContainer": false,
-                "skin": "slFbox",
-                "top": "83dp",
-                "width": "35%",
+                "skin": "CopyslFbox0j91f9d0a0ef540",
+                "top": "160dp",
+                "width": "38.80%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -502,15 +502,15 @@ define("ProductLinefrm", function() {
             }, {});
             FlexContainerLinechart.setDefaultUnit(voltmx.flex.DP);
             var linechart = new com.konymp.linechart({
-                "height": "111.11%",
+                "height": "98.33%",
                 "id": "linechart",
                 "isVisible": true,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "-60dp",
-                "width": "108.79%",
+                "top": "0dp",
+                "width": "100.42%",
                 "appName": "SKU2",
                 "viewType": "linechart",
                 "overrides": {
@@ -579,6 +579,208 @@ define("ProductLinefrm", function() {
             linechart.enableChartAnimation = true;
             linechart.enableStaticPreview = true;
             FlexContainerLinechart.add(linechart);
+            var FlexContainerHeader = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "110dp",
+                "id": "FlexContainerHeader",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "40dp",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "17dp",
+                "width": "92.97%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerHeader.setDefaultUnit(voltmx.flex.DP);
+            var flxforecast = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "110dp",
+                "id": "flxforecast",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FLOW_VERTICAL,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0b5b21954956f4d",
+                "top": "0dp",
+                "width": "29.92%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            flxforecast.setDefaultUnit(voltmx.flex.DP);
+            var lbl1 = new voltmx.ui.Label({
+                "centerX": "49.81%",
+                "id": "lbl1",
+                "isVisible": true,
+                "skin": "CopydefLabel0dff0a512056e4a",
+                "text": "Alignment %",
+                "top": "0dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var lbl2 = new voltmx.ui.Label({
+                "centerX": "50%",
+                "id": "lbl2",
+                "isVisible": true,
+                "skin": "CopydefLabel0aaae496075d949",
+                "text": " 94.2%  ",
+                "top": "10dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var lbl3 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "lbl3",
+                "isVisible": true,
+                "skin": "CopydefLabel0e37d99e471f945",
+                "text": "+2.1% from last month",
+                "top": "20dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            flxforecast.add(lbl1, lbl2, lbl3);
+            var Copyflxforecast0ecb1f7d226dc43 = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "110dp",
+                "id": "Copyflxforecast0ecb1f7d226dc43",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FLOW_VERTICAL,
+                "left": "440dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0b5b21954956f4d",
+                "top": "0dp",
+                "width": "29.92%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            Copyflxforecast0ecb1f7d226dc43.setDefaultUnit(voltmx.flex.DP);
+            var Copylbl0afa1df001f254f = new voltmx.ui.Label({
+                "centerX": "49.81%",
+                "id": "Copylbl0afa1df001f254f",
+                "isVisible": true,
+                "skin": "CopydefLabel0dff0a512056e4a",
+                "text": "Revenue Gap",
+                "top": "0dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Copylbl0j180cbf4bc344e = new voltmx.ui.Label({
+                "centerX": "50%",
+                "id": "Copylbl0j180cbf4bc344e",
+                "isVisible": true,
+                "skin": "CopydefLabel0aaae496075d949",
+                "text": " 94.2%  ",
+                "top": "10dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Copylbl0c1441a01c23043 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "Copylbl0c1441a01c23043",
+                "isVisible": true,
+                "skin": "CopydefLabel0e37d99e471f945",
+                "text": "+2.1% from last month",
+                "top": "20dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            Copyflxforecast0ecb1f7d226dc43.add(Copylbl0afa1df001f254f, Copylbl0j180cbf4bc344e, Copylbl0c1441a01c23043);
+            var Copyflxforecast0ec8489f0f44549 = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "110dp",
+                "id": "Copyflxforecast0ec8489f0f44549",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FLOW_VERTICAL,
+                "left": "880dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0b5b21954956f4d",
+                "top": "0dp",
+                "width": "29.92%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            Copyflxforecast0ec8489f0f44549.setDefaultUnit(voltmx.flex.DP);
+            var Copylbl0b7021c655d034b = new voltmx.ui.Label({
+                "centerX": "49.81%",
+                "id": "Copylbl0b7021c655d034b",
+                "isVisible": true,
+                "skin": "CopydefLabel0dff0a512056e4a",
+                "text": "Forecast Accuracy",
+                "top": "0dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Copylbl0ffd8361c691445 = new voltmx.ui.Label({
+                "centerX": "50%",
+                "id": "Copylbl0ffd8361c691445",
+                "isVisible": true,
+                "skin": "CopydefLabel0aaae496075d949",
+                "text": " 94.2%  ",
+                "top": "10dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Copylbl0d60e43cc28874d = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "Copylbl0d60e43cc28874d",
+                "isVisible": true,
+                "skin": "CopydefLabel0e37d99e471f945",
+                "text": "+2.1% from last month",
+                "top": "20dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            Copyflxforecast0ec8489f0f44549.add(Copylbl0b7021c655d034b, Copylbl0ffd8361c691445, Copylbl0d60e43cc28874d);
+            FlexContainerHeader.add(flxforecast, Copyflxforecast0ecb1f7d226dc43, Copyflxforecast0ec8489f0f44549);
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1366,
@@ -620,7 +822,7 @@ define("ProductLinefrm", function() {
                     "centerY": ""
                 }
             }
-            this.add(FlexContainertable, FlexChart, FlexContainerLinechart);
+            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader);
         };
         return [{
             "addWidgets": addWidgetsProductLinefrm,
