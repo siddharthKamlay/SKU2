@@ -263,7 +263,7 @@
     "cordovaModified": false,
     "createdVizVersion": "9.5.52",
     "createdgaversion": "9.5.52",
-    "currentgaversion": "9.5.54",
+    "currentgaversion": "9.5.52",
     "deeplinkkey": "None",
     "defaultZIndex": "1",
     "defaultlocalekey": "",
@@ -442,7 +442,7 @@
             "version": "1.0"
         }
     },
-    "konyVizVersion": "9.5.54",
+    "konyVizVersion": "9.5.52",
     "lastmodifiedtime": "1752037151868",
     "location": "false",
     "mangoapptitlekey": ",,,,,,",
