@@ -144,6 +144,48 @@ define("SKUDemandControllerActions", {
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
         SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback);
     },
+    /** onTouchEnd defined for Image0dc6e78981a6c4f **/
+    AS_Image_c7585c90d380452cb53b81adc5cd4ae1: function AS_Image_c7585c90d380452cb53b81adc5cd4ae1(eventobject, x, y) {
+        var self = this;
+
+        function MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8_Callback() {}
+        self.view.FlexContainerslidemenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 0.25
+        }, {
+            "animationEnd": MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8_Callback
+        });
+    },
+    /** onTouchStart defined for Label05 **/
+    AS_Label_ad9133d4135c453f87290c089a74695a: function AS_Label_ad9133d4135c453f87290c089a74695a(eventobject, x, y) {
+        var self = this;
+    },
+    /** onTouchEnd defined for CopyLabel0c2616b70466946 **/
+    AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for Label05 **/
+    AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("SKUDemand");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for CopyLabel0a138d2c742a340 **/
+    AS_Label_f70828358dce40018fdee062495dbbc7: function AS_Label_f70828358dce40018fdee062495dbbc7(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        ntf.navigate();
+    },
     /** onTouchEnd defined for lblName **/
     AS_Label_g98ccbb79b5c4fda802abb12822b0b9b: function AS_Label_g98ccbb79b5c4fda802abb12822b0b9b(eventobject, x, y) {
         var self = this;

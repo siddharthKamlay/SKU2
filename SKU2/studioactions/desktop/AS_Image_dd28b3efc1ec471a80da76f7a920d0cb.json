@@ -1,0 +1,30 @@
+{
+    "AS_Image_dd28b3efc1ec471a80da76f7a920d0cb": {
+        "id": "AS_Image_dd28b3efc1ec471a80da76f7a920d0cb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "imagesrc"
+        }, {
+            "datatype": "boolean",
+            "name": "issuccess"
+        }],
+        "contextObj": {
+            "name": "ProductLinefrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3c9856e04514d829f4c8106e7ce4669"
+        },
+        "language": "js",
+        "eventType": "onDownloadComplete",
+        "actions": [{
+            "id": "ADD_SNIPPET_a49b918b8a294e49b5be8b06f830b33d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var leftValue = this.view.FlexContainerSideMenu.left;\n\nif (leftValue === \"-180dp\") {\n  // Slide in\n  this.view.FlexContainerSideMenu.animate(\n    kony.ui.createAnimation({\n      \"100\": { \"left\": \"0dp\", \"stepConfig\": { \"timingFunction\": kony.anim.EASE } }\n    }),\n    {\n      \"duration\": 0.3,\n      \"iterationCount\": 1,\n      \"fillMode\": kony.anim.FILL_MODE_FORWARDS\n    },\n    { animationEnd: function() {} }\n  );\n} else {\n  // Slide out\n  this.view.FlexContainerSideMenu.animate(\n    kony.ui.createAnimation({\n      \"100\": { \"left\": \"-180dp\", \"stepConfig\": { \"timingFunction\": kony.anim.EASE } }\n    }),\n    {\n      \"duration\": 0.3,\n      \"iterationCount\": 1,\n      \"fillMode\": kony.anim.FILL_MODE_FORWARDS\n    },\n    { animationEnd: function() {} }\n  );\n}\n",
+            "parentId": null
+        }]
+    }
+}

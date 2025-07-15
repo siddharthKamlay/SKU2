@@ -20,17 +20,6 @@
         },
         "language": "js",
         "eventType": "onTouchStart",
-        "actions": [{
-            "id": "NAVIGATE_TO_FORM__ee4d1f68eb904de99590f144f162755f",
-            "type": "NAVIGATE_TO_FORM",
-            "formId": "SKUDemand",
-            "formKUID": "bb67880847304d79ab85353202f9a604",
-            "projectName": "SKU2",
-            "mappings": {},
-            "mappingsOrder": [],
-            "enableMappingEditor": true,
-            "package": "",
-            "isCustomInput": false
-        }]
+        "actions": []
     }
 }
