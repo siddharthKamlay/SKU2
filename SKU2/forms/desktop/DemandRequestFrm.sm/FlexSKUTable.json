@@ -39,8 +39,8 @@
         "LabelID",
         "LabelID1",
         "TextFieldSearchBox",
-        "ListBoxCategories",
-        "ListBoxStatus"
+        "ListBoxStatus",
+        "ListBoxCategories"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -66,8 +66,12 @@
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
+    "selectedkey": "All Status",
     "selectedkeys": null,
-    "selectedkeyvalue": null,
+    "selectedkeyvalue": [
+        "All Status",
+        "All Status"
+    ],
     "selectedkeyvalues": null,
     "size": 18,
     "viewconfig": {
