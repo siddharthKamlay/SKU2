@@ -1,0 +1,698 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        },
+        {
+            "CopyImage0b5d9a25cec1b4a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cross.jpg"
+            },
+            "CopyImage0b9e4270528ae45": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick.png"
+            },
+            "CopyLabel0a4721bc1be964e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            },
+            "CopyLabel0ac775376e26c4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "CopyLabel0b7c93f33c0e148": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Enriched QTY"
+            },
+            "CopyLabel0d7f854fb40f746": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "CopyLabel0e7176e8dc1c340": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved Date"
+            },
+            "CopyLabel0ed0fc93427ed46": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "CopyLabel0h140a4d033144e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "CopyLabel0hbbc7474e2d94a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested By"
+            },
+            "CopyLabel0hfa3918b88ca44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "CopyLabel0j137a4eb15b24c": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested date"
+            },
+            "Image0f546f4cd61574a": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eye.png"
+            },
+            "Label0ee69e19d962e44": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKU ID"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "105.43%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "records",
+        "eventAssociationMeta": {
+            "event": "onRowClick",
+            "skipMapping": true
+        },
+        "widgetPropertyName": "rowData"
+    },
+    "alternaterowskin": "s0ac9cdcd5484440a9c4b863422bb4ec",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "gdb8b58924f14547b2ae47f7cc1ef278",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segDemandRequest",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i1789355d0854e91882eb1921c521a22",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "parent": "flexHeaderDemandRequest",
+    "pf": "SKUDemand",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "c619ac315c9246fa9d50e159d5015365",
+    "rowcounter": 9,
+    "rowfocusskin": "saf2f87835b1465b9bd1c6c30c7b29c9",
+    "rowskin": "s416a1b7020e4404bf4c5f0ac54f015e",
+    "rowtemplate": "CopyFlex0ff43866586004c",
+    "seccounter": 0,
+    "sectionheaderskin": "s0813b4200ce43f1a1a3fff39aad210f",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyFlex0ff43866586004c": "CopyFlex0ff43866586004c",
+        "CopyImage0b5d9a25cec1b4a": "CopyImage0b5d9a25cec1b4a",
+        "CopyImage0b9e4270528ae45": "CopyImage0b9e4270528ae45",
+        "CopyLabel0a4721bc1be964e": "CopyLabel0a4721bc1be964e",
+        "CopyLabel0ac775376e26c4e": "CopyLabel0ac775376e26c4e",
+        "CopyLabel0b7c93f33c0e148": "CopyLabel0b7c93f33c0e148",
+        "CopyLabel0d7f854fb40f746": "CopyLabel0d7f854fb40f746",
+        "CopyLabel0e7176e8dc1c340": "CopyLabel0e7176e8dc1c340",
+        "CopyLabel0ed0fc93427ed46": "CopyLabel0ed0fc93427ed46",
+        "CopyLabel0h140a4d033144e": "CopyLabel0h140a4d033144e",
+        "CopyLabel0hbbc7474e2d94a": "CopyLabel0hbbc7474e2d94a",
+        "CopyLabel0hfa3918b88ca44": "CopyLabel0hfa3918b88ca44",
+        "CopyLabel0j137a4eb15b24c": "CopyLabel0j137a4eb15b24c",
+        "Image0f546f4cd61574a": "Image0f546f4cd61574a",
+        "Label0ee69e19d962e44": "Label0ee69e19d962e44"
+    }
+}

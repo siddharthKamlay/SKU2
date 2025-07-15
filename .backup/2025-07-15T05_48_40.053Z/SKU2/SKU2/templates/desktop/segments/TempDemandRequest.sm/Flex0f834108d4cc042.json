@@ -1,0 +1,79 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s8c7496960954fe2ac011b871ad3086c",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "Label0ee69e19d962e44",
+        "CopyLabel0h140a4d033144e",
+        "CopyLabel0ac775376e26c4e",
+        "CopyLabel0a4721bc1be964e",
+        "CopyLabel0hfa3918b88ca44",
+        "CopyLabel0b7c93f33c0e148",
+        "CopyLabel0ed0fc93427ed46",
+        "CopyLabel0d7f854fb40f746",
+        "CopyLabel0hbbc7474e2d94a",
+        "CopyLabel0j137a4eb15b24c",
+        "Image0f546f4cd61574a",
+        "CopyImage0b9e4270528ae45",
+        "CopyImage0b5d9a25cec1b4a"
+    ],
+    "clipbounds": false,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "Flex0f834108d4cc042Controller"
+        }
+    },
+    "enablescrolling": true,
+    "id": "Flex0f834108d4cc042",
+    "info": null,
+    "isTemplate": true,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b29fa9969efb4b5e8647118b4222c659",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "TempDemandRequest",
+    "pf": "TempDemandRequest",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

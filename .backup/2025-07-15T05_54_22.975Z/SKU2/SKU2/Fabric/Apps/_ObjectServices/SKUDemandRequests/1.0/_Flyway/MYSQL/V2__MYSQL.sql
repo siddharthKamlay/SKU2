@@ -1,0 +1,14 @@
+CREATE TABLE `Productline`(
+	`Actual` VARCHAR(40),
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`Forecasted` VARCHAR(40),
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`ProductLine` VARCHAR(40) NOT NULL,
+	`SoftDeleteFlag` BOOLEAN,
+	`Variance` VARCHAR(40),
+	PRIMARY KEY(`ProductLine`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+ALTER TABLE `Productline`
+	ADD CONSTRAINT `7c44891c3401d91c59870ede1b7797` UNIQUE KEY(`ProductLine`);

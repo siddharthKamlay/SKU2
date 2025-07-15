@@ -1,0 +1,80 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "800dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s03ce01253ea414c9c3984410091707c",
+    "_top_": {
+        "type": "string",
+        "value": "108dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s8df256dcb804b73b3ce84026bd95548",
+    "groupcells": false,
+    "id": "ListBoxStatus",
+    "ide_onSelection": "AS_ListBox_c927ae555a8444ddb905c8a59c786e27",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h5f11892b1eb4170a23d28e549550c15",
+    "masterdata": [
+        [
+            "All Status",
+            "All Status"
+        ],
+        [
+            "Approved",
+            "Approved"
+        ],
+        [
+            "Rejected",
+            "Rejected"
+        ],
+        [
+            "Pending",
+            "Pending"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "FlexSKUTable",
+    "pf": "SKUDemand",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}
