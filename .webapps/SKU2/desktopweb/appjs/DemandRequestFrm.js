@@ -650,32 +650,6 @@ define("DemandRequestFrm", function() {
                 "autoCorrect": false,
                 "placeholderSkin": "defTextBoxPlaceholder"
             });
-            var ListBoxCategories = new voltmx.ui.ListBox({
-                "focusSkin": "defListBoxFocus",
-                "height": "40dp",
-                "id": "ListBoxCategories",
-                "isVisible": true,
-                "left": "430dp",
-                "masterData": [
-                    ["All_Categories", "All Categories"],
-                    ["Clothing", "Clothing"],
-                    ["Home_Garden", "Home & Garden"],
-                    ["Sports", "Sports"],
-                    ["Books", "Books"],
-                    ["Electronics", "Electronics"]
-                ],
-                "onSelection": controller.AS_ListBox_e0a22196783943caa926e23657cc2af7,
-                "skin": "CopydefListBoxNormal0e2b722993c6543",
-                "top": "108dp",
-                "width": "300dp",
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [3, 0, 0, 0],
-                "paddingInPixel": false
-            }, {
-                "multiSelect": false
-            });
             var ListBoxStatus = new voltmx.ui.ListBox({
                 "focusSkin": "defListBoxFocus",
                 "height": "40dp",
@@ -689,6 +663,7 @@ define("DemandRequestFrm", function() {
                     ["Pending", "Pending"]
                 ],
                 "onSelection": controller.AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d,
+                "selectedKey": "All Status",
                 "skin": "CopydefListBoxNormal0d1b8af389ce64c",
                 "top": "108dp",
                 "width": "300dp",
@@ -700,7 +675,34 @@ define("DemandRequestFrm", function() {
             }, {
                 "multiSelect": false
             });
-            FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxCategories, ListBoxStatus);
+            var ListBoxCategories = new voltmx.ui.ListBox({
+                "focusSkin": "defListBoxFocus",
+                "height": "40dp",
+                "id": "ListBoxCategories",
+                "isVisible": true,
+                "left": "430dp",
+                "masterData": [
+                    ["All Categories", "All Categories"],
+                    ["Electronics", "Electronics"],
+                    ["Clothing", "Clothing"],
+                    ["Home & Garden", "Home & Garden"],
+                    ["Sports", "Sports"],
+                    ["Books", "Books"]
+                ],
+                "onSelection": controller.AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce,
+                "selectedKey": "All Categories",
+                "skin": "CopydefListBoxNormal0d1b8af389ce64c",
+                "top": "108dp",
+                "width": "300dp",
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [3, 0, 0, 0],
+                "paddingInPixel": false
+            }, {
+                "multiSelect": false
+            });
+            FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxStatus, ListBoxCategories);
             var FlexContainerPieChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
@@ -1070,8 +1072,7 @@ define("DemandRequestFrm", function() {
                 "id": "Label05",
                 "isVisible": true,
                 "left": "10dp",
-                "onTouchEnd": controller.AS_Label_ef28823a15424ff6b94cc4c23729f67a,
-                "onTouchStart": controller.AS_Label_ad9133d4135c453f87290c089a74695a,
+                "onTouchEnd": controller.AS_Label_g8499c9129424cf09a17f7294d793cb8,
                 "skin": "CopydefLabel0b193f12240ae46",
                 "text": "SKU Demand",
                 "top": "176dp",

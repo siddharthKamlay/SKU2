@@ -20339,7 +20339,7 @@ var appConfig = {
         "integsvc": {
             "_internal_logout": "https://m100004609002.demo-hclvoltmx.net/services/IST"
         },
-        "service_doc_etag": "0000019807CC3828",
+        "service_doc_etag": "000001980D4EFC68",
         "appId": "f6d7779f-9f00-4e51-9a53-83684bb70e20",
         "identity_features": {
             "reporting_params_header_allowed": true
