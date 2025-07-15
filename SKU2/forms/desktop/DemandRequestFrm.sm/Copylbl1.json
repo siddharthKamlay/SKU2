@@ -17,11 +17,11 @@
         0,
         0
     ],
-    "_skin_": "s1b5aea3e0a54e3eb3d090344b096fe7",
-    "_text_": "+2.1% from last month",
+    "_skin_": "s8c019d2bf5c4e8aa4e885e16ba4bbaf",
+    "_text_": "Inventory Turnover ",
     "_top_": {
         "type": "string",
-        "value": "6dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",
@@ -37,11 +37,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "46.67%"
+        "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lbl3",
+    "contentalignment": 4,
+    "id": "Copylbl1",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fc82fd6fb153464299b0cb1a7c5e1c1d",
+    "kuid": "j3932db6a4fb43fa93315df179edb53d",
     "name": "kony.ui.Label",
-    "parent": "flxforecast",
+    "parent": "flxinventory",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

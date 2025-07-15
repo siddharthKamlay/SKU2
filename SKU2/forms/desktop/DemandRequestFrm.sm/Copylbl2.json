@@ -17,11 +17,11 @@
         0,
         0
     ],
-    "_skin_": "s1b5aea3e0a54e3eb3d090344b096fe7",
-    "_text_": "+2.1% from last month",
+    "_skin_": "sc500f16c18248649dd39d1efbf6403a",
+    "_text_": "12.4x",
     "_top_": {
         "type": "string",
-        "value": "6dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "ref",
@@ -37,11 +37,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "46.67%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lbl3",
+    "id": "Copylbl2",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fc82fd6fb153464299b0cb1a7c5e1c1d",
+    "kuid": "eddd3ad06a664d8bafa7c6be98757f81",
     "name": "kony.ui.Label",
-    "parent": "flxforecast",
+    "parent": "flxinventory",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

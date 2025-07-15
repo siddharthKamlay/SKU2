@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "80dp"
+    },
     "_margin_": [
         1,
         1,
@@ -17,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "sc500f16c18248649dd39d1efbf6403a",
-    "_text_": "3.2% ",
+    "_skin_": "sd278fcd516049dba0c31128289dfacb",
+    "_text_": "Revenue Gap",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "9dp"
     },
     "_width_": {
         "type": "ref",
@@ -35,13 +39,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Copylbl0d53414d45bf746",
+    "id": "Label02",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +55,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "df938bc7e87841d686857a8ba3851d2b",
+    "kuid": "b1361d58fe504c2c94deed0b4b279485",
     "name": "kony.ui.Label",
-    "parent": "flxstock",
-    "pf": "DemandRequestFrm",
+    "parent": "CopyFlexContainer1",
+    "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

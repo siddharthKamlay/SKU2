@@ -52,7 +52,9 @@
     "children": [
         "FlexContainertable",
         "FlexChart",
-        "FlexContainerLinechart"
+        "FlexContainerLinechart",
+        "FlexContainerHeader",
+        "Label003"
     ],
     "containerweight": 100,
     "controllerInfo": {

@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s2963ba8faac4c8d8f945ffcb1b52528",
+    "_skin_": "sa98ab339420454e907fd6e8c4c59864",
     "_top_": {
         "type": "string",
         "value": "20dp"
@@ -49,7 +49,7 @@
     "kuid": "f85c1fe291c54393ab209cb744b2c194",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlexContainer0h987a7c53f0a4c",
+    "parent": "FlexContainerHeader",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

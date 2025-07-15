@@ -702,7 +702,7 @@ define("DemandRequestFrm", function() {
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "CopyCopyslFbox1",
+                "skin": "CopyCopyslFbox0abc86170ee1a48",
                 "top": "0dp",
                 "width": "100%",
                 "appName": "SKU2",
@@ -950,11 +950,19 @@ define("DemandRequestFrm", function() {
                 "paddingInPixel": false
             }, {});
             FlexContaineroverview.add(Label01, Label02, Label03, Label04, Label05);
+<<<<<<< HEAD
             var FlexContainer0h987a7c53f0a4c = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
                 "height": "140dp",
                 "id": "FlexContainer0h987a7c53f0a4c",
+=======
+            var FlexContainerHeader = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "140dp",
+                "id": "FlexContainerHeader",
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "170dp",
@@ -967,7 +975,11 @@ define("DemandRequestFrm", function() {
             }, {
                 "paddingInPixel": false
             }, {});
+<<<<<<< HEAD
             FlexContainer0h987a7c53f0a4c.setDefaultUnit(voltmx.flex.DP);
+=======
+            FlexContainerHeader.setDefaultUnit(voltmx.flex.DP);
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
             var flxforecast = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
@@ -1212,7 +1224,11 @@ define("DemandRequestFrm", function() {
                 "paddingInPixel": false
             }, {});
             flxstock.add(Copylbl0fea5063f9d084f, Copylbl0d53414d45bf746, Copylbl0b8df5c5f07ed40);
+<<<<<<< HEAD
             FlexContainer0h987a7c53f0a4c.add(flxforecast, flxsuppy, flxinventory, flxstock);
+=======
+            FlexContainerHeader.add(flxforecast, flxsuppy, flxinventory, flxstock);
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1380,
@@ -1254,7 +1270,11 @@ define("DemandRequestFrm", function() {
                     "centerY": ""
                 }
             }
+<<<<<<< HEAD
             this.add(FlexSKUTable, FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainer0h987a7c53f0a4c);
+=======
+            this.add(FlexSKUTable, FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainerHeader);
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
         };
         return [{
             "addWidgets": addWidgetsDemandRequestFrm,

@@ -1,4 +1,58 @@
 {
+    "CopyCopyslFbox0abc86170ee1a48": {
+        "background_color": "00000064",
+        "bg_type": "one",
+        "border_bottom_color": "00000000",
+        "border_bottom_width": "1",
+        "border_left_color": "00000000",
+        "border_left_width": "1",
+        "border_right_color": "00000000",
+        "border_right_width": "1",
+        "border_top_color": "00000000",
+        "border_top_width": "1",
+        "border_type": 0,
+        "bottom_left_border_style": "plain",
+        "bottom_right_border_style": "plain",
+        "forked": true,
+        "shadow": {
+            "br": 2,
+            "color": "00000000",
+            "inner": false,
+            "nm": 0,
+            "x": 0,
+            "y": 0
+        },
+        "top_left_border_style": "plain",
+        "top_right_border_style": "plain",
+        "wType": "FlexContainer"
+    },
+    "CopyCopyslFbox0i9ba5738169540": {
+        "background_color": "00000064",
+        "bg_type": "one",
+        "border_bottom_color": "00000000",
+        "border_bottom_width": 1,
+        "border_left_color": "00000000",
+        "border_left_width": 1,
+        "border_right_color": "00000000",
+        "border_right_width": 1,
+        "border_top_color": "00000000",
+        "border_top_width": 1,
+        "border_type": 0,
+        "bottom_left_border_style": "plain",
+        "bottom_right_border_style": "plain",
+        "forked": true,
+        "shadow": {
+            "br": 2,
+            "color": "00000000",
+            "inner": false,
+            "nm": 0,
+            "x": 0,
+            "y": 0
+        },
+        "top_left_border_style": "plain",
+        "top_right_border_style": "plain",
+        "wType": "FlexContainer"
+    },
     "CopyCopyslFbox1": {
         "background_color": "00000064",
         "bg_type": "one",
@@ -37,6 +91,7 @@
         "font_weight": "400",
         "wType": "Button"
     },
+<<<<<<< HEAD
     "CopydefBtnNormal0ie6f7de736d049": {
         "background_color": "4b88f164",
         "bg_type": "one",
@@ -52,6 +107,8 @@
         "forked": false,
         "wType": "Button"
     },
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     "CopydefLabel0aaae496075d949": {
         "background_color": "00000064",
         "bg_type": "one",
@@ -168,6 +225,7 @@
         "font_size": 119,
         "font_style": "normal",
         "font_weight": "normal",
+<<<<<<< HEAD
         "forked": false,
         "wType": "Label"
     },
@@ -183,6 +241,8 @@
         "font_size": 120,
         "font_style": "normal",
         "font_weight": "400",
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
         "forked": false,
         "wType": "Label"
     },
@@ -516,6 +576,7 @@
         "border_width": 0,
         "wType": "FlexContainer"
     },
+<<<<<<< HEAD
     "CopyslFbox0b47ed57bc2b749": {
         "background_color": "bdb9bd02",
         "bg_type": "one",
@@ -526,6 +587,8 @@
         "font_name": "Helvetica",
         "wType": "FlexContainer"
     },
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     "CopyslFbox0b5b21954956f4d": {
         "background_color": "f8f7ff00",
         "bg_type": "one",
@@ -567,6 +630,7 @@
         "border_width": 0,
         "wType": "FlexContainer"
     },
+<<<<<<< HEAD
     "CopyslFbox0bebbbf6a9fc948": {
         "background_color": "9494941a",
         "bg_type": "one",
@@ -577,6 +641,8 @@
         "font_name": "Helvetica",
         "wType": "FlexContainer"
     },
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     "CopyslFbox0c3f8ae40a95946": {
         "background_color": "f8f7ff00",
         "bg_type": "one",
@@ -640,6 +706,7 @@
         "font_name": "Helvetica",
         "wType": "FlexContainer"
     },
+<<<<<<< HEAD
     "CopyslFbox0e7b52cc062fe4b": {
         "background_color": "c7c7c700",
         "bg_type": "one",
@@ -650,6 +717,8 @@
         "font_name": "Helvetica",
         "wType": "FlexContainer"
     },
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     "CopyslFbox0e88f7dca09d544": {
         "background_color": "00000064",
         "bg_type": "one",
@@ -758,6 +827,37 @@
         "top_right_border_style": "rc",
         "wType": "FlexContainer"
     },
+<<<<<<< HEAD
+=======
+    "CopyslFbox0j91f9d0a0ef540": {
+        "background_color": "00000064",
+        "bg_type": "one",
+        "border_bottom_color": "00000000",
+        "border_bottom_width": 1,
+        "border_left_color": "00000000",
+        "border_left_width": 1,
+        "border_right_color": "00000000",
+        "border_right_width": 1,
+        "border_top_color": "00000000",
+        "border_top_width": 1,
+        "border_type": 0,
+        "bottom_left_border_style": "plain",
+        "bottom_right_border_style": "plain",
+        "font_name": "Helvetica",
+        "forked": true,
+        "shadow": {
+            "br": 2,
+            "color": "00000000",
+            "inner": false,
+            "nm": 0,
+            "x": 0,
+            "y": 0
+        },
+        "top_left_border_style": "plain",
+        "top_right_border_style": "plain",
+        "wType": "FlexContainer"
+    },
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     "CopyslForm": {
         "background_color": "ffffff00",
         "bg_type": "one",

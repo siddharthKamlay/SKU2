@@ -152,7 +152,48 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
+<<<<<<< HEAD
                 self.view.segDemandRequest.setData(DemandRequest.records);
+=======
+                var tempCollection8658 = [];
+                var tempData2297 = DemandRequest.records;
+                for (var each6300 in tempData2297) {
+                    var shouldShow = typeof tempData2297[each6300]["x_0024FILES"] !== 'undefined' && tempData2297[each6300]["x_0024FILES"] && tempData2297[each6300]["x_0024FILES"].length > 0
+                    tempCollection8658.push({
+                        "lblSKUID1": {
+                            "text": tempData2297[each6300]["SKUID"]
+                        },
+                        "lblName1": {
+                            "text": tempData2297[each6300]["Name"]
+                        },
+                        "lblCategory1": {
+                            "text": tempData2297[each6300]["Category"]
+                        },
+                        "lblStock1": {
+                            "text": tempData2297[each6300]["Stock"]
+                        },
+                        "lblForecasted1": {
+                            "text": tempData2297[each6300]["Forecasted"]
+                        },
+                        "lblEnrichedQTY1": {
+                            "text": tempData2297[each6300]["EnrichedQTY"]
+                        },
+                        "lblRequested1": {
+                            "text": tempData2297[each6300]["Requested"]
+                        },
+                        "lblStatus1": {
+                            "text": tempData2297[each6300]["Status"]
+                        },
+                        "lblRequestedBY1": {
+                            "text": tempData2297[each6300]["RequestedBY"]
+                        },
+                        "lblRequestDate1": {
+                            "text": tempData2297[each6300]["RequestDate"]
+                        },
+                    });
+                }
+                self.view.segDemandRequest.setData(tempCollection8658);
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -232,12 +273,15 @@ define("DemandRequestFrmControllerActions", {
     AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
+<<<<<<< HEAD
     },
     /** onTouchEnd defined for Label05 **/
     AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
         var self = this;
         var ntf = new voltmx.mvc.Navigation("SKUDemand");
         ntf.navigate();
+=======
+>>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
     }
 });
 define("DemandRequestFrmController", ["userDemandRequestFrmController", "DemandRequestFrmControllerActions"], function() {

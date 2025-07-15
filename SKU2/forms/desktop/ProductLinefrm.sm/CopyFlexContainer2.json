@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "35.19%"
+        "value": "100dp"
     },
     "_left_": {
         "type": "string",
-        "value": "40dp"
+        "value": "880dp"
     },
     "_margin_": [
         0,
@@ -22,32 +22,32 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s18f360cb68840bfaa531488d21c7725",
+    "_skin_": "seb2aa3191644d278b9ae11c23b12abc",
     "_top_": {
         "type": "string",
-        "value": "160dp"
+        "value": "16dp"
     },
     "_width_": {
         "type": "string",
-        "value": "38.80%"
+        "value": "30%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "linechart"
+        "Label03"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainerLinechart",
+    "id": "CopyFlexContainer2",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ie99c9336a8544d1b3fb7f63dcf838a6",
+    "kuid": "c0500c4ffed24b3093d41fc80a922224",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "ProductLinefrm",
+    "parent": "FlexContainerHeader",
     "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

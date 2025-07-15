@@ -17,11 +17,11 @@
         0,
         0
     ],
-    "_skin_": "s1b5aea3e0a54e3eb3d090344b096fe7",
-    "_text_": " +0.8x from last month",
+    "_skin_": "s8c019d2bf5c4e8aa4e885e16ba4bbaf",
+    "_text_": "Stockout Risk ",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",
@@ -40,8 +40,8 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "Copylbl0j8fb66b9d2254e",
+    "contentalignment": 4,
+    "id": "Copylbl04",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a840d655900547e9a53c68cefd8ad86c",
+    "kuid": "b42006ee9c4d4346a88cb8be9bfbc19e",
     "name": "kony.ui.Label",
-    "parent": "flxinventory",
+    "parent": "flxstock",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

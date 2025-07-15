@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "1058dp"
+    },
     "_margin_": [
         1,
         1,
@@ -17,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s8c019d2bf5c4e8aa4e885e16ba4bbaf",
-    "_text_": "Supply Variance",
+    "_skin_": "sd278fcd516049dba0c31128289dfacb",
+    "_text_": "92.5%",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "79dp"
     },
     "_width_": {
         "type": "ref",
@@ -35,13 +39,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "Copylbl0dda76a6f148145",
+    "contentalignment": 5,
+    "id": "Label003",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +55,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j45dbe1cbcdd4802913b1de5e59f1e15",
+    "kuid": "debc7c19420747d2bcd635cefb1ec340",
     "name": "kony.ui.Label",
-    "parent": "flxsuppy",
-    "pf": "DemandRequestFrm",
+    "parent": "ProductLinefrm",
+    "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

@@ -18,7 +18,7 @@
         0
     ],
     "_skin_": "sc500f16c18248649dd39d1efbf6403a",
-    "_text_": "12.4x",
+    "_text_": "8.7%",
     "_top_": {
         "type": "string",
         "value": "10dp"
@@ -41,7 +41,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "Copylbl0g00f465317ee43",
+    "id": "Copylbl02",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "eddd3ad06a664d8bafa7c6be98757f81",
+    "kuid": "e335f9c22c594a9e93468e1e1432f13a",
     "name": "kony.ui.Label",
-    "parent": "flxinventory",
+    "parent": "flxsuppy",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
