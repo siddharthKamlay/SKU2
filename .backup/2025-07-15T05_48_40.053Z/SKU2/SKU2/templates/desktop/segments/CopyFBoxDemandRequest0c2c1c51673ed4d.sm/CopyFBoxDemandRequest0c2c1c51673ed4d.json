@@ -1,0 +1,91 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s6a6eedb8f9046a8a00e603bd9c62606",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "skipMapping": true
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "breakpointInfo": {
+        "b1": {
+            "width": 1366
+        },
+        "b2": {
+            "width": 1024
+        },
+        "b3": {
+            "width": 640
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "lblSKUID1",
+        "lblName1",
+        "lblCategory1",
+        "lblStock1",
+        "lblForecasted1",
+        "lblEnrichedQTY1",
+        "lblRequested1",
+        "lblStatus1",
+        "lblRequestedBY1",
+        "lblRequestDate1",
+        "lblApprovedDate1"
+    ],
+    "clipbounds": false,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "CopyFBoxDemandRequest0c2c1c51673ed4dController"
+        }
+    },
+    "enablescrolling": true,
+    "id": "CopyFBoxDemandRequest0c2c1c51673ed4d",
+    "info": null,
+    "isGeneratedTemplate": true,
+    "isTemplate": true,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gdb8b58924f14547b2ae47f7cc1ef278",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "pf": "CopyFBoxDemandRequest0c2c1c51673ed4d",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

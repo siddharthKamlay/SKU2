@@ -1,0 +1,64 @@
+{
+    "AS_Segment_cd811289935744a2b8eefde28d193ed7": {
+        "id": "AS_Segment_cd811289935744a2b8eefde28d193ed7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onRowClick",
+        "actions": [{
+            "id": "_hb9dd6ee30bc4299b4eb0f7a77a5e82d",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "expression",
+                "leftValue": "this.view.hamburgermenu.segMenu.selectedRowItems[0].lblMenuOption\n=== \"Dashboard\"\n"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "MOVE_ACTION_jcffe2c0965d43509e410484ebee34d7",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "DemandRequestFrm",
+            "widgetId": "hamburgermenu",
+            "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+            "widgetKUID": "b76a5a46f89240ddb6bfe81ee0c0b3cc",
+            "wType": "UserWidgetInstance",
+            "animationObject": {
+                "left": "-90%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "voltmx.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_jcffe2c0965d43509e410484ebee34d7",
+            "displayAnimationId": "MOVE_ACTION_jcffe2c0965d43509e410484ebee34d7",
+            "forkedPlatform": "all",
+            "parentId": "_hb9dd6ee30bc4299b4eb0f7a77a5e82d",
+            "callbackType": null,
+            "widgetPath": "this.view.hamburgermenu"
+        }]
+    }
+}

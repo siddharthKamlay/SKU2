@@ -46,6 +46,9 @@
             ],
             "ProductLinefrmController_desktop": [
                 "ProductLinefrmController"
+            ],
+            "SKUDemandController_desktop": [
+                "SKUDemandController"
             ]
         }
     },
@@ -65,6 +68,11 @@
                 "controllerActionDir": "ProductLinefrmController",
                 "controllerChannel": "desktop",
                 "controllerName": "ProductLinefrmController"
+            },
+            "SKUDemand": {
+                "controllerActionDir": "SKUDemandController",
+                "controllerChannel": "desktop",
+                "controllerName": "SKUDemandController"
             }
         }
     },
@@ -104,6 +112,18 @@
                 },
                 "enableModelDriven": false,
                 "friendlyName": "ProductLinefrm",
+                "isMDAForm": false
+            },
+            "SKUDemand": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "SKUDemandController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "SKUDemandController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "SKUDemand",
                 "isMDAForm": false
             }
         }

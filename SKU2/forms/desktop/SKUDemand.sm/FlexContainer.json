@@ -6,7 +6,11 @@
     },
     "_left_": {
         "type": "string",
+<<<<<<< HEAD
         "value": "100dp"
+=======
+        "value": "120dp"
+>>>>>>> 3a345246027dab50a17e2ffc01a699378e6b1eaf
     },
     "_margin_": [
         0,
@@ -29,7 +33,11 @@
     },
     "_width_": {
         "type": "string",
+<<<<<<< HEAD
         "value": "94.44%"
+=======
+        "value": "86.38%"
+>>>>>>> 3a345246027dab50a17e2ffc01a699378e6b1eaf
     },
     "allboxes": [],
     "autogrowmode": 0,

@@ -7,7 +7,11 @@
     },
     "_left_": {
         "type": "string",
+<<<<<<< HEAD
         "value": "20dp"
+=======
+        "value": "40dp"
+>>>>>>> 3a345246027dab50a17e2ffc01a699378e6b1eaf
     },
     "_margin_": [
         1,

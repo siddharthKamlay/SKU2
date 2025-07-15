@@ -47,26 +47,6 @@ define("ProductLinefrmControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
-                var tempCollection7585 = [];
-                var tempData9646 = Productline.records;
-                for (var each2142 in tempData9646) {
-                    var shouldShow = typeof tempData9646[each2142]["x_0024FILES"] !== 'undefined' && tempData9646[each2142]["x_0024FILES"] && tempData9646[each2142]["x_0024FILES"].length > 0
-                    tempCollection7585.push({
-                        "lblProductLine1": {
-                            "text": tempData9646[each2142]["ProductLine"]
-                        },
-                        "lblForcasted1": {
-                            "text": tempData9646[each2142]["Forecasted"]
-                        },
-                        "lblActual1": {
-                            "text": tempData9646[each2142]["Actual"]
-                        },
-                        "lblVariance1": {
-                            "text": tempData9646[each2142]["Variance"]
-                        },
-                    });
-                }
-                self.view.segProductline.setData(tempCollection7585);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {
@@ -114,6 +94,44 @@ define("ProductLinefrmControllerActions", {
         var Productline_httpconfigs = {};
         Productline_inputparam["httpconfig"] = Productline_httpconfigs;
         SKUDemandRequests$Productline$get = mfobjectsecureinvokerasync(Productline_inputparam, "SKUDemandRequests", "Productline", INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback);
+    },
+    /** onTouchEnd defined for CopyLabel0g28597a9261e4c **/
+    AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for Label05 **/
+    AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("SKUDemand");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for Imagemenu **/
+    AS_Image_c07533c757414f3d8cf76a373f585070: function AS_Image_c07533c757414f3d8cf76a373f585070(eventobject, x, y) {
+        var self = this;
+
+        function MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8_Callback() {}
+        self.view.flxcontainerslidemenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 0.25
+        }, {
+            "animationEnd": MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8_Callback
+        });
+    },
+    /** onTouchEnd defined for Label04 **/
+    AS_Label_f379af81f07e493387ce6a5b60cc4481: function AS_Label_f379af81f07e493387ce6a5b60cc4481(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        ntf.navigate();
     }
 });
 define("ProductLinefrmController", ["userProductLinefrmController", "ProductLinefrmControllerActions"], function() {

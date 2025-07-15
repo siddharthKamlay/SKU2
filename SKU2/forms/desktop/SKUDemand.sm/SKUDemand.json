@@ -52,7 +52,9 @@
     "children": [
         "FlexContainer",
         "FlexContainerHeaders",
-        "FlexSKUTable"
+        "FlexSKUTable",
+        "FlexContainerslidemenu",
+        "Image0dc6e78981a6c4f"
     ],
     "containerweight": 100,
     "controllerInfo": {

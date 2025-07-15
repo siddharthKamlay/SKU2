@@ -54,7 +54,9 @@
         "FlexChart",
         "FlexContainerLinechart",
         "FlexContainerHeader",
-        "Label003"
+        "Label003",
+        "Imagemenu",
+        "flxcontainerslidemenu"
     ],
     "containerweight": 100,
     "controllerInfo": {

@@ -1,0 +1,158 @@
+{
+    "AS_Form_a3ae53fada0146c8b74d44da3c77462f": {
+        "id": "AS_Form_a3ae53fada0146c8b74d44da3c77462f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_h44b1e32720443f08036d19d1004f624",
+            "selectedOption": "show",
+            "parentId": null,
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_f3f8517a573c417ea7901f3e671ac19e",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "SKUDemandRequests",
+                "type": "objectsvcs",
+                "objectname": "DemandRequest",
+                "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                "methodname": "get"
+            },
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_b0f6918a44f842f7a3b49e2454977540",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_f3f8517a573c417ea7901f3e671ac19e",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_ea7b399fac9f4f6fb198e999afe19f4f",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "DemandRequest.opstatus",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "0"
+            }],
+            "parentId": "INVOKE_SERVICE_f3f8517a573c417ea7901f3e671ac19e",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_g5ebb605bf3f4140aa2d37a89addbef0",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": "INVOKE_SERVICE_f3f8517a573c417ea7901f3e671ac19e",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "SHOW_ALERT_cd27a1a5619f4acd998d8ea97e8f22b2",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "Data fetching failed try again later...",
+            "messageType": "constant",
+            "parentId": "_g5ebb605bf3f4140aa2d37a89addbef0",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "ADD_MAPPING_he6800a0734847d895e044b790b59ee5",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_e163989dd6e9442997428cab8ad4c679": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e163989dd6e9442997428cab8ad4c679",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "records",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segDemandRequest",
+                        "widgetPath": "this.view.segDemandRequest",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "DemandRequestFrm",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e163989dd6e9442997428cab8ad4c679"],
+            "parentId": "_ea7b399fac9f4f6fb198e999afe19f4f",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET_f8ae501c75624ceaa17231c1582cc123",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {\n    var templateId = self.view.segDemandRequest.rowTemplate;\n    self.view.segDemandRequest.data.forEach(function(row) {\n        row[templateId] = {\n            layoutType: kony.flex.FLOW_VERTICAL\n        };\n        Object.keys(row).forEach(function(key) {\n            if (key.includes(\"lbl\")) {\n                row[key].width = '80%';\n                row[key].height = kony.flex.USE_PREFERRED_SIZE;\n            }\n        });\n    });\n    var clonedWidgetDataMap = self.view.segDemandRequest.widgetDataMap;\n    clonedWidgetDataMap[templateId] = templateId;\n    self.view.segDemandRequest.widgetDataMap = clonedWidgetDataMap;\n    self.view.segDemandRequest.setData(self.view.segDemandRequest.data);\n    self.view.forceLayout();\n}\n\n",
+            "parentId": "_ea7b399fac9f4f6fb198e999afe19f4f",
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION__ae8c857d35cd4115a2f10575d7027a5e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "pieChartFromSegment",
+            "display": "pieChartFromSegment",
+            "inputparams": [],
+            "parentId": "_ea7b399fac9f4f6fb198e999afe19f4f",
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

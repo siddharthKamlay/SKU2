@@ -1,0 +1,36 @@
+{
+    "AS_Label_f70828358dce40018fdee062495dbbc7": {
+        "id": "AS_Label_f70828358dce40018fdee062495dbbc7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onTouchEnd",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ge67a3bc9cb348c38bdcae4989a25e13",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProductLinefrm",
+            "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "projectName": "SKU2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}
