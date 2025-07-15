@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "28dp"
+        "value": "36dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s69f11db7fce416e8451285869661e9b",
-    "_text_": "Name",
+    "_skin_": "s507470937934f5a91d7ea6bc46c7691",
+    "_text_": "Forecasted",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0h140a4d033144e",
+    "id": "lblForecasted",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h88afd2701234f2c8ffa12b83d0ce194",
+    "kuid": "a7a425ef96d84454ad3b72ec1dc6cd18",
     "name": "kony.ui.Label",
-    "parent": "Flex0f834108d4cc042",
-    "pf": "TempDemandRequest",
+    "parent": "CopyFlex0ff43866586004c",
+    "pf": "TempSKUDemand",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

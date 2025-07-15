@@ -35,7 +35,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "id": "CopyImage0b5d9a25cec1b4a",
+    "id": "imgcross",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",

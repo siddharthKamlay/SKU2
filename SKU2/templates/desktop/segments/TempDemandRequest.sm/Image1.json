@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "-3dp"
+        "value": "14dp"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "s5f3c73007e34a2b9f9a91eb8e3e0cf2",
-    "_src_": "cross.jpg",
+    "_src_": "eye.png",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "19dp"
     },
     "_width_": {
         "type": "string",
@@ -35,13 +35,13 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "id": "CopyImage0b5d9a25cec1b4a",
+    "id": "Image1",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "baf4f9c2a72840cfb1fbe336b77962cc",
+    "kuid": "j2bcaefa0ab14478b2d4b70988a48af4",
     "name": "kony.ui.Image2",
     "parent": "Flex0f834108d4cc042",
     "pf": "TempDemandRequest",

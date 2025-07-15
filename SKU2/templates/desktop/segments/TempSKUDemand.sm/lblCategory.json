@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "1dp"
+        "value": "34dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s69ddb3f574f4f22a66e594a1ef7e3fb",
-    "_text_": "SKU ID",
+    "_skin_": "se20c75048014f868140117caac2971e",
+    "_text_": "Category",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "Label0ee69e19d962e44",
+    "id": "lblCategory",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b698fe70ae4047f294b4f2d2c0e1ed7a",
+    "kuid": "abe3c327f8b845f3a2a4a4bbe303d08f",
     "name": "kony.ui.Label",
-    "parent": "Flex0f834108d4cc042",
-    "pf": "TempDemandRequest",
+    "parent": "CopyFlex0ff43866586004c",
+    "pf": "TempSKUDemand",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",
