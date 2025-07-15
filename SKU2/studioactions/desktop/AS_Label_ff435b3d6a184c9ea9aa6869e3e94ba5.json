@@ -23,8 +23,8 @@
         "actions": [{
             "id": "NAVIGATE_TO_FORM__d7355644011c42e2836962d4d048ed35",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "ProductLinefrm",
-            "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "formId": "Form1",
+            "formKUID": "c1126366a5114e4ea37731546b425144",
             "projectName": "SKU2",
             "mappings": {},
             "mappingsOrder": [],

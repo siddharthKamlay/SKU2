@@ -1,0 +1,37 @@
+{
+    "AS_Label_g98ccbb79b5c4fda802abb12822b0b9b": {
+        "id": "AS_Label_g98ccbb79b5c4fda802abb12822b0b9b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onTouchEnd",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d974edc3776b49a5a454f353b84a2409",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "sortByField",
+            "display": "sortByField",
+            "inputparams": [{
+                "name": "fieldKey"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

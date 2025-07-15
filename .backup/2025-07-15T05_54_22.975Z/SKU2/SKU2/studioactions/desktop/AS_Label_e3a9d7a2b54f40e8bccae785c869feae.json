@@ -1,0 +1,36 @@
+{
+    "AS_Label_e3a9d7a2b54f40e8bccae785c869feae": {
+        "id": "AS_Label_e3a9d7a2b54f40e8bccae785c869feae",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onTouchEnd",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f3ccd2f6dd9e492aa6d1545187640452",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "DemandRequestFrm",
+            "formKUID": "a1716dc115ec46f7b708dd80999458a8",
+            "projectName": "SKU2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

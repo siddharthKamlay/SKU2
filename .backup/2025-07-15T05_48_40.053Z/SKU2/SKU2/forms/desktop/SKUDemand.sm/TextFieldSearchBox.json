@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "31dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search",
+    "_skin_": "s6811098b2ce4d98a73ad3589c265484",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "108dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s99f41052f2f490e88d02182d4747674",
+    "id": "TextFieldSearchBox",
+    "ide_onTextChange": "AS_TextField_d001906d70c44fc2807c43c55b8d34a3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "b2d31a86e0a2458f88b6c75a1793bf45",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "FlexSKUTable",
+    "pf": "SKUDemand",
+    "placeholderskin": "sc7f5084b88d43e8a8bad9a2d20b33a5",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

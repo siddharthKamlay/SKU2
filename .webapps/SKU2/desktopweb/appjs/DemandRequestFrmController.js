@@ -216,7 +216,7 @@ define("DemandRequestFrmControllerActions", {
     /** onTouchEnd defined for Label04 **/
     AS_Label_ff435b3d6a184c9ea9aa6869e3e94ba5: function AS_Label_ff435b3d6a184c9ea9aa6869e3e94ba5(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        var ntf = new voltmx.mvc.Navigation("Form1");
         ntf.navigate();
     },
     /** onTouchEnd defined for lblName **/

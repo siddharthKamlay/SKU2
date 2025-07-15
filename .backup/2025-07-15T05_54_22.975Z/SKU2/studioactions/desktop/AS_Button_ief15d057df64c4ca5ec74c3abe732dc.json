@@ -1,0 +1,30 @@
+{
+    "AS_Button_ief15d057df64c4ca5ec74c3abe732dc": {
+        "id": "AS_Button_ief15d057df64c4ca5ec74c3abe732dc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__e3bf010df8ae48448aa92cbf98c98cf8",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ProductLinefrm",
+            "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "projectName": "MyGitProject",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}
