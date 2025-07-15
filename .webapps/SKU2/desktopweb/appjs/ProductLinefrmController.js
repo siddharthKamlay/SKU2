@@ -47,49 +47,26 @@ define("ProductLinefrmControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
-<<<<<<< HEAD
-                var tempCollection5680 = [];
-                var tempData5388 = Productline.records;
-                for (var each8048 in tempData5388) {
-                    var shouldShow = typeof tempData5388[each8048]["x_0024FILES"] !== 'undefined' && tempData5388[each8048]["x_0024FILES"] && tempData5388[each8048]["x_0024FILES"].length > 0
-                    tempCollection5680.push({
+                var tempCollection7585 = [];
+                var tempData9646 = Productline.records;
+                for (var each2142 in tempData9646) {
+                    var shouldShow = typeof tempData9646[each2142]["x_0024FILES"] !== 'undefined' && tempData9646[each2142]["x_0024FILES"] && tempData9646[each2142]["x_0024FILES"].length > 0
+                    tempCollection7585.push({
                         "lblProductLine1": {
-                            "text": tempData5388[each8048]["ProductLine"]
+                            "text": tempData9646[each2142]["ProductLine"]
                         },
                         "lblForcasted1": {
-                            "text": tempData5388[each8048]["Forecasted"]
+                            "text": tempData9646[each2142]["Forecasted"]
                         },
                         "lblActual1": {
-                            "text": tempData5388[each8048]["Actual"]
+                            "text": tempData9646[each2142]["Actual"]
                         },
                         "lblVariance1": {
-                            "text": tempData5388[each8048]["Variance"]
+                            "text": tempData9646[each2142]["Variance"]
                         },
                     });
                 }
-                self.view.segProductline.setData(tempCollection5680);
-=======
-                var tempCollection4825 = [];
-                var tempData3571 = Productline.records;
-                for (var each8647 in tempData3571) {
-                    var shouldShow = typeof tempData3571[each8647]["x_0024FILES"] !== 'undefined' && tempData3571[each8647]["x_0024FILES"] && tempData3571[each8647]["x_0024FILES"].length > 0
-                    tempCollection4825.push({
-                        "lblProductLine1": {
-                            "text": tempData3571[each8647]["ProductLine"]
-                        },
-                        "lblForcasted1": {
-                            "text": tempData3571[each8647]["Forecasted"]
-                        },
-                        "lblActual1": {
-                            "text": tempData3571[each8647]["Actual"]
-                        },
-                        "lblVariance1": {
-                            "text": tempData3571[each8647]["Variance"]
-                        },
-                    });
-                }
-                self.view.segProductline.setData(tempCollection4825);
->>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
+                self.view.segProductline.setData(tempCollection7585);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {

@@ -3,8 +3,8 @@
         "formslist": {
             "mvcFormObjects": [
                 "DemandRequestFrm",
-                "ProductLinefrm",
-                "SKUDemand"
+                "Form1",
+                "ProductLinefrm"
             ],
             "nonmvcFormObjects": []
         },
@@ -18,7 +18,8 @@
                 "mytplSegRowWithImageAndLabel",
                 "SampleRowTemplate",
                 "SampleSectionHeaderTemplate",
-                "Temp0af829031bbb549"
+                "TempDemandRequest",
+                "TempSKUDemand"
             ],
             "nonmvcTemplateObjects": []
         }

@@ -1,10 +1,10 @@
-define("Flex0f834108d4cc042", function() {
+define("CopyFlex0ff43866586004c", function() {
     return function(controller) {
-        var Flex0f834108d4cc042 = new voltmx.ui.FlexContainer({
+        var CopyFlex0ff43866586004c = new voltmx.ui.FlexContainer({
             "autogrowMode": voltmx.flex.AUTOGROW_NONE,
             "clipBounds": false,
             "height": "60dp",
-            "id": "Flex0f834108d4cc042",
+            "id": "CopyFlex0ff43866586004c",
             "isVisible": true,
             "layoutType": voltmx.flex.FLOW_HORIZONTAL,
             "left": "0dp",
@@ -17,7 +17,7 @@ define("Flex0f834108d4cc042", function() {
         }, {
             "paddingInPixel": false
         }, {});
-        Flex0f834108d4cc042.setDefaultUnit(voltmx.flex.DP);
+        CopyFlex0ff43866586004c.setDefaultUnit(voltmx.flex.DP);
         var Label0ee69e19d962e44 = new voltmx.ui.Label({
             "id": "Label0ee69e19d962e44",
             "isVisible": true,
@@ -158,6 +158,20 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
+        var CopyLabel0e7176e8dc1c340 = new voltmx.ui.Label({
+            "id": "CopyLabel0e7176e8dc1c340",
+            "isVisible": true,
+            "left": "24dp",
+            "skin": "CopydefLabel0d1dbad73a99642",
+            "text": "Approved Date",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
         var Image0f546f4cd61574a = new voltmx.ui.Image2({
             "height": "33dp",
             "id": "Image0f546f4cd61574a",
@@ -203,7 +217,7 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        Flex0f834108d4cc042.add(Label0ee69e19d962e44, CopyLabel0h140a4d033144e, CopyLabel0ac775376e26c4e, CopyLabel0a4721bc1be964e, CopyLabel0hfa3918b88ca44, CopyLabel0b7c93f33c0e148, CopyLabel0ed0fc93427ed46, CopyLabel0d7f854fb40f746, CopyLabel0hbbc7474e2d94a, CopyLabel0j137a4eb15b24c, Image0f546f4cd61574a, CopyImage0b9e4270528ae45, CopyImage0b5d9a25cec1b4a);
-        return Flex0f834108d4cc042;
+        CopyFlex0ff43866586004c.add(Label0ee69e19d962e44, CopyLabel0h140a4d033144e, CopyLabel0ac775376e26c4e, CopyLabel0a4721bc1be964e, CopyLabel0hfa3918b88ca44, CopyLabel0b7c93f33c0e148, CopyLabel0ed0fc93427ed46, CopyLabel0d7f854fb40f746, CopyLabel0hbbc7474e2d94a, CopyLabel0j137a4eb15b24c, CopyLabel0e7176e8dc1c340, Image0f546f4cd61574a, CopyImage0b9e4270528ae45, CopyImage0b5d9a25cec1b4a);
+        return CopyFlex0ff43866586004c;
     }
 })

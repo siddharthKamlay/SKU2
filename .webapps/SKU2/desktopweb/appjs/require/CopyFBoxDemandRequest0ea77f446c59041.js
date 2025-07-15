@@ -159,7 +159,8 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
         var img1 = new voltmx.ui.Image2({
             "height": "52dp",
             "id": "img1",
-            "imageWhileDownloading": "arrow.png",
+            "imageWhenFailed": "eye.png",
+            "imageWhileDownloading": "eye.png",
             "isVisible": true,
             "left": "6dp",
             "skin": "CopyslImage0hd7036747e924b",

@@ -62,17 +62,21 @@ define('applicationController',{
             "viewName": "Flex0f834108d4cc042",
             "controllerName": "Flex0f834108d4cc042Controller"
         });
+        voltmx.mvc.registry.add("CopyFlex0ff43866586004c", {
+            "viewName": "CopyFlex0ff43866586004c",
+            "controllerName": "CopyFlex0ff43866586004cController"
+        });
         voltmx.mvc.registry.add("DemandRequestFrm", {
             "viewName": "DemandRequestFrm",
             "controllerName": "DemandRequestFrmController"
         });
+        voltmx.mvc.registry.add("Form1", {
+            "viewName": "Form1",
+            "controllerName": "Form1Controller"
+        });
         voltmx.mvc.registry.add("ProductLinefrm", {
             "viewName": "ProductLinefrm",
             "controllerName": "ProductLinefrmController"
-        });
-        voltmx.mvc.registry.add("SKUDemand", {
-            "viewName": "SKUDemand",
-            "controllerName": "SKUDemandController"
         });
         setAppBehaviors();
         if (typeof startBackgroundWorker != "undefined") {
@@ -3405,7 +3409,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblSKUID1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "SKUID",
             "top": "5dp",
@@ -3419,7 +3423,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblName1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-3%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Name",
             "top": "5dp",
@@ -3433,7 +3437,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblCategory1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-2%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Category",
             "top": "5dp",
@@ -3461,7 +3465,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblForecasted1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-5%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Forecasted",
             "top": "5dp",
@@ -3475,7 +3479,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblEnrichedQTY1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "EnrichedQTY",
             "top": "5dp",
@@ -3489,7 +3493,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblRequested1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Requested",
             "top": "5dp",
@@ -3503,7 +3507,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblStatus1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Status",
             "top": "5dp",
@@ -3517,7 +3521,7 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "bottom": "0dp",
             "id": "lblRequestedBY1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "RequestedBY",
             "top": "5dp",
@@ -3541,7 +3545,21 @@ define("CopyFBoxDemandRequest0c2c1c51673ed4d", [],function() {
             "padding": [1, 1, 0, 1],
             "paddingInPixel": false
         }, {});
-        CopyFBoxDemandRequest0c2c1c51673ed4d.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1);
+        var lblApprovedDate1 = new voltmx.ui.Label({
+            "bottom": "0dp",
+            "id": "lblApprovedDate1",
+            "isVisible": true,
+            "left": "0%",
+            "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
+            "text": "RequestDate",
+            "top": "5dp",
+            "width": "9.5%"
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [1, 1, 0, 1],
+            "paddingInPixel": false
+        }, {});
+        CopyFBoxDemandRequest0c2c1c51673ed4d.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1, lblApprovedDate1);
         return CopyFBoxDemandRequest0c2c1c51673ed4d;
     }
 });
@@ -3706,7 +3724,8 @@ define("CopyFBoxDemandRequest0ea77f446c59041", [],function() {
         var img1 = new voltmx.ui.Image2({
             "height": "52dp",
             "id": "img1",
-            "imageWhileDownloading": "arrow.png",
+            "imageWhenFailed": "eye.png",
+            "imageWhileDownloading": "eye.png",
             "isVisible": true,
             "left": "6dp",
             "skin": "CopyslImage0hd7036747e924b",
@@ -4266,11 +4285,12 @@ define("flxSectionHeaderTemplate", [],function() {
 define("Flex0f834108d4cc042", [],function() {
     return function(controller) {
         var Flex0f834108d4cc042 = new voltmx.ui.FlexContainer({
+            "autogrowMode": voltmx.flex.AUTOGROW_NONE,
             "clipBounds": false,
-            "height": "80dp",
+            "height": "60dp",
             "id": "Flex0f834108d4cc042",
             "isVisible": true,
-            "layoutType": voltmx.flex.FREE_FORM,
+            "layoutType": voltmx.flex.FLOW_HORIZONTAL,
             "left": "0dp",
             "isModalContainer": false,
             "skin": "slFbox",
@@ -4282,23 +4302,416 @@ define("Flex0f834108d4cc042", [],function() {
             "paddingInPixel": false
         }, {});
         Flex0f834108d4cc042.setDefaultUnit(voltmx.flex.DP);
-        var Image0fc4b04c37aa545 = new voltmx.ui.Image2({
-            "height": "70dp",
-            "id": "Image0fc4b04c37aa545",
+        var Label0ee69e19d962e44 = new voltmx.ui.Label({
+            "id": "Label0ee69e19d962e44",
             "isVisible": true,
-            "left": "932dp",
+            "left": "1dp",
+            "skin": "CopydefLabel0aca9109f5b8a4d",
+            "text": "SKU ID",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0h140a4d033144e = new voltmx.ui.Label({
+            "id": "CopyLabel0h140a4d033144e",
+            "isVisible": true,
+            "left": "28dp",
+            "skin": "CopydefLabel0b82dc6acc4fb45",
+            "text": "Name",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0ac775376e26c4e = new voltmx.ui.Label({
+            "id": "CopyLabel0ac775376e26c4e",
+            "isVisible": true,
+            "left": "34dp",
+            "skin": "CopydefLabel0ac9dd36920e847",
+            "text": "Category",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0a4721bc1be964e = new voltmx.ui.Label({
+            "id": "CopyLabel0a4721bc1be964e",
+            "isVisible": true,
+            "left": "39dp",
+            "skin": "CopydefLabel0c26aec5fbc0740",
+            "text": "Stock",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0hfa3918b88ca44 = new voltmx.ui.Label({
+            "id": "CopyLabel0hfa3918b88ca44",
+            "isVisible": true,
+            "left": "36dp",
+            "skin": "CopydefLabel0e9ecd4791be946",
+            "text": "Forecasted",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0b7c93f33c0e148 = new voltmx.ui.Label({
+            "id": "CopyLabel0b7c93f33c0e148",
+            "isVisible": true,
+            "left": "36dp",
+            "skin": "CopydefLabel0cf619ed0268645",
+            "text": "Enriched QTY",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0ed0fc93427ed46 = new voltmx.ui.Label({
+            "id": "CopyLabel0ed0fc93427ed46",
+            "isVisible": true,
+            "left": "33dp",
+            "skin": "CopydefLabel0cc7e8040462441",
+            "text": "Requested",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0d7f854fb40f746 = new voltmx.ui.Label({
+            "id": "CopyLabel0d7f854fb40f746",
+            "isVisible": true,
+            "left": "31dp",
+            "skin": "CopydefLabel0cfa912c41e194a",
+            "text": "Status",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0hbbc7474e2d94a = new voltmx.ui.Label({
+            "id": "CopyLabel0hbbc7474e2d94a",
+            "isVisible": true,
+            "left": "31dp",
+            "skin": "CopydefLabel0fdef3af8f8ae47",
+            "text": "Requested By",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0j137a4eb15b24c = new voltmx.ui.Label({
+            "id": "CopyLabel0j137a4eb15b24c",
+            "isVisible": true,
+            "left": "24dp",
+            "skin": "CopydefLabel0d1dbad73a99642",
+            "text": "Requested date",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var Image0f546f4cd61574a = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "Image0f546f4cd61574a",
+            "isVisible": true,
+            "left": "14dp",
             "skin": "slImage",
             "src": "eye.png",
-            "top": "8dp",
-            "width": "75dp",
+            "top": "19dp",
+            "width": "40dp",
             "zIndex": 1
         }, {
             "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        Flex0f834108d4cc042.add(Image0fc4b04c37aa545);
+        var CopyImage0b9e4270528ae45 = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "CopyImage0b9e4270528ae45",
+            "isVisible": true,
+            "left": "-2dp",
+            "skin": "slImage",
+            "src": "tick.png",
+            "top": "20dp",
+            "width": "40dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyImage0b5d9a25cec1b4a = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "CopyImage0b5d9a25cec1b4a",
+            "isVisible": true,
+            "left": "-3dp",
+            "skin": "slImage",
+            "src": "cross.jpg",
+            "top": "20dp",
+            "width": "40dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        Flex0f834108d4cc042.add(Label0ee69e19d962e44, CopyLabel0h140a4d033144e, CopyLabel0ac775376e26c4e, CopyLabel0a4721bc1be964e, CopyLabel0hfa3918b88ca44, CopyLabel0b7c93f33c0e148, CopyLabel0ed0fc93427ed46, CopyLabel0d7f854fb40f746, CopyLabel0hbbc7474e2d94a, CopyLabel0j137a4eb15b24c, Image0f546f4cd61574a, CopyImage0b9e4270528ae45, CopyImage0b5d9a25cec1b4a);
         return Flex0f834108d4cc042;
+    }
+});
+define("CopyFlex0ff43866586004c", [],function() {
+    return function(controller) {
+        var CopyFlex0ff43866586004c = new voltmx.ui.FlexContainer({
+            "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+            "clipBounds": false,
+            "height": "60dp",
+            "id": "CopyFlex0ff43866586004c",
+            "isVisible": true,
+            "layoutType": voltmx.flex.FLOW_HORIZONTAL,
+            "left": "0dp",
+            "isModalContainer": false,
+            "skin": "slFbox",
+            "top": "0dp",
+            "width": "100%",
+            "breakpoints": [640, 1024, 1366],
+            "appName": "SKU2"
+        }, {
+            "paddingInPixel": false
+        }, {});
+        CopyFlex0ff43866586004c.setDefaultUnit(voltmx.flex.DP);
+        var Label0ee69e19d962e44 = new voltmx.ui.Label({
+            "id": "Label0ee69e19d962e44",
+            "isVisible": true,
+            "left": "1dp",
+            "skin": "CopydefLabel0aca9109f5b8a4d",
+            "text": "SKU ID",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0h140a4d033144e = new voltmx.ui.Label({
+            "id": "CopyLabel0h140a4d033144e",
+            "isVisible": true,
+            "left": "28dp",
+            "skin": "CopydefLabel0b82dc6acc4fb45",
+            "text": "Name",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0ac775376e26c4e = new voltmx.ui.Label({
+            "id": "CopyLabel0ac775376e26c4e",
+            "isVisible": true,
+            "left": "34dp",
+            "skin": "CopydefLabel0ac9dd36920e847",
+            "text": "Category",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0a4721bc1be964e = new voltmx.ui.Label({
+            "id": "CopyLabel0a4721bc1be964e",
+            "isVisible": true,
+            "left": "39dp",
+            "skin": "CopydefLabel0c26aec5fbc0740",
+            "text": "Stock",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0hfa3918b88ca44 = new voltmx.ui.Label({
+            "id": "CopyLabel0hfa3918b88ca44",
+            "isVisible": true,
+            "left": "36dp",
+            "skin": "CopydefLabel0e9ecd4791be946",
+            "text": "Forecasted",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0b7c93f33c0e148 = new voltmx.ui.Label({
+            "id": "CopyLabel0b7c93f33c0e148",
+            "isVisible": true,
+            "left": "36dp",
+            "skin": "CopydefLabel0cf619ed0268645",
+            "text": "Enriched QTY",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0ed0fc93427ed46 = new voltmx.ui.Label({
+            "id": "CopyLabel0ed0fc93427ed46",
+            "isVisible": true,
+            "left": "33dp",
+            "skin": "CopydefLabel0cc7e8040462441",
+            "text": "Requested",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0d7f854fb40f746 = new voltmx.ui.Label({
+            "id": "CopyLabel0d7f854fb40f746",
+            "isVisible": true,
+            "left": "31dp",
+            "skin": "CopydefLabel0cfa912c41e194a",
+            "text": "Status",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0hbbc7474e2d94a = new voltmx.ui.Label({
+            "id": "CopyLabel0hbbc7474e2d94a",
+            "isVisible": true,
+            "left": "31dp",
+            "skin": "CopydefLabel0fdef3af8f8ae47",
+            "text": "Requested By",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0j137a4eb15b24c = new voltmx.ui.Label({
+            "id": "CopyLabel0j137a4eb15b24c",
+            "isVisible": true,
+            "left": "24dp",
+            "skin": "CopydefLabel0d1dbad73a99642",
+            "text": "Requested date",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyLabel0e7176e8dc1c340 = new voltmx.ui.Label({
+            "id": "CopyLabel0e7176e8dc1c340",
+            "isVisible": true,
+            "left": "24dp",
+            "skin": "CopydefLabel0d1dbad73a99642",
+            "text": "Approved Date",
+            "top": "26dp",
+            "width": voltmx.flex.USE_PREFERRED_SIZE,
+            "zIndex": 1
+        }, {
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var Image0f546f4cd61574a = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "Image0f546f4cd61574a",
+            "isVisible": true,
+            "left": "14dp",
+            "skin": "slImage",
+            "src": "eye.png",
+            "top": "19dp",
+            "width": "40dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyImage0b9e4270528ae45 = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "CopyImage0b9e4270528ae45",
+            "isVisible": true,
+            "left": "-2dp",
+            "skin": "slImage",
+            "src": "tick.png",
+            "top": "20dp",
+            "width": "40dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var CopyImage0b5d9a25cec1b4a = new voltmx.ui.Image2({
+            "height": "33dp",
+            "id": "CopyImage0b5d9a25cec1b4a",
+            "isVisible": true,
+            "left": "-3dp",
+            "skin": "slImage",
+            "src": "cross.jpg",
+            "top": "20dp",
+            "width": "40dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        CopyFlex0ff43866586004c.add(Label0ee69e19d962e44, CopyLabel0h140a4d033144e, CopyLabel0ac775376e26c4e, CopyLabel0a4721bc1be964e, CopyLabel0hfa3918b88ca44, CopyLabel0b7c93f33c0e148, CopyLabel0ed0fc93427ed46, CopyLabel0d7f854fb40f746, CopyLabel0hbbc7474e2d94a, CopyLabel0j137a4eb15b24c, CopyLabel0e7176e8dc1c340, Image0f546f4cd61574a, CopyImage0b9e4270528ae45, CopyImage0b5d9a25cec1b4a);
+        return CopyFlex0ff43866586004c;
     }
 });
 define("userCopyFBoxDemandRequest0c2c1c51673ed4dController", {
@@ -4441,6 +4854,20 @@ define("Flex0f834108d4cc042Controller", ["userFlex0f834108d4cc042Controller", "F
     return voltmx.visualizer.mixinControllerActions(controller, controllerActions);
 });
 
+define("userCopyFlex0ff43866586004cController", {
+    //Type your controller code here 
+});
+define("CopyFlex0ff43866586004cControllerActions", {
+    /*
+      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    */
+});
+define("CopyFlex0ff43866586004cController", ["userCopyFlex0ff43866586004cController", "CopyFlex0ff43866586004cControllerActions"], function() {
+    var controller = require("userCopyFlex0ff43866586004cController");
+    var controllerActions = ["CopyFlex0ff43866586004cControllerActions"];
+    return voltmx.visualizer.mixinControllerActions(controller, controllerActions);
+});
+
 define("navigation/NavigationModel", { 
     "Application": {},
     "Forms" : {},
@@ -4450,6 +4877,6 @@ define("navigation/NavigationController", {
     //Add your navigation controller code here.
 });
 
-require(['applicationController','com/hclsoftwareu/hamburgermenu/hamburgermenuController','com/hclsoftwareu/hamburgermenu/hamburgermenu','com/konymp/linechart/analytics','com/konymp/linechart/konyLogger','com/konymp/linechart/linechartController','com/konymp/linechart/linechart','com/konymp/linechart/linechartConfig','com/konymp/piechart/analytics','com/konymp/piechart/konyLogger','com/konymp/piechart/piechartController','com/konymp/piechart/piechart','com/konymp/piechart/piechartConfig','com/konymp/verticalbar/analytics','com/konymp/verticalbar/konyLogger','com/konymp/verticalbar/verticalbarController','com/konymp/verticalbar/verticalbar','com/konymp/verticalbar/verticalbarConfig','com/voltmxmp/multiseriesverticalbar/voltmxLogger','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarController','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbar','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarConfig','CopyFBoxDemandRequest0c2c1c51673ed4d','CopyFBoxDemandRequest0ea77f446c59041','CopyFBoxProductline0b4828ae3534343','CopyFBoxProductline0cfaf586391c248','CopyFBoxProductline0g693a35b70844a','CopyFBoxProductline0he56704eefde49','myflxSegRowWithImageAndLabel','flxSampleRowTemplate','flxSectionHeaderTemplate','Flex0f834108d4cc042','CopyFBoxDemandRequest0c2c1c51673ed4dController','CopyFBoxDemandRequest0ea77f446c59041Controller','CopyFBoxProductline0b4828ae3534343Controller','CopyFBoxProductline0cfaf586391c248Controller','CopyFBoxProductline0g693a35b70844aController','CopyFBoxProductline0he56704eefde49Controller','myflxSegRowWithImageAndLabelController','flxSampleRowTemplateController','flxSectionHeaderTemplateController','Flex0f834108d4cc042Controller','navigation/NavigationModel','navigation/NavigationController'], function(){});
+require(['applicationController','com/hclsoftwareu/hamburgermenu/hamburgermenuController','com/hclsoftwareu/hamburgermenu/hamburgermenu','com/konymp/linechart/analytics','com/konymp/linechart/konyLogger','com/konymp/linechart/linechartController','com/konymp/linechart/linechart','com/konymp/linechart/linechartConfig','com/konymp/piechart/analytics','com/konymp/piechart/konyLogger','com/konymp/piechart/piechartController','com/konymp/piechart/piechart','com/konymp/piechart/piechartConfig','com/konymp/verticalbar/analytics','com/konymp/verticalbar/konyLogger','com/konymp/verticalbar/verticalbarController','com/konymp/verticalbar/verticalbar','com/konymp/verticalbar/verticalbarConfig','com/voltmxmp/multiseriesverticalbar/voltmxLogger','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarController','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbar','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarConfig','CopyFBoxDemandRequest0c2c1c51673ed4d','CopyFBoxDemandRequest0ea77f446c59041','CopyFBoxProductline0b4828ae3534343','CopyFBoxProductline0cfaf586391c248','CopyFBoxProductline0g693a35b70844a','CopyFBoxProductline0he56704eefde49','myflxSegRowWithImageAndLabel','flxSampleRowTemplate','flxSectionHeaderTemplate','Flex0f834108d4cc042','CopyFlex0ff43866586004c','CopyFBoxDemandRequest0c2c1c51673ed4dController','CopyFBoxDemandRequest0ea77f446c59041Controller','CopyFBoxProductline0b4828ae3534343Controller','CopyFBoxProductline0cfaf586391c248Controller','CopyFBoxProductline0g693a35b70844aController','CopyFBoxProductline0he56704eefde49Controller','myflxSegRowWithImageAndLabelController','flxSampleRowTemplateController','flxSectionHeaderTemplateController','Flex0f834108d4cc042Controller','CopyFlex0ff43866586004cController','navigation/NavigationModel','navigation/NavigationController'], function(){});
 define("sparequirefileslist", function(){});
 

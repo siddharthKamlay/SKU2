@@ -19,6 +19,9 @@
             "CopyFBoxProductline0he56704eefde49Controller_desktop": [
                 "CopyFBoxProductline0he56704eefde49Controller"
             ],
+            "CopyFlex0ff43866586004cController_desktop": [
+                "CopyFlex0ff43866586004cController"
+            ],
             "Flex0f834108d4cc042Controller_desktop": [
                 "Flex0f834108d4cc042Controller"
             ],
@@ -38,11 +41,11 @@
             "DemandRequestFrmController_desktop": [
                 "DemandRequestFrmController"
             ],
+            "Form1Controller_desktop": [
+                "Form1Controller"
+            ],
             "ProductLinefrmController_desktop": [
                 "ProductLinefrmController"
-            ],
-            "SKUDemandController_desktop": [
-                "SKUDemandController"
             ]
         }
     },
@@ -53,15 +56,15 @@
                 "controllerChannel": "desktop",
                 "controllerName": "DemandRequestFrmController"
             },
+            "Form1": {
+                "controllerActionDir": "Form1Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "Form1Controller"
+            },
             "ProductLinefrm": {
                 "controllerActionDir": "ProductLinefrmController",
                 "controllerChannel": "desktop",
                 "controllerName": "ProductLinefrmController"
-            },
-            "SKUDemand": {
-                "controllerActionDir": "SKUDemandController",
-                "controllerChannel": "desktop",
-                "controllerName": "SKUDemandController"
             }
         }
     },
@@ -79,6 +82,18 @@
                 "friendlyName": "DemandRequestFrm",
                 "isMDAForm": false
             },
+            "Form1": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "Form1Controller",
+                    "controllerChannel": "desktop",
+                    "controllerName": "Form1Controller"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "Form1",
+                "isMDAForm": false
+            },
             "ProductLinefrm": {
                 "ControllerExtensions": [],
                 "appName": "SKU2",
@@ -89,18 +104,6 @@
                 },
                 "enableModelDriven": false,
                 "friendlyName": "ProductLinefrm",
-                "isMDAForm": false
-            },
-            "SKUDemand": {
-                "ControllerExtensions": [],
-                "appName": "SKU2",
-                "controllerInfo": {
-                    "controllerActionName": "SKUDemandController",
-                    "controllerChannel": "desktop",
-                    "controllerName": "SKUDemandController"
-                },
-                "enableModelDriven": false,
-                "friendlyName": "SKUDemand",
                 "isMDAForm": false
             }
         }
@@ -147,10 +150,15 @@
                 "controllerChannel": "desktop",
                 "controllerName": "flxSectionHeaderTemplateController"
             },
-            "Temp0af829031bbb549": {
+            "TempDemandRequest": {
                 "controllerActionDir": "Flex0f834108d4cc042Controller",
                 "controllerChannel": "desktop",
                 "controllerName": "Flex0f834108d4cc042Controller"
+            },
+            "TempSKUDemand": {
+                "controllerActionDir": "CopyFlex0ff43866586004cController",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFlex0ff43866586004cController"
             },
             "mytplSegRowWithImageAndLabel": {
                 "controllerActionDir": "myflxSegRowWithImageAndLabelController",
@@ -161,6 +169,16 @@
     },
     "templatesifcMapping": {
         "desktopweb": {
+            "CopyFlex0ff43866586004c": {
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "CopyFlex0ff43866586004cController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "CopyFlex0ff43866586004cController"
+                },
+                "friendlyName": "CopyFlex0ff43866586004c",
+                "templateId": "CopyFlex0ff43866586004c"
+            },
             "Flex0f834108d4cc042": {
                 "appName": "SKU2",
                 "controllerInfo": {

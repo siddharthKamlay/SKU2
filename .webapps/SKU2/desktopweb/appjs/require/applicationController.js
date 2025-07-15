@@ -62,17 +62,21 @@ define({
             "viewName": "Flex0f834108d4cc042",
             "controllerName": "Flex0f834108d4cc042Controller"
         });
+        voltmx.mvc.registry.add("CopyFlex0ff43866586004c", {
+            "viewName": "CopyFlex0ff43866586004c",
+            "controllerName": "CopyFlex0ff43866586004cController"
+        });
         voltmx.mvc.registry.add("DemandRequestFrm", {
             "viewName": "DemandRequestFrm",
             "controllerName": "DemandRequestFrmController"
         });
+        voltmx.mvc.registry.add("Form1", {
+            "viewName": "Form1",
+            "controllerName": "Form1Controller"
+        });
         voltmx.mvc.registry.add("ProductLinefrm", {
             "viewName": "ProductLinefrm",
             "controllerName": "ProductLinefrmController"
-        });
-        voltmx.mvc.registry.add("SKUDemand", {
-            "viewName": "SKUDemand",
-            "controllerName": "SKUDemandController"
         });
         setAppBehaviors();
         if (typeof startBackgroundWorker != "undefined") {
