@@ -590,7 +590,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0.67%"
     },
     "_margin_": [
         0,
@@ -611,7 +611,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "105.43%"
+        "value": "104.76%"
     },
     "actionsInfo": {
         "dataPropertyName": "records",

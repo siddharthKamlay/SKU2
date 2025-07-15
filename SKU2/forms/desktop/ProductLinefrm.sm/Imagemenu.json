@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "77dp"
+        "value": "81dp"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_src_": "menu.png",
     "_top_": {
         "type": "string",
-        "value": "31dp"
+        "value": "9dp"
     },
     "_width_": {
         "type": "string",
-        "value": "90dp"
+        "value": "68dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,
