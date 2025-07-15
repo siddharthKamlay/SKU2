@@ -20,7 +20,7 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
             "bottom": "0dp",
             "id": "lblSKUID1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-1%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "SKUID",
             "top": "5dp",
@@ -34,7 +34,7 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
             "bottom": "0dp",
             "id": "lblName1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-2%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Name",
             "top": "5dp",
@@ -48,7 +48,7 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
             "bottom": "0dp",
             "id": "lblCategory1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-2%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Category",
             "top": "5dp",
@@ -76,7 +76,7 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
             "bottom": "0dp",
             "id": "lblForecasted1",
             "isVisible": true,
-            "left": "0%",
+            "left": "-3%",
             "skin": "defDataPanelLabelSubHeadingDW0j74c514d827c41",
             "text": "Forecasted",
             "top": "5dp",
@@ -156,7 +156,57 @@ define("CopyFBoxDemandRequest0ea77f446c59041", function() {
             "padding": [1, 1, 0, 1],
             "paddingInPixel": false
         }, {});
-        CopyFBoxDemandRequest0ea77f446c59041.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1);
+        var img1 = new voltmx.ui.Image2({
+            "height": "52dp",
+            "id": "img1",
+            "imageWhileDownloading": "arrow.png",
+            "isVisible": true,
+            "left": "6dp",
+            "skin": "CopyslImage0hd7036747e924b",
+            "src": "imagedrag.png",
+            "top": "0dp",
+            "width": "35dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var img2 = new voltmx.ui.Image2({
+            "height": "52dp",
+            "id": "img2",
+            "imageWhenFailed": "tick.png",
+            "imageWhileDownloading": "acme.png",
+            "isVisible": true,
+            "left": "9dp",
+            "skin": "slImage",
+            "src": "imagedrag.png",
+            "top": "0dp",
+            "width": "35dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        var img3 = new voltmx.ui.Image2({
+            "height": "52dp",
+            "id": "img3",
+            "imageWhenFailed": "cross.jpg",
+            "imageWhileDownloading": "cross.jpg",
+            "isVisible": true,
+            "left": "9dp",
+            "skin": "slImage",
+            "src": "imagedrag.png",
+            "top": "0dp",
+            "width": "35dp",
+            "zIndex": 1
+        }, {
+            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "padding": [0, 0, 0, 0],
+            "paddingInPixel": false
+        }, {});
+        CopyFBoxDemandRequest0ea77f446c59041.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1, img1, img2, img3);
         return CopyFBoxDemandRequest0ea77f446c59041;
     }
 })

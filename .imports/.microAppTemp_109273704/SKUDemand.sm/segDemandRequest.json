@@ -1,0 +1,574 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        },
+        {
+            "lblApprovalDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblCategory1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblEnrichedQTY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EnrichedQTY"
+            },
+            "lblForecasted1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Forecasted"
+            },
+            "lblName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name"
+            },
+            "lblRequestDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestDate"
+            },
+            "lblRequested1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Requested"
+            },
+            "lblRequestedBY1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "RequestedBY"
+            },
+            "lblSKUID1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SKUID"
+            },
+            "lblStatus1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Status"
+            },
+            "lblStock1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Stock"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "actionsInfo": {
+        "dataPropertyName": "records",
+        "eventAssociationMeta": {
+            "event": "onRowClick",
+            "skipMapping": true
+        },
+        "widgetPropertyName": "rowData"
+    },
+    "alternaterowskin": "s0ac9cdcd5484440a9c4b863422bb4ec",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "iccda9afe49d4f2b8d9cddf7f4500115",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segDemandRequest",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f42030d8f0bb4c99be4054e5328bb37d",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "parent": "flexHeaderDemandRequest",
+    "pf": "SKUDemand",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "iccda9afe49d4f2b8d9cddf7f4500115",
+    "rowcounter": 9,
+    "rowfocusskin": "saf2f87835b1465b9bd1c6c30c7b29c9",
+    "rowskin": "s416a1b7020e4404bf4c5f0ac54f015e",
+    "rowtemplate": "CopyFBoxDemandRequest0d7e2e16ee5db41",
+    "seccounter": 0,
+    "sectionheaderskin": "s0813b4200ce43f1a1a3fff39aad210f",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblApprovalDate1": "lblApprovalDate1",
+        "lblCategory1": "lblCategory1",
+        "lblEnrichedQTY1": "lblEnrichedQTY1",
+        "lblForecasted1": "lblForecasted1",
+        "lblName1": "lblName1",
+        "lblRequestDate1": "lblRequestDate1",
+        "lblRequested1": "lblRequested1",
+        "lblRequestedBY1": "lblRequestedBY1",
+        "lblSKUID1": "lblSKUID1",
+        "lblStatus1": "lblStatus1",
+        "lblStock1": "lblStock1"
+    }
+}

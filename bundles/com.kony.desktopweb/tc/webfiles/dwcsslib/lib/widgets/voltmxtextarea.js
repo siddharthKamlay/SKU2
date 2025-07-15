@@ -424,12 +424,6 @@
                     flag = true;
                 }
 
-                if (!flag && $K.F.EIWP) {
-                    if ($KU.is(value, 'null')) {
-                        flag = ['', true];
-                    }
-                }
-
                 return flag;
             },
 
@@ -680,19 +674,7 @@
             restrictCharactersSet: true,
 
             text: function TextArea2$_view_text(el/*, old*/) {
-                var $K = voltmx.$kwebfw$, $KD = $K.dom,
-                    value = $KD.getAttr(el.node, 'value'),
-                    maxLen = this.maxTextLength;
-                
-                if (value !== this.text) {
-                    let updatedText = this.text;
-                    // Truncate only if maxTextLength is a valid number (>= 0)
-                    if (typeof maxLen === 'number' && maxLen >= 0) {
-                        updatedText = updatedText.substring(0, maxLen);
-                    }
-                    $KD.setAttr(el.node, 'value', updatedText);
-                }
-                
+                el.node.value = this.text;
                 _autoResize.call(this, el);
             },
 

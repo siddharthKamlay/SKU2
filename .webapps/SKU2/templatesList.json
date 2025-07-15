@@ -3,7 +3,8 @@
         "formslist": {
             "mvcFormObjects": [
                 "DemandRequestFrm",
-                "ProductLinefrm"
+                "ProductLinefrm",
+                "SKUDemand"
             ],
             "nonmvcFormObjects": []
         },
@@ -16,7 +17,8 @@
                 "com.voltmxmp.multiseriesverticalbar",
                 "mytplSegRowWithImageAndLabel",
                 "SampleRowTemplate",
-                "SampleSectionHeaderTemplate"
+                "SampleSectionHeaderTemplate",
+                "Temp0af829031bbb549"
             ],
             "nonmvcTemplateObjects": []
         }

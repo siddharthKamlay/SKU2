@@ -1,6 +1,9 @@
 {
     "controllerTemplateInfoMapping": {
         "desktopweb": {
+            "CopyFBoxDemandRequest0c2c1c51673ed4dController_desktop": [
+                "CopyFBoxDemandRequest0c2c1c51673ed4dController"
+            ],
             "CopyFBoxDemandRequest0ea77f446c59041Controller_desktop": [
                 "CopyFBoxDemandRequest0ea77f446c59041Controller"
             ],
@@ -15,6 +18,9 @@
             ],
             "CopyFBoxProductline0he56704eefde49Controller_desktop": [
                 "CopyFBoxProductline0he56704eefde49Controller"
+            ],
+            "Flex0f834108d4cc042Controller_desktop": [
+                "Flex0f834108d4cc042Controller"
             ],
             "flxSampleRowTemplateController_desktop": [
                 "flxSampleRowTemplateController"
@@ -34,6 +40,9 @@
             ],
             "ProductLinefrmController_desktop": [
                 "ProductLinefrmController"
+            ],
+            "SKUDemandController_desktop": [
+                "SKUDemandController"
             ]
         }
     },
@@ -48,6 +57,11 @@
                 "controllerActionDir": "ProductLinefrmController",
                 "controllerChannel": "desktop",
                 "controllerName": "ProductLinefrmController"
+            },
+            "SKUDemand": {
+                "controllerActionDir": "SKUDemandController",
+                "controllerChannel": "desktop",
+                "controllerName": "SKUDemandController"
             }
         }
     },
@@ -76,11 +90,28 @@
                 "enableModelDriven": false,
                 "friendlyName": "ProductLinefrm",
                 "isMDAForm": false
+            },
+            "SKUDemand": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "SKUDemandController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "SKUDemandController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "SKUDemand",
+                "isMDAForm": false
             }
         }
     },
     "templateControllerInfoMapping": {
         "desktopweb": {
+            "CopyFBoxDemandRequest0c2c1c51673ed4d": {
+                "controllerActionDir": "CopyFBoxDemandRequest0c2c1c51673ed4dController",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxDemandRequest0c2c1c51673ed4dController"
+            },
             "CopyFBoxDemandRequest0ea77f446c59041": {
                 "controllerActionDir": "CopyFBoxDemandRequest0ea77f446c59041Controller",
                 "controllerChannel": "desktop",
@@ -116,6 +147,11 @@
                 "controllerChannel": "desktop",
                 "controllerName": "flxSectionHeaderTemplateController"
             },
+            "Temp0af829031bbb549": {
+                "controllerActionDir": "Flex0f834108d4cc042Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "Flex0f834108d4cc042Controller"
+            },
             "mytplSegRowWithImageAndLabel": {
                 "controllerActionDir": "myflxSegRowWithImageAndLabelController",
                 "controllerChannel": "desktop",
@@ -125,6 +161,16 @@
     },
     "templatesifcMapping": {
         "desktopweb": {
+            "Flex0f834108d4cc042": {
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "Flex0f834108d4cc042Controller",
+                    "controllerChannel": "desktop",
+                    "controllerName": "Flex0f834108d4cc042Controller"
+                },
+                "friendlyName": "Flex0f834108d4cc042",
+                "templateId": "Flex0f834108d4cc042"
+            },
             "flxSampleRowTemplate": {
                 "appName": "SKU2",
                 "controllerInfo": {

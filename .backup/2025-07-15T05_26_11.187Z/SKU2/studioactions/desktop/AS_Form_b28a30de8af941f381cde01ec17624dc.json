@@ -1,0 +1,115 @@
+{
+    "AS_Form_b28a30de8af941f381cde01ec17624dc": {
+        "id": "AS_Form_b28a30de8af941f381cde01ec17624dc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "DemandRequestFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onMapping",
+        "actions": [{
+            "id": "LOADING_INDICATOR_j83b072e39244cb298e7d1bc6816b40f",
+            "selectedOption": "show",
+            "parentId": null,
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_db6ead35bbc648d5848a3b3452d83bda",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "SKUDemandRequests",
+                "type": "objectsvcs",
+                "objectname": "DemandRequest",
+                "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                "methodname": "get"
+            },
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "LOADING_INDICATOR_eb0f664b535344649bdbfeeade5fb552",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_db6ead35bbc648d5848a3b3452d83bda",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Callback",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "_bbc854f250e64814a068f3ae7f83d8ca",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "value",
+                "leftValue": "DemandRequest.opstatus",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "0"
+            }],
+            "parentId": "INVOKE_SERVICE_db6ead35bbc648d5848a3b3452d83bda",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "ADD_MAPPING_d945929f0ce1450aa04cfd39b7210745",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_a16d0c9b1a5c426b881120e32ea86a95": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a16d0c9b1a5c426b881120e32ea86a95",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "records",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segDemandRequest",
+                        "widgetPath": "this.view.segDemandRequest",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "DemandRequestFrm",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_a16d0c9b1a5c426b881120e32ea86a95"],
+            "parentId": "_bbc854f250e64814a068f3ae7f83d8ca",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

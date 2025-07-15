@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "110.99%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s912bb86964f45a188586c8608e7e5ba",
+    "_top_": {
+        "type": "string",
+        "value": "-26dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {},
+    "id": "piechart",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cfcd4ac5b78e4cc7964243a4cfb94956",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FlexContainerPieChart",
+    "pf": "DemandRequestFrm",
+    "sourceUserWidget": "u9f9c00877cf4c6d97ac9708c590e5c9",
+    "wType": "UserWidgetInstance"
+}

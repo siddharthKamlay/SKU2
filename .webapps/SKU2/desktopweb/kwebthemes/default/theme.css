@@ -4,11 +4,14 @@
 .CopyslForm0fb417bbb10d849,
 .CopyslForm0je5baca4810942,
 .slForm,
+.slFormSkinCommon,
 .slSplashiOS,
 .slWatchForm,
 .CopydefBtnNormal0d4e959794f9c4b,
+.CopydefBtnNormal0ie6f7de736d049,
 .defBtnFocus,
 .defBtnNormal,
+.CopydefLabel0aaae496075d949,
 .CopydefLabel0aebb41b2283d4d,
 .CopydefLabel0b193f12240ae46,
 .CopydefLabel0b97643da1d804c,
@@ -16,11 +19,15 @@
 .CopydefLabel0c9e00abaf49641,
 .CopydefLabel0ce3122e877f340,
 .CopydefLabel0d01b683017a64e,
+.CopydefLabel0d3f2b59491324d,
 .CopydefLabel0d58ecf7ede194c,
 .CopydefLabel0d834f17a354841,
 .CopydefLabel0d9f56045d6f943,
+.CopydefLabel0dff0a512056e4a,
 .CopydefLabel0e19d9397d5b44d,
+.CopydefLabel0e37d99e471f945,
 .CopydefLabel0e5e411062cab44,
+.CopydefLabel0e6472f5744614f,
 .CopydefLabel0e6ade8a8c97c4d,
 .CopydefLabel0e6dd4a9eb46b40,
 .CopydefLabel0eadcb933c28e4a,
@@ -43,6 +50,10 @@
 .defDataPanelLabelSubHeadingDW0j74c514d827c41,
 .defDataPanelLabelSubHeadingDW0j77039fda5cc45,
 .defLabel,
+.defLabelGreen,
+.defLabelPurple,
+.defLabelYellow,
+.defLabelred,
 .lblStatusSkin0d1b3c7ffb10440,
 .sknLblDescription,
 .sknLblRowHeading,
@@ -372,6 +383,168 @@
 
 
 
+.CopydefBtnNormal0ie6f7de736d049,
+[kw].CopydefBtnNormal0ie6f7de736d049-hover,
+[kw].CopydefBtnNormal0ie6f7de736d049-focus,
+[kw].CopydefBtnNormal0ie6f7de736d049-active {
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 17.6px Helvetica;
+
+
+
+
+
+    color: rgba(0, 0, 0, 0.69);
+
+
+
+
+
+
+
+
+
+
+
+
+    background: rgba(75, 136, 241, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0aaae496075d949,
+[kw].CopydefLabel0aaae496075d949-hover,
+[kw].CopydefLabel0aaae496075d949-focus,
+[kw].CopydefLabel0aaae496075d949-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 16.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0aebb41b2283d4d,
 [kw].CopydefLabel0aebb41b2283d4d-hover,
 [kw].CopydefLabel0aebb41b2283d4d-focus,
@@ -469,7 +642,7 @@
 
 
 
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
 
 
 
@@ -613,7 +786,7 @@
 
 
 
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
 
 
 
@@ -681,7 +854,7 @@
 
 
 
-    font: normal bold 32.0px Comic Sans MS;
+    font: normal bold 32.0px Helvetica;
 
 
 
@@ -829,13 +1002,87 @@
 
 
 
-    font: normal bold 19.0px Helvetica;
+    font: normal normal 19.0px Helvetica;
 
 
 
 
 
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0d3f2b59491324d,
+[kw].CopydefLabel0d3f2b59491324d-hover,
+[kw].CopydefLabel0d3f2b59491324d-focus,
+[kw].CopydefLabel0d3f2b59491324d-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 19.2px Helvetica;
+
+
+
+
+
+    color: rgba(51, 51, 51, 0.75);
 
 
 
@@ -1100,6 +1347,80 @@
 
 
 
+.CopydefLabel0dff0a512056e4a,
+[kw].CopydefLabel0dff0a512056e4a-hover,
+[kw].CopydefLabel0dff0a512056e4a-focus,
+[kw].CopydefLabel0dff0a512056e4a-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 24.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0e19d9397d5b44d,
 [kw].CopydefLabel0e19d9397d5b44d-hover,
 [kw].CopydefLabel0e19d9397d5b44d-focus,
@@ -1124,6 +1445,80 @@
     font: normal 400 39.5px Helvetica;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0e37d99e471f945,
+[kw].CopydefLabel0e37d99e471f945-hover,
+[kw].CopydefLabel0e37d99e471f945-focus,
+[kw].CopydefLabel0e37d99e471f945-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 16.0px Helvetica;
+
+
+
+
+
+    color: #333333;
 
 
 
@@ -1244,6 +1639,80 @@
 
 
 
+.CopydefLabel0e6472f5744614f,
+[kw].CopydefLabel0e6472f5744614f-hover,
+[kw].CopydefLabel0e6472f5744614f-focus,
+[kw].CopydefLabel0e6472f5744614f-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 32.0px Helvetica;
+
+
+
+
+
+    color: #1c1c1c;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0e6ade8a8c97c4d,
 [kw].CopydefLabel0e6ade8a8c97c4d-hover,
 [kw].CopydefLabel0e6ade8a8c97c4d-focus,
@@ -1271,7 +1740,7 @@
 
 
 
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
 
 
 
@@ -1701,13 +2170,13 @@
 
 
 
-    font: normal 400 25.0px Helvetica;
+    font: normal 400 16.2px Helvetica;
 
 
 
 
 
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
 
 
 
@@ -2504,6 +2973,137 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0b1e93838bc484a,
+[kw].CopyslFbox0b1e93838bc484a-hover,
+[kw].CopyslFbox0b1e93838bc484a-focus,
+[kw].CopyslFbox0b1e93838bc484a-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #f8f7ff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0b2739be7657a49,
 [kw].CopyslFbox0b2739be7657a49-hover,
 [kw].CopyslFbox0b2739be7657a49-focus,
@@ -2666,6 +3266,217 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0b47ed57bc2b749,
+[kw].CopyslFbox0b47ed57bc2b749-hover,
+[kw].CopyslFbox0b47ed57bc2b749-focus,
+[kw].CopyslFbox0b47ed57bc2b749-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(189, 185, 189, 0.98);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0b5b21954956f4d,
+[kw].CopyslFbox0b5b21954956f4d-hover,
+[kw].CopyslFbox0b5b21954956f4d-focus,
+[kw].CopyslFbox0b5b21954956f4d-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #f8f7ff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0b75c50fb9d0e41,
 [kw].CopyslFbox0b75c50fb9d0e41-hover,
 [kw].CopyslFbox0b75c50fb9d0e41-focus,
@@ -2714,6 +3525,217 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0bebbbf6a9fc948,
+[kw].CopyslFbox0bebbbf6a9fc948-hover,
+[kw].CopyslFbox0bebbbf6a9fc948-focus,
+[kw].CopyslFbox0bebbbf6a9fc948-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(148, 148, 148, 0.74);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0c3f8ae40a95946,
+[kw].CopyslFbox0c3f8ae40a95946-hover,
+[kw].CopyslFbox0c3f8ae40a95946-focus,
+[kw].CopyslFbox0c3f8ae40a95946-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #f8f7ff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -2828,6 +3850,86 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0d77399fd11aa42,
+[kw].CopyslFbox0d77399fd11aa42-hover,
+[kw].CopyslFbox0d77399fd11aa42-focus,
+[kw].CopyslFbox0d77399fd11aa42-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(179, 179, 179, 0.85);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0e00d83b5950546,
 [kw].CopyslFbox0e00d83b5950546-hover,
 [kw].CopyslFbox0e00d83b5950546-focus,
@@ -2875,6 +3977,300 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background: linear-gradient(to bottom, #ceffff, #ffe7c7);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0e7b52cc062fe4b,
+[kw].CopyslFbox0e7b52cc062fe4b-hover,
+[kw].CopyslFbox0e7b52cc062fe4b-focus,
+[kw].CopyslFbox0e7b52cc062fe4b-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #c7c7c7;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0e88f7dca09d544,
+[kw].CopyslFbox0e88f7dca09d544-hover,
+[kw].CopyslFbox0e88f7dca09d544-focus,
+[kw].CopyslFbox0e88f7dca09d544-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 2px #000000;
+    -webkit-box-shadow: 0px 0px 2px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0eeb6273f1e3345,
+[kw].CopyslFbox0eeb6273f1e3345-hover,
+[kw].CopyslFbox0eeb6273f1e3345-focus,
+[kw].CopyslFbox0eeb6273f1e3345-active {
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
 
 
 
@@ -3035,7 +4431,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.78);
 
 
 
@@ -3231,6 +4627,137 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0j5389f56cd2449,
+[kw].CopyslFbox0j5389f56cd2449-hover,
+[kw].CopyslFbox0j5389f56cd2449-focus,
+[kw].CopyslFbox0j5389f56cd2449-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #f8f7ff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .CopyslForm,
 [kw].CopyslForm-hover,
@@ -3329,7 +4856,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f7f7f7;
+    background-color: #ebebeb;
 
 
 
@@ -3395,7 +4922,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f7f7f7;
+    background-color: #ebebeb;
 
 
 
@@ -3474,6 +5001,107 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: rgba(183, 184, 232, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslImage0hd7036747e924b,
+[kw='Image2']>img.CopyslImage0hd7036747e924b-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
 
 
 
@@ -6499,6 +8127,306 @@ div[kr='item'].defDataPanelRowFocusSkin0f23f1eafa9e942-focus,
 
 
     background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.defLabelGreen,
+[kw].defLabelGreen-hover,
+[kw].defLabelGreen-focus,
+[kw].defLabelGreen-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 32.0px Helvetica;
+
+
+
+
+
+    color: #126e40;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #bcebce;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.defLabelPurple,
+[kw].defLabelPurple-hover,
+[kw].defLabelPurple-focus,
+[kw].defLabelPurple-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 32.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffe6ff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.defLabelYellow,
+[kw].defLabelYellow-hover,
+[kw].defLabelYellow-focus,
+[kw].defLabelYellow-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 32.0px Helvetica;
+
+
+
+
+
+    color: #92963b;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #e5f2bf;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.defLabelred,
+[kw].defLabelred-hover,
+[kw].defLabelred-focus,
+[kw].defLabelred-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 32.0px Helvetica;
+
+
+
+
+
+    color: #990934;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #f2acbb;
 
 
 
@@ -10119,6 +12047,72 @@ div[kr='item'].sknseg-focus,
 
 
     background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slFormSkinCommon,
+[kw].slFormSkinCommon-hover,
+[kw].slFormSkinCommon-focus,
+[kw].slFormSkinCommon-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ebebeb;
 
 
 

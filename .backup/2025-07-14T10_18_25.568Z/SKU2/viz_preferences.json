@@ -1,0 +1,57 @@
+{
+    "FP": {
+        "spabb": false,
+        "winphone8": false,
+        "spawinphone8": false,
+        "windows8": false,
+        "spawindowstablet": false,
+        "desktopweb": true,
+        "iphone": false,
+        "spaip": false,
+        "android": false,
+        "spaan": false,
+        "ipad": false,
+        "spaipad": false,
+        "tabrcandroid": false,
+        "spaandroidtablet": false
+    },
+    "general": {
+        "urls": {
+            "konyFabricURL": "https://manage.demo-hclvoltmx.com"
+        },
+        "codeEditor": {
+            "indentConf": {},
+            "externalEditor": {
+                "displayName": "Sublime"
+            }
+        },
+        "proxyConfig": {},
+        "remoteMACConfig": {},
+        "testRecorder": {
+            "port": 9111
+        },
+        "AllowLockManagementSettings": false,
+        "inlinePreviewEnabled": false,
+        "isHtmlPreviewEnabled": false,
+        "autoCollapsePW": false,
+        "widgetHighlighterActionButtons": false,
+        "isSnapModeEnabled": true,
+        "containerPlaceholders": true,
+        "skipAppSigningRequirements": false,
+        "autoDetectIP": true,
+        "staticIP": "",
+        "autoUpdate": false
+    },
+    "build": {},
+    "previewMode": "debug",
+    "starter": {
+        "general": {
+            "enableMetrics": true
+        }
+    },
+    "dx": {
+        "general": {},
+        "dxClient": {}
+    },
+    "vizTheme": "dark"
+}

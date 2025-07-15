@@ -707,16 +707,11 @@
 
             text: function TextBox2$_view_text(el/* , old */) {
                 var $K = voltmx.$kwebfw$, $KD = $K.dom,
-                    value = $KD.getAttr(el.node, 'value'),
-                    maxLen = this.maxTextLength;
+                    value = $KD.getAttr(el.node, 'value');
+
                 //This if condition handles setting of same text to the node value onInput(onTextChange) event
-                if (value !== this.text) {
-                    let updatedText = this.text;
-                    // Truncate only if maxTextLength is a valid number (>= 0)
-                    if (typeof maxLen === 'number' && maxLen >= 0) {
-                        updatedText = updatedText.substring(0, maxLen);
-                    }
-                    $KD.setAttr(el.node, 'value', updatedText);
+                if(value !== this.text) {
+                    $KD.setAttr(el.node, 'value', this.text);
                 }
             },
 
