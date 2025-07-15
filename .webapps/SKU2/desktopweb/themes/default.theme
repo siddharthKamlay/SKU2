@@ -630,7 +630,7 @@
         "wType": "Label"
     },
     "CopydefListBoxNormal0d1b8af389ce64c": {
-        "background_color": "ffffff00",
+        "background_color": "ffffff64",
         "bg_type": "one",
         "border_color": "33333300",
         "border_style": "rc",
@@ -638,9 +638,10 @@
         "border_width": 1,
         "font_color": "33333300",
         "font_name": "Helvetica",
-        "font_size": 107,
+        "font_size": 100,
         "font_style": "normal",
         "font_weight": "400",
+        "forked": false,
         "wType": "ListBox"
     },
     "CopydefListBoxNormal0e2b722993c6543": {
@@ -672,7 +673,7 @@
         "wType": "TextField"
     },
     "CopydefTextBoxNormal0ffc21e68237640": {
-        "background_color": "ffffff00",
+        "background_color": "ffffff64",
         "bg_type": "one",
         "border_color": "33333300",
         "border_style": "rc",

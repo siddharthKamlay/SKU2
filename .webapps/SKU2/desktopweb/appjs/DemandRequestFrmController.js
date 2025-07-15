@@ -152,44 +152,44 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection5001 = [];
-                var tempData4093 = DemandRequest.records;
-                for (var each860 in tempData4093) {
-                    var shouldShow = typeof tempData4093[each860]["x_0024FILES"] !== 'undefined' && tempData4093[each860]["x_0024FILES"] && tempData4093[each860]["x_0024FILES"].length > 0
-                    tempCollection5001.push({
+                var tempCollection7621 = [];
+                var tempData9742 = DemandRequest.records;
+                for (var each9583 in tempData9742) {
+                    var shouldShow = typeof tempData9742[each9583]["x_0024FILES"] !== 'undefined' && tempData9742[each9583]["x_0024FILES"] && tempData9742[each9583]["x_0024FILES"].length > 0
+                    tempCollection7621.push({
                         "lblSKUID": {
-                            "text": tempData4093[each860]["SKUID"]
+                            "text": tempData9742[each9583]["SKUID"]
                         },
                         "lblName": {
-                            "text": tempData4093[each860]["Name"]
+                            "text": tempData9742[each9583]["Name"]
                         },
                         "lblCategory": {
-                            "text": tempData4093[each860]["Category"]
+                            "text": tempData9742[each9583]["Category"]
                         },
                         "lblStock": {
-                            "text": tempData4093[each860]["Stock"]
+                            "text": tempData9742[each9583]["Stock"]
                         },
                         "lblForecasted": {
-                            "text": tempData4093[each860]["Forecasted"]
+                            "text": tempData9742[each9583]["Forecasted"]
                         },
                         "lblEnrichedQTY": {
-                            "text": tempData4093[each860]["EnrichedQTY"]
+                            "text": tempData9742[each9583]["EnrichedQTY"]
                         },
                         "lblRequested": {
-                            "text": tempData4093[each860]["Requested"]
+                            "text": tempData9742[each9583]["Requested"]
                         },
                         "lblStatus": {
-                            "text": tempData4093[each860]["Status"]
+                            "text": tempData9742[each9583]["Status"]
                         },
                         "lblRequestedBY": {
-                            "text": tempData4093[each860]["RequestedBY"]
+                            "text": tempData9742[each9583]["RequestedBY"]
                         },
                         "lblRequestDate": {
-                            "text": tempData4093[each860]["RequestDate"]
+                            "text": tempData9742[each9583]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection5001);
+                self.view.segDemandRequest.setData(tempCollection7621);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -266,13 +266,13 @@ define("DemandRequestFrmControllerActions", {
         var self = this;
         return self.filterData.call(this);
     },
-    /** onTextChange defined for TextFieldSearchBox **/
-    AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
+    /** onSelection defined for ListBoxCategories **/
+    AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce: function AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce(eventobject) {
         var self = this;
         return self.filterData.call(this);
     },
-    /** onSelection defined for ListBoxCategories **/
-    AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce: function AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce(eventobject) {
+    /** onTextChange defined for TextFieldSearchBox **/
+    AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
     }
