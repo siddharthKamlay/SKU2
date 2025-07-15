@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "28dp"
+        "value": "24dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s69f11db7fce416e8451285869661e9b",
-    "_text_": "Name",
+    "_skin_": "s98b6c2e79bc40e1a82e36da149b5a5a",
+    "_text_": "Approved Date",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0h140a4d033144e",
+    "id": "lblApprovedDate",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a2beca56d76e42e5a6d8c4a1b8962731",
+    "kuid": "i8d9a9560aa3434488284102bdbc5edd",
     "name": "kony.ui.Label",
     "parent": "CopyFlex0ff43866586004c",
     "pf": "TempSKUDemand",

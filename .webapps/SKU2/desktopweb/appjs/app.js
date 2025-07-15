@@ -20328,7 +20328,7 @@ var appConfig = {
     appVersion: "1.0.0",
     isturlbase: "https://m100004609002.demo-hclvoltmx.net/services",
     isDebug: true,
-    hotReloadURL: "ws://172.26.176.1:9099",
+    hotReloadURL: "ws://192.168.1.116:9099",
     isMFApp: true,
     appKey: "341c66538550d0efe25b7aedeb781c6a",
     appSecret: "d17a8e5ba7334c8f3a94e81e23fedafb",

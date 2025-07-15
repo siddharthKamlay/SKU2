@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0j137a4eb15b24c",
+    "id": "lblRequestDate",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fd8a3dd5c4c5418b9b6c73780c9ae0cf",
+    "kuid": "i1e8587146aa4d6da56bf3accd1e9589",
     "name": "kony.ui.Label",
-    "parent": "CopyFlex0ff43866586004c",
-    "pf": "TempSKUDemand",
+    "parent": "Flex0f834108d4cc042",
+    "pf": "TempDemandRequest",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

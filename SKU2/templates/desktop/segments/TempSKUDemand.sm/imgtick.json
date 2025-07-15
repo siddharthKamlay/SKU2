@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "14dp"
+        "value": "-2dp"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "s5f3c73007e34a2b9f9a91eb8e3e0cf2",
-    "_src_": "eye.png",
+    "_src_": "tick.png",
     "_top_": {
         "type": "string",
-        "value": "19dp"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
@@ -35,13 +35,13 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "id": "Image0f546f4cd61574a",
+    "id": "imgtick",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f170a089cfd04bb4b0193846649fb0df",
+    "kuid": "j156ba7e6d8541d4bce3e8d9ca2a4aff",
     "name": "kony.ui.Image2",
     "parent": "CopyFlex0ff43866586004c",
     "pf": "TempSKUDemand",
