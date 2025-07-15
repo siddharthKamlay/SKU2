@@ -739,18 +739,16 @@ define("ProductLinefrm", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-<<<<<<< HEAD
-=======
             var Imagemenu = new voltmx.ui.Image2({
-                "height": "77dp",
+                "height": "81dp",
                 "id": "Imagemenu",
                 "isVisible": true,
                 "left": "12dp",
                 "onTouchEnd": controller.AS_Image_c07533c757414f3d8cf76a373f585070,
                 "skin": "slImage",
                 "src": "menu.png",
-                "top": "31dp",
-                "width": "90dp",
+                "top": "9dp",
+                "width": "68dp",
                 "zIndex": 1
             }, {
                 "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
@@ -849,7 +847,6 @@ define("ProductLinefrm", function() {
                 "paddingInPixel": false
             }, {});
             flxcontainerslidemenu.add(CopyLabel0cea9eb96dd2045, CopyLabel0e8c464feb75d4e, CopyLabel0g28597a9261e4c, Label04, Label05);
->>>>>>> 3a345246027dab50a17e2ffc01a699378e6b1eaf
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1366,
@@ -891,11 +888,7 @@ define("ProductLinefrm", function() {
                     "centerY": ""
                 }
             }
-<<<<<<< HEAD
-            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003);
-=======
             this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003, Imagemenu, flxcontainerslidemenu);
->>>>>>> 3a345246027dab50a17e2ffc01a699378e6b1eaf
         };
         return [{
             "addWidgets": addWidgetsProductLinefrm,

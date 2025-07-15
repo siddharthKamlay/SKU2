@@ -9,11 +9,11 @@ define("SKUDemand", function() {
                 "id": "FlexContainer",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0dp",
+                "left": "100dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "0dp",
-                "width": "100%",
+                "width": "86.38%",
                 "zIndex": 2,
                 "appName": "SKU2"
             }, {
@@ -23,7 +23,7 @@ define("SKUDemand", function() {
             var Label1 = new voltmx.ui.Label({
                 "id": "Label1",
                 "isVisible": true,
-                "left": "69dp",
+                "left": "20dp",
                 "skin": "CopydefLabel0e6472f5744614f",
                 "text": "SKU DEMAND MANAGEMENT",
                 "top": "37dp",
@@ -37,7 +37,7 @@ define("SKUDemand", function() {
             var Label2 = new voltmx.ui.Label({
                 "id": "Label2",
                 "isVisible": true,
-                "left": "69dp",
+                "left": "20dp",
                 "skin": "CopydefLabel0d3f2b59491324d",
                 "text": "Manage and approve  demand requests across all SKUs",
                 "top": "80dp",
@@ -52,14 +52,14 @@ define("SKUDemand", function() {
             var FlexContainerHeaders = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "20%",
+                "height": "15.56%",
                 "id": "FlexContainerHeaders",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_HORIZONTAL,
-                "left": "0dp",
+                "left": "80dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "140dp",
+                "top": "135dp",
                 "width": "100%",
                 "zIndex": 2,
                 "appName": "SKU2"
@@ -70,14 +70,14 @@ define("SKUDemand", function() {
             var FlexContainer0f33f26919d934e = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "59.82%",
+                "height": "80.42%",
                 "id": "FlexContainer0f33f26919d934e",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "3.00%",
                 "isModalContainer": false,
-                "skin": "CopyslFbox0b47ed57bc2b749",
-                "top": "37dp",
+                "skin": "slFboxPurple",
+                "top": "20dp",
                 "width": "20%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -88,7 +88,7 @@ define("SKUDemand", function() {
             var Label00 = new voltmx.ui.Label({
                 "id": "Label00",
                 "isVisible": true,
-                "left": "37dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Label",
                 "top": "15dp",
@@ -102,7 +102,7 @@ define("SKUDemand", function() {
             var LabelTotalRequests = new voltmx.ui.Label({
                 "id": "LabelTotalRequests",
                 "isVisible": true,
-                "left": "37dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Total Requests",
                 "top": "70dp",
@@ -117,14 +117,14 @@ define("SKUDemand", function() {
             var CopyFlexContainer0de1dbf6c79f442 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "61.52%",
+                "height": "80.42%",
                 "id": "CopyFlexContainer0de1dbf6c79f442",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "3.00%",
                 "isModalContainer": false,
-                "skin": "CopyslFbox0e7b52cc062fe4b",
-                "top": "37dp",
+                "skin": "slFboxYellow",
+                "top": "20dp",
                 "width": "20%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -135,7 +135,7 @@ define("SKUDemand", function() {
             var LabelPending = new voltmx.ui.Label({
                 "id": "LabelPending",
                 "isVisible": true,
-                "left": "59dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Pending",
                 "top": "73dp",
@@ -149,10 +149,10 @@ define("SKUDemand", function() {
             var Label01 = new voltmx.ui.Label({
                 "id": "Label01",
                 "isVisible": true,
-                "left": "57dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "17dp",
+                "top": "15dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -164,14 +164,14 @@ define("SKUDemand", function() {
             var CopyFlexContainer0a81cef57546647 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "62.73%",
+                "height": "80.42%",
                 "id": "CopyFlexContainer0a81cef57546647",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "3.00%",
                 "isModalContainer": false,
-                "skin": "CopyslFbox0bebbbf6a9fc948",
-                "top": "37dp",
+                "skin": "slFboxgreen",
+                "top": "21dp",
                 "width": "20%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -182,7 +182,7 @@ define("SKUDemand", function() {
             var LabelApproved = new voltmx.ui.Label({
                 "id": "LabelApproved",
                 "isVisible": true,
-                "left": "58dp",
+                "left": "19dp",
                 "skin": "defLabel",
                 "text": "Approved",
                 "top": "73dp",
@@ -196,10 +196,10 @@ define("SKUDemand", function() {
             var Label03 = new voltmx.ui.Label({
                 "id": "Label03",
                 "isVisible": true,
-                "left": "65dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "22dp",
+                "top": "15dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -211,14 +211,14 @@ define("SKUDemand", function() {
             var CopyFlexContainer0c5033b5aec0a42 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "60.22%",
+                "height": "80.42%",
                 "id": "CopyFlexContainer0c5033b5aec0a42",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "3.00%",
                 "isModalContainer": false,
-                "skin": "CopyslFbox0d77399fd11aa42",
-                "top": "37dp",
+                "skin": "slFboxRed",
+                "top": "20dp",
                 "width": "20%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -229,7 +229,7 @@ define("SKUDemand", function() {
             var labelRejected = new voltmx.ui.Label({
                 "id": "labelRejected",
                 "isVisible": true,
-                "left": "59dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Rejected",
                 "top": "71dp",
@@ -243,10 +243,10 @@ define("SKUDemand", function() {
             var label04 = new voltmx.ui.Label({
                 "id": "label04",
                 "isVisible": true,
-                "left": "63dp",
+                "left": "20dp",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "23dp",
+                "top": "15dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -263,12 +263,12 @@ define("SKUDemand", function() {
                 "id": "FlexSKUTable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "5.85%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0i2f208e36e0f41",
-                "top": "38.86%",
-                "width": "95%",
+                "top": "38.83%",
+                "width": "93.70%",
                 "zIndex": 2,
                 "appName": "SKU2"
             }, {
@@ -300,11 +300,11 @@ define("SKUDemand", function() {
                 "id": "flexDemandRequest",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_HORIZONTAL,
-                "left": "0%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "defDataPanelFlexBorderSkinDW0a2758320af6449",
                 "top": "0%",
-                "width": "100%",
+                "width": "101.97%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -700,161 +700,161 @@ define("SKUDemand", function() {
                 "alternateRowSkin": "defDataPanelAlternateRowSkinDW0ccd9302b745549",
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "data": [{
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }, {
-                    "CopyImage0b5d9a25cec1b4a": "cross.jpg",
-                    "CopyImage0b9e4270528ae45": "tick.png",
-                    "CopyLabel0a4721bc1be964e": "Stock",
-                    "CopyLabel0ac775376e26c4e": "Category",
-                    "CopyLabel0b7c93f33c0e148": "Enriched QTY",
-                    "CopyLabel0d7f854fb40f746": "Status",
-                    "CopyLabel0e7176e8dc1c340": "Approved Date",
-                    "CopyLabel0ed0fc93427ed46": "Requested",
-                    "CopyLabel0h140a4d033144e": "Name",
-                    "CopyLabel0hbbc7474e2d94a": "Requested By",
-                    "CopyLabel0hfa3918b88ca44": "Forecasted",
-                    "CopyLabel0j137a4eb15b24c": "Requested date",
-                    "Image0f546f4cd61574a": "eye.png",
-                    "Label0ee69e19d962e44": "SKU ID"
+                    "imgcross": "cross.jpg",
+                    "imgeye": "eye.png",
+                    "imgtick": "tick.png",
+                    "lblApprovedDate": "Approved Date",
+                    "lblCategory": "Category",
+                    "lblEnrichedQTY": "Enriched QTY",
+                    "lblForecasted": "Forecasted",
+                    "lblName": "Name",
+                    "lblRequestDate": "Requested date",
+                    "lblRequested": "Requested",
+                    "lblRequestedBY": "Requested By",
+                    "lblSKUID": "SKU ID",
+                    "lblStatus": "Status",
+                    "lblStock": "Stock"
                 }],
                 "groupCells": false,
                 "height": "90%",
                 "id": "segDemandRequest",
                 "isVisible": true,
-                "left": "0%",
+                "left": "0.67%",
                 "needPageIndicator": false,
                 "pageOffDotImage": "pageoffdot.png",
                 "pageOnDotImage": "pageondot.png",
@@ -872,22 +872,22 @@ define("SKUDemand", function() {
                 "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
                 "widgetDataMap": {
                     "CopyFlex0ff43866586004c": "CopyFlex0ff43866586004c",
-                    "CopyImage0b5d9a25cec1b4a": "CopyImage0b5d9a25cec1b4a",
-                    "CopyImage0b9e4270528ae45": "CopyImage0b9e4270528ae45",
-                    "CopyLabel0a4721bc1be964e": "CopyLabel0a4721bc1be964e",
-                    "CopyLabel0ac775376e26c4e": "CopyLabel0ac775376e26c4e",
-                    "CopyLabel0b7c93f33c0e148": "CopyLabel0b7c93f33c0e148",
-                    "CopyLabel0d7f854fb40f746": "CopyLabel0d7f854fb40f746",
-                    "CopyLabel0e7176e8dc1c340": "CopyLabel0e7176e8dc1c340",
-                    "CopyLabel0ed0fc93427ed46": "CopyLabel0ed0fc93427ed46",
-                    "CopyLabel0h140a4d033144e": "CopyLabel0h140a4d033144e",
-                    "CopyLabel0hbbc7474e2d94a": "CopyLabel0hbbc7474e2d94a",
-                    "CopyLabel0hfa3918b88ca44": "CopyLabel0hfa3918b88ca44",
-                    "CopyLabel0j137a4eb15b24c": "CopyLabel0j137a4eb15b24c",
-                    "Image0f546f4cd61574a": "Image0f546f4cd61574a",
-                    "Label0ee69e19d962e44": "Label0ee69e19d962e44"
+                    "imgcross": "imgcross",
+                    "imgeye": "imgeye",
+                    "imgtick": "imgtick",
+                    "lblApprovedDate": "lblApprovedDate",
+                    "lblCategory": "lblCategory",
+                    "lblEnrichedQTY": "lblEnrichedQTY",
+                    "lblForecasted": "lblForecasted",
+                    "lblName": "lblName",
+                    "lblRequestDate": "lblRequestDate",
+                    "lblRequested": "lblRequested",
+                    "lblRequestedBY": "lblRequestedBY",
+                    "lblSKUID": "lblSKUID",
+                    "lblStatus": "lblStatus",
+                    "lblStock": "lblStock"
                 },
-                "width": "105.43%",
+                "width": "104.76%",
                 "appName": "SKU2"
             }, {
                 "padding": [0, 0, 0, 0],
@@ -963,7 +963,7 @@ define("SKUDemand", function() {
                 ],
                 "onSelection": controller.AS_ListBox_c9bd2ff52144480c955ead8257217004,
                 "skin": "CopydefListBoxNormal0e2b722993c6543",
-                "top": "108dp",
+                "top": "110dp",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -978,7 +978,7 @@ define("SKUDemand", function() {
                 "height": "40dp",
                 "id": "ListBoxStatus",
                 "isVisible": true,
-                "left": "800dp",
+                "left": "790dp",
                 "masterData": [
                     ["All Status", "All Status"],
                     ["Approved", "Approved"],
@@ -1002,10 +1002,10 @@ define("SKUDemand", function() {
                 "height": "39dp",
                 "id": "BtnReset",
                 "isVisible": true,
-                "left": "1156dp",
+                "left": "1120dp",
                 "skin": "CopydefBtnNormal0ie6f7de736d049",
                 "text": "Reset all ",
-                "top": "109dp",
+                "top": "108dp",
                 "width": "130dp",
                 "zIndex": 1
             }, {
@@ -1015,6 +1015,114 @@ define("SKUDemand", function() {
                 "paddingInPixel": false
             }, {});
             FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxCategories, ListBoxStatus, BtnReset);
+            var FlexContainerslidemenu = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "900dp",
+                "id": "FlexContainerslidemenu",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "-180%",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0gae0f93674bb43",
+                "top": "0dp",
+                "width": "12.34%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerslidemenu.setDefaultUnit(voltmx.flex.DP);
+            var CopyLabel0j9c682737e714f = new voltmx.ui.Label({
+                "id": "CopyLabel0j9c682737e714f",
+                "isVisible": true,
+                "left": "10dp",
+                "skin": "CopydefLabel0d01b683017a64e",
+                "text": "Demand Planning",
+                "top": "30dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label02 = new voltmx.ui.Label({
+                "id": "Label02",
+                "isVisible": true,
+                "left": "10dp",
+                "skin": "CopydefLabel0j936dd23cb674a",
+                "text": "Navigation",
+                "top": "74dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var CopyLabel0c2616b70466946 = new voltmx.ui.Label({
+                "id": "CopyLabel0c2616b70466946",
+                "isVisible": true,
+                "left": "10dp",
+                "onTouchEnd": controller.AS_Label_e3a9d7a2b54f40e8bccae785c869feae,
+                "skin": "CopydefLabel0c85f7f3632f247",
+                "text": "Overview",
+                "top": "110dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var CopyLabel0a138d2c742a340 = new voltmx.ui.Label({
+                "id": "CopyLabel0a138d2c742a340",
+                "isVisible": true,
+                "left": "10dp",
+                "onTouchEnd": controller.AS_Label_f70828358dce40018fdee062495dbbc7,
+                "skin": "CopydefLabel0e6ade8a8c97c4d",
+                "text": "S&OP",
+                "top": "143dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label05 = new voltmx.ui.Label({
+                "id": "Label05",
+                "isVisible": true,
+                "left": "10dp",
+                "onTouchEnd": controller.AS_Label_ef28823a15424ff6b94cc4c23729f67a,
+                "onTouchStart": controller.AS_Label_ad9133d4135c453f87290c089a74695a,
+                "skin": "CopydefLabel0b193f12240ae46",
+                "text": "SKU Demand",
+                "top": "176dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            FlexContainerslidemenu.add(CopyLabel0j9c682737e714f, Label02, CopyLabel0c2616b70466946, CopyLabel0a138d2c742a340, Label05);
+            var Image0dc6e78981a6c4f = new voltmx.ui.Image2({
+                "height": "81dp",
+                "id": "Image0dc6e78981a6c4f",
+                "isVisible": true,
+                "left": "12dp",
+                "skin": "slImage",
+                "src": "menu.png",
+                "top": "9dp",
+                "width": "68dp",
+                "zIndex": 1
+            }, {
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1366,
@@ -1035,7 +1143,7 @@ define("SKUDemand", function() {
                 }
             }
             this.compInstData = {}
-            this.add(FlexContainer, FlexContainerHeaders, FlexSKUTable);
+            this.add(FlexContainer, FlexContainerHeaders, FlexSKUTable, FlexContainerslidemenu, Image0dc6e78981a6c4f);
         };
         return [{
             "addWidgets": addWidgetsSKUDemand,
@@ -1043,7 +1151,7 @@ define("SKUDemand", function() {
             "id": "SKUDemand",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
-            "skin": "slForm",
+            "skin": "slFormSkinCommon",
             "onBreakpointHandler": onBreakpointHandler,
             "breakpoints": [640, 1024, 1366],
             "appName": "SKU2",
