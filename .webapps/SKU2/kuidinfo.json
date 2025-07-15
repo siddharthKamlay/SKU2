@@ -727,83 +727,83 @@
     "userWidgetsKuidToIdMap": {
         "aa570ff5a1824107b761ad1cd5898397": {
             "id": "mytplSegRowWithImageAndLabel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "b656248f66d84e97b8d7890d448a0de2": {
             "id": "hamburgermenu",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu"
         },
         "c5220a35fd2642c7a2680543716e3657": {
             "id": "sublabel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "d24f664024184a4fad2b342e6880e1bb": {
             "id": "Labeloverview",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "d61e873ddea84d13b8d8263debdd0a6f": {
             "id": "segMenu",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "gf178bf978c14d03923c79a3f1354d76": {
             "id": "myflxSegRowWithImageAndLabel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "j88fbc8557a648e6af3eb621e0918e83": {
             "id": "FlexTitle",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "u0869c86a27a46afacb32e9ca0608b64": {
             "id": "verticalBarBrowser",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar\\userwidgetmodel.sm"
         },
         "u25eb8f63d794b87afc30e244122d339": {
             "id": "userwidgetmodel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart\\userwidgetmodel.sm"
         },
         "u280eedb760c465fad3cc47ffd27e626": {
             "id": "userwidgetmodel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar\\userwidgetmodel.sm"
         },
         "u5517768a7c7478eb4cc07dfb7c51584": {
             "id": "userwidgetmodel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.hclsoftwareu.hamburgermenu\\userwidgetmodel.sm"
         },
         "u5a7480a1640438ab7b26ff93616b252": {
             "id": "PieBrowser",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart\\userwidgetmodel.sm"
         },
         "u61bd8e92ab54a98ab810b57595fdada": {
             "id": "linechart",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart"
         },
         "u96899b41cc348bfa51030733ecd5f9c": {
             "id": "verticalbar",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.verticalbar"
         },
         "u9f9c00877cf4c6d97ac9708c590e5c9": {
             "id": "piechart",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart"
         },
         "ub15c071d4794dddab3ab6e36fd63864": {
             "id": "userwidgetmodel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.piechart\\userwidgetmodel.sm"
         },
         "uca7b9cdee524790b0c0472622bc314e": {
             "id": "lineChartBrowser",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.konymp.linechart\\userwidgetmodel.sm"
         },
         "ud2019b2473240bfab79c4797869bb93": {
             "id": "userwidgetmodel",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar\\userwidgetmodel.sm"
         },
         "ud25b457886348fa894a424d5ab2f1ec": {
             "id": "multiseriesverticalbar",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar"
         },
         "uf50aa34512f4d048382695ba18747b8": {
             "id": "multiSeriesHbarBrowser",
-            "path": "C:\\Users\\Lenovo\\Iris\\workspace\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar\\userwidgetmodel.sm"
+            "path": "C:\\Users\\varsh\\OneDrive\\Desktop\\Alpha Leo\\Hcl Volt MX Iris\\SKU2\\SKU2\\userwidgets\\com.voltmxmp.multiseriesverticalbar\\userwidgetmodel.sm"
         }
     }
 }

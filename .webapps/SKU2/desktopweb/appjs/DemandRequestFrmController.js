@@ -152,44 +152,44 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection5001 = [];
-                var tempData4093 = DemandRequest.records;
-                for (var each860 in tempData4093) {
-                    var shouldShow = typeof tempData4093[each860]["x_0024FILES"] !== 'undefined' && tempData4093[each860]["x_0024FILES"] && tempData4093[each860]["x_0024FILES"].length > 0
-                    tempCollection5001.push({
+                var tempCollection9901 = [];
+                var tempData4574 = DemandRequest.records;
+                for (var each5067 in tempData4574) {
+                    var shouldShow = typeof tempData4574[each5067]["x_0024FILES"] !== 'undefined' && tempData4574[each5067]["x_0024FILES"] && tempData4574[each5067]["x_0024FILES"].length > 0
+                    tempCollection9901.push({
                         "lblSKUID": {
-                            "text": tempData4093[each860]["SKUID"]
+                            "text": tempData4574[each5067]["SKUID"]
                         },
                         "lblName": {
-                            "text": tempData4093[each860]["Name"]
+                            "text": tempData4574[each5067]["Name"]
                         },
                         "lblCategory": {
-                            "text": tempData4093[each860]["Category"]
+                            "text": tempData4574[each5067]["Category"]
                         },
                         "lblStock": {
-                            "text": tempData4093[each860]["Stock"]
+                            "text": tempData4574[each5067]["Stock"]
                         },
                         "lblForecasted": {
-                            "text": tempData4093[each860]["Forecasted"]
+                            "text": tempData4574[each5067]["Forecasted"]
                         },
                         "lblEnrichedQTY": {
-                            "text": tempData4093[each860]["EnrichedQTY"]
+                            "text": tempData4574[each5067]["EnrichedQTY"]
                         },
                         "lblRequested": {
-                            "text": tempData4093[each860]["Requested"]
+                            "text": tempData4574[each5067]["Requested"]
                         },
                         "lblStatus": {
-                            "text": tempData4093[each860]["Status"]
+                            "text": tempData4574[each5067]["Status"]
                         },
                         "lblRequestedBY": {
-                            "text": tempData4093[each860]["RequestedBY"]
+                            "text": tempData4574[each5067]["RequestedBY"]
                         },
                         "lblRequestDate": {
-                            "text": tempData4093[each860]["RequestDate"]
+                            "text": tempData4574[each5067]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection5001);
+                self.view.segDemandRequest.setData(tempCollection9901);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -238,18 +238,6 @@ define("DemandRequestFrmControllerActions", {
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
         SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_jaeb26165b184047aca6d7d11e45e1aa_Callback);
     },
-<<<<<<< HEAD
-    /** onTouchStart defined for Label05 **/
-    AS_Label_ad9133d4135c453f87290c089a74695a: function AS_Label_ad9133d4135c453f87290c089a74695a(eventobject, x, y) {
-        var self = this;
-<<<<<<< HEAD
-=======
-        var ntf = new voltmx.mvc.Navigation("SKUDemand");
-        ntf.navigate();
->>>>>>> cd1c5fe38dea411b2f7a8dc1e42728f94a8d6497
-    },
-=======
->>>>>>> 1489d01b5a1fd7bf1831e4b37bb6a83c50b6bfbc
     /** onTouchEnd defined for Label03 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
@@ -278,13 +266,13 @@ define("DemandRequestFrmControllerActions", {
         var self = this;
         return self.filterData.call(this);
     },
-    /** onTextChange defined for TextFieldSearchBox **/
-    AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
+    /** onSelection defined for ListBoxCategories **/
+    AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce: function AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce(eventobject) {
         var self = this;
         return self.filterData.call(this);
     },
-    /** onSelection defined for ListBoxCategories **/
-    AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce: function AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce(eventobject) {
+    /** onTextChange defined for TextFieldSearchBox **/
+    AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
     }
