@@ -47,26 +47,6 @@ define("ProductLinefrmControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
-                var tempCollection7585 = [];
-                var tempData9646 = Productline.records;
-                for (var each2142 in tempData9646) {
-                    var shouldShow = typeof tempData9646[each2142]["x_0024FILES"] !== 'undefined' && tempData9646[each2142]["x_0024FILES"] && tempData9646[each2142]["x_0024FILES"].length > 0
-                    tempCollection7585.push({
-                        "lblProductLine1": {
-                            "text": tempData9646[each2142]["ProductLine"]
-                        },
-                        "lblForcasted1": {
-                            "text": tempData9646[each2142]["Forecasted"]
-                        },
-                        "lblActual1": {
-                            "text": tempData9646[each2142]["Actual"]
-                        },
-                        "lblVariance1": {
-                            "text": tempData9646[each2142]["Variance"]
-                        },
-                    });
-                }
-                self.view.segProductline.setData(tempCollection7585);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {

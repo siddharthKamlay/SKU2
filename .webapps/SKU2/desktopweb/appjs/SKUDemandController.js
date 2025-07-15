@@ -1,58 +1,4 @@
-define("userDemandRequestFrmController", {
-    pieChartFromSegment: function() {
-        try {
-            var rawData = this.view.segDemandRequest.data;
-            kony.print("Raw Segment Data: " + JSON.stringify(rawData));
-            var categoryTotals = {};
-            var totalRequestedQty = 0;
-            // Group Requested Qty by Category
-            rawData.forEach(function(item) {
-                if (item && item.lblCategory1 && item.lblRequested1) {
-                    var category = item.lblCategory1.text.trim();
-                    var requestedQty = parseInt(item.lblRequested1.text, 10);
-                    if (!isNaN(requestedQty)) {
-                        totalRequestedQty += requestedQty;
-                        categoryTotals[category] = (categoryTotals[category] || 0) + requestedQty;
-                    }
-                }
-            });
-            if (totalRequestedQty === 0) {
-                kony.print("No valid requested quantity to chart.");
-                return;
-            }
-            // Pastel color palette
-            var pastelColors = ["#A3D5FF", "#FFD6A5", "#C3FDB8", "#FFB3C1", "#D5D6EA"];
-            var chartData = [];
-            var colorIndex = 0;
-            for (var category in categoryTotals) {
-                var qty = categoryTotals[category];
-                var percentage = ((qty / totalRequestedQty) * 100).toFixed(1);
-                chartData.push({
-                    label: category + " (" + qty + ")", // Label shows quantity
-                    value: qty, // Show raw value in chart
-                    colorCode: pastelColors[colorIndex % pastelColors.length],
-                    toolTip: category + ": " + qty + " (" + percentage + "%)" // Tooltip with value and %
-                });
-                colorIndex++;
-            }
-            // Assign data and config to pie chart
-            this.view.piechart.chartTitle = "Requested Quantity by Category";
-            this.view.piechart.enableStaticPreview = true;
-            this.view.piechart.chartData = {
-                data: chartData
-            };
-            this.view.piechart.chartConfig = {
-                labelPosition: "outside",
-                showLegend: true,
-                showValues: true,
-                toolTip: true
-            };
-            this.view.piechart.createChart();
-            kony.print("Pie chart created with: " + JSON.stringify(chartData));
-        } catch (e) {
-            kony.print("Error in pieChartFromSegment: " + JSON.stringify(e));
-        }
-    },
+define("userSKUDemandController", {
     sortDirectionMap: {},
     sortByField: function(fieldKey) {
         const data = this.view.segDemandRequest.data;
@@ -137,21 +83,19 @@ define("userDemandRequestFrmController", {
         this.view.segDemandRequest.setData(tempCollection9723);
     }
 });
-define("DemandRequestFrmControllerActions", {
+define("SKUDemandControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onMapping defined for DemandRequestFrm **/
-    AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07: function AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07(eventobject) {
+    /** onMapping defined for SKUDemand **/
+    AS_Form_c0dd210e25d54aff9eafc381b1dfe411: function AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject) {
         var self = this;
 
-        function SHOW_ALERT_b9d577f648ff446bba1ae44b749551b6_True() {}
+        function SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_True() {}
 
-        function INVOKE_SERVICE_jaeb26165b184047aca6d7d11e45e1aa_Callback(DemandRequest) {
-            voltmx.application.dismissLoadingScreen();
+        function INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback(DemandRequest) {
             if (DemandRequest.opstatus == 0) {
-                taskData = DemandRequest.records;
-                kony.print("taskData" + JSON.stringify(taskData));
+                voltmx.application.dismissLoadingScreen();
                 self.view.segDemandRequest.setData(DemandRequest.records);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
@@ -172,15 +116,14 @@ define("DemandRequestFrmControllerActions", {
                     self.view.segDemandRequest.setData(self.view.segDemandRequest.data);
                     self.view.forceLayout();
                 }
-                self.pieChartFromSegment.call(this);
             } else {
-                function SHOW_ALERT_b9d577f648ff446bba1ae44b749551b6_Callback() {
-                    SHOW_ALERT_b9d577f648ff446bba1ae44b749551b6_True();
+                function SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_Callback() {
+                    SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_True();
                 }
                 voltmx.ui.Alert({
                     "alertType": constants.ALERT_TYPE_INFO,
-                    "message": "failed to fetch data",
-                    "alertHandler": SHOW_ALERT_b9d577f648ff446bba1ae44b749551b6_Callback
+                    "message": "Data fetching failed",
+                    "alertHandler": SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_Callback
                 }, {
                     "iconPosition": constants.ALERT_ICON_POSITION_LEFT
                 });
@@ -199,43 +142,31 @@ define("DemandRequestFrmControllerActions", {
         DemandRequest_inputparam["httpheaders"] = DemandRequest_httpheaders;
         var DemandRequest_httpconfigs = {};
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
-        SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_jaeb26165b184047aca6d7d11e45e1aa_Callback);
-    },
-    /** onTouchEnd defined for Label03 **/
-    AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
-        var self = this;
-        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
-        ntf.navigate();
-    },
-    /** onTouchEnd defined for Label05 **/
-    AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
-        var self = this;
-        var ntf = new voltmx.mvc.Navigation("SKUDemand");
-        ntf.navigate();
+        SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback);
     },
     /** onTouchEnd defined for lblName **/
     AS_Label_g98ccbb79b5c4fda802abb12822b0b9b: function AS_Label_g98ccbb79b5c4fda802abb12822b0b9b(eventobject, x, y) {
         var self = this;
         return self.sortByField.call(this, null);
     },
-    /** onSelection defined for ListBoxCategories **/
-    AS_ListBox_e0a22196783943caa926e23657cc2af7: function AS_ListBox_e0a22196783943caa926e23657cc2af7(eventobject) {
+    /** onSelection defined for ListBoxStatus **/
+    AS_ListBox_c927ae555a8444ddb905c8a59c786e27: function AS_ListBox_c927ae555a8444ddb905c8a59c786e27(eventobject) {
         var self = this;
         return self.filterData.call(this);
     },
-    /** onSelection defined for ListBoxStatus **/
-    AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d: function AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d(eventobject) {
+    /** onSelection defined for ListBoxCategories **/
+    AS_ListBox_c9bd2ff52144480c955ead8257217004: function AS_ListBox_c9bd2ff52144480c955ead8257217004(eventobject) {
         var self = this;
         return self.filterData.call(this);
     },
     /** onTextChange defined for TextFieldSearchBox **/
-    AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
+    AS_TextField_d001906d70c44fc2807c43c55b8d34a3: function AS_TextField_d001906d70c44fc2807c43c55b8d34a3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
     }
 });
-define("DemandRequestFrmController", ["userDemandRequestFrmController", "DemandRequestFrmControllerActions"], function() {
-    var controller = require("userDemandRequestFrmController");
-    var controllerActions = ["DemandRequestFrmControllerActions"];
+define("SKUDemandController", ["userSKUDemandController", "SKUDemandControllerActions"], function() {
+    var controller = require("userSKUDemandController");
+    var controllerActions = ["SKUDemandControllerActions"];
     return voltmx.visualizer.mixinControllerActions(controller, controllerActions);
 });

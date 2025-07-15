@@ -23,9 +23,13 @@
         "actions": [{
             "id": "NAVIGATE_TO_FORM__d7355644011c42e2836962d4d048ed35",
             "type": "NAVIGATE_TO_FORM",
+<<<<<<< HEAD
             "formId": "Form1",
             "formKUID": "c1126366a5114e4ea37731546b425144",
             "projectName": "SKU2",
+=======
+            "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
+>>>>>>> ce9e3ec0c304edab61ad2bfb2099c50ec5c43cea
             "mappings": {},
             "mappingsOrder": [],
             "enableMappingEditor": true,

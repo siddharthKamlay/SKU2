@@ -78,6 +78,10 @@ define({
             "viewName": "ProductLinefrm",
             "controllerName": "ProductLinefrmController"
         });
+        voltmx.mvc.registry.add("SKUDemand", {
+            "viewName": "SKUDemand",
+            "controllerName": "SKUDemandController"
+        });
         setAppBehaviors();
         if (typeof startBackgroundWorker != "undefined") {
             startBackgroundWorker();
