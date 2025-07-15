@@ -1,5 +1,5 @@
 /**
- * voltmx-spa-offlineobjects version 9.5.51
+ * voltmx-spa-offlineobjects version 9.5.53
  * This file is intended for desktopWeb/SPA only.
  */
  
@@ -76,7 +76,9 @@ voltmx.sdk.OfflineObjects.KSCRUDConstants = {
     COLLATE_NOCASE : "COLLATE NOCASE",
 
     DEFAULT_VALUE_FOR_TRACK_CHANGES : true,
-    DEFAULT_VALUE_FOR_TRACK_INTERMEDIATE_UPDATES : true
+    DEFAULT_VALUE_FOR_TRACK_INTERMEDIATE_UPDATES : true,
+    DEFAULT_VALUE_FOR_SYNC_LATEST_OBJECT_SNAPSHOT : false
+
 };
 voltmx.sdk.OfflineObjects.KSDBSchemaVersion = Object.freeze({
     Version_None : 0,
@@ -4428,6 +4430,20 @@ define("KSSyncDatabaseHelper", ["exports", "KSDatabaseAPI", "KSSQLQueryGenerator
         }
 
         /**
+         * Method to build whereClause for the given primary keys
+         *
+         * @param options options containing primary key value pairs
+         * @return {Array} Array of whereCondition
+         */
+        function whereConditionToGetRecordWithPrimaryKey(options) {
+            var primaryKeyValuePair = options[KSPublicConstants.CRUD_OPTION_PRIMARY_KEYS];
+            var whereCondition = buildWhereConditionAsString(primaryKeyValuePair);
+
+            // whereCondition for ex : UserID = 91
+            return whereCondition;
+        }
+
+        /**
          * Method to fetch number of records deferred and track intermediate updates set to off
          *
          * options options containing primary key value pair
@@ -4435,6 +4451,42 @@ define("KSSyncDatabaseHelper", ["exports", "KSDatabaseAPI", "KSSQLQueryGenerator
          */
         async function getNumberOfRecordsDeferredAndTrackIntermediateUpdateSetToFalse(options, tableName) {
             var whereClause = buildWhereConditionToFetchRecordsWithDeferredAndTrackIntermediateUpdateSetToFalse(options);
+            var queryObj = KSSQLQueryGenerator.buildPreparedStatementsOfTypeRead(tableName, KSTableType.HISTORY, whereClause);
+            var records = await KSDatabaseAPI.executeQuery(queryObj);
+            return records.length;
+        }
+
+        /**
+         * Method to fetch number of records deferred and track intermediate updates set to off
+         *
+         * options options containing primary key value pair
+         * tableName tableName from which the records are needed
+         */
+        async function getRecordsDeferredAndTrackIntermediateUpdateSetToFalse(options, tableName) {
+            var whereClause = buildWhereConditionToFetchRecordsWithDeferredAndTrackIntermediateUpdateSetToFalse(options);
+            var queryObj = KSSQLQueryGenerator.buildPreparedStatementsOfTypeRead(tableName, KSTableType.HISTORY, whereClause);
+            return await KSDatabaseAPI.executeQuery(queryObj);
+        }
+        /**
+         * Method to fetch number of records elgible for update with syncsnapshot set to true
+         *
+         * options options containing primary key value pair
+         * tableName tableName from which the records are needed
+         */
+        async function getRecordsElgibleForUpdateWithSyncSnapshotSetToTrue(options, tableName) {
+            var whereClause = KSSQLQueryGenerator.buildWhereConditionToUpdateRecordsInHistory(options);
+            var queryObj = KSSQLQueryGenerator.buildPreparedStatementsOfTypeRead(tableName, KSTableType.HISTORY, whereClause);
+            return await KSDatabaseAPI.executeQuery(queryObj);
+        }
+
+        /**
+         * Method to fetch number of records deferred
+         *
+         * options options containing primary key value pair
+         * tableName tableName from which the records are needed
+         */
+        async function getNumberOfRecordsDeferred(options, tableName) {
+            var whereClause = whereConditionToGetRecordWithPrimaryKey(options);
             var queryObj = KSSQLQueryGenerator.buildPreparedStatementsOfTypeRead(tableName, KSTableType.HISTORY, whereClause);
             var records = await KSDatabaseAPI.executeQuery(queryObj);
             return records.length;
@@ -6308,6 +6360,8 @@ define("KSSyncDatabaseHelper", ["exports", "KSDatabaseAPI", "KSSQLQueryGenerator
         exports.setRemoveAfterUploadParam = setRemoveAfterUploadParam;
         exports.buildUpdatePreparedStatementForTrackIntermediateUpdatesRecord = buildUpdatePreparedStatementForTrackIntermediateUpdatesRecord;
         exports.getNumberOfRecordsDeferredAndTrackIntermediateUpdateSetToFalse = getNumberOfRecordsDeferredAndTrackIntermediateUpdateSetToFalse;
+        exports.getRecordsDeferredAndTrackIntermediateUpdateSetToFalse = getRecordsDeferredAndTrackIntermediateUpdateSetToFalse;
+        exports.getRecordsElgibleForUpdateWithSyncSnapshotSetToTrue = getRecordsElgibleForUpdateWithSyncSnapshotSetToTrue;
         exports.executeSelectPreparedStatement = executeSelectPreparedStatement;
         exports.executeSelectQuery = executeSelectQuery;
         exports.initializeDatabase = initializeDatabase;
@@ -6339,6 +6393,8 @@ define("KSSyncDatabaseHelper", ["exports", "KSDatabaseAPI", "KSSQLQueryGenerator
         exports.getRecordsInTableByWhereCondition = getRecordsInTableByWhereCondition;
         exports.isTableExists = isTableExists;
         exports.executePreparedStatementWithQueryValues = executePreparedStatementWithQueryValues;
+        exports.whereConditionToGetRecordWithPrimaryKey = whereConditionToGetRecordWithPrimaryKey;
+        exports.getNumberOfRecordsDeferred = getNumberOfRecordsDeferred;
     });
 
 // ************************************* Start of VoltmxNoSQLDatabaseHelper.js *************************************
@@ -10947,7 +11003,7 @@ define("KSBaseORMManager", ["exports", "KSCommonUtils", "KSSDKObjectRecord", "KS
          * @param sdkRecord KSSDKObjectRecord for which the metainfo is to be retrieved
          * @returns {Promise<void>} Map containing VoltmxSyncChangeType, LastReplaySequenceNumber and UploadSessionNumber
          */
-        KSBaseORMManager.prototype.getCommonMetaInfo = async function (sdkRecord) {
+        KSBaseORMManager.prototype.getCommonMetaInfo = async function (sdkRecord, options) {
             voltmx.sdk.logsdk.trace(LOG_PREFIX + "getCommonMetaInfo : ", "Start");
 
             var metaInfo = {};
@@ -10955,7 +11011,11 @@ define("KSBaseORMManager", ["exports", "KSCommonUtils", "KSSDKObjectRecord", "KS
 
             var objectService = KSSDKObjectService.getInstanceByName(sdkRecord.getParentObject().getObjectServiceName());
             var syncMetaInfo = await objectService.getSyncMetaInfo();
-            var replaySequenceNumber = await syncMetaInfo.getReplaySequenceNumber();
+            var replaySequenceNumber;
+            if(voltmx.sdk.util.useSQLite)
+                replaySequenceNumber = await getReplaySequenceNumberSQLITE(syncMetaInfo, sdkRecord, options);
+            else
+                replaySequenceNumber = await getReplaySequenceNumber(syncMetaInfo, sdkRecord, options);
             metaInfo[KSDatabaseConstants.REPLAY_SEQUENCE_NUMBER] = replaySequenceNumber;
 
             var uploadSessionNumber = syncMetaInfo.getUploadSyncVersionNumber();
@@ -10963,6 +11023,76 @@ define("KSBaseORMManager", ["exports", "KSCommonUtils", "KSSDKObjectRecord", "KS
 
             return metaInfo;
         };
+
+        async function getReplaySequenceNumber(syncMetaInfo, sdkRecord, options) {
+            let replaySequenceNumber = 0;
+            const trackIntermediateUpdates = KSOptionsHelper.getOptionValueOrDefaultForGivenKey(options, KSPublicConstants.TRACK_INTERMEDIATE_UPDATES, KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_INTERMEDIATE_UPDATES);
+            const syncLatestObjectSnapshot = KSOptionsHelper.getOptionValueOrDefaultForGivenKey(options, KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT, KSCRUDConstants.DEFAULT_VALUE_FOR_SYNC_LATEST_OBJECT_SNAPSHOT);
+
+            if (KSOptionsHelper.isOptionsContainsPrimaryKeys(options) && (!trackIntermediateUpdates || syncLatestObjectSnapshot)) {
+                try {
+                    let result;
+                    if(!trackIntermediateUpdates) {
+                        result = await KSSyncDatabaseHelper.getRecordsDeferredAndTrackIntermediateUpdateSetToFalse(options,
+                            sdkRecord.getParentObject().getFullyQualifiedName());
+                    }
+                    else {
+                        result = await KSSyncDatabaseHelper.getRecordsElgibleForUpdateWithSyncSnapshotSetToTrue(options,
+                            sdkRecord.getParentObject().getFullyQualifiedName());
+                    }
+
+                    if (result && result.length > 0) {
+                        replaySequenceNumber = result[0][KSDatabaseConstants.REPLAY_SEQUENCE_NUMBER];
+                    } else {
+                        replaySequenceNumber = await syncMetaInfo.getReplaySequenceNumber();
+                    }
+                } catch (e) {
+                    var errMsg = "An error occurred in the ORM operation";
+                    voltmx.sdk.logsdk.trace(LOG_PREFIX + " : getReplaySequenceNumber", errMsg);
+                    throw new KSError(KSErrorConstants.CRUD_GENERIC_ERROR, errMsg);
+                }
+            } else {
+                replaySequenceNumber = await syncMetaInfo.getReplaySequenceNumber();
+            }
+
+            return replaySequenceNumber;
+        }
+        async function getReplaySequenceNumberSQLITE(syncMetaInfo, sdkRecord, options) {
+            let replaySequenceNumber = 0;
+            const trackIntermediateUpdates = KSOptionsHelper.getOptionValueOrDefaultForGivenKey(options, KSPublicConstants.TRACK_INTERMEDIATE_UPDATES, KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_INTERMEDIATE_UPDATES);
+            const syncLatestObjectSnapshot = KSOptionsHelper.getOptionValueOrDefaultForGivenKey(options, KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT, KSCRUDConstants.DEFAULT_VALUE_FOR_SYNC_LATEST_OBJECT_SNAPSHOT);
+
+            if (KSOptionsHelper.isOptionsContainsPrimaryKeys(options) && (!trackIntermediateUpdates || syncLatestObjectSnapshot)) {
+                try {
+                    let result;
+                    let whereCondition;
+                    let tableName = KSCommonUtils.getSQLTableName(sdkRecord.getParentObject().getMetadata().getFullyQualifiedName(), KSTableType.HISTORY);
+                    if(!trackIntermediateUpdates) {
+                        whereCondition = KSSQLQueryGenerator.whereConditionToGetRecordWithTrackIntermediateUpdateSetToOff(options);
+                    }
+                   else {
+                        whereCondition = KSSQLQueryGenerator.whereConditionToGetRecordFromHistoryTable(options);
+                    }
+
+                    let query =  KSSQLQueryGenerator.getQueryForGettingTheRecordsInATable(tableName, whereCondition);
+                    result = await KSSyncDatabaseHelper.executeSelectQuery(query);
+
+                    if (result && result.length > 0) {
+                        replaySequenceNumber = result[0][KSDatabaseConstants.REPLAY_SEQUENCE_NUMBER];
+                    } else {
+                        replaySequenceNumber = await syncMetaInfo.getReplaySequenceNumber();
+                    }
+                } catch (e) {
+                    var errMsg = "An error occurred in the ORM operation";
+                    voltmx.sdk.logsdk.trace(LOG_PREFIX + " : getReplaySequenceNumber", errMsg);
+                    throw new KSError(KSErrorConstants.CRUD_GENERIC_ERROR, errMsg);
+                }
+            } else {
+                replaySequenceNumber = await syncMetaInfo.getReplaySequenceNumber();
+            }
+
+            return replaySequenceNumber;
+        }
 
         /**
          * Method to create an insert prepared statement given a KSSDKObjectRecord and tableName
@@ -11652,7 +11782,7 @@ define("KSCreateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
                 KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_CHANGES);
 
             if (isTrackChangesEnabled) {
-                var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
 
                 KSCommonUtils.clearJSONObject(listOfDataMaps);
                 listOfDataMaps.push(sdkRecord.getData());
@@ -11766,7 +11896,7 @@ define("KSCreateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
                 KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_CHANGES);
 
             if (isTrackChangesEnabled) {
-                var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
 
                 KSCommonUtils.clearJSONObject(listOfDataMaps);
                 listOfDataMaps.push(sdkRecord.getData());
@@ -12115,7 +12245,7 @@ define("KSDeleteORMManager", ["exports", "KSBaseORMManager", "KSCommonUtils", "K
                         statements.push(statement);
                     }
                     if (KSOptionsHelper.getOptionValueOrDefaultForGivenKey(crudOptions, KSPublicConstants.TRACK_CHANGES, KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_CHANGES)) {
-                        var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                        var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
                         var listOfDataMapsForHistory = [childRecord, metaInfo];
                         var sdkRecordForBuilderForHistory = instance.createSDKRecordFromDataMaps(listOfDataMapsForHistory, sdkRecord.getParentObject());
                         statements.push(await instance.buildPreparedStatementForSqliteDBHistoryTable(sdkRecordForBuilderForHistory, options));
@@ -12242,7 +12372,7 @@ define("KSDeleteORMManager", ["exports", "KSBaseORMManager", "KSCommonUtils", "K
 
                     if (isTrackChangesEnabled) {
                         //Build sdkRecord for History table
-                        var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                        var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
                         listOfDataMaps = {};
                         KSCommonUtils.mergeTwoJSONMaps(listOfDataMaps, childRecord);
                         KSCommonUtils.mergeTwoJSONMaps(listOfDataMaps, metaInfo);
@@ -12423,7 +12553,7 @@ define("KSDeleteORMManager", ["exports", "KSBaseORMManager", "KSCommonUtils", "K
             if (isTrackChangesEnabled) {
 
                 //Build SDKRecord for History table
-                var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
 
                 KSCommonUtils.clearJSONObject(listOfDataMaps);
                 listOfDataMaps.push(record);
@@ -12479,7 +12609,7 @@ define("KSDeleteORMManager", ["exports", "KSBaseORMManager", "KSCommonUtils", "K
             if (isTrackChangesEnabled) {
 
                 //Build SDKRecord for History table
-                var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
 
                 KSCommonUtils.clearJSONObject(listOfDataMaps);
                 listOfDataMaps.push(record);
@@ -13178,7 +13308,7 @@ define("KSUpdateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
                     statements.push(statement);
                 }
                 if (KSOptionsHelper.getOptionValueOrDefaultForGivenKey(options, KSPublicConstants.TRACK_CHANGES, KSCRUDConstants.DEFAULT_VALUE_FOR_TRACK_CHANGES)) {
-                    var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                    var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
                     listOfDataMaps = [];
                     listOfDataMaps.push(record);
                     listOfDataMaps.push(sdkRecord.getData());
@@ -13244,17 +13374,25 @@ define("KSUpdateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
                 if (count === 0) {
                     if (options.hasOwnProperty(KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT)) {
                         if (options[KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT] === true) {
-                            whereCondition = KSSQLQueryGenerator.whereConditionToGetRecordFromHistoryTable(options);
-                            let optionsForBuilder = Object.assign({}, options);
-                            optionsForBuilder[KSCRUDConstants.CRUD_OPTION_CRITERIA] = KSCriteria.WHERE_CONDITION_AS_A_STRING;
-                            optionsForBuilder[KSPublicConstants.CRUD_OPTION_WHERE_CONDITION_AS_A_STRING] = whereCondition;
-                            // Update action as DEFERRED_CREATE or CREATE
-                            if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD])) {
-                                sdkRecordForBuilder.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.DEFERRED_CREATE;
+                            whereCondition = KSSQLQueryGenerator.whereConditionToGetRecordWithPrimaryKeyForSqliteDB(options);
+                            const noOfRecords = await KSSyncDatabaseHelper.getNumberOfRecordsInTableByWhereClause(tableName, whereCondition);
+                            if (noOfRecords > 0 && voltmx.sdk.util.isNullOrUndefinedOrEmptyObject(sdkRecord.getData()[KSDatabaseConstants.KONY_SYNC_HASH_SUM])) {
+                                whereCondition = KSSQLQueryGenerator.whereConditionToGetRecordFromHistoryTable(options);
+                                let optionsForBuilder = Object.assign({}, options);
+                                optionsForBuilder[KSCRUDConstants.CRUD_OPTION_CRITERIA] = KSCriteria.WHERE_CONDITION_AS_A_STRING;
+                                optionsForBuilder[KSPublicConstants.CRUD_OPTION_WHERE_CONDITION_AS_A_STRING] = whereCondition;
+                                // Update action as DEFERRED_CREATE or CREATE
+                                if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD])) {
+                                    sdkRecordForBuilder.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.DEFERRED_CREATE;
+                                } else {
+                                    sdkRecordForBuilder.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.CREATE;
+                                }
+                                statement = getUpdatePreparedStatement(sdkRecordForBuilder, optionsForBuilder, tableName);
                             } else {
-                                sdkRecordForBuilder.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.CREATE;
+                                statement = instance.getInsertPreparedStatementForSqlite(sdkRecordForBuilder, tableName);
                             }
-                            statement = getUpdatePreparedStatement(sdkRecordForBuilder, optionsForBuilder, tableName);
+                        } else {
+                            statement = instance.getInsertPreparedStatementForSqlite(sdkRecordForBuilder, tableName);
                         }
                     } else {
                         statement = instance.getInsertPreparedStatementForSqlite(sdkRecordForBuilder, tableName);
@@ -13320,7 +13458,7 @@ define("KSUpdateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
 
                 if (isTrackChangesEnabled) {
                     //Build SDKRecord for History table
-                    var metaInfo = await instance.getCommonMetaInfo(sdkRecord);
+                    var metaInfo = await instance.getCommonMetaInfo(sdkRecord, options);
 
                     KSCommonUtils.clearJSONObject(listOfDataMaps);
                     listOfDataMaps.push(records[index]);
@@ -13380,14 +13518,21 @@ define("KSUpdateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
                 // Check if the custom option 'SYNC_LATEST_OBJECT_SNAPSHOT' is enabled
                 if (options.hasOwnProperty(KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT)) {
                     if (options[KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT]) {
-                        // Change the action type to deferred create or create instead of update
-                        if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD])) {
-                            sdkRecordForHistory.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.DEFERRED_CREATE;
+                        var noOfRecords = await KSSyncDatabaseHelper.getNumberOfRecordsDeferred(options,
+                            sdkRecord.getParentObject().getFullyQualifiedName());
+
+                        if (noOfRecords > 0 && voltmx.sdk.util.isNullOrUndefinedOrEmptyObject(sdkRecord.getData()[KSDatabaseConstants.KONY_SYNC_HASH_SUM])) {
+                            // Change the action type to deferred create or create instead of update
+                            if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD])) {
+                                sdkRecordForHistory.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.DEFERRED_CREATE;
+                            } else {
+                                sdkRecordForHistory.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.CREATE;
+                            }
+                            // Add an update prepared statement to the 'statements' array
+                            statements.push(buildUpdatePreparedStatementForUpdatesRecord(sdkRecordForHistory,options,sdkRecord.getParentObject().getFullyQualifiedName()));
                         } else {
-                            sdkRecordForHistory.getData()[KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE] = KSSDKObjectRecordAction.CREATE;
+                            statements.push(instance.getInsertPreparedStatement(sdkRecordForHistory, tableName));
                         }
-                        // Add an update prepared statement to the 'statements' array
-                        statements.push(buildUpdatePreparedStatementForUpdatesRecord(sdkRecordForHistory,options,sdkRecord.getParentObject().getFullyQualifiedName()));
                     } else {
                         statements.push(instance.getInsertPreparedStatement(sdkRecordForHistory, tableName));
                     }
@@ -13414,49 +13559,12 @@ define("KSUpdateORMManager", ["exports", "KSBaseORMManager", "KSDatabaseAPI", "K
          */
         function buildUpdatePreparedStatementForUpdatesRecord(sdkRecord, options, tableName) {
             // Build the WHERE clause for updating records in the history table
-            const whereClause = buildWhereConditionToUpdateRecordsInHistory(options);
+            const whereClause = KSSQLQueryGenerator.buildWhereConditionToUpdateRecordsInHistory(options);
             // Generate the update prepared statement using the SQL query generator
             return KSSQLQueryGenerator.buildPreparedStatementsOfTypeUpdate(tableName, KSTableType.HISTORY,
                 whereClause, sdkRecord.getData());
         }
 
-        /**
-         * Builds a WHERE condition to update records in the history table.
-         *
-         * @param options - Options containing primary key-value pairs.
-         * @returns wherecondition - An array representing the WHERE condition.
-         */
-        function buildWhereConditionToUpdateRecordsInHistory(options) {
-            // Extract primary key-value pairs from options
-            const primaryKeyValuePair = options[KSPublicConstants.CRUD_OPTION_PRIMARY_KEYS];
-
-            // Initialize an array to hold the WHERE condition rules
-            const rule = [];
-
-            // Add the column name (KONY_SYNC_CHANGE_TYPE) to the rule
-            rule.push(KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE);
-
-            // Add the comparison operator (EQUALS) to the rule
-            rule.push(KSInternalConstants.EQUALS);
-
-            // Add the value (91) or (1) to the rule
-            if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD]) && options[KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT]) {
-                rule.push(KSSDKObjectRecordAction.DEFERRED_CREATE);
-            } else {
-                rule.push(KSSDKObjectRecordAction.CREATE);
-            }
-
-            // Build the WHERE condition as an array
-            const whereCondition = KSSyncDatabaseHelper.buildWhereConditionAsString(primaryKeyValuePair);
-
-            // Add a logical AND operator to the WHERE condition
-            whereCondition.push([KSDatabaseConstants.LOGICAL_AND]);
-
-            // Add the previously constructed rule to the WHERE condition
-            whereCondition.push(rule);
-
-            return whereCondition;
-        }
 
         /**
          * Generates prepared statement for Main table for Update operation
@@ -21687,7 +21795,7 @@ define("KSSyncingTask",
                     this.isDownloadEnabled = false;
                 }
             }
-            if(options.hasOwnProperty(KSPublicConstants.GET_SYNC_STATS)) {
+            if(options.hasOwnProperty(KSPublicConstants.GET_SYNC_STATS) && String(options[KSPublicConstants.GET_SYNC_STATS]).toUpperCase() === 'TRUE') {
                 this.isStatsEnabled = true;
             }
 
@@ -25218,7 +25326,17 @@ define("KSOptionsHelper", ["exports", "KSError", "KSCommonUtils"], function (exp
         }
         return value;
     }
-    
+
+
+    /**
+     * Check for primaryKeys key in given options.
+     * @param options
+     * @return {boolean} true if enabled else false
+     */
+    function isOptionsContainsPrimaryKeys(options) {
+        return options != null && options.hasOwnProperty(KSPublicConstants.CRUD_OPTION_PRIMARY_KEYS);
+    }
+
     exports.skipValidation = skipValidation;
     exports.isValidAttribute = isValidAttribute;
     exports.arePrimaryKeysValid = arePrimaryKeysValid;
@@ -25233,6 +25351,7 @@ define("KSOptionsHelper", ["exports", "KSError", "KSCommonUtils"], function (exp
     exports.getOptionValueOrDefaultForGivenKey = getOptionValueOrDefaultForGivenKey;
     exports.arePrimaryKeysValidFromSqlite = arePrimaryKeysValidFromSqlite;
     exports.validateAndGetValueForBactchContext = validateAndGetValueForBactchContext;
+    exports.isOptionsContainsPrimaryKeys = isOptionsContainsPrimaryKeys;
 });
 
 /**
@@ -25601,8 +25720,8 @@ define("KSRequestResponseUtils", ["exports", "KSDownloadResponseParser", "KSComm
 /**
  * Module to create query objects to perform operations on the indexed DB.
  */
-define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils", "KSMarkForUploadUtils", "KNYPreparedStatementBuilderFactory", "KSMetadataUtils","KSError"], 
-    function (exports, KSQueryObjectBuilder, KSCommonUtils, KSMarkForUploadUtils, KNYPreparedStatementBuilderFactory, KSMetadataUtils, KSError) {
+define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils", "KSMarkForUploadUtils", "KNYPreparedStatementBuilderFactory", "KSMetadataUtils","KSError", "KSSyncDatabaseHelper"],
+    function (exports, KSQueryObjectBuilder, KSCommonUtils, KSMarkForUploadUtils, KNYPreparedStatementBuilderFactory, KSMetadataUtils, KSError, KSSyncDatabaseHelper) {
 
     "use strict";
     var LOG_PREFIX = "KSSQLQueryGenerator : ";
@@ -26481,6 +26600,18 @@ define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils
     };
 
     /**
+     * The function builds a query to get records for the given primary keys.
+     *
+     * @param  options Options which have the pk list
+     * @return where condition as string
+     */
+    function whereConditionToGetRecordWithPrimaryKeyForSqliteDB(options) {
+        const criteria = {};
+        Object.assign(criteria, options[KSPublicConstants.CRUD_OPTION_PRIMARY_KEYS]);
+         const whereCondition = this.buildWhereConditionForColumnsWithDataAndJoinType(criteria, "AND");
+        return whereCondition;
+    }
+        /**
      * Generates a WHERE condition to retrieve records from the history table based on the provided options.
      * @param options A map of options that may include primary key values for filtering.
      * @return A SQL WHERE condition string for querying the history table.
@@ -26514,6 +26645,24 @@ define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils
         query += ";";
         return query;
     };
+
+    /**
+     * Get the query to get the number of records in a table by where condition
+     *
+     * @param tableName   The table name for which record countis required
+     * @param whereClause The where condition
+     * @return query as a string
+     */
+    function getQueryForGettingTheRecordsInATable(tableName, whereClause) {
+        let query = "select replaysequencenumber from " + tableName;
+        if (whereClause !== null) {
+            query += " where " + whereClause;
+        }
+        query += ";";
+        return query;
+    };
+
+
 
     /**
      *
@@ -26782,6 +26931,44 @@ define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils
       return `SELECT * from ${tableName} where ${whereCondition} ORDER BY ${KSDatabaseConstants.REPLAY_SEQUENCE_NUMBER} ASC LIMIT ${numberOfFreeSlotsInCurrentBatch};`;
     };
 
+        /**
+         * Builds a WHERE condition to update records in the history table.
+         *
+         * @param options - Options containing primary key-value pairs.
+         * @returns wherecondition - An array representing the WHERE condition.
+         */
+        function buildWhereConditionToUpdateRecordsInHistory(options) {
+            // Extract primary key-value pairs from options
+            const primaryKeyValuePair = options[KSPublicConstants.CRUD_OPTION_PRIMARY_KEYS];
+
+            // Initialize an array to hold the WHERE condition rules
+            const rule = [];
+
+            // Add the column name (KONY_SYNC_CHANGE_TYPE) to the rule
+            rule.push(KSDatabaseConstants.KONY_SYNC_CHANGE_TYPE);
+
+            // Add the comparison operator (EQUALS) to the rule
+            rule.push(KSInternalConstants.EQUALS);
+
+            // Add the value (91) or (1) to the rule
+            if (options.hasOwnProperty(KSPublicConstants.MARK_FOR_UPLOAD) && !(options[KSPublicConstants.MARK_FOR_UPLOAD]) && options[KSPublicConstants.SYNC_LATEST_OBJECT_SNAPSHOT]) {
+                rule.push(KSSDKObjectRecordAction.DEFERRED_CREATE);
+            } else {
+                rule.push(KSSDKObjectRecordAction.CREATE);
+            }
+
+            // Build the WHERE condition as an array
+            const whereCondition = KSSyncDatabaseHelper.buildWhereConditionAsString(primaryKeyValuePair);
+
+            // Add a logical AND operator to the WHERE condition
+            whereCondition.push([KSDatabaseConstants.LOGICAL_AND]);
+
+            // Add the previously constructed rule to the WHERE condition
+            whereCondition.push(rule);
+
+            return whereCondition;
+        }
+
     exports.getAllTableNames = getAllTableNames;
     exports.getSQLDataQueries = getSQLDataQueries;
     exports.getTableNameWithType = getTableNameWithType;
@@ -26822,6 +27009,9 @@ define("KSSQLQueryGenerator", ["exports", "KSQueryObjectBuilder", "KSCommonUtils
     exports.getSubQueryForGettingMinReplaySequenceNumbersOfParentRecords = getSubQueryForGettingMinReplaySequenceNumbersOfParentRecords;
     exports.getQueryForReadingRecordsFromHistoryTableForFlatObject = getQueryForReadingRecordsFromHistoryTableForFlatObject;
     exports.formattedTableName = formattedTableName;
+    exports.whereConditionToGetRecordWithPrimaryKeyForSqliteDB = whereConditionToGetRecordWithPrimaryKeyForSqliteDB;
+    exports.buildWhereConditionToUpdateRecordsInHistory = buildWhereConditionToUpdateRecordsInHistory;
+    exports.getQueryForGettingTheRecordsInATable = getQueryForGettingTheRecordsInATable;
 });
 define("KSSQLiteQueryCreator", ["exports", "KSCommonUtils", "KSSDKObject", "KSError", "KSSQLQueryGenerator", "KSQueryObjectBuilder", "KSSyncDatabaseHelper", "KNYPreparedStatementBuilderFactory", "KSMetadataUtils"], function(exports, KSCommonUtils, KSSDKObject, _KSError, KSSQLQueryGenerator, KSQueryObjectBuilder, KSSyncDatabaseHelper, KNYPreparedStatementBuilderFactory, KSMetadataUtils) {
     "use strict";

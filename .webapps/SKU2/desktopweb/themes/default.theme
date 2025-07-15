@@ -718,7 +718,7 @@
         "wType": "FlexContainer"
     },
     "CopyslFbox0b1e93838bc484a": {
-        "background_color": "f8f7ff00",
+        "background_color": "ffffff00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": "1",
@@ -848,7 +848,7 @@
         "wType": "FlexContainer"
     },
     "CopyslFbox0c3f8ae40a95946": {
-        "background_color": "f8f7ff00",
+        "background_color": "ffffff00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": "1",
@@ -1105,7 +1105,7 @@
         "wType": "FlexContainer"
     },
     "CopyslFbox0j5389f56cd2449": {
-        "background_color": "f8f7ff00",
+        "background_color": "ffffff00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": "1",
@@ -2240,7 +2240,7 @@
         "wType": "FlexContainer"
     },
     "slFboxRed": {
-        "background_color": "f2acbb00",
+        "background_color": "ffffff00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": 1,

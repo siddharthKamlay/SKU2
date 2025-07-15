@@ -181,7 +181,7 @@ var requirejs, require, define;
                 
                 
                 
-                waitSeconds: 7,
+                waitSeconds: 120,
                 baseUrl: './',
                 paths: {},
                 bundles: {},
@@ -1138,7 +1138,10 @@ var requirejs, require, define;
         function callGetModule(args) {
             
             if (!hasProp(defined, args[0])) {
-                getModule(makeModuleMap(args[0], null, true)).init(args[1], args[2]);
+                
+                getModule(makeModuleMap(args[0], null, true)).init(args[1], args[2], null, {
+                    enabled: true
+                });
             }
         }
 
@@ -1363,11 +1366,21 @@ var requirejs, require, define;
                         id = map.id;
 
                         if (!hasProp(defined, id)) {
-                            return onError(makeError('notloaded', 'Module name "' +
+                            if (isWebWorker) {
+                                requireMod = getModule(makeModuleMap(null, relMap));
+                                requireMod.init([id], function () { }, function () { }, {
+                                    enabled: true
+                                });
+                            } else {
+                                context.completeLoad(id);
+                                if (!defined[id]) {
+                                    return onError(makeError('notloaded', 'Module name "' +
                                         id +
                                         '" has not been loaded yet for context: ' +
                                         contextName +
                                         (relMap ? '' : '. Use require([])')));
+                                }
+                            }
                         }
                         return defined[id];
                     }
@@ -1815,11 +1828,7 @@ var requirejs, require, define;
             
             
             currentlyAddingScript = node;
-            if (baseElement) {
-                head.insertBefore(node, baseElement);
-            } else {
-                head.appendChild(node);
-            }
+            head.appendChild(node);
             currentlyAddingScript = null;
 
             return node;

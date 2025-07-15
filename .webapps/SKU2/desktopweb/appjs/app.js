@@ -5643,7 +5643,7 @@ kony=voltmx;voltmx.decrement=function(a){if("number"==typeof a){return a-1}else{
 }());
 //FP Appended voltmx_sdk.js-----------------------------------------------------------
  /*
-  * voltmx-sdk-ide Version 9.5.51
+  * voltmx-sdk-ide Version 9.5.53
   */
  /**
   * Volt MX namespace
@@ -5854,7 +5854,7 @@ kony=voltmx;voltmx.decrement=function(a){if("number"==typeof a){return a-1}else{
  voltmx.sdk.isLicenseUrlAvailable = true;
  voltmx.sdk.isOAuthLogoutInProgress = false;
  voltmx.sdk.constants = voltmx.sdk.constants || {};
- voltmx.sdk.version = "9.5.51";
+ voltmx.sdk.version = "9.5.53";
  voltmx.sdk.logsdk = new voltmxSdkLogger();
  voltmx.sdk.syncService = null;
  voltmx.sdk.dataStore = voltmx.sdk.dataStore || new voltmxDataStore();
@@ -18737,8 +18737,8 @@ kony=voltmx;voltmx.decrement=function(a){if("number"==typeof a){return a-1}else{
                  if (result.response) {
                      // Parse the response if it's a string for SPA Channel
                      parsedResponse = typeof result.response === "string" ? JSON.parse(result.response) : result.response;
-                     // Update the Opstatus to 8009 if the backend service's response HTTP status code is 500.
-                     if (parsedResponse.httpStatusCode && Number(parsedResponse.httpStatusCode) == 500 && parsedResponse.opstatus == 0) {
+                     // Update opstatus to 8009 if the backend returns an HTTP 5XX error response and opstatus is 0.
+                     if (parsedResponse.httpStatusCode && Number(parsedResponse.httpStatusCode) >= 500 && Number(parsedResponse.httpStatusCode) <= 599 && parsedResponse.opstatus == 0) {
                          parsedResponse.opstatus = 8009;
                      }
                      // Convert the updated object back to string if it was originally a string
@@ -20329,7 +20329,7 @@ var appConfig = {
     appVersion: "1.0.0",
     isturlbase: "https://m100004609002.demo-hclvoltmx.net/services",
     isDebug: true,
-    hotReloadURL: "ws://192.168.1.116:9099",
+    hotReloadURL: "ws://192.168.1.107:9099",
     isMFApp: true,
     appKey: "341c66538550d0efe25b7aedeb781c6a",
     appSecret: "d17a8e5ba7334c8f3a94e81e23fedafb",
@@ -20340,7 +20340,7 @@ var appConfig = {
         "integsvc": {
             "_internal_logout": "https://m100004609002.demo-hclvoltmx.net/services/IST"
         },
-        "service_doc_etag": "0000019807CC3828",
+        "service_doc_etag": "000001980D4EFC68",
         "appId": "f6d7779f-9f00-4e51-9a53-83684bb70e20",
         "identity_features": {
             "reporting_params_header_allowed": true
