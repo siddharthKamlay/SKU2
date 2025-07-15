@@ -137,9 +137,389 @@
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
+                },
+                "ME_Mapping_j0e6d206711345049b722f071c04c848": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_j0e6d206711345049b722f071c04c848",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "SKUID",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"SKUID\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblSKUID",
+                        "widgetPath": "this.view.lblSKUID",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "b698fe70ae4047f294b4f2d2c0e1ed7a",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_dd77dd2befd24e03a7323689746893e6": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_dd77dd2befd24e03a7323689746893e6",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Name",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Name\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblName",
+                        "widgetPath": "this.view.lblName",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "h88afd2701234f2c8ffa12b83d0ce194",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Category",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Category\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblCategory",
+                        "widgetPath": "this.view.lblCategory",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "b5d1dc0eef4b47c1852bb33d341ad8ee",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Stock",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Stock\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblStock",
+                        "widgetPath": "this.view.lblStock",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "g783ee541403472b971bcfc68886ff14",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ae20cd524e454fff9e33a7704341aea9": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ae20cd524e454fff9e33a7704341aea9",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Forecasted",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Forecasted\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblForecasted",
+                        "widgetPath": "this.view.lblForecasted",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "df721c5a43704b0384d85952f5ca12d1",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "EnrichedQTY",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"EnrichedQTY\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblEnrichedQTY",
+                        "widgetPath": "this.view.lblEnrichedQTY",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "ef97919b3755474aaab5983db0d7e6ca",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f6506c0826c549a899999b8f1780f9af": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f6506c0826c549a899999b8f1780f9af",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Requested",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Requested\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblRequested",
+                        "widgetPath": "this.view.lblRequested",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "i96f9efe2f8b4586b58723cb94296a07",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_h5162077ccd444a8b60c550a4abab429": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_h5162077ccd444a8b60c550a4abab429",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Status",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Status\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblStatus",
+                        "widgetPath": "this.view.lblStatus",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "dbb7dc60edff490e9f51cb1c7d9aab36",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "RequestedBY",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"RequestedBY\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblRequestedBY",
+                        "widgetPath": "this.view.lblRequestedBY",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "faa831aa46284a4f8211ec2344614ce8",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "RequestDate",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"RequestDate\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblRequestDate",
+                        "widgetPath": "this.view.lblRequestDate",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "DemandRequestFrm",
+                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "i1e8587146aa4d6da56bf3accd1e9589",
+                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+                        "forkedPlatform": "all"
+                    }
                 }
             },
-            "mappingsOrder": ["ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d"],
+            "mappingsOrder": ["ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d", "ME_Mapping_j0e6d206711345049b722f071c04c848", "ME_Mapping_dd77dd2befd24e03a7323689746893e6", "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805", "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7", "ME_Mapping_ae20cd524e454fff9e33a7704341aea9", "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3", "ME_Mapping_f6506c0826c549a899999b8f1780f9af", "ME_Mapping_h5162077ccd444a8b60c550a4abab429", "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc", "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1"],
             "parentId": "_e074e2821b61460a8198ec7965b3c26b",
             "callbackType": null,
             "enableMappingEditor": true
