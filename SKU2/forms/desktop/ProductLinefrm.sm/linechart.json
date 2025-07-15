@@ -27,11 +27,8 @@
     "_skin_": "s8c7496960954fe2ac011b871ad3086c",
     "_top_": {
         "type": "string",
-<<<<<<< HEAD
         "value": "-44dp"
-=======
-        "value": "0dp"
->>>>>>> ada6fe551dd57341cb33e247f9b6c56313cad73d
+        
     },
     "_width_": {
         "type": "string",
