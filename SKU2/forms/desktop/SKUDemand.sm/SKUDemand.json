@@ -15,6 +15,11 @@
         0
     ],
     "_percent_": true,
+    "_pxMenuIndex": [
+        2,
+        1,
+        2
+    ],
     "_skin_": "sde86b62ef46487c836c748e9c5e210a",
     "_title_": null,
     "addWidgetsdone": false,
@@ -47,7 +52,9 @@
     "children": [
         "FlexContainer",
         "FlexContainerHeaders",
-        "FlexSKUTable"
+        "FlexSKUTable",
+        "FlexContainerslidemenu",
+        "Image0dc6e78981a6c4f"
     ],
     "containerweight": 100,
     "controllerInfo": {

@@ -1,21 +1,275 @@
-define("DemandRequestFrm", function() {
+define("SKUDemand", function() {
     return function(controller) {
-        function addWidgetsDemandRequestFrm() {
+        function addWidgetsSKUDemand() {
             this.setDefaultUnit(voltmx.flex.DP);
+            var FlexContainer = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "15%",
+                "id": "FlexContainer",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 2,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainer.setDefaultUnit(voltmx.flex.DP);
+            var Label1 = new voltmx.ui.Label({
+                "id": "Label1",
+                "isVisible": true,
+                "left": "69dp",
+                "skin": "CopydefLabel0e6472f5744614f",
+                "text": "SKU DEMAND MANAGEMENT",
+                "top": "37dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label2 = new voltmx.ui.Label({
+                "id": "Label2",
+                "isVisible": true,
+                "left": "69dp",
+                "skin": "CopydefLabel0d3f2b59491324d",
+                "text": "Manage and approve  demand requests across all SKUs",
+                "top": "80dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            FlexContainer.add(Label1, Label2);
+            var FlexContainerHeaders = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "20%",
+                "id": "FlexContainerHeaders",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FLOW_HORIZONTAL,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "140dp",
+                "width": "100%",
+                "zIndex": 2,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerHeaders.setDefaultUnit(voltmx.flex.DP);
+            var FlexContainer0f33f26919d934e = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "59.82%",
+                "id": "FlexContainer0f33f26919d934e",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "3%",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0b47ed57bc2b749",
+                "top": "37dp",
+                "width": "20%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainer0f33f26919d934e.setDefaultUnit(voltmx.flex.DP);
+            var Label00 = new voltmx.ui.Label({
+                "id": "Label00",
+                "isVisible": true,
+                "left": "37dp",
+                "skin": "defLabel",
+                "text": "Label",
+                "top": "15dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var LabelTotalRequests = new voltmx.ui.Label({
+                "id": "LabelTotalRequests",
+                "isVisible": true,
+                "left": "37dp",
+                "skin": "defLabel",
+                "text": "Total Requests",
+                "top": "70dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            FlexContainer0f33f26919d934e.add(Label00, LabelTotalRequests);
+            var CopyFlexContainer0de1dbf6c79f442 = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "61.52%",
+                "id": "CopyFlexContainer0de1dbf6c79f442",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "3%",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0e7b52cc062fe4b",
+                "top": "37dp",
+                "width": "20%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0de1dbf6c79f442.setDefaultUnit(voltmx.flex.DP);
+            var LabelPending = new voltmx.ui.Label({
+                "id": "LabelPending",
+                "isVisible": true,
+                "left": "59dp",
+                "skin": "defLabel",
+                "text": "Pending",
+                "top": "73dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label01 = new voltmx.ui.Label({
+                "id": "Label01",
+                "isVisible": true,
+                "left": "57dp",
+                "skin": "defLabel",
+                "text": "Label",
+                "top": "17dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0de1dbf6c79f442.add(LabelPending, Label01);
+            var CopyFlexContainer0a81cef57546647 = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "62.73%",
+                "id": "CopyFlexContainer0a81cef57546647",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "3%",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0bebbbf6a9fc948",
+                "top": "37dp",
+                "width": "20%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0a81cef57546647.setDefaultUnit(voltmx.flex.DP);
+            var LabelApproved = new voltmx.ui.Label({
+                "id": "LabelApproved",
+                "isVisible": true,
+                "left": "58dp",
+                "skin": "defLabel",
+                "text": "Approved",
+                "top": "73dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label03 = new voltmx.ui.Label({
+                "id": "Label03",
+                "isVisible": true,
+                "left": "65dp",
+                "skin": "defLabel",
+                "text": "Label",
+                "top": "22dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0a81cef57546647.add(LabelApproved, Label03);
+            var CopyFlexContainer0c5033b5aec0a42 = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "60.22%",
+                "id": "CopyFlexContainer0c5033b5aec0a42",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "3.00%",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0d77399fd11aa42",
+                "top": "37dp",
+                "width": "20%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0c5033b5aec0a42.setDefaultUnit(voltmx.flex.DP);
+            var labelRejected = new voltmx.ui.Label({
+                "id": "labelRejected",
+                "isVisible": true,
+                "left": "59dp",
+                "skin": "defLabel",
+                "text": "Rejected",
+                "top": "71dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var label04 = new voltmx.ui.Label({
+                "id": "label04",
+                "isVisible": true,
+                "left": "63dp",
+                "skin": "defLabel",
+                "text": "Label",
+                "top": "23dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            CopyFlexContainer0c5033b5aec0a42.add(labelRejected, label04);
+            FlexContainerHeaders.add(FlexContainer0f33f26919d934e, CopyFlexContainer0de1dbf6c79f442, CopyFlexContainer0a81cef57546647, CopyFlexContainer0c5033b5aec0a42);
             var FlexSKUTable = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "48.89%",
+                "height": "57.78%",
                 "id": "FlexSKUTable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "12.32%",
+                "left": "2%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0i2f208e36e0f41",
-                "top": "51.11%",
-                "width": "86.92%",
-                "zIndex": 1,
+                "top": "38.86%",
+                "width": "95%",
+                "zIndex": 2,
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -28,9 +282,9 @@ define("DemandRequestFrm", function() {
                 "id": "flexHeaderDemandRequest",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "2.50%",
+                "left": "-0.76%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
-                "isModalContainer": true,
+                "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "38.18%",
                 "width": "95%",
@@ -67,7 +321,7 @@ define("DemandRequestFrm", function() {
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "7.02%",
+                "width": "5%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -95,11 +349,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexName",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "5.97%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -128,11 +382,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexCategory",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "1%",
+                "left": "-1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
-                "top": "1%",
-                "width": "9.5%",
+                "top": "0%",
+                "width": "7%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -160,11 +414,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexStock",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-1%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "5%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -192,11 +446,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexForecasted",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-3%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "6%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -224,11 +478,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexEnrichedQTY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "1%",
+                "left": "4%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -256,11 +510,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexRequested",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "3%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -292,7 +546,7 @@ define("DemandRequestFrm", function() {
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -320,11 +574,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexRequestedBY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-2%",
+                "left": "-1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "10%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -352,11 +606,11 @@ define("DemandRequestFrm", function() {
                 "id": "flexRequestDate",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "10%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -366,7 +620,7 @@ define("DemandRequestFrm", function() {
                 "height": "100%",
                 "id": "lblRequestDate",
                 "isVisible": true,
-                "left": "5%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "RequestDate",
                 "top": "0%",
@@ -377,28 +631,60 @@ define("DemandRequestFrm", function() {
                 "paddingInPixel": false
             }, {});
             flexRequestDate.add(lblRequestDate);
-            var flexactions = new voltmx.ui.FlexContainer({
+            var flexApprovedDate = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
                 "height": "100%",
-                "id": "flexactions",
+                "id": "flexApprovedDate",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "9.5%",
+                "width": "10%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
             }, {});
-            flexactions.setDefaultUnit(voltmx.flex.DP);
-            var lblActions = new voltmx.ui.Label({
+            flexApprovedDate.setDefaultUnit(voltmx.flex.DP);
+            var lblApprovedDate = new voltmx.ui.Label({
                 "height": "100%",
-                "id": "lblActions",
+                "id": "lblApprovedDate",
                 "isVisible": true,
-                "left": "23%",
+                "left": "0%",
+                "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
+                "text": "Approved Date",
+                "top": "0%",
+                "width": "100%"
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [3, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            flexApprovedDate.add(lblApprovedDate);
+            var flexActions = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "100%",
+                "id": "flexActions",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "1%",
+                "isModalContainer": false,
+                "skin": "slFbox0c447e39f18754f",
+                "top": "0%",
+                "width": "8%",
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            flexActions.setDefaultUnit(voltmx.flex.DP);
+            var lblAtions = new voltmx.ui.Label({
+                "height": "100%",
+                "id": "lblAtions",
+                "isVisible": true,
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Actions",
                 "top": "0%",
@@ -408,8 +694,8 @@ define("DemandRequestFrm", function() {
                 "padding": [3, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            flexactions.add(lblActions);
-            flexDemandRequest.add(flexSKUID, flexName, flexCategory, flexStock, flexForecasted, flexEnrichedQTY, flexRequested, flexStatus, flexRequestedBY, flexRequestDate, flexactions);
+            flexActions.add(lblAtions);
+            flexDemandRequest.add(flexSKUID, flexName, flexCategory, flexStock, flexForecasted, flexEnrichedQTY, flexRequested, flexStatus, flexRequestedBY, flexRequestDate, flexApprovedDate, flexActions);
             var segDemandRequest = new voltmx.ui.SegmentedUI2({
                 "alternateRowSkin": "defDataPanelAlternateRowSkinDW0ccd9302b745549",
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
@@ -420,6 +706,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -434,6 +721,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -448,6 +736,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -462,6 +751,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -476,6 +766,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -490,6 +781,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -504,6 +796,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -518,6 +811,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -532,6 +826,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -546,6 +841,7 @@ define("DemandRequestFrm", function() {
                     "CopyLabel0ac775376e26c4e": "Category",
                     "CopyLabel0b7c93f33c0e148": "Enriched QTY",
                     "CopyLabel0d7f854fb40f746": "Status",
+                    "CopyLabel0e7176e8dc1c340": "Approved Date",
                     "CopyLabel0ed0fc93427ed46": "Requested",
                     "CopyLabel0h140a4d033144e": "Name",
                     "CopyLabel0hbbc7474e2d94a": "Requested By",
@@ -565,32 +861,33 @@ define("DemandRequestFrm", function() {
                 "retainSelection": false,
                 "rowFocusSkin": "defDataPanelRowFocusSkin0bd1dff1eda834e",
                 "rowSkin": "defDataPanelFlexBorderSkinDW0a2758320af6449",
-                "rowTemplate": "Flex0f834108d4cc042",
+                "rowTemplate": "CopyFlex0ff43866586004c",
                 "sectionHeaderSkin": "sliPhoneSegmentHeader0i672f9ffb35a4b",
                 "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
                 "separatorColor": "aaaaaa00",
                 "separatorRequired": false,
                 "separatorThickness": 1,
-                "showScrollbars": true,
+                "showScrollbars": false,
                 "top": "0%",
                 "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
                 "widgetDataMap": {
+                    "CopyFlex0ff43866586004c": "CopyFlex0ff43866586004c",
                     "CopyImage0b5d9a25cec1b4a": "CopyImage0b5d9a25cec1b4a",
                     "CopyImage0b9e4270528ae45": "CopyImage0b9e4270528ae45",
                     "CopyLabel0a4721bc1be964e": "CopyLabel0a4721bc1be964e",
                     "CopyLabel0ac775376e26c4e": "CopyLabel0ac775376e26c4e",
                     "CopyLabel0b7c93f33c0e148": "CopyLabel0b7c93f33c0e148",
                     "CopyLabel0d7f854fb40f746": "CopyLabel0d7f854fb40f746",
+                    "CopyLabel0e7176e8dc1c340": "CopyLabel0e7176e8dc1c340",
                     "CopyLabel0ed0fc93427ed46": "CopyLabel0ed0fc93427ed46",
                     "CopyLabel0h140a4d033144e": "CopyLabel0h140a4d033144e",
                     "CopyLabel0hbbc7474e2d94a": "CopyLabel0hbbc7474e2d94a",
                     "CopyLabel0hfa3918b88ca44": "CopyLabel0hfa3918b88ca44",
                     "CopyLabel0j137a4eb15b24c": "CopyLabel0j137a4eb15b24c",
-                    "Flex0f834108d4cc042": "Flex0f834108d4cc042",
                     "Image0f546f4cd61574a": "Image0f546f4cd61574a",
                     "Label0ee69e19d962e44": "Label0ee69e19d962e44"
                 },
-                "width": "100%",
+                "width": "105.43%",
                 "appName": "SKU2"
             }, {
                 "padding": [0, 0, 0, 0],
@@ -602,7 +899,7 @@ define("DemandRequestFrm", function() {
                 "isVisible": true,
                 "left": "31dp",
                 "skin": "CopydefLabel0c9e00abaf49641",
-                "text": "Recent SKU Demand Requests",
+                "text": "SKU Demand Requests",
                 "top": "18dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -616,7 +913,7 @@ define("DemandRequestFrm", function() {
                 "isVisible": true,
                 "left": "31dp",
                 "skin": "CopydefLabel0e6dd4a9eb46b40",
-                "text": "Overview of latest demand requests across all SKUs",
+                "text": "Detailed view of  all demand requests",
                 "top": "62dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -633,7 +930,7 @@ define("DemandRequestFrm", function() {
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
                 "left": "31dp",
-                "onTextChange": controller.AS_TextField_dc47635772cc453eaed6ee53512ba60a,
+                "onTextChange": controller.AS_TextField_d001906d70c44fc2807c43c55b8d34a3,
                 "placeholder": "Search",
                 "secureTextEntry": false,
                 "skin": "CopydefTextBoxNormal0ffc21e68237640",
@@ -655,7 +952,7 @@ define("DemandRequestFrm", function() {
                 "height": "40dp",
                 "id": "ListBoxCategories",
                 "isVisible": true,
-                "left": "430dp",
+                "left": "410dp",
                 "masterData": [
                     ["All_Categories", "All Categories"],
                     ["Clothing", "Clothing"],
@@ -664,7 +961,7 @@ define("DemandRequestFrm", function() {
                     ["Books", "Books"],
                     ["Electronics", "Electronics"]
                 ],
-                "onSelection": controller.AS_ListBox_e0a22196783943caa926e23657cc2af7,
+                "onSelection": controller.AS_ListBox_c9bd2ff52144480c955ead8257217004,
                 "skin": "CopydefListBoxNormal0e2b722993c6543",
                 "top": "108dp",
                 "width": "300dp",
@@ -681,14 +978,14 @@ define("DemandRequestFrm", function() {
                 "height": "40dp",
                 "id": "ListBoxStatus",
                 "isVisible": true,
-                "left": "820dp",
+                "left": "800dp",
                 "masterData": [
                     ["All Status", "All Status"],
                     ["Approved", "Approved"],
                     ["Rejected", "Rejected"],
                     ["Pending", "Pending"]
                 ],
-                "onSelection": controller.AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d,
+                "onSelection": controller.AS_ListBox_c927ae555a8444ddb905c8a59c786e27,
                 "skin": "CopydefListBoxNormal0d1b8af389ce64c",
                 "top": "108dp",
                 "width": "300dp",
@@ -700,655 +997,27 @@ define("DemandRequestFrm", function() {
             }, {
                 "multiSelect": false
             });
-            FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxCategories, ListBoxStatus);
-            var FlexContainerPieChart = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "28.90%",
-                "id": "FlexContainerPieChart",
+            var BtnReset = new voltmx.ui.Button({
+                "focusSkin": "defBtnFocus",
+                "height": "39dp",
+                "id": "BtnReset",
                 "isVisible": true,
-                "layoutType": voltmx.flex.FREE_FORM,
-                "left": "799dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0e88f7dca09d544",
-                "top": "160dp",
-                "width": "41.35%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            FlexContainerPieChart.setDefaultUnit(voltmx.flex.DP);
-            var piechart = new com.konymp.piechart({
-                "height": "100%",
-                "id": "piechart",
-                "isVisible": true,
-                "left": "0dp",
-                "masterType": constants.MASTER_TYPE_USERWIDGET,
-                "isModalContainer": false,
-                "skin": "sknComponentFlex",
-                "top": "0dp",
-                "width": "99.96%",
-                "appName": "SKU2",
-                "viewType": "piechart",
-                "overrides": {
-                    "piechart": {
-                        "right": "viz.val_cleared",
-                        "bottom": "viz.val_cleared",
-                        "minWidth": "viz.val_cleared",
-                        "minHeight": "viz.val_cleared",
-                        "maxWidth": "viz.val_cleared",
-                        "maxHeight": "viz.val_cleared",
-                        "centerX": "viz.val_cleared",
-                        "centerY": "viz.val_cleared"
-                    }
-                }
-            }, {
-                "paddingInPixel": false,
-                "overrides": {}
-            }, {
-                "overrides": {}
-            });
-            piechart.chartTitle = "Pie Chart";
-            piechart.enableLegend = true;
-            piechart.bgColor = "#ffffff";
-            piechart.chartData = {
-                "data": [{
-                    "colorCode": "#1B9ED9",
-                    "label": "Data1",
-                    "value": "40"
-                }, {
-                    "colorCode": "#E8672B",
-                    "label": "Data2",
-                    "value": "20"
-                }, {
-                    "colorCode": "#76C044",
-                    "label": "Data3",
-                    "value": "20"
-                }, {
-                    "colorCode": "#FFC522",
-                    "label": "Data4",
-                    "value": "10"
-                }, {
-                    "colorCode": "#97CDED",
-                    "label": "Data5",
-                    "value": "10"
-                }],
-                "schema": [{
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Label",
-                    "columnHeaderType": "text",
-                    "columnID": "label",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "c8434b6cbed443e6a6167d99e8c3bdcb"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value",
-                    "columnHeaderType": "text",
-                    "columnID": "value",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "cddb65c1fe8c429bb5a4b5f93bd171ef"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Color Code",
-                    "columnHeaderType": "text",
-                    "columnID": "colorCode",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f722303b71a8439eae528d9af9856f30"
-                }]
-            };
-            piechart.titleFontSize = "12";
-            piechart.legendFontSize = "8";
-            piechart.enableStaticPreview = true;
-            piechart.titleFontColor = "#000000";
-            piechart.legendFontColor = "#000000";
-            FlexContainerPieChart.add(piechart);
-            var FlexContainerchart = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "260dp",
-                "id": "FlexContainerchart",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FREE_FORM,
-                "left": "170dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0eeb6273f1e3345",
-                "top": "160dp",
-                "width": "41.30%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            FlexContainerchart.setDefaultUnit(voltmx.flex.DP);
-            var multiseriesverticalbar = new com.voltmxmp.multiseriesverticalbar({
-                "height": "100.13%",
-                "id": "multiseriesverticalbar",
-                "isVisible": true,
-                "left": "0dp",
-                "masterType": constants.MASTER_TYPE_USERWIDGET,
-                "isModalContainer": false,
-                "skin": "CopyCopyslFbox0abc86170ee1a48",
-                "top": "0dp",
-                "width": "100%",
-                "appName": "SKU2",
-                "viewType": "multiseriesverticalbar",
-                "overrides": {
-                    "multiseriesverticalbar": {
-                        "right": "viz.val_cleared",
-                        "bottom": "viz.val_cleared",
-                        "minWidth": "viz.val_cleared",
-                        "minHeight": "viz.val_cleared",
-                        "maxWidth": "viz.val_cleared",
-                        "maxHeight": "viz.val_cleared",
-                        "centerX": "viz.val_cleared",
-                        "centerY": "viz.val_cleared"
-                    }
-                }
-            }, {
-                "paddingInPixel": false,
-                "overrides": {}
-            }, {
-                "overrides": {}
-            });
-            multiseriesverticalbar.enableGrid = true;
-            multiseriesverticalbar.chartData = {
-                "data": [{
-                    "label": "d1",
-                    "value1": "25",
-                    "value2": "12",
-                    "value3": "8",
-                    "value4": "32",
-                    "value5": "5"
-                }, {
-                    "label": "d2",
-                    "value1": "12",
-                    "value2": "32",
-                    "value3": "36",
-                    "value4": "10",
-                    "value5": "22"
-                }, {
-                    "label": "d3",
-                    "value1": "22",
-                    "value2": "3",
-                    "value3": "15",
-                    "value4": "8",
-                    "value5": "24"
-                }],
-                "schema": [{
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Label",
-                    "columnHeaderType": "text",
-                    "columnID": "label",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "adb02a6b13a046f4861d9d64ef0c34ee"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value1",
-                    "columnHeaderType": "text",
-                    "columnID": "value1",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f7ad02b6f3df4493bb1ef588ab70e008"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value2",
-                    "columnHeaderType": "text",
-                    "columnID": "value2",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "b59fe0cbc1394743a3214ea7583c0180"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value3",
-                    "columnHeaderType": "text",
-                    "columnID": "value3",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "d9cae0e9fe1548b0becf2dac23f4ceef"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value4",
-                    "columnHeaderType": "text",
-                    "columnID": "value4",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f03e4f1fe95c4dd4b6f8e6f3d7629bd9"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value5",
-                    "columnHeaderType": "text",
-                    "columnID": "value5",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "bb532b4caa214aabb1f9e17780f59200"
-                }]
-            };
-            multiseriesverticalbar.chartTitle = "Vertical Bars";
-            multiseriesverticalbar.indicatorFontColor = "#000000";
-            multiseriesverticalbar.barDetails = {
-                "data": [{
-                    "color": "#1B9ED9",
-                    "legendName": "blue"
-                }, {
-                    "color": "#76C044",
-                    "legendName": "green"
-                }, {
-                    "color": "#F26B29",
-                    "legendName": "orange"
-                }, {
-                    "color": "#464648",
-                    "legendName": "black"
-                }, {
-                    "color": "#FFC522",
-                    "legendName": "yellow"
-                }],
-                "schema": [{
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Legend Name",
-                    "columnHeaderType": "text",
-                    "columnID": "legendName",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f6de75a55e614f8385befc3ec254a1bd"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Color Code",
-                    "columnHeaderType": "text",
-                    "columnID": "color",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "g50365d432034b0a92c5a5cd4b07d1c7"
-                }]
-            };
-            multiseriesverticalbar.xAxisTitle = "x-axis";
-            multiseriesverticalbar.lowValue = "0";
-            multiseriesverticalbar.highValue = "50";
-            multiseriesverticalbar.bgColor = "#FFFFFF";
-            multiseriesverticalbar.enableChartAnimation = true;
-            multiseriesverticalbar.enableLegends = true;
-            multiseriesverticalbar.yAxisTitle = "y-axis";
-            multiseriesverticalbar.titleFontSize = "12";
-            multiseriesverticalbar.indicatorFontSize = "8";
-            multiseriesverticalbar.legendFontSize = "95%";
-            multiseriesverticalbar.enableStaticPreview = true;
-            multiseriesverticalbar.titleFontColor = "#000000";
-            multiseriesverticalbar.legendFontColor = "#000000";
-            FlexContainerchart.add(multiseriesverticalbar);
-            var FlexContaineroverview = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "900dp",
-                "id": "FlexContaineroverview",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0gae0f93674bb43",
-                "top": "0dp",
-                "width": "12.34%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            FlexContaineroverview.setDefaultUnit(voltmx.flex.DP);
-            var Label01 = new voltmx.ui.Label({
-                "id": "Label01",
-                "isVisible": true,
-                "left": "10dp",
-                "skin": "CopydefLabel0d01b683017a64e",
-                "text": "Demand Planning",
-                "top": "30dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label02 = new voltmx.ui.Label({
-                "id": "Label02",
-                "isVisible": true,
-                "left": "10dp",
-                "skin": "CopydefLabel0j936dd23cb674a",
-                "text": "Navigation",
-                "top": "74dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label03 = new voltmx.ui.Label({
-                "id": "Label03",
-                "isVisible": true,
-                "left": "10dp",
-                "onTouchEnd": controller.AS_Label_e3a9d7a2b54f40e8bccae785c869feae,
-                "skin": "CopydefLabel0c85f7f3632f247",
-                "text": "Overview",
-                "top": "110dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label04 = new voltmx.ui.Label({
-                "id": "Label04",
-                "isVisible": true,
-                "left": "10dp",
-                "onTouchEnd": controller.AS_Label_f70828358dce40018fdee062495dbbc7,
-                "skin": "CopydefLabel0e6ade8a8c97c4d",
-                "text": "S&OP",
-                "top": "143dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label05 = new voltmx.ui.Label({
-                "id": "Label05",
-                "isVisible": true,
-                "left": "10dp",
-                "onTouchEnd": controller.AS_Label_ef28823a15424ff6b94cc4c23729f67a,
-                "onTouchStart": controller.AS_Label_ad9133d4135c453f87290c089a74695a,
-                "skin": "CopydefLabel0b193f12240ae46",
-                "text": "SKU Demand",
-                "top": "176dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            FlexContaineroverview.add(Label01, Label02, Label03, Label04, Label05);
-            var FlexContainerHeader = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "140dp",
-                "id": "FlexContainerHeader",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FREE_FORM,
-                "left": "170dp",
-                "isModalContainer": false,
-                "skin": "slFbox",
-                "top": "0dp",
-                "width": "86.97%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            FlexContainerHeader.setDefaultUnit(voltmx.flex.DP);
-            var flxforecast = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "110dp",
-                "id": "flxforecast",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "10dp",
-                "isModalContainer": false,
-                "skin": "slFboxRed",
-                "top": "20dp",
-                "width": "20.83%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            flxforecast.setDefaultUnit(voltmx.flex.DP);
-            var lbl1 = new voltmx.ui.Label({
-                "centerX": "49.81%",
-                "id": "lbl1",
-                "isVisible": true,
-                "skin": "CopydefLabel0dff0a512056e4a",
-                "text": "Forecast Accuracy",
-                "top": "0dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var lbl2 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "lbl2",
-                "isVisible": true,
-                "skin": "CopydefLabel0aaae496075d949",
-                "text": " 94.2%  ",
-                "top": "10dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "left": "1156dp",
+                "skin": "CopydefBtnNormal0ie6f7de736d049",
+                "text": "Reset all ",
+                "top": "109dp",
+                "width": "130dp",
                 "zIndex": 1
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "displayText": true,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            var lbl3 = new voltmx.ui.Label({
-                "centerX": "46.67%",
-                "id": "lbl3",
-                "isVisible": true,
-                "skin": "CopydefLabel0e37d99e471f945",
-                "text": "+2.1% from last month",
-                "top": "6dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            flxforecast.add(lbl1, lbl2, lbl3);
-            var flxsuppy = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "110dp",
-                "id": "flxsuppy",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "300dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0j5389f56cd2449",
-                "top": "20dp",
-                "width": "22.53%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            flxsuppy.setDefaultUnit(voltmx.flex.DP);
-            var Copylbl01 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl01",
-                "isVisible": true,
-                "skin": "CopydefLabel0dff0a512056e4a",
-                "text": "Supply Variance",
-                "top": "0dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl02 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl02",
-                "isVisible": true,
-                "skin": "CopydefLabel0aaae496075d949",
-                "text": "8.7%",
-                "top": "10dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl03 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl03",
-                "isVisible": true,
-                "skin": "CopydefLabel0e37d99e471f945",
-                "text": "-1.3% from last month",
-                "top": "5dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            flxsuppy.add(Copylbl01, Copylbl02, Copylbl03);
-            var flxinventory = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "110dp",
-                "id": "flxinventory",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "632dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0c3f8ae40a95946",
-                "top": "20dp",
-                "width": "22.53%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            flxinventory.setDefaultUnit(voltmx.flex.DP);
-            var Copylbl1 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl1",
-                "isVisible": true,
-                "skin": "CopydefLabel0dff0a512056e4a",
-                "text": "Inventory Turnover ",
-                "top": "0dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl2 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl2",
-                "isVisible": true,
-                "skin": "CopydefLabel0aaae496075d949",
-                "text": "12.4x",
-                "top": "10dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl3 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl3",
-                "isVisible": true,
-                "skin": "CopydefLabel0e37d99e471f945",
-                "text": " +0.8x from last month",
-                "top": "5dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            flxinventory.add(Copylbl1, Copylbl2, Copylbl3);
-            var flxstock = new voltmx.ui.FlexContainer({
-                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "110dp",
-                "id": "flxstock",
-                "isVisible": true,
-                "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "930dp",
-                "isModalContainer": false,
-                "skin": "CopyslFbox0b1e93838bc484a",
-                "top": "20dp",
-                "width": "22.53%",
-                "zIndex": 1,
-                "appName": "SKU2"
-            }, {
-                "paddingInPixel": false
-            }, {});
-            flxstock.setDefaultUnit(voltmx.flex.DP);
-            var Copylbl04 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl04",
-                "isVisible": true,
-                "skin": "CopydefLabel0dff0a512056e4a",
-                "text": "Stockout Risk ",
-                "top": "0dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl05 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl05",
-                "isVisible": true,
-                "skin": "CopydefLabel0aaae496075d949",
-                "text": "3.2% ",
-                "top": "10dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Copylbl06 = new voltmx.ui.Label({
-                "centerX": "50%",
-                "id": "Copylbl06",
-                "isVisible": true,
-                "skin": "CopydefLabel0e37d99e471f945",
-                "text": " -0.5% from last month",
-                "top": "5dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            flxstock.add(Copylbl04, Copylbl05, Copylbl06);
-            FlexContainerHeader.add(flxforecast, flxsuppy, flxinventory, flxstock);
+            FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxCategories, ListBoxStatus, BtnReset);
             this.breakpointResetData = {};
             this.breakpointData = {
-                maxBreakpointWidth: 1380,
+                maxBreakpointWidth: 1366,
                 "640": {
                     "flexHeaderDemandRequest": {
                         "segmentProps": []
@@ -1365,46 +1034,25 @@ define("DemandRequestFrm", function() {
                     }
                 }
             }
-            this.compInstData = {
-                "piechart": {
-                    "right": "",
-                    "bottom": "",
-                    "minWidth": "",
-                    "minHeight": "",
-                    "maxWidth": "",
-                    "maxHeight": "",
-                    "centerX": "",
-                    "centerY": ""
-                },
-                "multiseriesverticalbar": {
-                    "right": "",
-                    "bottom": "",
-                    "minWidth": "",
-                    "minHeight": "",
-                    "maxWidth": "",
-                    "maxHeight": "",
-                    "centerX": "",
-                    "centerY": ""
-                }
-            }
-            this.add(FlexSKUTable, FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainerHeader);
+            this.compInstData = {}
+            this.add(FlexContainer, FlexContainerHeaders, FlexSKUTable);
         };
         return [{
-            "addWidgets": addWidgetsDemandRequestFrm,
+            "addWidgets": addWidgetsSKUDemand,
             "enabledForIdleTimeout": false,
-            "id": "DemandRequestFrm",
+            "id": "SKUDemand",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
-            "skin": "CopyslForm0je5baca4810942",
+            "skin": "slForm",
             "onBreakpointHandler": onBreakpointHandler,
-            "breakpoints": [640, 1024, 1200, 1366, 1380],
+            "breakpoints": [640, 1024, 1366],
             "appName": "SKU2",
             "preShow": function(eventobject) {
-                controller.AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07(eventobject);
+                controller.AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject);
                 voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
             },
             "info": {
-                "kuid": "a1716dc115ec46f7b708dd80999458a8"
+                "kuid": "bb67880847304d79ab85353202f9a604"
             }
         }, {
             "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,

@@ -1,6 +1,6 @@
 {
-    "AS_Label_ef28823a15424ff6b94cc4c23729f67a": {
-        "id": "AS_Label_ef28823a15424ff6b94cc4c23729f67a",
+    "AS_Label_ad9133d4135c453f87290c089a74695a": {
+        "id": "AS_Label_ad9133d4135c453f87290c089a74695a",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -19,9 +19,9 @@
             "KUID": "a1716dc115ec46f7b708dd80999458a8"
         },
         "language": "js",
-        "eventType": "onTouchEnd",
+        "eventType": "onTouchStart",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM__b9c7d12dc5a64667a3930ef5388c5650",
+            "id": "NAVIGATE_TO_FORM__ee4d1f68eb904de99590f144f162755f",
             "type": "NAVIGATE_TO_FORM",
             "formId": "SKUDemand",
             "formKUID": "bb67880847304d79ab85353202f9a604",

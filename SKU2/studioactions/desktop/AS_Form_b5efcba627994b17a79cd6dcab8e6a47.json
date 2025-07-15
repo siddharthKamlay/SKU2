@@ -9,7 +9,8 @@
         "contextObj": {
             "type": "forms",
             "platform": "",
-            "KUID": "b3c9856e04514d829f4c8106e7ce4669"
+            "KUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "name": "ProductLinefrm"
         },
         "language": "js",
         "eventType": "onMapping",

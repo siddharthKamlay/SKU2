@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "40dp"
+        "value": "10dp"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s4029861bd4849a994639bb93da889e2",
-    "_text_": "Manage and approve  demand requests across all SKUs",
+    "_skin_": "sac91c8792f142cd8241b61e7434a39d",
+    "_text_": "Navigation",
     "_top_": {
         "type": "string",
-        "value": "80dp"
+        "value": "74dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "Label2",
+    "id": "Label02",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c87dea56ecf94df48174ceaffc3c1066",
+    "kuid": "d714ba72fd3b44ccb9a87af7b3211940",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer",
+    "parent": "FlexContainerslidemenu",
     "pf": "SKUDemand",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

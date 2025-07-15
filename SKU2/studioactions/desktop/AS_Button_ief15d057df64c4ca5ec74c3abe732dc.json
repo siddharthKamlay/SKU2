@@ -17,7 +17,9 @@
         "actions": [{
             "id": "NAVIGATE_TO_FORM__e3bf010df8ae48448aa92cbf98c98cf8",
             "type": "NAVIGATE_TO_FORM",
+            "formId": "ProductLinefrm",
             "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "projectName": "SKU2",
             "mappings": {},
             "mappingsOrder": [],
             "enableMappingEditor": true,

@@ -4,7 +4,8 @@
             "mvcFormObjects": [
                 "DemandRequestFrm",
                 "Form1",
-                "ProductLinefrm"
+                "ProductLinefrm",
+                "SKUDemand"
             ],
             "nonmvcFormObjects": []
         },

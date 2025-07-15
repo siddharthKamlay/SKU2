@@ -1,12 +1,14 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "35.19%"
+        "value": "77dp"
     },
     "_left_": {
         "type": "string",
-        "value": "120dp"
+        "value": "12dp"
     },
     "_margin_": [
         0,
@@ -14,47 +16,39 @@
         0,
         0
     ],
-    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_percent_": true,
-    "_skin_": "s18f360cb68840bfaa531488d21c7725",
+    "_skin_": "s5f3c73007e34a2b9f9a91eb8e3e0cf2",
+    "_src_": "menu.png",
     "_top_": {
         "type": "string",
-        "value": "170dp"
+        "value": "31dp"
     },
     "_width_": {
         "type": "string",
-        "value": "38.80%"
+        "value": "90dp"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "linechart"
-    ],
-    "clipbounds": false,
     "containerweight": 100,
-    "enablescrolling": true,
-    "id": "FlexContainerLinechart",
+    "id": "Imagemenu",
+    "ide_onTouchEnd": "AS_Image_c07533c757414f3d8cf76a373f585070",
+    "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ie99c9336a8544d1b3fb7f63dcf838a6",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
+    "kuid": "d5ada0897c7e430c8d690f7dc53cc4cb",
+    "name": "kony.ui.Image2",
     "parent": "ProductLinefrm",
     "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "retainflowhorizontalalignment": false,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
     "zindex": 1
 }

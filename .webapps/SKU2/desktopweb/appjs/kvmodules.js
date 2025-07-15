@@ -78,6 +78,10 @@ define('applicationController',{
             "viewName": "ProductLinefrm",
             "controllerName": "ProductLinefrmController"
         });
+        voltmx.mvc.registry.add("SKUDemand", {
+            "viewName": "SKUDemand",
+            "controllerName": "SKUDemandController"
+        });
         setAppBehaviors();
         if (typeof startBackgroundWorker != "undefined") {
             startBackgroundWorker();
@@ -897,8 +901,8 @@ define("com/konymp/linechart/userlinechartController", ['com/konymp/linechart/ko
     };
 });
 define("com/konymp/linechart/linechartControllerActions", {
-    /* 
-    This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    /*
+      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
 });
 define("com/konymp/linechart/linechartController", ["com/konymp/linechart/userlinechartController", "com/konymp/linechart/linechartControllerActions"], function() {
