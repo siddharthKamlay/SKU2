@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "1156dp"
+        "value": "1120dp"
     },
     "_margin_": [
         6,
@@ -25,7 +25,7 @@
     "_text_": "Reset all ",
     "_top_": {
         "type": "string",
-        "value": "109dp"
+        "value": "108dp"
     },
     "_width_": {
         "type": "string",
