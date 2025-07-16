@@ -25,11 +25,11 @@
     "_text_": "Requested By",
     "_top_": {
         "type": "string",
-        "value": "26dp"
+        "value": "19dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "7%"
     },
     "_wrapping_": 2,
     "android": {

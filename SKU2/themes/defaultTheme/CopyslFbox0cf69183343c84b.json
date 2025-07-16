@@ -3,7 +3,7 @@
     "font_name": "default",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -32,7 +32,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -52,7 +52,7 @@
     "font_name": "System",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -64,7 +64,7 @@
     "font_name": "System",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -89,7 +89,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -117,7 +117,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -145,7 +145,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -173,7 +173,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -201,7 +201,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -229,7 +229,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -257,7 +257,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -285,7 +285,7 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -305,7 +305,7 @@
     "font_name": "default",
     "isForked": true,
     "shadow": {
-      "br": 3,
+      "br": 9,
       "color": "000000",
       "inner": false,
       "nm": 0,

@@ -305,14 +305,14 @@ define("ProductLinefrm", function() {
             var FlexChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "321dp",
+                "height": "315dp",
                 "id": "FlexChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "690dp",
                 "isModalContainer": false,
-                "skin": "slFbox",
-                "top": "160dp",
+                "skin": "CopyslFbox0acc280aa815740",
+                "top": "170dp",
                 "width": "45.39%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -502,14 +502,14 @@ define("ProductLinefrm", function() {
             }, {});
             FlexContainerLinechart.setDefaultUnit(voltmx.flex.DP);
             var linechart = new com.konymp.linechart({
-                "height": "104.10%",
+                "height": "99.82%",
                 "id": "linechart",
                 "isVisible": true,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "slFbox",
-                "top": "-10dp",
+                "skin": "CopyslFbox0d79224d2c5f241",
+                "top": "0dp",
                 "width": "100.42%",
                 "appName": "SKU2",
                 "viewType": "linechart",
@@ -740,15 +740,15 @@ define("ProductLinefrm", function() {
                 "paddingInPixel": false
             }, {});
             var Imagemenu = new voltmx.ui.Image2({
-                "height": "81dp",
+                "height": "67dp",
                 "id": "Imagemenu",
                 "isVisible": true,
                 "left": "12dp",
                 "onDownloadComplete": controller.AS_Image_dd28b3efc1ec471a80da76f7a920d0cb,
                 "onTouchEnd": controller.AS_Image_c07533c757414f3d8cf76a373f585070,
-                "skin": "slImage",
-                "src": "menu.png",
-                "top": "9dp",
+                "skin": "CopyslImage0fed14fc8e7a249",
+                "src": "screenshot_2025_07_15_205044.png",
+                "top": "14dp",
                 "width": "68dp",
                 "zIndex": 1
             }, {

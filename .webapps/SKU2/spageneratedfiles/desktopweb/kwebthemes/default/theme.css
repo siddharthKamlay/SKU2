@@ -159,32 +159,6 @@
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -203,10 +177,6 @@
 
 
 
-
-
-    box-shadow: 0px 0px 2px #000000;
-    -webkit-box-shadow: 0px 0px 2px #000000;
 
 
 
@@ -289,35 +259,6 @@
 
 
 
-
-
-
-
-    border: 1px solid #000000;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -338,8 +279,8 @@
 
 
 
-    box-shadow: 0px 0px 2px #000000;
-    -webkit-box-shadow: 0px 0px 2px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -4446,6 +4387,110 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0acc280aa815740,
+[kw].CopyslFbox0acc280aa815740-hover,
+[kw].CopyslFbox0acc280aa815740-focus,
+[kw].CopyslFbox0acc280aa815740-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0acf09a4b32db44,
 [kw].CopyslFbox0acf09a4b32db44-hover,
 [kw].CopyslFbox0acf09a4b32db44-focus,
@@ -4535,15 +4580,15 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -4673,8 +4718,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -5095,7 +5140,23 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5129,6 +5190,14 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: #ffffff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
 
 
 
@@ -5495,8 +5564,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -5707,8 +5776,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -5915,6 +5984,110 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: rgba(179, 179, 179, 0.85);
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0d79224d2c5f241,
+[kw].CopyslFbox0d79224d2c5f241-hover,
+[kw].CopyslFbox0d79224d2c5f241-focus,
+[kw].CopyslFbox0d79224d2c5f241-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
 
 
 
@@ -6216,32 +6389,6 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -6262,8 +6409,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
 
 
 
@@ -6346,32 +6493,6 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -6392,8 +6513,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
 
 
 
@@ -6596,15 +6717,15 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: rgba(248, 247, 255, 0.98);
+    background-color: rgba(255, 255, 255, 0.98);
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -6888,15 +7009,15 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -6979,32 +7100,6 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -7026,8 +7121,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
 
 
 
@@ -7157,8 +7252,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -7241,35 +7336,6 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-
-
-
-
-    border: 1px solid #000000;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -7290,8 +7356,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 2px #000000;
-    -webkit-box-shadow: 0px 0px 2px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
 
 
 
@@ -7489,7 +7555,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #ebebeb;
+    background-color: #ffffff;
 
 
 
@@ -7555,7 +7621,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #ebebeb;
+    background-color: #ffffff;
 
 
 
@@ -7634,6 +7700,216 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: rgba(183, 184, 232, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslImage0cf2b7d99e3014e,
+[kw='Image2']>img.CopyslImage0cf2b7d99e3014e-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 7px #000000;
+    -webkit-box-shadow: 0px 0px 7px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslImage0fed14fc8e7a249,
+[kw='Image2']>img.CopyslImage0fed14fc8e7a249-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 7px #000000;
+    -webkit-box-shadow: 0px 0px 7px #000000;
 
 
 
@@ -13319,32 +13595,6 @@ div[kr='item'].seg2Normal-focus,
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -13363,10 +13613,6 @@ div[kr='item'].seg2Normal-focus,
 
 
 
-
-
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -16315,32 +16561,6 @@ div[kr='item'].sknseg-focus,
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -16355,15 +16575,15 @@ div[kr='item'].sknseg-focus,
 
 
 
-    background-color: #ffe6ff;
+    background-color: #f7e4f7;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -16446,32 +16666,6 @@ div[kr='item'].sknseg-focus,
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -16486,15 +16680,15 @@ div[kr='item'].sknseg-focus,
 
 
 
-    background-color: #f2acbb;
+    background-color: #ebbcc6;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -16577,32 +16771,6 @@ div[kr='item'].sknseg-focus,
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -16617,15 +16785,15 @@ div[kr='item'].sknseg-focus,
 
 
 
-    background-color: #e5f2bf;
+    background-color: #eaf0d8;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -16708,32 +16876,6 @@ div[kr='item'].sknseg-focus,
 
 
 
-
-
-
-
-    border: 1px solid rgba(0, 0, 0, 0.0);
-
-
-
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     color: #000000;
 
 
@@ -16748,15 +16890,15 @@ div[kr='item'].sknseg-focus,
 
 
 
-    background-color: #bcebce;
+    background-color: #d5eddf;
 
 
 
 
 
 
-    box-shadow: 0px 0px 3px #000000;
-    -webkit-box-shadow: 0px 0px 3px #000000;
+    box-shadow: 0px 0px 9px #000000;
+    -webkit-box-shadow: 0px 0px 9px #000000;
 
 
 
@@ -16916,7 +17058,7 @@ div[kr='item'].sknseg-focus,
 
 
 
-    background-color: #ebebeb;
+    background-color: #ffffff;
 
 
 
