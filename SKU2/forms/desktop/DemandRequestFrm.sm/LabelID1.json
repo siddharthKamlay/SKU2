@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s4b9f9506cbf4289b71da7930751fe4a",
-    "_text_": "Overview of latest demand requests across all SKUs",
+    "_text_": "Detailed view of  all demand requests",
     "_top_": {
         "type": "string",
         "value": "62dp"
@@ -55,7 +55,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "be3eaa5612224271b44f8390605e792a",
+    "kuid": "f878a9af28714817a7e0a8cc65bca58b",
     "masterType": 1,
     "name": "kony.ui.Label",
     "parent": "FlexSKUTable",

@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "1%"
     },
     "_margin_": [
         0,
@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "101.97%"
     },
     "actionsInfo": {
         "skipMapping": true
@@ -48,7 +48,7 @@
         "flexStatus",
         "flexRequestedBY",
         "flexRequestDate",
-        "flexactions"
+        "flexActions"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -57,7 +57,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c228a7213df14dadba69bae1b423be08",
+    "kuid": "d07e2108b79044178574428753f2da78",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flexHeaderDemandRequest",

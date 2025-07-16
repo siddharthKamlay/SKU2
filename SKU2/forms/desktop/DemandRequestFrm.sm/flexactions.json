@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "9.5%"
+        "value": "8%"
     },
     "actionsInfo": {
         "skipMapping": true
@@ -38,16 +38,16 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblActions"
+        "lblAtions"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flexactions",
+    "id": "flexActions",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h918f9f6a22446c4ba771ad6326e73f8",
+    "kuid": "i53c784066b44e40a8c1e554808b07cd",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flexDemandRequest",

@@ -115,24 +115,6 @@ define("ProductLinefrmControllerActions", {
             "animationEnd": MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8_Callback
         });
     },
-    /** onTouchEnd defined for CopyLabel0g28597a9261e4c **/
-    AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
-        var self = this;
-        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
-        ntf.navigate();
-    },
-    /** onTouchEnd defined for Label05 **/
-    AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
-        var self = this;
-        var ntf = new voltmx.mvc.Navigation("SKUDemand");
-        ntf.navigate();
-    },
-    /** onTouchEnd defined for Label04 **/
-    AS_Label_f379af81f07e493387ce6a5b60cc4481: function AS_Label_f379af81f07e493387ce6a5b60cc4481(eventobject, x, y) {
-        var self = this;
-        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
-        ntf.navigate();
-    },
     /** onDownloadComplete defined for Imagemenu **/
     AS_Image_dd28b3efc1ec471a80da76f7a920d0cb: function AS_Image_dd28b3efc1ec471a80da76f7a920d0cb(eventobject, imagesrc, issuccess) {
         var self = this;
@@ -170,6 +152,24 @@ define("ProductLinefrmControllerActions", {
                 animationEnd: function() {}
             });
         }
+    },
+    /** onTouchEnd defined for CopyLabel0g28597a9261e4c **/
+    AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for Label05 **/
+    AS_Label_ef28823a15424ff6b94cc4c23729f67a: function AS_Label_ef28823a15424ff6b94cc4c23729f67a(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("SKUDemand");
+        ntf.navigate();
+    },
+    /** onTouchEnd defined for Label04 **/
+    AS_Label_f379af81f07e493387ce6a5b60cc4481: function AS_Label_f379af81f07e493387ce6a5b60cc4481(eventobject, x, y) {
+        var self = this;
+        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        ntf.navigate();
     }
 });
 define("ProductLinefrmController", ["userProductLinefrmController", "ProductLinefrmControllerActions"], function() {

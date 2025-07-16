@@ -1,0 +1,22 @@
+{
+    "AS_ListBox_cdfff7a0ec2b49099a32bd66ab80db6c": {
+        "id": "AS_ListBox_cdfff7a0ec2b49099a32bd66ab80db6c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "eventType": "onSelection",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onSelection_d84a26fcfa85496b888d4b4d4c0a9883",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "filterData",
+            "display": "filterData",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

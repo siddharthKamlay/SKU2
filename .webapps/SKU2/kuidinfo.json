@@ -2,8 +2,8 @@
     "idToKuidMapping": {
         "androidwear": {},
         "desktop": {
+            "CopyFBoxDemandRequest0baf5ada8ae3645": "dabc9f47dc304dbdb607d1309de056bc",
             "CopyFBoxDemandRequest0c2c1c51673ed4d": "gdb8b58924f14547b2ae47f7cc1ef278",
-            "CopyFBoxDemandRequest0ea77f446c59041": "b5f5ace415884eb0838dc4019390aea7",
             "CopyFBoxProductline0b4828ae3534343": "ec308690a79a44e281fde338fdce6226",
             "CopyFBoxProductline0cfaf586391c248": "dd217f75f53344958e01ff4471590cb5",
             "CopyFBoxProductline0g693a35b70844a": "j598f99689c247c0a27ed15521362d08",
@@ -274,8 +274,8 @@
             "f098a1f5d3814ee8a1feb9621a0ea1b1"
         ],
         "s1d898db12fd45b985cb2cea244b5b4a": [
-            "gdb8b58924f14547b2ae47f7cc1ef278",
-            "b5f5ace415884eb0838dc4019390aea7"
+            "dabc9f47dc304dbdb607d1309de056bc",
+            "gdb8b58924f14547b2ae47f7cc1ef278"
         ],
         "s2028412784640289c0224c2f5811654": [
             "f098a1f5d3814ee8a1feb9621a0ea1b1"
@@ -336,6 +336,7 @@
             "b3c9856e04514d829f4c8106e7ce4669"
         ],
         "s5c7c6e36a8f4a76909e926aa060655a": [
+            "a1716dc115ec46f7b708dd80999458a8",
             "bb67880847304d79ab85353202f9a604"
         ],
         "s5d11d0d4d8a4af691f0bd351ae6538e": [
@@ -345,7 +346,6 @@
             "u5517768a7c7478eb4cc07dfb7c51584"
         ],
         "s5f3c73007e34a2b9f9a91eb8e3e0cf2": [
-            "b5f5ace415884eb0838dc4019390aea7",
             "aa570ff5a1824107b761ad1cd5898397",
             "c807b688a6b342a29a1622c174c4eeff",
             "c619ac315c9246fa9d50e159d5015365",
@@ -374,8 +374,8 @@
             "c619ac315c9246fa9d50e159d5015365"
         ],
         "s6a6eedb8f9046a8a00e603bd9c62606": [
-            "gdb8b58924f14547b2ae47f7cc1ef278",
-            "b5f5ace415884eb0838dc4019390aea7"
+            "dabc9f47dc304dbdb607d1309de056bc",
+            "gdb8b58924f14547b2ae47f7cc1ef278"
         ],
         "s6d59e3183544a789db757a99b242934": [
             "a1716dc115ec46f7b708dd80999458a8",
@@ -391,9 +391,6 @@
         ],
         "s7034ea40ee44bf9b4e9dac2e67e9f63": [
             "b3c9856e04514d829f4c8106e7ce4669"
-        ],
-        "s736638023f748269968efbe81ba2a6e": [
-            "b5f5ace415884eb0838dc4019390aea7"
         ],
         "s778dd9de3b54764b9066bae65241e8f": [
             "f098a1f5d3814ee8a1feb9621a0ea1b1"
@@ -593,12 +590,6 @@
                     "videoWgtPltfrms": []
                 }
             },
-            "b5f5ace415884eb0838dc4019390aea7": {
-                "appName": "SKU2",
-                "id": "CopyFBoxDemandRequest0ea77f446c59041",
-                "templateType": "segments",
-                "topFlexId": "CopyFBoxDemandRequest0ea77f446c59041"
-            },
             "bb67880847304d79ab85353202f9a604": {
                 "appName": "SKU2",
                 "id": "SKUDemand",
@@ -636,6 +627,12 @@
                 "id": "TempDemandRequest",
                 "templateType": "segments",
                 "topFlexId": "Flex0f834108d4cc042"
+            },
+            "dabc9f47dc304dbdb607d1309de056bc": {
+                "appName": "SKU2",
+                "id": "CopyFBoxDemandRequest0baf5ada8ae3645",
+                "templateType": "segments",
+                "topFlexId": "CopyFBoxDemandRequest0baf5ada8ae3645"
             },
             "dd217f75f53344958e01ff4471590cb5": {
                 "appName": "SKU2",

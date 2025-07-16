@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "-1%"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "9.5%"
+        "value": "5%"
     },
     "actionsInfo": {
         "skipMapping": true
@@ -47,7 +47,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c6db8eeac63b47fdaa8d352d5d1d4b69",
+    "kuid": "b4f517dc93934cc9acfa736b87403c7b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flexDemandRequest",

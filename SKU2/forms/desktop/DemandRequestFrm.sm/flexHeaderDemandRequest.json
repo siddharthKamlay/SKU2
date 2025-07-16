@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "2.50%"
+        "value": "-0.76%"
     },
     "_margin_": [
         0,
@@ -47,9 +47,8 @@
     "id": "flexHeaderDemandRequest",
     "info": null,
     "iscustomlayout": false,
-    "ismodalcontainer": true,
     "isvisible": true,
-    "kuid": "eea304ad1a284a788547c852eb5a1ae8",
+    "kuid": "cacfb2a3f037456db0f328fd21dc8a6d",
     "layouttype": 4,
     "masterType": 1,
     "name": "kony.ui.FlexContainer",

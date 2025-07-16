@@ -550,7 +550,7 @@
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0.67%"
     },
     "_margin_": [
         0,
@@ -571,7 +571,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "104.76%"
     },
     "actionsInfo": {
         "dataPropertyName": "records",
@@ -588,7 +588,7 @@
     "counter": "09",
     "focusedindex": null,
     "focuseditem": null,
-    "generatedtemplate": "b5f5ace415884eb0838dc4019390aea7",
+    "generatedtemplate": "dabc9f47dc304dbdb607d1309de056bc",
     "groupcells": false,
     "hasSections": false,
     "id": "segDemandRequest",
@@ -605,15 +605,12 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a14c722083c1430a89cf089dc81679ad",
+    "kuid": "c64e90c621cd4a63af321e71dfc82e8d",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": false,
     "pageoffdotimage": "pageoffdot.png",
     "pageondotimage": "pageondot.png",
-    "paginationconfig": {
-        "vdistance": 1
-    },
     "parent": "flexHeaderDemandRequest",
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
@@ -625,25 +622,18 @@
     "rowskin": "s416a1b7020e4404bf4c5f0ac54f015e",
     "rowtemplate": "Flex0f834108d4cc042",
     "seccounter": 0,
-    "sectionHeaderTemplateId": null,
     "sectionheaderskin": "s0813b4200ce43f1a1a3fff39aad210f",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
-    "selectionbehaviorconfig": null,
     "separatorcolor": "aaaaaa00",
     "separatorrequired": false,
     "separatorthickness": 1,
-    "showscrollbars": true,
-    "swipeContext": {
-        "currentPage": 0,
-        "imageWidth": 1138,
-        "widthRatio": 0
-    },
+    "showscrollbars": false,
     "viewtype": "tableview",
     "vizProps": {},
     "wType": "Segment",

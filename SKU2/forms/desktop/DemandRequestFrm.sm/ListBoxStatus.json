@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "820dp"
+        "value": "790dp"
     },
     "_margin_": [
         0,
@@ -34,15 +34,14 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "dropdownimage": "listboxarw.png",
     "focusskin": "s8df256dcb804b73b3ce84026bd95548",
     "groupcells": false,
     "id": "ListBoxStatus",
-    "ide_onSelection": "AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d",
+    "ide_onSelection": "AS_ListBox_e142ea5b752e4766817f055209389d11",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f5337251411d44c08b7e0cfa8a96bfe1",
+    "kuid": "ec946ba2141844c88c9131381b2ff72e",
     "masterdata": [
         [
             "All Status",
@@ -66,12 +65,8 @@
     "pf": "DemandRequestFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "selectedkey": "All Status",
     "selectedkeys": null,
-    "selectedkeyvalue": [
-        "All Status",
-        "All Status"
-    ],
+    "selectedkeyvalue": null,
     "selectedkeyvalues": null,
     "size": 18,
     "viewconfig": {

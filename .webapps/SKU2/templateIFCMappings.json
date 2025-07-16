@@ -1,11 +1,11 @@
 {
     "controllerTemplateInfoMapping": {
         "desktopweb": {
+            "CopyFBoxDemandRequest0baf5ada8ae3645Controller_desktop": [
+                "CopyFBoxDemandRequest0baf5ada8ae3645Controller"
+            ],
             "CopyFBoxDemandRequest0c2c1c51673ed4dController_desktop": [
                 "CopyFBoxDemandRequest0c2c1c51673ed4dController"
-            ],
-            "CopyFBoxDemandRequest0ea77f446c59041Controller_desktop": [
-                "CopyFBoxDemandRequest0ea77f446c59041Controller"
             ],
             "CopyFBoxProductline0b4828ae3534343Controller_desktop": [
                 "CopyFBoxProductline0b4828ae3534343Controller"
@@ -130,15 +130,15 @@
     },
     "templateControllerInfoMapping": {
         "desktopweb": {
+            "CopyFBoxDemandRequest0baf5ada8ae3645": {
+                "controllerActionDir": "CopyFBoxDemandRequest0baf5ada8ae3645Controller",
+                "controllerChannel": "desktop",
+                "controllerName": "CopyFBoxDemandRequest0baf5ada8ae3645Controller"
+            },
             "CopyFBoxDemandRequest0c2c1c51673ed4d": {
                 "controllerActionDir": "CopyFBoxDemandRequest0c2c1c51673ed4dController",
                 "controllerChannel": "desktop",
                 "controllerName": "CopyFBoxDemandRequest0c2c1c51673ed4dController"
-            },
-            "CopyFBoxDemandRequest0ea77f446c59041": {
-                "controllerActionDir": "CopyFBoxDemandRequest0ea77f446c59041Controller",
-                "controllerChannel": "desktop",
-                "controllerName": "CopyFBoxDemandRequest0ea77f446c59041Controller"
             },
             "CopyFBoxProductline0b4828ae3534343": {
                 "controllerActionDir": "CopyFBoxProductline0b4828ae3534343Controller",

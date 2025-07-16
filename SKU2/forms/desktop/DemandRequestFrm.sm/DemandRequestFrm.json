@@ -56,11 +56,11 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "FlexSKUTable",
         "FlexContainerPieChart",
         "FlexContainerchart",
         "FlexContaineroverview",
-        "FlexContainerHeader"
+        "FlexContainerHeader",
+        "FlexSKUTable"
     ],
     "containerweight": 100,
     "controllerInfo": {

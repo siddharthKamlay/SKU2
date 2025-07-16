@@ -105,9 +105,9 @@
             "id": "ADD_MAPPING_ec5a2c590a374278bf5d1ed42ca5f138",
             "type": "ADD_MAPPING",
             "mappings": {
-                "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d": {
+                "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                    "id": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -133,14 +133,14 @@
                         "dataType": "collection",
                         "itemId": "DemandRequestFrm",
                         "collectionId": "masterdata",
-                        "widgetKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "widgetKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_j0e6d206711345049b722f071c04c848": {
+                "ME_Mapping_bc379f6dfae440af8a482b962fd0f728": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_j0e6d206711345049b722f071c04c848",
+                    "id": "ME_Mapping_bc379f6dfae440af8a482b962fd0f728",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -168,17 +168,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "b698fe70ae4047f294b4f2d2c0e1ed7a",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_dd77dd2befd24e03a7323689746893e6": {
+                "ME_Mapping_fc615a92bf8440119c92a8de867496ca": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_dd77dd2befd24e03a7323689746893e6",
+                    "id": "ME_Mapping_fc615a92bf8440119c92a8de867496ca",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -206,17 +206,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "h88afd2701234f2c8ffa12b83d0ce194",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805": {
+                "ME_Mapping_d116b1b46dbe4586846ddf365293b192": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805",
+                    "id": "ME_Mapping_d116b1b46dbe4586846ddf365293b192",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -244,17 +244,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "b5d1dc0eef4b47c1852bb33d341ad8ee",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7": {
+                "ME_Mapping_ha45bfdc3c3b454a88ecc49a56f19c6c": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7",
+                    "id": "ME_Mapping_ha45bfdc3c3b454a88ecc49a56f19c6c",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -282,17 +282,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "g783ee541403472b971bcfc68886ff14",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_ae20cd524e454fff9e33a7704341aea9": {
+                "ME_Mapping_e81030412a964c469376150b5f7501a3": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_ae20cd524e454fff9e33a7704341aea9",
+                    "id": "ME_Mapping_e81030412a964c469376150b5f7501a3",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -320,17 +320,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "df721c5a43704b0384d85952f5ca12d1",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3": {
+                "ME_Mapping_b706f99b6db64383bda07ca83ad0bb92": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3",
+                    "id": "ME_Mapping_b706f99b6db64383bda07ca83ad0bb92",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -358,17 +358,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "ef97919b3755474aaab5983db0d7e6ca",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_f6506c0826c549a899999b8f1780f9af": {
+                "ME_Mapping_e8629588c7854e53a55f7c3821cd4924": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_f6506c0826c549a899999b8f1780f9af",
+                    "id": "ME_Mapping_e8629588c7854e53a55f7c3821cd4924",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -396,17 +396,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "i96f9efe2f8b4586b58723cb94296a07",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_h5162077ccd444a8b60c550a4abab429": {
+                "ME_Mapping_fd7077151c39452cbd454d96209b3e9f": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_h5162077ccd444a8b60c550a4abab429",
+                    "id": "ME_Mapping_fd7077151c39452cbd454d96209b3e9f",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -434,17 +434,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "dbb7dc60edff490e9f51cb1c7d9aab36",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc": {
+                "ME_Mapping_fe91f8118d0b4d228e7549a04a7c405c": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc",
+                    "id": "ME_Mapping_fe91f8118d0b4d228e7549a04a7c405c",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -472,17 +472,17 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "faa831aa46284a4f8211ec2344614ce8",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 },
-                "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1": {
+                "ME_Mapping_b8b2eb8444e947c5b1656d412289757e": {
                     "channel": "desktop",
-                    "id": "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1",
+                    "id": "ME_Mapping_b8b2eb8444e947c5b1656d412289757e",
                     "type": "MAPPING",
                     "callbackType": null,
                     "rectified": true,
@@ -510,16 +510,16 @@
                         "dataType": "string",
                         "templateType": "rowTemplate",
                         "itemId": "DemandRequestFrm",
-                        "parentMappingId": "ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d",
+                        "parentMappingId": "ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff",
                         "segmentId": "segDemandRequest",
-                        "segmentKUID": "a14c722083c1430a89cf089dc81679ad",
+                        "segmentKUID": "c64e90c621cd4a63af321e71dfc82e8d",
                         "widgetKUID": "i1e8587146aa4d6da56bf3accd1e9589",
                         "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
                         "forkedPlatform": "all"
                     }
                 }
             },
-            "mappingsOrder": ["ME_Mapping_a2ce3ca11bfa427091dadd227874ba3d", "ME_Mapping_j0e6d206711345049b722f071c04c848", "ME_Mapping_dd77dd2befd24e03a7323689746893e6", "ME_Mapping_b9e3edb7afa24ecfb60a2f29859aa805", "ME_Mapping_fa8ace9f06fb4d24b160984a7190c7a7", "ME_Mapping_ae20cd524e454fff9e33a7704341aea9", "ME_Mapping_c71c255ac74b4247b1d296b16ca40fd3", "ME_Mapping_f6506c0826c549a899999b8f1780f9af", "ME_Mapping_h5162077ccd444a8b60c550a4abab429", "ME_Mapping_d99498249023400dbe82ce73b0b4fdcc", "ME_Mapping_a5aa60961e8e4c6097491842d3dce6b1"],
+            "mappingsOrder": ["ME_Mapping_a74b04e5ddb74b64a9d7adad68132aff", "ME_Mapping_bc379f6dfae440af8a482b962fd0f728", "ME_Mapping_fc615a92bf8440119c92a8de867496ca", "ME_Mapping_d116b1b46dbe4586846ddf365293b192", "ME_Mapping_ha45bfdc3c3b454a88ecc49a56f19c6c", "ME_Mapping_e81030412a964c469376150b5f7501a3", "ME_Mapping_b706f99b6db64383bda07ca83ad0bb92", "ME_Mapping_e8629588c7854e53a55f7c3821cd4924", "ME_Mapping_fd7077151c39452cbd454d96209b3e9f", "ME_Mapping_fe91f8118d0b4d228e7549a04a7c405c", "ME_Mapping_b8b2eb8444e947c5b1656d412289757e"],
             "parentId": "_e074e2821b61460a8198ec7965b3c26b",
             "callbackType": null,
             "enableMappingEditor": true

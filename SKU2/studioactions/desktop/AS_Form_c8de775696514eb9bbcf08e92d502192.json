@@ -98,42 +98,8 @@
         }, {
             "id": "ADD_MAPPING_ba80f2a14ab24a389e1b7ed4e8b683b7",
             "type": "ADD_MAPPING",
-            "mappings": {
-                "ME_Mapping_f045a07a5f7a4f478ff47349e3e2de15": {
-                    "channel": "desktop",
-                    "id": "ME_Mapping_f045a07a5f7a4f478ff47349e3e2de15",
-                    "type": "MAPPING",
-                    "callbackType": null,
-                    "rectified": true,
-                    "source": {
-                        "type": "Services",
-                        "propertyName": "records",
-                        "dataType": "collection",
-                        "forkedPlatform": "all",
-                        "serviceconfig": {
-                            "servicename": "SKUDemandRequests",
-                            "type": "objectsvcs",
-                            "objectname": "DemandRequest",
-                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
-                            "methodname": "get"
-                        }
-                    },
-                    "target": {
-                        "type": "Forms",
-                        "propertyName": "rowData",
-                        "widgetId": "segDemandRequest",
-                        "widgetPath": "this.view.segDemandRequest",
-                        "widgetType": "Segment",
-                        "dataType": "collection",
-                        "itemId": "DemandRequestFrm",
-                        "collectionId": "masterdata",
-                        "widgetKUID": "a14c722083c1430a89cf089dc81679ad",
-                        "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
-                        "forkedPlatform": "all"
-                    }
-                }
-            },
-            "mappingsOrder": ["ME_Mapping_f045a07a5f7a4f478ff47349e3e2de15"],
+            "mappings": {},
+            "mappingsOrder": [],
             "parentId": "_de5a6e1c9b564db580f21e4db1298c53",
             "callbackType": null,
             "enableMappingEditor": true

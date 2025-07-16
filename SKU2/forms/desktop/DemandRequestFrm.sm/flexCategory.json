@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "-2%"
     },
     "_margin_": [
         0,
@@ -25,11 +25,11 @@
     "_skin_": "sfeac37b87e44e47b9e8f0fe72c45418",
     "_top_": {
         "type": "string",
-        "value": "1%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "9.5%"
+        "value": "7%"
     },
     "actionsInfo": {
         "skipMapping": true
@@ -47,7 +47,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "jf0fce57f54342038507426c43c73315",
+    "kuid": "f1961875091d42db9f194663e7730383",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flexDemandRequest",
