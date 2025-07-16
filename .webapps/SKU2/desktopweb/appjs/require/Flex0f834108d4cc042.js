@@ -18,8 +18,8 @@ define("Flex0f834108d4cc042", function() {
             "paddingInPixel": false
         }, {});
         Flex0f834108d4cc042.setDefaultUnit(voltmx.flex.DP);
-        var lblSKUID = new voltmx.ui.Label({
-            "id": "lblSKUID",
+        var lblSKUID1 = new voltmx.ui.Label({
+            "id": "lblSKUID1",
             "isVisible": true,
             "left": "1dp",
             "skin": "CopydefLabel0aca9109f5b8a4d",
@@ -32,8 +32,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblName = new voltmx.ui.Label({
-            "id": "lblName",
+        var lblName1 = new voltmx.ui.Label({
+            "id": "lblName1",
             "isVisible": true,
             "left": "28dp",
             "skin": "CopydefLabel0b82dc6acc4fb45",
@@ -46,8 +46,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblCategory = new voltmx.ui.Label({
-            "id": "lblCategory",
+        var lblCategory1 = new voltmx.ui.Label({
+            "id": "lblCategory1",
             "isVisible": true,
             "left": "34dp",
             "skin": "CopydefLabel0ac9dd36920e847",
@@ -60,8 +60,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblStock = new voltmx.ui.Label({
-            "id": "lblStock",
+        var lblStock1 = new voltmx.ui.Label({
+            "id": "lblStock1",
             "isVisible": true,
             "left": "39dp",
             "skin": "CopydefLabel0c26aec5fbc0740",
@@ -74,8 +74,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblForecasted = new voltmx.ui.Label({
-            "id": "lblForecasted",
+        var lblForecasted1 = new voltmx.ui.Label({
+            "id": "lblForecasted1",
             "isVisible": true,
             "left": "36dp",
             "skin": "CopydefLabel0e9ecd4791be946",
@@ -88,8 +88,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblEnrichedQTY = new voltmx.ui.Label({
-            "id": "lblEnrichedQTY",
+        var lblEnrichedQTY1 = new voltmx.ui.Label({
+            "id": "lblEnrichedQTY1",
             "isVisible": true,
             "left": "36dp",
             "skin": "CopydefLabel0cf619ed0268645",
@@ -102,8 +102,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblRequested = new voltmx.ui.Label({
-            "id": "lblRequested",
+        var lblRequested1 = new voltmx.ui.Label({
+            "id": "lblRequested1",
             "isVisible": true,
             "left": "33dp",
             "skin": "CopydefLabel0cc7e8040462441",
@@ -116,8 +116,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblStatus = new voltmx.ui.Label({
-            "id": "lblStatus",
+        var lblStatus1 = new voltmx.ui.Label({
+            "id": "lblStatus1",
             "isVisible": true,
             "left": "31dp",
             "skin": "CopydefLabel0cfa912c41e194a",
@@ -130,8 +130,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblRequestedBY = new voltmx.ui.Label({
-            "id": "lblRequestedBY",
+        var lblRequestedBY1 = new voltmx.ui.Label({
+            "id": "lblRequestedBY1",
             "isVisible": true,
             "left": "31dp",
             "skin": "CopydefLabel0fdef3af8f8ae47",
@@ -144,8 +144,8 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var lblRequestDate = new voltmx.ui.Label({
-            "id": "lblRequestDate",
+        var lblRequestDate1 = new voltmx.ui.Label({
+            "id": "lblRequestDate1",
             "isVisible": true,
             "left": "24dp",
             "skin": "CopydefLabel0d1dbad73a99642",
@@ -203,7 +203,7 @@ define("Flex0f834108d4cc042", function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        Flex0f834108d4cc042.add(lblSKUID, lblName, lblCategory, lblStock, lblForecasted, lblEnrichedQTY, lblRequested, lblStatus, lblRequestedBY, lblRequestDate, Image1, image2, image3);
+        Flex0f834108d4cc042.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1, Image1, image2, image3);
         return Flex0f834108d4cc042;
     }
 })

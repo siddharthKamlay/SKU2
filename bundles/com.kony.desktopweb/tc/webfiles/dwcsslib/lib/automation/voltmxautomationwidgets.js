@@ -87,7 +87,12 @@
         }
 
         if(arguments.length == 2 && typeof arguments[1] == 'string') {
-            enterText_withDefaultEvent(widgetModel, arguments[1]);
+            const maxLen = widgetModel.maxTextLength;
+            let textToEnter = arguments[1];
+            if (typeof maxLen === 'number' && maxLen >= 0) {
+                textToEnter = textToEnter.substring(0, maxLen);
+            }
+            enterText_withDefaultEvent(widgetModel, textToEnter);
         } else if(arguments.length == 2 && $KU.is(arguments[1], 'array')) {
             enterText_withCustomEvent(widgetModel, arguments[1]);
         } else if(arguments.length == 3) {
@@ -159,7 +164,12 @@
         }
 
         if(arguments.length == 2 && typeof arguments[1] == 'string') {
-            enterText_withDefaultEvent(widgetModel, arguments[1]);
+            const maxLen = widgetModel.maxTextLength;
+            let textToEnter = arguments[1];
+            if (typeof maxLen === 'number' && maxLen >= 0) {
+                textToEnter = textToEnter.substring(0, maxLen);
+            }
+            enterText_withDefaultEvent(widgetModel, textToEnter);
         } else if(arguments.length == 2 && $KU.is(arguments[1], 'array')) {
             enterText_withCustomEvent(widgetModel, arguments[1]);
         } else if(arguments.length == 3) {

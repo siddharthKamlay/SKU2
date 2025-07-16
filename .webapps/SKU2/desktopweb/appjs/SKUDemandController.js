@@ -87,6 +87,14 @@ define("SKUDemandControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
+    /** onClick defined for BtnReset **/
+    AS_Button_d5adf419f25344bda4ff66cb60a5bb06: function AS_Button_d5adf419f25344bda4ff66cb60a5bb06(eventobject) {
+        var self = this;
+        self.view.TextFieldSearchBox.text = "";
+        self.view.ListBoxCategories.selectedKeys = ["All_Categories"];
+        self.view.ListBoxStatus.selectedKeys = ["All_Status"];
+        self.filterData.call(this);
+    },
     /** onMapping defined for SKUDemand **/
     AS_Form_c0dd210e25d54aff9eafc381b1dfe411: function AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject) {
         var self = this;
@@ -96,44 +104,46 @@ define("SKUDemandControllerActions", {
         function INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback(DemandRequest) {
             if (DemandRequest.opstatus == 0) {
                 voltmx.application.dismissLoadingScreen();
-                var tempCollection7175 = [];
-                var tempData9617 = DemandRequest.records;
-                for (var each5807 in tempData9617) {
-                    var shouldShow = typeof tempData9617[each5807]["x_0024FILES"] !== 'undefined' && tempData9617[each5807]["x_0024FILES"] && tempData9617[each5807]["x_0024FILES"].length > 0
-                    tempCollection7175.push({
-                        "lblSKUID": {
-                            "text": tempData9617[each5807]["SKUID"]
+                taskData = DemandRequest.records;
+                kony.print("taskData" + JSON.stringify(taskData));
+                var tempCollection2355 = [];
+                var tempData1432 = DemandRequest.records;
+                for (var each2387 in tempData1432) {
+                    var shouldShow = typeof tempData1432[each2387]["x_0024FILES"] !== 'undefined' && tempData1432[each2387]["x_0024FILES"] && tempData1432[each2387]["x_0024FILES"].length > 0
+                    tempCollection2355.push({
+                        "lblSKUID1": {
+                            "text": tempData1432[each2387]["SKUID"]
                         },
-                        "lblName": {
-                            "text": tempData9617[each5807]["Name"]
+                        "lblName1": {
+                            "text": tempData1432[each2387]["Name"]
                         },
-                        "lblCategory": {
-                            "text": tempData9617[each5807]["Category"]
+                        "lblCategory1": {
+                            "text": tempData1432[each2387]["Category"]
                         },
-                        "lblStock": {
-                            "text": tempData9617[each5807]["Stock"]
+                        "lblStock1": {
+                            "text": tempData1432[each2387]["Stock"]
                         },
-                        "lblForecasted": {
-                            "text": tempData9617[each5807]["Forecasted"]
+                        "lblForecasted1": {
+                            "text": tempData1432[each2387]["Forecasted"]
                         },
-                        "lblEnrichedQTY": {
-                            "text": tempData9617[each5807]["EnrichedQTY"]
+                        "lblEnrichedQTY1": {
+                            "text": tempData1432[each2387]["EnrichedQTY"]
                         },
-                        "lblRequested": {
-                            "text": tempData9617[each5807]["Requested"]
+                        "lblRequested1": {
+                            "text": tempData1432[each2387]["Requested"]
                         },
-                        "lblStatus": {
-                            "text": tempData9617[each5807]["Status"]
+                        "lblStatus1": {
+                            "text": tempData1432[each2387]["Status"]
                         },
-                        "lblRequestedBY": {
-                            "text": tempData9617[each5807]["RequestedBY"]
+                        "lblRequestedBY1": {
+                            "text": tempData1432[each2387]["RequestedBY"]
                         },
-                        "lblRequestDate": {
-                            "text": tempData9617[each5807]["RequestDate"]
+                        "lblRequestDate1": {
+                            "text": tempData1432[each2387]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection7175);
+                self.view.segDemandRequest.setData(tempCollection2355);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -153,6 +163,13 @@ define("SKUDemandControllerActions", {
                     self.view.segDemandRequest.setData(self.view.segDemandRequest.data);
                     self.view.forceLayout();
                 }
+                self.view.Label00.text = taskData.length;
+                const pendingCount = taskData.filter(item => item.Status === "Pending").length;
+                self.view.Label01.text = pendingCount;
+                const approvedCount = taskData.filter(item => item.Status === "Approved").length;
+                const rejectedCount = taskData.filter(item => item.Status === "Rejected").length;
+                self.view.Label03.text = approvedCount;
+                self.view.label04.text = rejectedCount;
             } else {
                 function SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_Callback() {
                     SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_True();

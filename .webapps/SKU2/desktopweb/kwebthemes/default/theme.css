@@ -163,16 +163,13 @@
 
 
 
-    border: 1px solid #000000;
+    border: 1px solid rgba(0, 0, 0, 0.0);
 
 
 
-
-
-
-
-
-
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 
 
 
@@ -2256,7 +2253,7 @@
 
 
 
-    font: normal normal 19.0px Helvetica;
+    font: normal normal 17.6px Helvetica;
 
 
 
@@ -4669,7 +4666,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 
 
 
@@ -5491,7 +5488,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 
 
 
@@ -5581,6 +5578,137 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0cf69183343c84b,
+[kw].CopyslFbox0cf69183343c84b-hover,
+[kw].CopyslFbox0cf69183343c84b-focus,
+[kw].CopyslFbox0cf69183343c84b-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid rgba(0, 0, 0, 0.0);
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -6092,16 +6220,13 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    border: 1px solid #000000;
+    border: 1px solid rgba(0, 0, 0, 0.0);
 
 
 
-
-
-
-
-
-
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 
 
 
@@ -6137,8 +6262,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 0px 0px 2px #000000;
-    -webkit-box-shadow: 0px 0px 2px #000000;
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -6186,10 +6311,52 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    border: 1px solid #000000;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid rgba(0, 0, 0, 0.0);
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 
 
 
@@ -6219,6 +6386,14 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -6769,10 +6944,52 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    border: 0px solid #000000;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid rgba(0, 0, 0, 0.0);
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 
 
 
@@ -6803,6 +7020,14 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: #ffffff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -6925,7 +7150,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #f8f7ff;
+    background-color: #ffffff;
 
 
 
@@ -13059,10 +13284,52 @@ div[kr='item'].seg2Normal-focus,
 
 
 
-    border: 0px solid #000000;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid rgba(0, 0, 0, 0.0);
+
+
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 
 
 
@@ -13092,6 +13359,14 @@ div[kr='item'].seg2Normal-focus,
 
 
     background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 0px 0px 3px #000000;
+    -webkit-box-shadow: 0px 0px 3px #000000;
 
 
 
@@ -16613,7 +16888,38 @@ div[kr='item'].sknseg-focus,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     background-color: #ebebeb;
+
+
+
 
 
 
