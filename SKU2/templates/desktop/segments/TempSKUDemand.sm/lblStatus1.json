@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "33dp"
+        "value": "31dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s7c2db914503405082f04d57aa02581e",
-    "_text_": "Requested",
+    "_skin_": "s08334dede804cf78f45cadb541c8039",
+    "_text_": "Status",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblRequested",
+    "id": "lblStatus1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d632fd7568244edaaa080f12790ef646",
+    "kuid": "ea45957c91004ce4a1d5028bddcc4056",
     "name": "kony.ui.Label",
     "parent": "CopyFlex0ff43866586004c",
     "pf": "TempSKUDemand",

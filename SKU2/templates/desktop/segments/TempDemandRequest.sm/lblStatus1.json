@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "36dp"
+        "value": "31dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s507470937934f5a91d7ea6bc46c7691",
-    "_text_": "Forecasted",
+    "_skin_": "s08334dede804cf78f45cadb541c8039",
+    "_text_": "Status",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblForecasted",
+    "id": "lblStatus1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "df721c5a43704b0384d85952f5ca12d1",
+    "kuid": "dbb7dc60edff490e9f51cb1c7d9aab36",
     "name": "kony.ui.Label",
     "parent": "Flex0f834108d4cc042",
     "pf": "TempDemandRequest",

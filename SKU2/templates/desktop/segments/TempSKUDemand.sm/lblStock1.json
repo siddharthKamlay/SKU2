@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "31dp"
+        "value": "39dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s08334dede804cf78f45cadb541c8039",
-    "_text_": "Status",
+    "_skin_": "s08a2011c675433a9ec35225eee753e0",
+    "_text_": "Stock",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblStatus",
+    "id": "lblStock1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dbb7dc60edff490e9f51cb1c7d9aab36",
+    "kuid": "i9dbabbdff7148ee9950ae1c352300e6",
     "name": "kony.ui.Label",
-    "parent": "Flex0f834108d4cc042",
-    "pf": "TempDemandRequest",
+    "parent": "CopyFlex0ff43866586004c",
+    "pf": "TempSKUDemand",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

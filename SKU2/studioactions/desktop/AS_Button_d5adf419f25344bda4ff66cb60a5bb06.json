@@ -1,0 +1,61 @@
+{
+    "AS_Button_d5adf419f25344bda4ff66cb60a5bb06": {
+        "id": "AS_Button_d5adf419f25344bda4ff66cb60a5bb06",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SKUDemand",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bb67880847304d79ab85353202f9a604"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "ADD_SNIPPET_dc4c7db66b834d5d80dcbbe322b405a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.TextFieldSearchBox.text = \"\";\nself.view.ListBoxCategories.selectedKeys = [\"All_Categories\"];\nself.view.ListBoxStatus.selectedKeys = [\"All_Status\"];",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION__h402d2a721084f5abf87c3f8c63c0f33",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "filterData",
+            "display": "filterData",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY___jfc2f27274d646f499c2e6b1bf785b21",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "SKUDemand",
+            "widgetId": "ListBoxStatus",
+            "propertyName": "masterData",
+            "propertyValue": [
+                ["All_Status", "All Status"]
+            ],
+            "additionalPropertyKeyValues": {
+                "selectedKeys": ["All_Status"]
+            },
+            "itemKUID": "bb67880847304d79ab85353202f9a604",
+            "widgetKUID": "h5f11892b1eb4170a23d28e549550c15",
+            "skinKUID": null,
+            "isSkinProperty": false,
+            "wType": "ListBox",
+            "currentTheme": null,
+            "forkedPlatform": "all",
+            "i18nText": null,
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true,
+            "propertyValueKUID": null,
+            "widgetPath": "this.view.ListBoxStatus"
+        }]
+    }
+}

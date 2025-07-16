@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "34dp"
+        "value": "36dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "se20c75048014f868140117caac2971e",
-    "_text_": "Category",
+    "_skin_": "s7b0d0930ea84dcdad28c43c8978e8c5",
+    "_text_": "Enriched QTY",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblCategory",
+    "id": "lblEnrichedQTY1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "abe3c327f8b845f3a2a4a4bbe303d08f",
+    "kuid": "ef97919b3755474aaab5983db0d7e6ca",
     "name": "kony.ui.Label",
-    "parent": "CopyFlex0ff43866586004c",
-    "pf": "TempSKUDemand",
+    "parent": "Flex0f834108d4cc042",
+    "pf": "TempDemandRequest",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

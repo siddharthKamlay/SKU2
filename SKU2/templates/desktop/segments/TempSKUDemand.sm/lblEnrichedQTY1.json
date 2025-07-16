@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "24dp"
+        "value": "36dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s98b6c2e79bc40e1a82e36da149b5a5a",
-    "_text_": "Requested date",
+    "_skin_": "s7b0d0930ea84dcdad28c43c8978e8c5",
+    "_text_": "Enriched QTY",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblRequestDate",
+    "id": "lblEnrichedQTY1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fd8a3dd5c4c5418b9b6c73780c9ae0cf",
+    "kuid": "c4fcbbcdb0294413858134be99776130",
     "name": "kony.ui.Label",
     "parent": "CopyFlex0ff43866586004c",
     "pf": "TempSKUDemand",

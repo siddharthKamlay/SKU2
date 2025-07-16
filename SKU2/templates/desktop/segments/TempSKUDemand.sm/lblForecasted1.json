@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "33dp"
+        "value": "36dp"
     },
     "_margin_": [
         1,
@@ -21,8 +21,8 @@
         0,
         0
     ],
-    "_skin_": "s7c2db914503405082f04d57aa02581e",
-    "_text_": "Requested",
+    "_skin_": "s507470937934f5a91d7ea6bc46c7691",
+    "_text_": "Forecasted",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblRequested",
+    "id": "lblForecasted1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +56,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "i96f9efe2f8b4586b58723cb94296a07",
+    "kuid": "a7a425ef96d84454ad3b72ec1dc6cd18",
     "name": "kony.ui.Label",
-    "parent": "Flex0f834108d4cc042",
-    "pf": "TempDemandRequest",
+    "parent": "CopyFlex0ff43866586004c",
+    "pf": "TempSKUDemand",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

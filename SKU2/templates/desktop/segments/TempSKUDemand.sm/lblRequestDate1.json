@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s98b6c2e79bc40e1a82e36da149b5a5a",
-    "_text_": "Approved Date",
+    "_text_": "Requested date",
     "_top_": {
         "type": "string",
         "value": "26dp"
@@ -42,7 +42,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblApprovedDate",
+    "id": "lblRequestDate1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "i8d9a9560aa3434488284102bdbc5edd",
+    "kuid": "fd8a3dd5c4c5418b9b6c73780c9ae0cf",
     "name": "kony.ui.Label",
     "parent": "CopyFlex0ff43866586004c",
     "pf": "TempSKUDemand",

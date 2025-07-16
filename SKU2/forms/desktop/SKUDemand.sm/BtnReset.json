@@ -37,6 +37,7 @@
     "displaytext": true,
     "focusskin": "s03dc07b3c9645fb82a4fa30243c6677",
     "id": "BtnReset",
+    "ide_onClick": "AS_Button_d5adf419f25344bda4ff66cb60a5bb06",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
