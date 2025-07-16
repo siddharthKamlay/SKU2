@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "110dp"
+        "value": "150dp"
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -22,35 +22,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s54ef042942b412db74349d124beddc3",
+    "_skin_": "s8c7496960954fe2ac011b871ad3086c",
     "_top_": {
         "type": "string",
         "value": "20dp"
     },
     "_width_": {
         "type": "string",
-        "value": "20.83%"
+        "value": "12.45%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lbl1",
-        "lbl2",
-        "lbl3"
+        "imgLogo"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxforecast",
+    "id": "FlexContainerlogo",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "f85c1fe291c54393ab209cb744b2c194",
-    "layouttype": 4,
+    "kuid": "h8e30ae221724d92b712198f591f7f0b",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "FlexContainerHeader",
-    "pf": "DemandRequestFrm",
+    "parent": "LoginFrm",
+    "pf": "LoginFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

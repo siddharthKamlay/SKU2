@@ -1,0 +1,29 @@
+{
+    "AS_Button_je7479732d18461f8a986160b7b3c4c0": {
+        "id": "AS_Button_je7479732d18461f8a986160b7b3c4c0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LoginFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c1126366a5114e4ea37731546b425144"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__c6fb995d85f2405f8e2bac11dc6b4f93",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateLoginAndNavigate",
+            "display": "validateLoginAndNavigate",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

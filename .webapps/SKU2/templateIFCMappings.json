@@ -41,8 +41,8 @@
             "DemandRequestFrmController_desktop": [
                 "DemandRequestFrmController"
             ],
-            "Form1Controller_desktop": [
-                "Form1Controller"
+            "LoginFrmController_desktop": [
+                "LoginFrmController"
             ],
             "ProductLinefrmController_desktop": [
                 "ProductLinefrmController"
@@ -59,10 +59,10 @@
                 "controllerChannel": "desktop",
                 "controllerName": "DemandRequestFrmController"
             },
-            "Form1": {
-                "controllerActionDir": "Form1Controller",
+            "LoginFrm": {
+                "controllerActionDir": "LoginFrmController",
                 "controllerChannel": "desktop",
-                "controllerName": "Form1Controller"
+                "controllerName": "LoginFrmController"
             },
             "ProductLinefrm": {
                 "controllerActionDir": "ProductLinefrmController",
@@ -90,16 +90,16 @@
                 "friendlyName": "DemandRequestFrm",
                 "isMDAForm": false
             },
-            "Form1": {
+            "LoginFrm": {
                 "ControllerExtensions": [],
                 "appName": "SKU2",
                 "controllerInfo": {
-                    "controllerActionName": "Form1Controller",
+                    "controllerActionName": "LoginFrmController",
                     "controllerChannel": "desktop",
-                    "controllerName": "Form1Controller"
+                    "controllerName": "LoginFrmController"
                 },
                 "enableModelDriven": false,
-                "friendlyName": "Form1",
+                "friendlyName": "LoginFrm",
                 "isMDAForm": false
             },
             "ProductLinefrm": {
