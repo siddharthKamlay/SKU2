@@ -46,9 +46,13 @@ define('applicationController',{
             "classname": "multiseriesverticalbar",
             "name": "com.voltmxmp.multiseriesverticalbar"
         });
-        voltmx.mvc.registry.add("myflxSegRowWithImageAndLabel", {
-            "viewName": "myflxSegRowWithImageAndLabel",
-            "controllerName": "myflxSegRowWithImageAndLabelController"
+        voltmx.mvc.registry.add("CopyFlex0ff43866586004c", {
+            "viewName": "CopyFlex0ff43866586004c",
+            "controllerName": "CopyFlex0ff43866586004cController"
+        });
+        voltmx.mvc.registry.add("Flex0f834108d4cc042", {
+            "viewName": "Flex0f834108d4cc042",
+            "controllerName": "Flex0f834108d4cc042Controller"
         });
         voltmx.mvc.registry.add("flxSampleRowTemplate", {
             "viewName": "flxSampleRowTemplate",
@@ -58,13 +62,9 @@ define('applicationController',{
             "viewName": "flxSectionHeaderTemplate",
             "controllerName": "flxSectionHeaderTemplateController"
         });
-        voltmx.mvc.registry.add("Flex0f834108d4cc042", {
-            "viewName": "Flex0f834108d4cc042",
-            "controllerName": "Flex0f834108d4cc042Controller"
-        });
-        voltmx.mvc.registry.add("CopyFlex0ff43866586004c", {
-            "viewName": "CopyFlex0ff43866586004c",
-            "controllerName": "CopyFlex0ff43866586004cController"
+        voltmx.mvc.registry.add("myflxSegRowWithImageAndLabel", {
+            "viewName": "myflxSegRowWithImageAndLabel",
+            "controllerName": "myflxSegRowWithImageAndLabelController"
         });
         voltmx.mvc.registry.add("DemandRequestFrm", {
             "viewName": "DemandRequestFrm",

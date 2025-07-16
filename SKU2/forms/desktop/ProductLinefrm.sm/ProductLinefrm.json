@@ -56,7 +56,7 @@
         "FlexContainerHeader",
         "Label003",
         "Imagemenu",
-        "flxcontainerslidemenu"
+        "FlexContainerSideMenu"
     ],
     "containerweight": 100,
     "controllerInfo": {

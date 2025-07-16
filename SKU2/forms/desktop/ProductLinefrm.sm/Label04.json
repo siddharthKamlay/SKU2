@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "ff61b7c732cd4ab491a19f162f99c09c",
     "name": "kony.ui.Label",
-    "parent": "flxcontainerslidemenu",
+    "parent": "FlexContainerSideMenu",
     "pf": "ProductLinefrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

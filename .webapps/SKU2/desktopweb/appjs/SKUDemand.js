@@ -1113,6 +1113,10 @@ define("SKUDemand", function() {
                 "id": "Image0dc6e78981a6c4f",
                 "isVisible": true,
                 "left": "12dp",
+<<<<<<< HEAD
+                "onTouchEnd": controller.AS_Image_c7585c90d380452cb53b81adc5cd4ae1,
+=======
+>>>>>>> cd1c5fe38dea411b2f7a8dc1e42728f94a8d6497
                 "skin": "slImage",
                 "src": "menu.png",
                 "top": "9dp",

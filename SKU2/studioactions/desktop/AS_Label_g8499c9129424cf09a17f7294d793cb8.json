@@ -1,6 +1,6 @@
 {
-    "AS_Label_e3a9d7a2b54f40e8bccae785c869feae": {
-        "id": "AS_Label_e3a9d7a2b54f40e8bccae785c869feae",
+    "AS_Label_g8499c9129424cf09a17f7294d793cb8": {
+        "id": "AS_Label_g8499c9129424cf09a17f7294d793cb8",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -21,15 +21,13 @@
         "language": "js",
         "eventType": "onTouchEnd",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM__had774ccd6834c46857d6e0591bf95f8",
+            "id": "NAVIGATE_TO_FORM__a22bd936fa194329b3c04fc4fdcdd08b",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "DemandRequestFrm",
-            "formKUID": "a1716dc115ec46f7b708dd80999458a8",
+            "formId": "SKUDemand",
+            "formKUID": "bb67880847304d79ab85353202f9a604",
             "projectName": "SKU2",
             "mappings": {},
             "mappingsOrder": [],
-            "parentId": null,
-            "callbackType": null,
             "enableMappingEditor": true,
             "package": "",
             "isCustomInput": false

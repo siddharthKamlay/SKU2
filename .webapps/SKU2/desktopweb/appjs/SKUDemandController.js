@@ -96,44 +96,44 @@ define("SKUDemandControllerActions", {
         function INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback(DemandRequest) {
             if (DemandRequest.opstatus == 0) {
                 voltmx.application.dismissLoadingScreen();
-                var tempCollection8065 = [];
-                var tempData7615 = DemandRequest.records;
-                for (var each1731 in tempData7615) {
-                    var shouldShow = typeof tempData7615[each1731]["x_0024FILES"] !== 'undefined' && tempData7615[each1731]["x_0024FILES"] && tempData7615[each1731]["x_0024FILES"].length > 0
-                    tempCollection8065.push({
+                var tempCollection3092 = [];
+                var tempData7442 = DemandRequest.records;
+                for (var each6201 in tempData7442) {
+                    var shouldShow = typeof tempData7442[each6201]["x_0024FILES"] !== 'undefined' && tempData7442[each6201]["x_0024FILES"] && tempData7442[each6201]["x_0024FILES"].length > 0
+                    tempCollection3092.push({
                         "lblSKUID": {
-                            "text": tempData7615[each1731]["SKUID"]
+                            "text": tempData7442[each6201]["SKUID"]
                         },
                         "lblName": {
-                            "text": tempData7615[each1731]["Name"]
+                            "text": tempData7442[each6201]["Name"]
                         },
                         "lblCategory": {
-                            "text": tempData7615[each1731]["Category"]
+                            "text": tempData7442[each6201]["Category"]
                         },
                         "lblStock": {
-                            "text": tempData7615[each1731]["Stock"]
+                            "text": tempData7442[each6201]["Stock"]
                         },
                         "lblForecasted": {
-                            "text": tempData7615[each1731]["Forecasted"]
+                            "text": tempData7442[each6201]["Forecasted"]
                         },
                         "lblEnrichedQTY": {
-                            "text": tempData7615[each1731]["EnrichedQTY"]
+                            "text": tempData7442[each6201]["EnrichedQTY"]
                         },
                         "lblRequested": {
-                            "text": tempData7615[each1731]["Requested"]
+                            "text": tempData7442[each6201]["Requested"]
                         },
                         "lblStatus": {
-                            "text": tempData7615[each1731]["Status"]
+                            "text": tempData7442[each6201]["Status"]
                         },
                         "lblRequestedBY": {
-                            "text": tempData7615[each1731]["RequestedBY"]
+                            "text": tempData7442[each6201]["RequestedBY"]
                         },
                         "lblRequestDate": {
-                            "text": tempData7615[each1731]["RequestDate"]
+                            "text": tempData7442[each6201]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection8065);
+                self.view.segDemandRequest.setData(tempCollection3092);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -181,11 +181,37 @@ define("SKUDemandControllerActions", {
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
         SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback);
     },
+<<<<<<< HEAD
+    /** onTouchEnd defined for Image0dc6e78981a6c4f **/
+    AS_Image_c7585c90d380452cb53b81adc5cd4ae1: function AS_Image_c7585c90d380452cb53b81adc5cd4ae1(eventobject, x, y) {
+        var self = this;
+
+        function MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8_Callback() {}
+        self.view.FlexContainerslidemenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 0.25
+        }, {
+            "animationEnd": MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8_Callback
+        });
+    },
+    /** onTouchStart defined for Label05 **/
+    AS_Label_ad9133d4135c453f87290c089a74695a: function AS_Label_ad9133d4135c453f87290c089a74695a(eventobject, x, y) {
+        var self = this;
+=======
     /** onTouchStart defined for Label05 **/
     AS_Label_ad9133d4135c453f87290c089a74695a: function AS_Label_ad9133d4135c453f87290c089a74695a(eventobject, x, y) {
         var self = this;
         var ntf = new voltmx.mvc.Navigation("SKUDemand");
         ntf.navigate();
+>>>>>>> cd1c5fe38dea411b2f7a8dc1e42728f94a8d6497
     },
     /** onTouchEnd defined for CopyLabel0c2616b70466946 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
