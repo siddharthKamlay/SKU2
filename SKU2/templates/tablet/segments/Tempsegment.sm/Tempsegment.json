@@ -1,5 +1,5 @@
 {
-    "@class": "com.kony.gen.viz.model.container.KVizForm",
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
     "DNDConfig": null,
     "_margin_": [
         0,
@@ -19,28 +19,17 @@
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
-    "breakpointInfo": {
-        "b1": {
-            "width": 1366
-        },
-        "b2": {
-            "width": 1024
-        },
-        "b3": {
-            "width": 640
-        }
-    },
     "canUpdateUI": true,
-    "canvasWidth": 1200,
     "children": [
-        "hamburgermenu"
+        "Flex0j00c1fe46a5540"
     ],
+    "containerId": true,
     "containerweight": 100,
     "currentLocale": "default",
-    "device": "desktopweb",
+    "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
-    "id": "userwidgetmodel",
+    "id": "Tempsegment",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -49,18 +38,16 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "u5517768a7c7478eb4cc07dfb7c51584",
-    "layouttype": 2,
-    "masterType": 0,
+    "kuid": "afd669bfb0194fea9ead6f896f827974",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {
         "formTransition": "None"
     },
     "paddinginpixel": false,
-    "platform": "desktopweb",
-    "prevDevice": "desktopweb",
-    "prevPlatform": "desktopweb",
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,

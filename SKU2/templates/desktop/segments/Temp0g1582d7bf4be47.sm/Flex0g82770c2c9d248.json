@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "104.22%"
+        "value": "110dp"
     },
     "_left_": {
         "type": "string",
@@ -22,43 +22,46 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sa21ac74b9064cec8901c0dbcb08d160",
+    "_skin_": "s8c7496960954fe2ac011b871ad3086c",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "FlexTitle",
-        "segMenu"
+        "Label0fc0d8d3dfe234e"
     ],
     "clipbounds": false,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "Flex0g82770c2c9d248Controller"
+        }
+    },
     "enablescrolling": true,
-    "id": "hamburgermenu",
+    "id": "Flex0g82770c2c9d248",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b656248f66d84e97b8d7890d448a0de2",
+    "kuid": "g57cae45ba1f40e3af008403cfa41b7a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
+    "parent": "Temp0g1582d7bf4be47",
+    "pf": "Temp0g1582d7bf4be47",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "vizProps": {
-        "hidewidgethierarchy": false
-    },
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

@@ -15,12 +15,12 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "97.78%"
+        "value": "620dp"
     },
     "_indicator_": "none",
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "30dp"
     },
     "_margin_": [
         0,
@@ -37,71 +37,52 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "170dp"
+        "value": "200dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100.03%"
+        "value": "83.59%"
     },
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
-    "counter": "01",
+    "counter": "02",
     "desktop": {
         "_data_": [
             {
-                "Imgarrow": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "arrow.png",
-                    "type": "Image"
-                },
-                "imgMenuOption": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "overview.png",
-                    "type": "Image"
-                },
-                "lblMenuOption": {
+                "Label0fc0d8d3dfe234e": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                     "text": "Overview",
                     "type": "Label"
                 }
             },
             {
-                "Imgarrow": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "arrow.png",
-                    "type": "Image"
-                },
-                "imgMenuOption": {
-                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                    "src": "sop.png",
-                    "type": "Image"
-                },
-                "lblMenuOption": {
+                "Label0fc0d8d3dfe234e": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "S&OP       ",
+                    "text": "S&OP",
+                    "type": "Label"
+                }
+            },
+            {
+                "Label0fc0d8d3dfe234e": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "SKU Demand",
                     "type": "Label"
                 }
             }
         ],
-        "rowTemplateId": "aa570ff5a1824107b761ad1cd5898397",
-        "rowtemplate": "myflxSegRowWithImageAndLabel",
+        "rowTemplateId": "d0f54284d54b4a22a6fcdf49683d6d24",
+        "rowtemplate": "Flex0g82770c2c9d248",
         "widgetdatamap": {
-            "Imgarrow": "Imgarrow",
-            "imgMenuOption": "imgMenuOption",
-            "lblMenuOption": "lblMenuOption",
-            "myflxSegRowWithImageAndLabel": "myflxSegRowWithImageAndLabel"
+            "Flex0g82770c2c9d248": "Flex0g82770c2c9d248",
+            "Label0fc0d8d3dfe234e": "Label0fc0d8d3dfe234e"
         }
     },
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
-    "id": "segMenu",
+    "id": "Segment0ba7739d59cd244",
     "info": null,
     "ipad": {
         "psp": {
@@ -115,7 +96,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d61e873ddea84d13b8d8263debdd0a6f",
+    "kuid": "h859792119e440ed9e4d8705919ac433",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -124,14 +105,14 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "hamburgermenu",
+    "parent": "hamburgermenu1",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
-    "rowcounter": 1,
+    "rowcounter": 2,
     "rowfocusskin": "se7b8babe3694f61b066e744c5473f19",
-    "rowskin": "sf47abc84698409194a1a0bb9638fc19",
+    "rowskin": "s6fb30bd0e6847f1b7285f862f4b3ecc",
     "rowtemplate": null,
     "screenlevelwidget": false,
     "seccounter": 0,
@@ -152,10 +133,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "arrowlbl": "arrowlbl",
-        "imgMenuOption": "imgMenuOption",
-        "lblMenuOption": "lblMenuOption",
-        "myflxSegRowWithImageAndLabel": "myflxSegRowWithImageAndLabel"
+        "Flex0g82770c2c9d248": "Flex0g82770c2c9d248"
     },
     "zindex": 1
 }
