@@ -89,6 +89,6 @@ define({
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
+        new voltmx.mvc.Navigation("LoginFrm").navigate();
     }
 });

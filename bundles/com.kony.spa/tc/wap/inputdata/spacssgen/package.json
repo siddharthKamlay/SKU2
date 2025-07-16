@@ -11,8 +11,8 @@
   "license": "BSD",
   "dependencies": {
     "@babel/cli": "^7.22.9",
-    "@babel/core": "^7.26.10",
-    "@babel/preset-env": "^7.26.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.22.9",
     "config": "3.3.9",
     "js-beautify": "1.14.7",
     "log4js": "6.4.0",

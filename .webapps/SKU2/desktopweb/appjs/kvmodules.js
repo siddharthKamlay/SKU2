@@ -89,7 +89,7 @@ define('applicationController',{
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
+        new voltmx.mvc.Navigation("LoginFrm").navigate();
     }
 });
 define("com/hclsoftwareu/hamburgermenu/userhamburgermenuController", [],function() {

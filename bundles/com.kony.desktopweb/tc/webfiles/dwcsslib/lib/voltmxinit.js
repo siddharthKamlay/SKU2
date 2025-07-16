@@ -14,7 +14,7 @@ if(!String.prototype.startsWith) {
 //pollyfill ends
 
 (function() {
-    var VERSION = '9.5.54.v202505141408',
+    var VERSION = '9.5.52.v202503251056',
         BUILD = 'debug',
         ECMAENABLE = '@ECMAENABLE', PUBLISH = false,
         UWPAPIS = (/true/i).test('-- UWPAPIS --'),

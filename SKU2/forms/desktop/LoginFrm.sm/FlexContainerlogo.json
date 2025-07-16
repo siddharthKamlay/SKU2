@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "150dp"
+        "value": "160dp"
     },
     "_left_": {
         "type": "string",
@@ -22,14 +22,14 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s8c7496960954fe2ac011b871ad3086c",
+    "_skin_": "se8760b175884e129e1071d3b3dfcb1b",
     "_top_": {
         "type": "string",
         "value": "20dp"
     },
     "_width_": {
         "type": "string",
-        "value": "12.45%"
+        "value": "160dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -37,7 +37,7 @@
     "children": [
         "imgLogo"
     ],
-    "clipbounds": false,
+    "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "FlexContainerlogo",

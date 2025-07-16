@@ -263,12 +263,12 @@
     "cordovaModified": false,
     "createdVizVersion": "9.5.52",
     "createdgaversion": "9.5.52",
-    "currentgaversion": "9.5.54",
+    "currentgaversion": "9.5.52",
     "deeplinkkey": "None",
     "defaultZIndex": "1",
     "defaultlocalekey": "",
     "defaulttheme": "defaultTheme",
-    "desktopstartupformkey": "a1716dc115ec46f7b708dd80999458a8",
+    "desktopstartupformkey": "c1126366a5114e4ea37731546b425144",
     "desktopwebaligenmentoption": "left",
     "desktopwebbasefontsize": "16",
     "desktopwebfavico": "",
@@ -442,7 +442,7 @@
             "version": "1.0"
         }
     },
-    "konyVizVersion": "9.5.54",
+    "konyVizVersion": "9.5.52",
     "lastmodifiedtime": "1752037151868",
     "location": "false",
     "mangoapptitlekey": ",,,,,,",

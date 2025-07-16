@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s5f3c73007e34a2b9f9a91eb8e3e0cf2",
+    "_skin_": "s64c1f048b8e473db250b046169f0445",
     "_src_": "alphaleo.jpg",
     "_top_": {
         "type": "string",
@@ -35,7 +35,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "id": "imgLogo",
-    "imagescalemode": 1,
+    "imagescalemode": 0,
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
