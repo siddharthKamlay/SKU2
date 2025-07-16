@@ -3,7 +3,7 @@
         "formslist": {
             "mvcFormObjects": [
                 "DemandRequestFrm",
-                "Form1",
+                "LoginFrm",
                 "ProductLinefrm",
                 "SKUDemand"
             ],

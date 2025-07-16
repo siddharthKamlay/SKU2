@@ -20,7 +20,7 @@
         1,
         1
     ],
-    "_skin_": "sde86b62ef46487c836c748e9c5e210a",
+    "_skin_": "s195f62c002d4431b127bf96b63ce319",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -45,16 +45,26 @@
         },
         "b3": {
             "width": 640
+        },
+        "b4": {
+            "width": 1380
+        },
+        "b5": {
+            "width": 1200
         }
     },
     "canUpdateUI": true,
     "canvasWidth": 1200,
-    "children": [],
+    "children": [
+        "FlexContainerlogo",
+        "lbl1",
+        "FlexContainerLogin"
+    ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "desktop",
-            "name": "Form1Controller"
+            "name": "LoginFrmController"
         }
     },
     "currentLocale": "default",
@@ -64,7 +74,7 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "Form1",
+    "id": "LoginFrm",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

@@ -70,9 +70,9 @@ define('applicationController',{
             "viewName": "DemandRequestFrm",
             "controllerName": "DemandRequestFrmController"
         });
-        voltmx.mvc.registry.add("Form1", {
-            "viewName": "Form1",
-            "controllerName": "Form1Controller"
+        voltmx.mvc.registry.add("LoginFrm", {
+            "viewName": "LoginFrm",
+            "controllerName": "LoginFrmController"
         });
         voltmx.mvc.registry.add("ProductLinefrm", {
             "viewName": "ProductLinefrm",
@@ -89,7 +89,7 @@ define('applicationController',{
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
+        new voltmx.mvc.Navigation("LoginFrm").navigate();
     }
 });
 define("com/hclsoftwareu/hamburgermenu/userhamburgermenuController", [],function() {
@@ -901,8 +901,8 @@ define("com/konymp/linechart/userlinechartController", ['com/konymp/linechart/ko
     };
 });
 define("com/konymp/linechart/linechartControllerActions", {
-    /* 
-    This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    /*
+      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
 });
 define("com/konymp/linechart/linechartController", ["com/konymp/linechart/userlinechartController", "com/konymp/linechart/linechartControllerActions"], function() {

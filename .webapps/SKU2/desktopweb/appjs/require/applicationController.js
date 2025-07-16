@@ -70,9 +70,9 @@ define({
             "viewName": "DemandRequestFrm",
             "controllerName": "DemandRequestFrmController"
         });
-        voltmx.mvc.registry.add("Form1", {
-            "viewName": "Form1",
-            "controllerName": "Form1Controller"
+        voltmx.mvc.registry.add("LoginFrm", {
+            "viewName": "LoginFrm",
+            "controllerName": "LoginFrmController"
         });
         voltmx.mvc.registry.add("ProductLinefrm", {
             "viewName": "ProductLinefrm",
@@ -89,6 +89,6 @@ define({
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
+        new voltmx.mvc.Navigation("LoginFrm").navigate();
     }
 });
