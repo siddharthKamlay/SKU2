@@ -20410,7 +20410,7 @@ function themeCallBack() {
                 init: applicationController.appInit,
                 postappinit: applicationController.postAppInitCallBack,
                 showstartupform: function() {
-                    new voltmx.mvc.Navigation("SKUDemand").navigate();
+                    new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
                 }
             });
         });

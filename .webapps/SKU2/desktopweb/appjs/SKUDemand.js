@@ -556,7 +556,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblStatus",
                 "isVisible": true,
-                "left": "57%",
+                "left": "62%",
                 "skin": "lblStatusSkin0d1b3c7ffb10440",
                 "text": "Status",
                 "top": "0%",
