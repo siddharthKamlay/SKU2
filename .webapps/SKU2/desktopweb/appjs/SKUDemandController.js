@@ -87,6 +87,14 @@ define("SKUDemandControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
+    /** onClick defined for BtnReset **/
+    AS_Button_d5adf419f25344bda4ff66cb60a5bb06: function AS_Button_d5adf419f25344bda4ff66cb60a5bb06(eventobject) {
+        var self = this;
+        self.view.TextFieldSearchBox.text = "";
+        self.view.ListBoxCategories.selectedKeys = ["All_Categories"];
+        self.view.ListBoxStatus.selectedKeys = ["All_Status"];
+        self.filterData.call(this);
+    },
     /** onMapping defined for SKUDemand **/
     AS_Form_c0dd210e25d54aff9eafc381b1dfe411: function AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject) {
         var self = this;
@@ -96,6 +104,7 @@ define("SKUDemandControllerActions", {
         function INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback(DemandRequest) {
             if (DemandRequest.opstatus == 0) {
                 voltmx.application.dismissLoadingScreen();
+<<<<<<< Updated upstream
                 var tempCollection1751 = [];
                 var tempData9414 = DemandRequest.records;
                 for (var each980 in tempData9414) {
@@ -134,6 +143,48 @@ define("SKUDemandControllerActions", {
                     });
                 }
                 self.view.segDemandRequest.setData(tempCollection1751);
+=======
+                taskData = DemandRequest.records;
+                kony.print("taskData" + JSON.stringify(taskData));
+                var tempCollection5963 = [];
+                var tempData7864 = DemandRequest.records;
+                for (var each1577 in tempData7864) {
+                    var shouldShow = typeof tempData7864[each1577]["x_0024FILES"] !== 'undefined' && tempData7864[each1577]["x_0024FILES"] && tempData7864[each1577]["x_0024FILES"].length > 0
+                    tempCollection5963.push({
+                        "lblSKUID1": {
+                            "text": tempData7864[each1577]["SKUID"]
+                        },
+                        "lblName1": {
+                            "text": tempData7864[each1577]["Name"]
+                        },
+                        "lblCategory1": {
+                            "text": tempData7864[each1577]["Category"]
+                        },
+                        "lblStock1": {
+                            "text": tempData7864[each1577]["Stock"]
+                        },
+                        "lblForecasted1": {
+                            "text": tempData7864[each1577]["Forecasted"]
+                        },
+                        "lblEnrichedQTY1": {
+                            "text": tempData7864[each1577]["EnrichedQTY"]
+                        },
+                        "lblRequested1": {
+                            "text": tempData7864[each1577]["Requested"]
+                        },
+                        "lblStatus1": {
+                            "text": tempData7864[each1577]["Status"]
+                        },
+                        "lblRequestedBY1": {
+                            "text": tempData7864[each1577]["RequestedBY"]
+                        },
+                        "lblRequestDate1": {
+                            "text": tempData7864[each1577]["RequestDate"]
+                        },
+                    });
+                }
+                self.view.segDemandRequest.setData(tempCollection5963);
+>>>>>>> Stashed changes
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -153,6 +204,13 @@ define("SKUDemandControllerActions", {
                     self.view.segDemandRequest.setData(self.view.segDemandRequest.data);
                     self.view.forceLayout();
                 }
+                self.view.Label00.text = taskData.length;
+                const pendingCount = taskData.filter(item => item.Status === "Pending").length;
+                self.view.Label01.text = pendingCount;
+                const approvedCount = taskData.filter(item => item.Status === "Approved").length;
+                const rejectedCount = taskData.filter(item => item.Status === "Rejected").length;
+                self.view.Label03.text = approvedCount;
+                self.view.label04.text = rejectedCount;
             } else {
                 function SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_Callback() {
                     SHOW_ALERT_e3b4ecb1ad2049969ae8833aac6c7ea8_True();

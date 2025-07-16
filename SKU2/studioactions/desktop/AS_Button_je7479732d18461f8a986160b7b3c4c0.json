@@ -1,0 +1,186 @@
+{
+    "AS_Button_je7479732d18461f8a986160b7b3c4c0": {
+        "id": "AS_Button_je7479732d18461f8a986160b7b3c4c0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LoginFrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c1126366a5114e4ea37731546b425144"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "LOADING_INDICATOR_d061abae49424431b9daea644336befa",
+            "selectedOption": "show",
+            "parentId": null,
+            "type": "LOADING_INDICATOR",
+            "callbackType": null,
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "INVOKE_SERVICE_addf556c7d5043ac99843f6154b8ad62",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {
+                "ME_Mapping_d146704964304c269b34903f5d65d05c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d146704964304c269b34903f5d65d05c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtUsername",
+                        "widgetPath": "this.view.txtUsername",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "LoginFrm",
+                        "widgetKUID": "a40e065f1bb341539502f5a336c390a4",
+                        "itemKUID": "c1126366a5114e4ea37731546b425144",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "userid",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "operationname": "login",
+                            "servicename": "LoginAuthentication",
+                            "type": "identity",
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic"
+                        }
+                    }
+                },
+                "ME_Mapping_e8279074881840e7bc1858839ddc0fcf": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e8279074881840e7bc1858839ddc0fcf",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtPassword",
+                        "widgetPath": "this.view.txtPassword",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "LoginFrm",
+                        "widgetKUID": "de23322335a342c1969170d1d1396805",
+                        "itemKUID": "c1126366a5114e4ea37731546b425144",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "password",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "operationname": "login",
+                            "servicename": "LoginAuthentication",
+                            "type": "identity",
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_d146704964304c269b34903f5d65d05c", "ME_Mapping_e8279074881840e7bc1858839ddc0fcf"],
+            "serviceconfig": {
+                "operationname": "login",
+                "servicename": "LoginAuthentication",
+                "type": "identity",
+                "isDeepLinkRequired": false,
+                "login_type": "basic"
+            },
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": false
+        }, {
+            "id": "LOADING_INDICATOR_f52a5ed3d36d41aca3e5e02302701f67",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_addf556c7d5043ac99843f6154b8ad62",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Failure",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "SHOW_ALERT_idcf18bf49614274ad1d2a54d62775c5",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_ERROR",
+            "alertTitle": "Login",
+            "yesLabel": "Ok",
+            "alertMessage": "Invalid Credentials",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_addf556c7d5043ac99843f6154b8ad62",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "LOADING_INDICATOR_j4b2b0c850b2482c8635caa3903f65ba",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_addf556c7d5043ac99843f6154b8ad62",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Success",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "NAVIGATE_TO_FORM__g49820401132473799d99c4de652b94f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "DemandRequestFrm",
+            "formKUID": "a1716dc115ec46f7b708dd80999458a8",
+            "projectName": "SKU2",
+            "mappings": {
+                "ME_Mapping_e1092da6cc3d41cab861f8e1aeca7c5c": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_e1092da6cc3d41cab861f8e1aeca7c5c",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "txtUsername_text",
+                        "widgetId": "txtUsername",
+                        "widgetPath": "this.view.txtUsername",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "LoginFrm",
+                        "widgetKUID": "a40e065f1bb341539502f5a336c390a4",
+                        "itemKUID": "c1126366a5114e4ea37731546b425144",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e1092da6cc3d41cab861f8e1aeca7c5c"],
+            "parentId": "INVOKE_SERVICE_addf556c7d5043ac99843f6154b8ad62",
+            "callbackType": "Success",
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"txtUsername_text\": self.view.txtUsername.text,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnLogin\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

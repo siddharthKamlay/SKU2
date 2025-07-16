@@ -889,6 +889,29 @@
         "border_width": 0,
         "wType": "FlexContainer"
     },
+<<<<<<< Updated upstream
+=======
+    "CopyslFbox0cf69183343c84b": {
+        "background_color": "ffffff00",
+        "bg_type": "one",
+        "border_color": "00000000",
+        "border_style": "plain",
+        "border_type": 0,
+        "border_width": 0,
+        "font_name": "Helvetica",
+        "wType": "FlexContainer"
+    },
+    "CopyslFbox0d65f37a3b8a246": {
+        "background_color": "00000064",
+        "bg_type": "one",
+        "border_color": "00000032",
+        "border_style": "rc",
+        "border_type": 0,
+        "border_width": 1,
+        "font_name": "Helvetica",
+        "wType": "FlexContainer"
+    },
+>>>>>>> Stashed changes
     "CopyslFbox0d77399fd11aa42": {
         "background_color": "b3b3b30f",
         "bg_type": "one",
@@ -2345,7 +2368,12 @@
     "slFormSkinCommon": {
         "background_color": "ebebeb00",
         "bg_type": "one",
-        "border_color": "ffffff00",
+        "border_bottom_color": "ffffff00",
+        "border_left_color": "ffffff00",
+        "border_right_color": "ffffff00",
+        "border_top_color": "ffffff00",
+        "forked": true,
+        "isCustomCSSEnabled": false,
         "wType": "Form"
     },
     "slImage": {

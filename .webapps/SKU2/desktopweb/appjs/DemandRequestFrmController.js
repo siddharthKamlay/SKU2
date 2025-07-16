@@ -152,6 +152,7 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
+<<<<<<< Updated upstream
                 var tempCollection7621 = [];
                 var tempData9742 = DemandRequest.records;
                 for (var each9583 in tempData9742) {
@@ -190,6 +191,46 @@ define("DemandRequestFrmControllerActions", {
                     });
                 }
                 self.view.segDemandRequest.setData(tempCollection7621);
+=======
+                var tempCollection4199 = [];
+                var tempData9372 = DemandRequest.records;
+                for (var each5462 in tempData9372) {
+                    var shouldShow = typeof tempData9372[each5462]["x_0024FILES"] !== 'undefined' && tempData9372[each5462]["x_0024FILES"] && tempData9372[each5462]["x_0024FILES"].length > 0
+                    tempCollection4199.push({
+                        "lblSKUID1": {
+                            "text": tempData9372[each5462]["SKUID"]
+                        },
+                        "lblName1": {
+                            "text": tempData9372[each5462]["Name"]
+                        },
+                        "lblCategory1": {
+                            "text": tempData9372[each5462]["Category"]
+                        },
+                        "lblStock1": {
+                            "text": tempData9372[each5462]["Stock"]
+                        },
+                        "lblForecasted1": {
+                            "text": tempData9372[each5462]["Forecasted"]
+                        },
+                        "lblEnrichedQTY1": {
+                            "text": tempData9372[each5462]["EnrichedQTY"]
+                        },
+                        "lblRequested1": {
+                            "text": tempData9372[each5462]["Requested"]
+                        },
+                        "lblStatus1": {
+                            "text": tempData9372[each5462]["Status"]
+                        },
+                        "lblRequestedBY1": {
+                            "text": tempData9372[each5462]["RequestedBY"]
+                        },
+                        "lblRequestDate1": {
+                            "text": tempData9372[each5462]["RequestDate"]
+                        },
+                    });
+                }
+                self.view.segDemandRequest.setData(tempCollection4199);
+>>>>>>> Stashed changes
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -261,11 +302,14 @@ define("DemandRequestFrmControllerActions", {
         var self = this;
         return self.sortByField.call(this, null);
     },
+<<<<<<< Updated upstream
     /** onSelection defined for ListBoxStatus **/
     AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d: function AS_ListBox_e2ce0cd1c7e24420b302a23eef71b76d(eventobject) {
         var self = this;
         return self.filterData.call(this);
     },
+=======
+>>>>>>> Stashed changes
     /** onSelection defined for ListBoxCategories **/
     AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce: function AS_ListBox_i69f73a7b22447c6b72c79cd37d16dce(eventobject) {
         var self = this;
@@ -273,6 +317,11 @@ define("DemandRequestFrmControllerActions", {
     },
     /** onTextChange defined for TextFieldSearchBox **/
     AS_TextField_dc47635772cc453eaed6ee53512ba60a: function AS_TextField_dc47635772cc453eaed6ee53512ba60a(eventobject, changedtext) {
+        var self = this;
+        return self.filterData.call(this);
+    },
+    /** onTextChange defined for TextFieldSearchBox **/
+    AS_TextField_i399824987dc42e28a801263c10a9da3: function AS_TextField_i399824987dc42e28a801263c10a9da3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
     }
