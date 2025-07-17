@@ -45,9 +45,7 @@
         "lblStatus1",
         "lblRequestedBY1",
         "lblRequestDate1",
-        "Image1",
-        "image2",
-        "image3"
+        "lblApprovedDate1"
     ],
     "clipbounds": false,
     "containerId": true,

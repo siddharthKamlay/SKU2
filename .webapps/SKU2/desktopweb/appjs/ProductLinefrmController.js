@@ -95,6 +95,11 @@ define("ProductLinefrmControllerActions", {
         Productline_inputparam["httpconfig"] = Productline_httpconfigs;
         SKUDemandRequests$Productline$get = mfobjectsecureinvokerasync(Productline_inputparam, "SKUDemandRequests", "Productline", INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback);
     },
+    /** preShow defined for ProductLinefrm **/
+    AS_Form_da584cea0bdc46239c2275a4cc857053: function AS_Form_da584cea0bdc46239c2275a4cc857053(eventobject) {
+        var self = this;
+        self.view.FlexContainerSideMenu.left = "-180%";
+    },
     /** onTouchEnd defined for Imagemenu **/
     AS_Image_c07533c757414f3d8cf76a373f585070: function AS_Image_c07533c757414f3d8cf76a373f585070(eventobject, x, y) {
         var self = this;
@@ -104,13 +109,14 @@ define("ProductLinefrmControllerActions", {
             "100": {
                 "stepConfig": {
                     "timingFunction": voltmx.anim.EASE
-                }
+                },
+                "left": "0px"
             }
         }), {
             "delay": 0,
             "iterationCount": 1,
             "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
-            "duration": 0.25
+            "duration": 1
         }, {
             "animationEnd": MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8_Callback
         });
@@ -170,6 +176,27 @@ define("ProductLinefrmControllerActions", {
         var self = this;
         var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
         ntf.navigate();
+    },
+    /** onTouchEnd defined for Bars **/
+    AS_Label_i99a9cd8afc14c08bad313a16cd614b2: function AS_Label_i99a9cd8afc14c08bad313a16cd614b2(eventobject, x, y) {
+        var self = this;
+
+        function _a9f423b228fb463186e1094c88010403_Callback() {}
+        self.view.FlexContainerSideMenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "0px",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 0.25
+        }, {
+            "animationEnd": _a9f423b228fb463186e1094c88010403_Callback
+        });
     }
 });
 define("ProductLinefrmController", ["userProductLinefrmController", "ProductLinefrmControllerActions"], function() {

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../../fonts/FontAwesome.ttf'), url('../../fonts/FontAwesome.eot');
+}
+
+
 .voltmxfw_baseskincss,
 .CopyCopyslForm1,
 .CopyslForm,
@@ -52,8 +58,10 @@
 .CopydefLabel0eb185b43aedb42,
 .CopydefLabel0fdef3af8f8ae47,
 .CopydefLabel0hba1267c8f024f,
+.CopydefLabel0i8a7b2a6a59f4b,
 .CopydefLabel0j1256387816f4b,
 .CopydefLabel0j936dd23cb674a,
+.CopyslFontAwesomeIcon0a2a3d24700e048,
 .defDataPanelLabelNormalSkinDW0c3de096c907b47,
 .defDataPanelLabelNormalSkinDW0c7b20c06c3214b,
 .defDataPanelLabelNormalSkinDW0f236c797f91642,
@@ -74,11 +82,13 @@
 .defLabelYellow,
 .defLabelred,
 .lblStatusSkin0d1b3c7ffb10440,
+.s8cdcc90e1ba42929bb919beacf32867,
 .sknLblDescription,
 .sknLblRowHeading,
 .sknLblStrip,
 .sknLblTimeStamp,
 .sknSectionHeaderLabelSkin,
+.slFontAwesomeIcon,
 .CopydefListBoxNormal0d1b8af389ce64c,
 .CopydefListBoxNormal0e2b722993c6543,
 .defListBoxFocus,
@@ -1234,8 +1244,10 @@
 
 
 
-    font: normal 400 19.0px Helvetica;
+    font: 400 19.0px Helvetica;
 
+
+    text-decoration: underline;
 
 
 
@@ -1676,8 +1688,10 @@
 
 
 
-    font: normal 400 19.0px Helvetica;
+    font: 400 19.0px Helvetica;
 
+
+    text-decoration: underline;
 
 
 
@@ -2194,7 +2208,7 @@
 
 
 
-    font: normal normal 17.6px Helvetica;
+    font: normal bold 27.0px Helvetica;
 
 
 
@@ -3000,8 +3014,10 @@
 
 
 
-    font: normal 400 19.0px Helvetica;
+    font: 400 19.0px Helvetica;
 
+
+    text-decoration: underline;
 
 
 
@@ -3441,6 +3457,80 @@
 
 
     font: normal 400 19.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0i8a7b2a6a59f4b,
+[kw].CopydefLabel0i8a7b2a6a59f4b-hover,
+[kw].CopydefLabel0i8a7b2a6a59f4b-focus,
+[kw].CopydefLabel0i8a7b2a6a59f4b-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 16.0px Helvetica;
 
 
 
@@ -7051,6 +7141,132 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0h22d676da58b4a,
+[kw].CopyslFbox0h22d676da58b4a-hover,
+[kw].CopyslFbox0h22d676da58b4a-focus,
+[kw].CopyslFbox0h22d676da58b4a-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0i2f208e36e0f41,
 [kw].CopyslFbox0i2f208e36e0f41-hover,
 [kw].CopyslFbox0i2f208e36e0f41-focus,
@@ -7358,6 +7574,80 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
     box-shadow: 0px 0px 10px #000000;
     -webkit-box-shadow: 0px 0px 10px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFontAwesomeIcon0a2a3d24700e048,
+[kw].CopyslFontAwesomeIcon0a2a3d24700e048-hover,
+[kw].CopyslFontAwesomeIcon0a2a3d24700e048-focus,
+[kw].CopyslFontAwesomeIcon0a2a3d24700e048-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal normal 49.8px FontAwesome;
+
+
+
+
+
+    color: #a9a9a9;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
 
 
 
@@ -7700,6 +7990,111 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
     background-color: rgba(183, 184, 232, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslImage0cc1d9251e8e74d,
+[kw='Image2']>img.CopyslImage0cc1d9251e8e74d-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+    box-shadow: 3px 0px 6px #000000;
+    -webkit-box-shadow: 3px 0px 6px #000000;
 
 
 
@@ -12603,6 +12998,80 @@ input[kplaceholderskin='defTextBoxPlaceholder']:-ms-input-placeholder {
 
 
 
+.s8cdcc90e1ba42929bb919beacf32867,
+[kw].s8cdcc90e1ba42929bb919beacf32867-hover,
+[kw].s8cdcc90e1ba42929bb919beacf32867-focus,
+[kw].s8cdcc90e1ba42929bb919beacf32867-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 34.4px Helvetica;
+
+
+
+
+
+    color: #a9a9a9;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sd63765c86af4a57aea8e99202871e4f,
 [kw].sd63765c86af4a57aea8e99202871e4f-hover,
 [kw].sd63765c86af4a57aea8e99202871e4f-focus,
@@ -16899,6 +17368,80 @@ div[kr='item'].sknseg-focus,
 
     box-shadow: 0px 0px 9px #000000;
     -webkit-box-shadow: 0px 0px 9px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slFontAwesomeIcon,
+[kw].slFontAwesomeIcon-hover,
+[kw].slFontAwesomeIcon-focus,
+[kw].slFontAwesomeIcon-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal normal 34.4px FontAwesome;
+
+
+
+
+
+    color: #a9a9a9;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
 
 
 

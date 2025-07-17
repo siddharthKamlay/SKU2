@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "410dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s5c7c6e36a8f4a76909e926aa060655a",
+    "_top_": {
+        "type": "string",
+        "value": "108dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s8df256dcb804b73b3ce84026bd95548",
+    "groupcells": false,
+    "id": "ListBoxCategories",
+    "ide_onSelection": "AS_ListBox_cdfff7a0ec2b49099a32bd66ab80db6c",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bc912be91a3e494e8c7117bcbb13bdc4",
+    "masterdata": [
+        [
+            "All_Categories",
+            "All Categories"
+        ],
+        [
+            "Clothing",
+            "Clothing"
+        ],
+        [
+            "Home_Garden",
+            "Home & Garden"
+        ],
+        [
+            "Sports",
+            "Sports"
+        ],
+        [
+            "Books",
+            "Books"
+        ],
+        [
+            "Electronics",
+            "Electronics"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "FlexSKUTable",
+    "pf": "Overview",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

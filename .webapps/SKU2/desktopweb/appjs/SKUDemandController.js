@@ -106,44 +106,44 @@ define("SKUDemandControllerActions", {
                 voltmx.application.dismissLoadingScreen();
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection3016 = [];
-                var tempData8989 = DemandRequest.records;
-                for (var each3127 in tempData8989) {
-                    var shouldShow = typeof tempData8989[each3127]["x_0024FILES"] !== 'undefined' && tempData8989[each3127]["x_0024FILES"] && tempData8989[each3127]["x_0024FILES"].length > 0
-                    tempCollection3016.push({
+                var tempCollection8212 = [];
+                var tempData5895 = DemandRequest.records;
+                for (var each9211 in tempData5895) {
+                    var shouldShow = typeof tempData5895[each9211]["x_0024FILES"] !== 'undefined' && tempData5895[each9211]["x_0024FILES"] && tempData5895[each9211]["x_0024FILES"].length > 0
+                    tempCollection8212.push({
                         "lblSKUID1": {
-                            "text": tempData8989[each3127]["SKUID"]
+                            "text": tempData5895[each9211]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData8989[each3127]["Name"]
+                            "text": tempData5895[each9211]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData8989[each3127]["Category"]
+                            "text": tempData5895[each9211]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData8989[each3127]["Stock"]
+                            "text": tempData5895[each9211]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData8989[each3127]["Forecasted"]
+                            "text": tempData5895[each9211]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData8989[each3127]["EnrichedQTY"]
+                            "text": tempData5895[each9211]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData8989[each3127]["Requested"]
+                            "text": tempData5895[each9211]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData8989[each3127]["Status"]
+                            "text": tempData5895[each9211]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData8989[each3127]["RequestedBY"]
+                            "text": tempData5895[each9211]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData8989[each3127]["RequestDate"]
+                            "text": tempData5895[each9211]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection3016);
+                self.view.segDemandRequest.setData(tempCollection8212);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -198,6 +198,11 @@ define("SKUDemandControllerActions", {
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
         SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_g498ebcd252b41ff9f8955cc0185954f_Callback);
     },
+    /** preShow defined for SKUDemand **/
+    AS_Form_f7241cd1101c4c3db5efde669ef295a6: function AS_Form_f7241cd1101c4c3db5efde669ef295a6(eventobject) {
+        var self = this;
+        self.view.FlexContainerslidemenu.left = "-180%";
+    },
     /** onTouchEnd defined for Image0dc6e78981a6c4f **/
     AS_Image_c7585c90d380452cb53b81adc5cd4ae1: function AS_Image_c7585c90d380452cb53b81adc5cd4ae1(eventobject, x, y) {
         var self = this;
@@ -207,13 +212,14 @@ define("SKUDemandControllerActions", {
             "100": {
                 "stepConfig": {
                     "timingFunction": voltmx.anim.EASE
-                }
+                },
+                "left": "0px"
             }
         }), {
             "delay": 0,
             "iterationCount": 1,
             "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
-            "duration": 0.25
+            "duration": 1
         }, {
             "animationEnd": MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8_Callback
         });
@@ -259,6 +265,27 @@ define("SKUDemandControllerActions", {
     AS_TextField_d001906d70c44fc2807c43c55b8d34a3: function AS_TextField_d001906d70c44fc2807c43c55b8d34a3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
+    },
+    /** onTouchEnd defined for Bars **/
+    AS_Label_adef7f078c76408e9c72b4a1031d80a1: function AS_Label_adef7f078c76408e9c72b4a1031d80a1(eventobject, x, y) {
+        var self = this;
+
+        function _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback() {}
+        self.view.FlexContainerslidemenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "0px",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 1
+        }, {
+            "animationEnd": _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback
+        });
     }
 });
 define("SKUDemandController", ["userSKUDemandController", "SKUDemandControllerActions"], function() {

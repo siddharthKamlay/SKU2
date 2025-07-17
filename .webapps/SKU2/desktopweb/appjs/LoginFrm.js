@@ -4,16 +4,16 @@ define("LoginFrm", function() {
             this.setDefaultUnit(voltmx.flex.DP);
             var FlexContainerlogo = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
-                "clipBounds": false,
-                "height": "150dp",
+                "clipBounds": true,
+                "height": "160dp",
                 "id": "FlexContainerlogo",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "20dp",
                 "isModalContainer": false,
-                "skin": "slFbox",
+                "skin": "CopyslFbox0h22d676da58b4a",
                 "top": "20dp",
-                "width": "12.45%",
+                "width": "160dp",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -25,13 +25,13 @@ define("LoginFrm", function() {
                 "id": "imgLogo",
                 "isVisible": true,
                 "left": 0,
-                "skin": "slImage",
+                "skin": "CopyslImage0cc1d9251e8e74d",
                 "src": "alphaleo.jpg",
                 "top": "0dp",
                 "width": "100%",
                 "zIndex": 1
             }, {
-                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_FIT_TO_DIMENSIONS,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
@@ -39,7 +39,7 @@ define("LoginFrm", function() {
             var lbl1 = new voltmx.ui.Label({
                 "id": "lbl1",
                 "isVisible": true,
-                "left": "230dp",
+                "left": "328dp",
                 "skin": "CopydefLabel0a1a3e3b2909941",
                 "text": "Alphaleo Technology Pvt. Ltd",
                 "top": "58dp",

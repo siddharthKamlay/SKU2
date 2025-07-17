@@ -24,7 +24,7 @@
   "font_color": "ffffffcc",
   "font_name": "iphoneSystem",
   "font_size": 119,
-  "font_style": "normal",
+  "font_style": "underline",
   "font_weight": "400",
   "ipad": {
     "font_name": "System",

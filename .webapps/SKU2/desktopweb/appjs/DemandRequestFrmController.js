@@ -42,7 +42,7 @@ define("userDemandRequestFrmController", {
                 data: chartData
             };
             this.view.piechart.chartConfig = {
-                labelPosition: "outside",
+                labelPosition: "inside",
                 showLegend: true,
                 showValues: true,
                 toolTip: true
@@ -152,44 +152,44 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection4333 = [];
-                var tempData928 = DemandRequest.records;
-                for (var each7358 in tempData928) {
-                    var shouldShow = typeof tempData928[each7358]["x_0024FILES"] !== 'undefined' && tempData928[each7358]["x_0024FILES"] && tempData928[each7358]["x_0024FILES"].length > 0
-                    tempCollection4333.push({
+                var tempCollection8024 = [];
+                var tempData7316 = DemandRequest.records;
+                for (var each4876 in tempData7316) {
+                    var shouldShow = typeof tempData7316[each4876]["x_0024FILES"] !== 'undefined' && tempData7316[each4876]["x_0024FILES"] && tempData7316[each4876]["x_0024FILES"].length > 0
+                    tempCollection8024.push({
                         "lblSKUID1": {
-                            "text": tempData928[each7358]["SKUID"]
+                            "text": tempData7316[each4876]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData928[each7358]["Name"]
+                            "text": tempData7316[each4876]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData928[each7358]["Category"]
+                            "text": tempData7316[each4876]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData928[each7358]["Stock"]
+                            "text": tempData7316[each4876]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData928[each7358]["Forecasted"]
+                            "text": tempData7316[each4876]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData928[each7358]["EnrichedQTY"]
+                            "text": tempData7316[each4876]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData928[each7358]["Requested"]
+                            "text": tempData7316[each4876]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData928[each7358]["Status"]
+                            "text": tempData7316[each4876]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData928[each7358]["RequestedBY"]
+                            "text": tempData7316[each4876]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData928[each7358]["RequestDate"]
+                            "text": tempData7316[each4876]["RequestDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection4333);
+                self.view.segDemandRequest.setData(tempCollection8024);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -275,6 +275,32 @@ define("DemandRequestFrmControllerActions", {
     AS_TextField_i399824987dc42e28a801263c10a9da3: function AS_TextField_i399824987dc42e28a801263c10a9da3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
+    },
+    /** onTouchEnd defined for Bars **/
+    AS_Label_ccb1f37491fa443d8857b72030ce776a: function AS_Label_ccb1f37491fa443d8857b72030ce776a(eventobject, x, y) {
+        var self = this;
+
+        function _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback() {}
+        self.view.FlexContaineroverview.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "0px",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 1
+        }, {
+            "animationEnd": _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback
+        });
+    },
+    /** preShow defined for DemandRequestFrm **/
+    AS_Form_g59a2ef8557045418e7aecff9e8b333b: function AS_Form_g59a2ef8557045418e7aecff9e8b333b(eventobject) {
+        var self = this;
+        self.view.FlexContaineroverview.left = "-180%";
     }
 });
 define("DemandRequestFrmController", ["userDemandRequestFrmController", "DemandRequestFrmControllerActions"], function() {

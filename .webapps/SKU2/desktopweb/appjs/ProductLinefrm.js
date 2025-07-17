@@ -742,13 +742,13 @@ define("ProductLinefrm", function() {
             var Imagemenu = new voltmx.ui.Image2({
                 "height": "67dp",
                 "id": "Imagemenu",
-                "isVisible": true,
-                "left": "12dp",
+                "isVisible": false,
+                "left": "46dp",
                 "onDownloadComplete": controller.AS_Image_dd28b3efc1ec471a80da76f7a920d0cb,
                 "onTouchEnd": controller.AS_Image_c07533c757414f3d8cf76a373f585070,
                 "skin": "CopyslImage0fed14fc8e7a249",
                 "src": "screenshot_2025_07_15_205044.png",
-                "top": "14dp",
+                "top": "350dp",
                 "width": "68dp",
                 "zIndex": 1
             }, {
@@ -767,34 +767,21 @@ define("ProductLinefrm", function() {
                 "isModalContainer": false,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
-                "width": "12.34%",
-                "zIndex": 1,
+                "width": "17.52%",
+                "zIndex": 2,
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
             }, {});
             FlexContainerSideMenu.setDefaultUnit(voltmx.flex.DP);
             var CopyLabel0cea9eb96dd2045 = new voltmx.ui.Label({
+                "height": "5%",
                 "id": "CopyLabel0cea9eb96dd2045",
                 "isVisible": true,
                 "left": "10dp",
                 "skin": "CopydefLabel0d01b683017a64e",
                 "text": "Demand Planning",
                 "top": "30dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var CopyLabel0e8c464feb75d4e = new voltmx.ui.Label({
-                "id": "CopyLabel0e8c464feb75d4e",
-                "isVisible": true,
-                "left": "10dp",
-                "skin": "CopydefLabel0j936dd23cb674a",
-                "text": "Navigation",
-                "top": "74dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -809,7 +796,7 @@ define("ProductLinefrm", function() {
                 "onTouchEnd": controller.AS_Label_e3a9d7a2b54f40e8bccae785c869feae,
                 "skin": "CopydefLabel0c85f7f3632f247",
                 "text": "Overview",
-                "top": "110dp",
+                "top": "113dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -824,7 +811,7 @@ define("ProductLinefrm", function() {
                 "onTouchEnd": controller.AS_Label_f379af81f07e493387ce6a5b60cc4481,
                 "skin": "CopydefLabel0e6ade8a8c97c4d",
                 "text": "S&OP",
-                "top": "143dp",
+                "top": "164dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -839,7 +826,7 @@ define("ProductLinefrm", function() {
                 "onTouchEnd": controller.AS_Label_ef28823a15424ff6b94cc4c23729f67a,
                 "skin": "CopydefLabel0b193f12240ae46",
                 "text": "SKU Demand",
-                "top": "176dp",
+                "top": "219dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -847,7 +834,22 @@ define("ProductLinefrm", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            FlexContainerSideMenu.add(CopyLabel0cea9eb96dd2045, CopyLabel0e8c464feb75d4e, CopyLabel0g28597a9261e4c, Label04, Label05);
+            FlexContainerSideMenu.add(CopyLabel0cea9eb96dd2045, CopyLabel0g28597a9261e4c, Label04, Label05);
+            var Bars = new voltmx.ui.Label({
+                "id": "Bars",
+                "isVisible": true,
+                "left": "39dp",
+                "onTouchEnd": controller.AS_Label_i99a9cd8afc14c08bad313a16cd614b2,
+                "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
+                "text": "",
+                "top": "44dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1366,
@@ -889,7 +891,7 @@ define("ProductLinefrm", function() {
                     "centerY": ""
                 }
             }
-            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003, Imagemenu, FlexContainerSideMenu);
+            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003, Imagemenu, FlexContainerSideMenu, Bars);
         };
         return [{
             "addWidgets": addWidgetsProductLinefrm,
@@ -897,14 +899,15 @@ define("ProductLinefrm", function() {
             "id": "ProductLinefrm",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
+            "preShow": function(eventobject) {
+                controller.AS_Form_da584cea0bdc46239c2275a4cc857053(eventobject);
+                controller.AS_Form_b5efcba627994b17a79cd6dcab8e6a47(eventobject);
+                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
+            },
             "skin": "CopyslForm0fb417bbb10d849",
             "onBreakpointHandler": onBreakpointHandler,
             "breakpoints": [640, 1024, 1366],
             "appName": "SKU2",
-            "preShow": function(eventobject) {
-                controller.AS_Form_b5efcba627994b17a79cd6dcab8e6a47(eventobject);
-                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
-            },
             "info": {
                 "kuid": "b3c9856e04514d829f4c8106e7ce4669"
             }

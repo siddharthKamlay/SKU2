@@ -12,7 +12,7 @@ define("SKUDemand", function() {
                 "left": "100dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "0dp",
+                "top": "2dp",
                 "width": "86.38%",
                 "zIndex": 2,
                 "appName": "SKU2"
@@ -1027,8 +1027,8 @@ define("SKUDemand", function() {
                 "isModalContainer": false,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
-                "width": "12.34%",
-                "zIndex": 1,
+                "width": "17.52%",
+                "zIndex": 2,
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -1041,20 +1041,6 @@ define("SKUDemand", function() {
                 "skin": "CopydefLabel0d01b683017a64e",
                 "text": "Demand Planning",
                 "top": "30dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label02 = new voltmx.ui.Label({
-                "id": "Label02",
-                "isVisible": true,
-                "left": "10dp",
-                "skin": "CopydefLabel0j936dd23cb674a",
-                "text": "Navigation",
-                "top": "74dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1084,7 +1070,7 @@ define("SKUDemand", function() {
                 "onTouchEnd": controller.AS_Label_f70828358dce40018fdee062495dbbc7,
                 "skin": "CopydefLabel0e6ade8a8c97c4d",
                 "text": "S&OP",
-                "top": "143dp",
+                "top": "155dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1100,7 +1086,7 @@ define("SKUDemand", function() {
                 "onTouchStart": controller.AS_Label_ad9133d4135c453f87290c089a74695a,
                 "skin": "CopydefLabel0b193f12240ae46",
                 "text": "SKU Demand",
-                "top": "176dp",
+                "top": "200dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1108,20 +1094,35 @@ define("SKUDemand", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            FlexContainerslidemenu.add(CopyLabel0j9c682737e714f, Label02, CopyLabel0c2616b70466946, CopyLabel0a138d2c742a340, Label05);
+            FlexContainerslidemenu.add(CopyLabel0j9c682737e714f, CopyLabel0c2616b70466946, CopyLabel0a138d2c742a340, Label05);
             var Image0dc6e78981a6c4f = new voltmx.ui.Image2({
                 "height": "68dp",
                 "id": "Image0dc6e78981a6c4f",
-                "isVisible": true,
-                "left": "12dp",
+                "isVisible": false,
+                "left": "510dp",
                 "onTouchEnd": controller.AS_Image_c7585c90d380452cb53b81adc5cd4ae1,
                 "skin": "CopyslImage0cf2b7d99e3014e",
                 "src": "screenshot_2025_07_15_205044.png",
-                "top": "27dp",
+                "top": "250dp",
                 "width": "68dp",
                 "zIndex": 1
             }, {
                 "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Bars = new voltmx.ui.Label({
+                "id": "Bars",
+                "isVisible": true,
+                "left": "29dp",
+                "onTouchEnd": controller.AS_Label_adef7f078c76408e9c72b4a1031d80a1,
+                "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
+                "text": "",
+                "top": "44dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
@@ -1145,7 +1146,7 @@ define("SKUDemand", function() {
                 }
             }
             this.compInstData = {}
-            this.add(FlexContainer, FlexContainerHeaders, FlexSKUTable, FlexContainerslidemenu, Image0dc6e78981a6c4f);
+            this.add(FlexContainer, FlexContainerHeaders, FlexSKUTable, FlexContainerslidemenu, Image0dc6e78981a6c4f, Bars);
         };
         return [{
             "addWidgets": addWidgetsSKUDemand,
@@ -1153,14 +1154,15 @@ define("SKUDemand", function() {
             "id": "SKUDemand",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
+            "preShow": function(eventobject) {
+                controller.AS_Form_f7241cd1101c4c3db5efde669ef295a6(eventobject);
+                controller.AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject);
+                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
+            },
             "skin": "slFormSkinCommon",
             "onBreakpointHandler": onBreakpointHandler,
             "breakpoints": [640, 1024, 1366],
             "appName": "SKU2",
-            "preShow": function(eventobject) {
-                controller.AS_Form_c0dd210e25d54aff9eafc381b1dfe411(eventobject);
-                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
-            },
             "info": {
                 "kuid": "bb67880847304d79ab85353202f9a604"
             }

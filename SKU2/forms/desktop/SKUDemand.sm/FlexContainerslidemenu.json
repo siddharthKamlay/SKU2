@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "-90%"
+        "value": "-180%"
     },
     "_margin_": [
         0,
@@ -29,14 +29,13 @@
     },
     "_width_": {
         "type": "string",
-        "value": "12.34%"
+        "value": "17.52%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "CopyLabel0j9c682737e714f",
-        "Label02",
         "CopyLabel0c2616b70466946",
         "CopyLabel0a138d2c742a340",
         "Label05"

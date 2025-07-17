@@ -9,7 +9,7 @@ define("DemandRequestFrm", function() {
                 "id": "FlexContainerPieChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "799dp",
+                "left": "730dp",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0e88f7dca09d544",
                 "top": "160dp",
@@ -21,6 +21,8 @@ define("DemandRequestFrm", function() {
             }, {});
             FlexContainerPieChart.setDefaultUnit(voltmx.flex.DP);
             var piechart = new com.konymp.piechart({
+                "bottom": "0",
+                "centerX": "50%",
                 "height": "100%",
                 "id": "piechart",
                 "isVisible": true,
@@ -35,12 +37,10 @@ define("DemandRequestFrm", function() {
                 "overrides": {
                     "piechart": {
                         "right": "viz.val_cleared",
-                        "bottom": "viz.val_cleared",
                         "minWidth": "viz.val_cleared",
                         "minHeight": "viz.val_cleared",
                         "maxWidth": "viz.val_cleared",
                         "maxHeight": "viz.val_cleared",
-                        "centerX": "viz.val_cleared",
                         "centerY": "viz.val_cleared"
                     }
                 }
@@ -117,7 +117,7 @@ define("DemandRequestFrm", function() {
                 "id": "FlexContainerchart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "170dp",
+                "left": "90dp",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0eeb6273f1e3345",
                 "top": "160dp",
@@ -298,12 +298,12 @@ define("DemandRequestFrm", function() {
                 "id": "FlexContaineroverview",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0dp",
+                "left": "-180%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
-                "width": "10.87%",
-                "zIndex": 1,
+                "width": "18.39%",
+                "zIndex": 3,
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -316,20 +316,6 @@ define("DemandRequestFrm", function() {
                 "skin": "CopydefLabel0d01b683017a64e",
                 "text": "Demand Planning",
                 "top": "30dp",
-                "width": voltmx.flex.USE_PREFERRED_SIZE,
-                "zIndex": 1
-            }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-                "padding": [0, 0, 0, 0],
-                "paddingInPixel": false
-            }, {});
-            var Label02 = new voltmx.ui.Label({
-                "id": "Label02",
-                "isVisible": true,
-                "left": "10dp",
-                "skin": "CopydefLabel0j936dd23cb674a",
-                "text": "Navigation",
-                "top": "74dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -359,7 +345,7 @@ define("DemandRequestFrm", function() {
                 "onTouchEnd": controller.AS_Label_f70828358dce40018fdee062495dbbc7,
                 "skin": "CopydefLabel0e6ade8a8c97c4d",
                 "text": "S&OP",
-                "top": "143dp",
+                "top": "158dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -374,7 +360,7 @@ define("DemandRequestFrm", function() {
                 "onTouchEnd": controller.AS_Label_g8499c9129424cf09a17f7294d793cb8,
                 "skin": "CopydefLabel0b193f12240ae46",
                 "text": "SKU Demand",
-                "top": "176dp",
+                "top": "206dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -382,7 +368,7 @@ define("DemandRequestFrm", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            FlexContaineroverview.add(Label01, Label02, Label03, Label04, Label05);
+            FlexContaineroverview.add(Label01, Label03, Label04, Label05);
             var FlexContainerHeader = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
@@ -390,7 +376,7 @@ define("DemandRequestFrm", function() {
                 "id": "FlexContainerHeader",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "170dp",
+                "left": "101dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "0dp",
@@ -653,11 +639,11 @@ define("DemandRequestFrm", function() {
                 "id": "FlexSKUTable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "12.35%",
+                "left": "6.52%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0i2f208e36e0f41",
-                "top": "50.00%",
+                "top": "49.99%",
                 "width": "87.27%",
                 "zIndex": 2,
                 "appName": "SKU2"
@@ -1021,11 +1007,11 @@ define("DemandRequestFrm", function() {
                 "paddingInPixel": false
             }, {});
             flexRequestDate.add(lblRequestDate);
-            var flexActions = new voltmx.ui.FlexContainer({
+            var flexApproved = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
                 "height": "100%",
-                "id": "flexActions",
+                "id": "flexApproved",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "2%",
@@ -1037,30 +1023,28 @@ define("DemandRequestFrm", function() {
             }, {
                 "paddingInPixel": false
             }, {});
-            flexActions.setDefaultUnit(voltmx.flex.DP);
-            var lblAtions = new voltmx.ui.Label({
+            flexApproved.setDefaultUnit(voltmx.flex.DP);
+            var lblApproveddate = new voltmx.ui.Label({
                 "height": "100%",
-                "id": "lblAtions",
+                "id": "lblApproveddate",
                 "isVisible": true,
-                "left": "57%",
+                "left": "32.26%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
-                "text": "Actions",
+                "text": "Approved Date",
                 "top": "0%",
-                "width": "100%"
+                "width": "129.03%"
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [3, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            flexActions.add(lblAtions);
-            flexDemandRequest.add(flexSKUID, flexName, flexCategory, flexStock, flexForecasted, flexEnrichedQTY, flexRequested, flexStatus, flexRequestedBY, flexRequestDate, flexActions);
+            flexApproved.add(lblApproveddate);
+            flexDemandRequest.add(flexSKUID, flexName, flexCategory, flexStock, flexForecasted, flexEnrichedQTY, flexRequested, flexStatus, flexRequestedBY, flexRequestDate, flexApproved);
             var segDemandRequest = new voltmx.ui.SegmentedUI2({
                 "alternateRowSkin": "defDataPanelAlternateRowSkinDW0ccd9302b745549",
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "data": [{
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1072,9 +1056,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1086,9 +1068,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1100,9 +1080,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1114,9 +1092,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1128,9 +1104,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1142,9 +1116,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1156,9 +1128,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1170,9 +1140,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1184,9 +1152,7 @@ define("DemandRequestFrm", function() {
                     "lblStatus1": "Status",
                     "lblStock1": "Stock"
                 }, {
-                    "Image1": "eye.png",
-                    "image2": "tick.png",
-                    "image3": "cross.jpg",
+                    "lblApprovedDate1": "Approved Date",
                     "lblCategory1": "Category",
                     "lblEnrichedQTY1": "Enriched QTY",
                     "lblForecasted1": "Forecasted",
@@ -1220,9 +1186,7 @@ define("DemandRequestFrm", function() {
                 "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
                 "widgetDataMap": {
                     "Flex0f834108d4cc042": "Flex0f834108d4cc042",
-                    "Image1": "Image1",
-                    "image2": "image2",
-                    "image3": "image3",
+                    "lblApprovedDate1": "lblApprovedDate1",
                     "lblCategory1": "lblCategory1",
                     "lblEnrichedQTY1": "lblEnrichedQTY1",
                     "lblForecasted1": "lblForecasted1",
@@ -1345,6 +1309,21 @@ define("DemandRequestFrm", function() {
                 "multiSelect": false
             });
             FlexSKUTable.add(flexHeaderDemandRequest, LabelID, LabelID1, TextFieldSearchBox, ListBoxCategories, ListBoxStatus);
+            var Bars = new voltmx.ui.Label({
+                "id": "Bars",
+                "isVisible": true,
+                "left": "29dp",
+                "onTouchEnd": controller.AS_Label_ccb1f37491fa443d8857b72030ce776a,
+                "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
+                "text": "",
+                "top": "44dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
             this.breakpointResetData = {};
             this.breakpointData = {
                 maxBreakpointWidth: 1380,
@@ -1367,12 +1346,10 @@ define("DemandRequestFrm", function() {
             this.compInstData = {
                 "piechart": {
                     "right": "",
-                    "bottom": "",
                     "minWidth": "",
                     "minHeight": "",
                     "maxWidth": "",
                     "maxHeight": "",
-                    "centerX": "",
                     "centerY": ""
                 },
                 "multiseriesverticalbar": {
@@ -1386,7 +1363,7 @@ define("DemandRequestFrm", function() {
                     "centerY": ""
                 }
             }
-            this.add(FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainerHeader, FlexSKUTable);
+            this.add(FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainerHeader, FlexSKUTable, Bars);
         };
         return [{
             "addWidgets": addWidgetsDemandRequestFrm,
@@ -1394,14 +1371,15 @@ define("DemandRequestFrm", function() {
             "id": "DemandRequestFrm",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
+            "preShow": function(eventobject) {
+                controller.AS_Form_g59a2ef8557045418e7aecff9e8b333b(eventobject);
+                controller.AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07(eventobject);
+                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
+            },
             "skin": "CopyslForm0je5baca4810942",
             "onBreakpointHandler": onBreakpointHandler,
             "breakpoints": [640, 1024, 1200, 1366, 1380],
             "appName": "SKU2",
-            "preShow": function(eventobject) {
-                controller.AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07(eventobject);
-                voltmx.visualizer.syncComponentInstanceDataCache(eventobject);
-            },
             "info": {
                 "kuid": "a1716dc115ec46f7b708dd80999458a8"
             }

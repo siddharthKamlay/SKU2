@@ -231,7 +231,7 @@
                     <fileset dir="${buildwap}/inputdata/webfiles/iphone" includes="**/*.png,**/*.gif" />
                 </copy>
                 <copy todir="${buildwebdeskweb.img}" overwrite="true">
-                    <fileset dir="${resfolder}/common" includes="*.*" />
+                    <fileset dir="${resfolder}/common" includes="**/*.*" />
                 </copy>
 
                 <!-- Copying raw folder to desktop build -->
@@ -276,7 +276,7 @@
                 <then>
                     <echo message="New structure ************"/>
                     <copy todir="${buildwebdeskweb.img}" overwrite="true">
-                        <fileset dir="${resfolder}/desktop/common" includes="*.*" />
+                        <fileset dir="${resfolder}/desktop/common" includes="**/*.*" />
                     </copy>
                 </then>
                 </if>
@@ -296,13 +296,13 @@
                 <then>
                     <echo message="New structure ************"/>
                     <copy todir="${buildwebdeskweb.img}" overwrite="true">
-                        <fileset dir="${resfolder}/desktop/web/desktopweb" includes="*.*" />
+                        <fileset dir="${resfolder}/desktop/web/desktopweb" includes="**/*.*" />
                     </copy>
                 </then>
                 <else>
                     <echo message="Old structure ************"/>
                     <copy todir="${buildwebdeskweb.img}" overwrite="true">
-                        <fileset dir="${resfolder}/desktop/desktopweb" includes="*.*" />
+                        <fileset dir="${resfolder}/desktop/desktopweb" includes="**/*.*" />
                     </copy>
                 </else>
                 </if>

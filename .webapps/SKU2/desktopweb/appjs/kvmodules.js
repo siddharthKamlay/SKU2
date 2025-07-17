@@ -89,7 +89,7 @@ define('applicationController',{
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("LoginFrm").navigate();
+        new voltmx.mvc.Navigation("DemandRequestFrm").navigate();
     }
 });
 define("com/hclsoftwareu/hamburgermenu/userhamburgermenuController", [],function() {
@@ -4409,52 +4409,21 @@ define("Flex0f834108d4cc042", [],function() {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var Image1 = new voltmx.ui.Image2({
-            "height": "33dp",
-            "id": "Image1",
+        var lblApprovedDate1 = new voltmx.ui.Label({
+            "id": "lblApprovedDate1",
             "isVisible": true,
-            "left": "14dp",
-            "skin": "slImage",
-            "src": "eye.png",
+            "left": "24dp",
+            "skin": "CopydefLabel0i8a7b2a6a59f4b",
+            "text": "Approved Date",
             "top": "19dp",
-            "width": "40dp",
+            "width": "7%",
             "zIndex": 1
         }, {
-            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+            "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        var image2 = new voltmx.ui.Image2({
-            "height": "33dp",
-            "id": "image2",
-            "isVisible": true,
-            "left": "-2dp",
-            "skin": "slImage",
-            "src": "tick.png",
-            "top": "20dp",
-            "width": "40dp",
-            "zIndex": 1
-        }, {
-            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-            "padding": [0, 0, 0, 0],
-            "paddingInPixel": false
-        }, {});
-        var image3 = new voltmx.ui.Image2({
-            "height": "33dp",
-            "id": "image3",
-            "isVisible": true,
-            "left": "-3dp",
-            "skin": "slImage",
-            "src": "cross.jpg",
-            "top": "20dp",
-            "width": "40dp",
-            "zIndex": 1
-        }, {
-            "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-            "padding": [0, 0, 0, 0],
-            "paddingInPixel": false
-        }, {});
-        Flex0f834108d4cc042.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1, Image1, image2, image3);
+        Flex0f834108d4cc042.add(lblSKUID1, lblName1, lblCategory1, lblStock1, lblForecasted1, lblEnrichedQTY1, lblRequested1, lblStatus1, lblRequestedBY1, lblRequestDate1, lblApprovedDate1);
         return Flex0f834108d4cc042;
     }
 });

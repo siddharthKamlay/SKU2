@@ -25,7 +25,7 @@
     "_text_": "SKU Demand",
     "_top_": {
         "type": "string",
-        "value": "176dp"
+        "value": "200dp"
     },
     "_width_": {
         "type": "ref",

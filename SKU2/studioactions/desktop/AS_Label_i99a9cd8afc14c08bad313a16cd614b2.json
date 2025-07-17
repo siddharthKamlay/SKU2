@@ -30,17 +30,17 @@
             "widgetKUID": "ja3002e9bbfb4c5a8f7583c358169698",
             "wType": "FlexContainer",
             "animationObject": {
+                "left": "0px",
                 "anchorPoint": {},
                 "stepConfig": {
                     "timingFunction": "kony.anim.EASE"
-                },
-                "left": "0px"
+                }
             },
             "config": {
                 "delay": "0",
                 "iterationCount": 1,
                 "fillMode": "voltmx.anim.FILL_MODE_FORWARDS",
-                "duration": "1000"
+                "duration": "250"
             },
             "start": "Immediately",
             "animationId": "_a9f423b228fb463186e1094c88010403",
