@@ -1,5 +1,5 @@
  /*
-  * voltmx-sdk-ide Version 9.5.51
+  * voltmx-sdk-ide Version 9.5.53
   */
  /**
   * Volt MX namespace
@@ -210,7 +210,7 @@
  voltmx.sdk.isLicenseUrlAvailable = true;
  voltmx.sdk.isOAuthLogoutInProgress = false;
  voltmx.sdk.constants = voltmx.sdk.constants || {};
- voltmx.sdk.version = "9.5.51";
+ voltmx.sdk.version = "9.5.53";
  voltmx.sdk.logsdk = new voltmxSdkLogger();
  voltmx.sdk.syncService = null;
  voltmx.sdk.dataStore = voltmx.sdk.dataStore || new voltmxDataStore();
@@ -13093,8 +13093,8 @@
                  if (result.response) {
                      // Parse the response if it's a string for SPA Channel
                      parsedResponse = typeof result.response === "string" ? JSON.parse(result.response) : result.response;
-                     // Update the Opstatus to 8009 if the backend service's response HTTP status code is 500.
-                     if (parsedResponse.httpStatusCode && Number(parsedResponse.httpStatusCode) == 500 && parsedResponse.opstatus == 0) {
+                     // Update opstatus to 8009 if the backend returns an HTTP 5XX error response and opstatus is 0.
+                     if (parsedResponse.httpStatusCode && Number(parsedResponse.httpStatusCode) >= 500 && Number(parsedResponse.httpStatusCode) <= 599 && parsedResponse.opstatus == 0) {
                          parsedResponse.opstatus = 8009;
                      }
                      // Convert the updated object back to string if it was originally a string

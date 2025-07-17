@@ -136,6 +136,10 @@ voltmx.automation.textbox = (function() {
                 return;
             }
             node = $KAUtils.getNodeByModel(widgetConfig);
+            var maxLen = widgetModel.maxTextLength;
+            if (typeof maxLen === 'number' && maxLen >= 0) {
+            item = item.substring(0, maxLen);
+            }
             node.value = "";
             var eventTriggered = $KU.fireEvent(node, "focus");
             for(var i = 0; i < item.length; i++) {
@@ -180,6 +184,10 @@ voltmx.automation.textarea = (function() {
             }
 
             node = $KAUtils.getNodeByModel(widgetConfig);
+            var maxLen = widgetModel.maxTextLength;
+            if (typeof maxLen === 'number' && maxLen >= 0) {
+            item = item.substring(0, maxLen);
+            }
             node.value = "";
             var eventTriggered = $KU.fireEvent(node, "focus");
             for(var i = 0; i < item.length; i++) {

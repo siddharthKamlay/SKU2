@@ -128,20 +128,19 @@ define("Overview", function() {
                 "paddingInPixel": false
             }, {});
             FlexContainerchart.setDefaultUnit(voltmx.flex.DP);
-            var multiseriesverticalbar = new com.voltmxmp.multiseriesverticalbar({
-                "height": "100.13%",
-                "id": "multiseriesverticalbar",
+            var verticalbarCopy = new com.konymp.verticalbarCopy({
+                "height": "100%",
+                "id": "verticalbarCopy",
                 "isVisible": true,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
-                "skin": "CopyCopyslFbox0abc86170ee1a48",
                 "top": "0dp",
                 "width": "100%",
                 "appName": "SKU2",
-                "viewType": "multiseriesverticalbar",
+                "viewType": "verticalbarCopy",
                 "overrides": {
-                    "multiseriesverticalbar": {
+                    "verticalbarCopy": {
                         "right": "viz.val_cleared",
                         "bottom": "viz.val_cleared",
                         "minWidth": "viz.val_cleared",
@@ -158,31 +157,48 @@ define("Overview", function() {
             }, {
                 "overrides": {}
             });
-            multiseriesverticalbar.enableGrid = true;
-            multiseriesverticalbar.chartData = {
+            verticalbarCopy.enableGrid = true;
+            verticalbarCopy.chartData = {
                 "data": [{
-                    "label": "d1",
-                    "value1": "25",
-                    "value2": "12",
-                    "value3": "8",
-                    "value4": "32",
-                    "value5": "5"
+                    "colorCode": "#1B9ED9",
+                    "label": "Data1",
+                    "value": "25"
                 }, {
-                    "label": "d2",
-                    "value1": "12",
-                    "value2": "32",
-                    "value3": "36",
-                    "value4": "10",
-                    "value5": "22"
+                    "colorCode": "#76C044",
+                    "label": "Data2",
+                    "value": "20"
                 }, {
-                    "label": "d3",
-                    "value1": "22",
-                    "value2": "3",
-                    "value3": "15",
-                    "value4": "8",
-                    "value5": "24"
+                    "colorCode": "#E8672B",
+                    "label": "Data3",
+                    "value": "10"
+                }, {
+                    "colorCode": "#464648",
+                    "label": "Data4",
+                    "value": "30"
+                }, {
+                    "colorCode": "#FFC522",
+                    "label": "Data5",
+                    "value": "40"
                 }],
                 "schema": [{
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "Value",
+                    "columnHeaderType": "text",
+                    "columnID": "value",
+                    "columnOnClick": null,
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "adb02a6b13a046f4861d9d64ef0c34ee"
+                }, {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "Color Code",
+                    "columnHeaderType": "text",
+                    "columnID": "colorCode",
+                    "columnOnClick": null,
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "f7ad02b6f3df4493bb1ef588ab70e008"
+                }, {
                     "columnHeaderTemplate": null,
                     "columnHeaderText": "Label",
                     "columnHeaderType": "text",
@@ -190,107 +206,21 @@ define("Overview", function() {
                     "columnOnClick": null,
                     "columnText": "Not Defined",
                     "columnType": "text",
-                    "kuid": "adb02a6b13a046f4861d9d64ef0c34ee"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value1",
-                    "columnHeaderType": "text",
-                    "columnID": "value1",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f7ad02b6f3df4493bb1ef588ab70e008"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value2",
-                    "columnHeaderType": "text",
-                    "columnID": "value2",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
                     "kuid": "b59fe0cbc1394743a3214ea7583c0180"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value3",
-                    "columnHeaderType": "text",
-                    "columnID": "value3",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "d9cae0e9fe1548b0becf2dac23f4ceef"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value4",
-                    "columnHeaderType": "text",
-                    "columnID": "value4",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f03e4f1fe95c4dd4b6f8e6f3d7629bd9"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Value5",
-                    "columnHeaderType": "text",
-                    "columnID": "value5",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "bb532b4caa214aabb1f9e17780f59200"
                 }]
             };
-            multiseriesverticalbar.chartTitle = "Vertical Bars";
-            multiseriesverticalbar.indicatorFontColor = "#000000";
-            multiseriesverticalbar.barDetails = {
-                "data": [{
-                    "color": "#1B9ED9",
-                    "legendName": "blue"
-                }, {
-                    "color": "#76C044",
-                    "legendName": "green"
-                }, {
-                    "color": "#F26B29",
-                    "legendName": "orange"
-                }, {
-                    "color": "#464648",
-                    "legendName": "black"
-                }, {
-                    "color": "#FFC522",
-                    "legendName": "yellow"
-                }],
-                "schema": [{
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Legend Name",
-                    "columnHeaderType": "text",
-                    "columnID": "legendName",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "f6de75a55e614f8385befc3ec254a1bd"
-                }, {
-                    "columnHeaderTemplate": null,
-                    "columnHeaderText": "Color Code",
-                    "columnHeaderType": "text",
-                    "columnID": "color",
-                    "columnOnClick": null,
-                    "columnText": "Not Defined",
-                    "columnType": "text",
-                    "kuid": "g50365d432034b0a92c5a5cd4b07d1c7"
-                }]
-            };
-            multiseriesverticalbar.xAxisTitle = "x-axis";
-            multiseriesverticalbar.lowValue = "0";
-            multiseriesverticalbar.highValue = "50";
-            multiseriesverticalbar.bgColor = "#FFFFFF";
-            multiseriesverticalbar.enableChartAnimation = true;
-            multiseriesverticalbar.enableLegends = true;
-            multiseriesverticalbar.yAxisTitle = "y-axis";
-            multiseriesverticalbar.titleFontSize = "12";
-            multiseriesverticalbar.indicatorFontSize = "8";
-            multiseriesverticalbar.legendFontSize = "95%";
-            multiseriesverticalbar.enableStaticPreview = true;
-            multiseriesverticalbar.titleFontColor = "#000000";
-            multiseriesverticalbar.legendFontColor = "#000000";
-            FlexContainerchart.add(multiseriesverticalbar);
+            verticalbarCopy.chartTitle = "Vertical Bar";
+            verticalbarCopy.xAxisTitle = "x-axis";
+            verticalbarCopy.lowValue = "0";
+            verticalbarCopy.enableGridAnimation = true;
+            verticalbarCopy.titleFontSize = "12";
+            verticalbarCopy.yAxisTitle = "y-axis";
+            verticalbarCopy.titleFontColor = "#000000";
+            verticalbarCopy.highValue = "40";
+            verticalbarCopy.bgColor = "#FFFFFF";
+            verticalbarCopy.enableChartAnimation = true;
+            verticalbarCopy.enableStaticPreview = true;
+            FlexContainerchart.add(verticalbarCopy);
             var FlexContaineroverview = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
@@ -1351,7 +1281,7 @@ define("Overview", function() {
                     "maxHeight": "",
                     "centerY": ""
                 },
-                "multiseriesverticalbar": {
+                "verticalbarCopy": {
                     "right": "",
                     "bottom": "",
                     "minWidth": "",

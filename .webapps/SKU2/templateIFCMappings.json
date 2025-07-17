@@ -262,6 +262,11 @@
             "classname": "verticalbar",
             "namespace": "com.konymp"
         },
+        "com.konymp.verticalbarCopy": {
+            "appName": "SKU2",
+            "classname": "verticalbarCopy",
+            "namespace": "com.konymp"
+        },
         "com.voltmxmp.multiseriesverticalbar": {
             "appName": "SKU2",
             "classname": "multiseriesverticalbar",

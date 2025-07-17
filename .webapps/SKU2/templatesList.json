@@ -15,6 +15,7 @@
                 "com.konymp.linechart",
                 "com.konymp.piechart",
                 "com.konymp.verticalbar",
+                "com.konymp.verticalbarCopy",
                 "com.voltmxmp.multiseriesverticalbar",
                 "mytplSegRowWithImageAndLabel",
                 "SampleRowTemplate",

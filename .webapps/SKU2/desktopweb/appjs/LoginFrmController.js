@@ -25,7 +25,7 @@ define("LoginFrmControllerActions", {
                 "txtUsername_text": self.view.txtUsername.text,
                 "_meta_": {
                     "eventName": "onClick",
-                    "widgetId": "btnLogin"
+                    "widgetId": ""
                 }
             });
         }

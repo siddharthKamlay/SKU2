@@ -4,7 +4,7 @@ Created-By: 1.8.0_265-b01 (Oracle Corporation)
 Bundle-ManifestVersion: 1
 Bundle-Name: Volt MX Web Commons
 Bundle-SymbolicName: com.kony.webcommons
-Bundle-Version: 9.5.52.202503251057
+Bundle-Version: 9.5.54.202505141406
 Bundle-Activator: com.kony.web.Activator
 Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
 Eclipse-LazyStart: true
@@ -81,9 +81,6 @@ Name: common/wap/TXTemplate/hcl_mx_archetype/src/main/resources/archetyp
  e-resources/src/main/webapp/WEB-INF/classes/com/hcl/mx/base/nl/BasePort
  letResource_en.properties
 SHA-256-Digest: YoqjpF62Ln8JkqSOHnE0TGBDmMZ2cpctw+JYP0dnWII=
-
-Name: common/wap/9.5.52.202503251057.txt
-SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 
 Name: common/wap/inputdata/webfiles/iphone/tupF.png
 SHA-256-Digest: D5M9vAR5Y/ihuGzZG/sHPKZHKue5ONpcb8jVB6AMCs8=
@@ -281,7 +278,7 @@ Name: common/wap/inputdata/webfiles/iphone/checkboxselected.png
 SHA-256-Digest: OwCtssa/sX5PMkQBEB0ZcFlDQOCoRHtA1lFaI7Xgta4=
 
 Name: platform.properties
-SHA-256-Digest: TULOd166ztP9w9ESV3eEDpxfeij9aeHt0lMgHDuiu8o=
+SHA-256-Digest: LAxVuejjJJxT/ny8Xr5LvEenZ9xeKiqBa/yVWhflfAg=
 
 Name: common/wap/inputdata/webfiles/iphone/tupF.bmp
 SHA-256-Digest: NeIfTkF+1i0hq+K7ZVHQbDK2qSsIOzjBFM74rxorUuA=
@@ -298,6 +295,9 @@ SHA-256-Digest: TDHNXNISK129wLOFAO+xbYTRKpn9A2l2XDEr18dxhVU=
 Name: common/wap/TXTemplate/hcl_mx_archetype/target/classes/archetype-re
  sources/src/main/webapp/WEB-INF/web.xml
 SHA-256-Digest: oR/1eJR+c60RRpmqGAzcSWZ5Mgsf8i2VMAtRv3/mPTM=
+
+Name: common/wap/9.5.54.202505141406.txt
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 
 Name: common/wap/inputdata/webfiles/iphone/checkboxnormal.png
 SHA-256-Digest: njiJ0A2pVru0oLqjP24qP91P09Gt9eDsVkn0MB58br8=
@@ -322,7 +322,7 @@ Name: common/wap/TXTemplate/hcl_mx_archetype/README.md
 SHA-256-Digest: NJjuprNiz5CQv35bFMOrQStrdqoFFjxOUoizDZM2RJw=
 
 Name: konywebcommonslib/KonyWebCommons.jar
-SHA-256-Digest: ApUfEkXuOfy+3u3Jg51z/GfuW+Ln1Ul0l/1cAiyqhw8=
+SHA-256-Digest: o9/CGg3zK802w2W9QUnKUQLkVug3TsX6nVKCQ6m1ms0=
 
 Name: common/wap/inputdata/webfiles/iphone/konycalendar.png
 SHA-256-Digest: qKzpKj832MGHM2oRf8CGSiWfx2jx7ysqfwBIrzFHv48=
@@ -392,10 +392,10 @@ Name: common/wap/inputdata/webfiles/iphone/kwebfw-prev-month.png
 SHA-256-Digest: gK47OmG96mweVzJOvqC2iv6EuKQxprncK9ButwHglZY=
 
 Name: common/wap/KonyUtils.jar
-SHA-256-Digest: WbghaxEBSkVy5sBt4ZAt7vmMW9FF/v7mE37lpvE2lac=
+SHA-256-Digest: Z2QLKgqG/T++MnlKxf599pqGht8pDkG/l/zyQI7gh1E=
 
 Name: common/KonyFMParser.jar
-SHA-256-Digest: ScvbRNqUbe2C45H0Oq0VuW6Y1Xq4Sm9+JL4YGyKO6eI=
+SHA-256-Digest: HRV9YJzH8+wPqwx7hPlZnwOTdFNliw59IAC5PLU5IaY=
 
 Name: common/wap/inputdata/webfiles/iphone/fsc_down.png
 SHA-256-Digest: 1j7RTpNc+eJkJQ60IGt6RafqJkVHGW09eClDKHcCRmo=
@@ -434,13 +434,13 @@ Name: common/wap/TXTemplate/hcl_mx_archetype/target/classes/archetype-re
 SHA-256-Digest: zwdyd0neJxVad3kuUK5iAL4TibP5tMo0Oea7QOedPTc=
 
 Name: common/wap/lib/konyweblib.jar
-SHA-256-Digest: YWCbPgVQSsUpfoKR1bEK+jDj61RF7XVr+VfkmYJICtY=
+SHA-256-Digest: yqibKCnj0VtCiCpS5DqlKxoIVn9UoKqickCQaXaMCFA=
 
 Name: common/wap/inputdata/webfiles/spabot/index.jsp
 SHA-256-Digest: 7SEJt+3I69cIZHL5wqmtZ3jkL8ItcatUWr9Q4TkTMvw=
 
 Name: common/konysecurejs.jar
-SHA-256-Digest: PJKIuaEDuqlpw3Fubjceb42gxG8YjVZUlO3Za3cgaUI=
+SHA-256-Digest: DDx8yuVhRl0Mo3XBcjHSyg08H1CGcyCjtbts+Mh4ZBo=
 
 Name: common/wap/inputdata/webfiles/iphone/prvarw.png
 SHA-256-Digest: MPsM5L/nwzHUGdPj2Uzy11kp475Xd1SMPZlE+KvgW/Q=

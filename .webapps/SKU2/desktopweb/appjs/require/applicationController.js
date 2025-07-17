@@ -37,6 +37,15 @@ define({
             "classname": "verticalbar",
             "name": "com.konymp.verticalbar"
         });
+        voltmx.mvc.registry.add("com.konymp.verticalbarCopy", {
+            "viewName": "verticalbarCopy",
+            "controllerName": "verticalbarCopyController"
+        });
+        voltmx.application.registerMaster({
+            "namespace": "com.konymp",
+            "classname": "verticalbarCopy",
+            "name": "com.konymp.verticalbarCopy"
+        });
         voltmx.mvc.registry.add("com.voltmxmp.multiseriesverticalbar", {
             "viewName": "multiseriesverticalbar",
             "controllerName": "multiseriesverticalbarController"

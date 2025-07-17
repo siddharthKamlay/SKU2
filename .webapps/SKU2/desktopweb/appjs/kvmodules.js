@@ -37,6 +37,15 @@ define('applicationController',{
             "classname": "verticalbar",
             "name": "com.konymp.verticalbar"
         });
+        voltmx.mvc.registry.add("com.konymp.verticalbarCopy", {
+            "viewName": "verticalbarCopy",
+            "controllerName": "verticalbarCopyController"
+        });
+        voltmx.application.registerMaster({
+            "namespace": "com.konymp",
+            "classname": "verticalbarCopy",
+            "name": "com.konymp.verticalbarCopy"
+        });
         voltmx.mvc.registry.add("com.voltmxmp.multiseriesverticalbar", {
             "viewName": "multiseriesverticalbar",
             "controllerName": "multiseriesverticalbarController"
@@ -2405,8 +2414,8 @@ define("com/konymp/verticalbar/userverticalbarController", ['com/konymp/vertical
     };
 });
 define("com/konymp/verticalbar/verticalbarControllerActions", {
-    /* 
-    This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    /*
+      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
 });
 define("com/konymp/verticalbar/verticalbarController", ["com/konymp/verticalbar/userverticalbarController", "com/konymp/verticalbar/verticalbarControllerActions"], function() {
@@ -2464,6 +2473,797 @@ define('com/konymp/verticalbar/verticalbar',[],function() {
     }
 });
 define('com/konymp/verticalbar/verticalbarConfig',[],function() {
+    return {
+        "properties": [{
+            "name": "enableGrid",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "chartData",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "chartTitle",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "xAxisTitle",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "lowValue",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "enableGridAnimation",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "titleFontSize",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "yAxisTitle",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "titleFontColor",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "highValue",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "bgColor",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "enableChartAnimation",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }, {
+            "name": "enableStaticPreview",
+            "enumerable": true,
+            "configurable": false,
+            "writable": true
+        }],
+        "apis": ["createChart"],
+        "events": []
+    }
+});
+define('com/konymp/verticalbarCopy/analytics',[],function() {
+    return {
+        analyticsHost: "https://sampleapps.hclvoltmx.net:443/services/data/v1/analytics/objects/log",
+        constructBody: function() {
+            try {
+                var date = new Date();
+                var deviceInfo = this.getDeviceOS();
+                var body = {
+                    "deviceModel": deviceInfo.model,
+                    "Locale": kony.i18n.getCurrentDeviceLocale().language,
+                    "Platform": deviceInfo.name,
+                    "PlatformVersion": deviceInfo.version,
+                    "appId": appConfig.appId,
+                    "serviceUrl": appConfig.serviceUrl,
+                    "itemGuid": "cb6b24c0ac6840099fdb7f6a4af87198",
+                    "assetName": "com.konymp.verticalbar",
+                    "assetVersion": "1.0.0",
+                    "releaseMode": !appConfig.isDebug,
+                    "konySdkVersion": kony.sdk.version,
+                    "date": date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear(),
+                    "endpointId": this.generateUniqueId(),
+                    "deviceHeight": deviceInfo.deviceHeight,
+                    "deviceWidth": deviceInfo.deviceWidth,
+                    "kuid": "2b90b128899b43528dc1109e042784fe",
+                };
+                return body;
+            } catch (exception) {
+                kony.print(JSON.stringify(exception));
+            }
+        },
+        notifyAnalytics: function() {
+            try {
+                if (this.checkInternetConnectivity() && this.isItFirstTime()) {
+                    var httpclient = new kony.net.HttpRequest();
+                    httpclient.open(constants.HTTP_METHOD_POST, this.analyticsHost);
+                    httpclient.setRequestHeader("Content-Type", "application/json");
+                    httpclient.send(JSON.stringify(this.constructBody()));
+                }
+            } catch (exception) {
+                kony.print(JSON.stringify(exception));
+            }
+        },
+        getDeviceOS: function() {
+            try {
+                return kony.os.deviceInfo();
+            } catch (exception) {
+                kony.print(JSON.stringify(exception));
+            }
+        },
+        generateUniqueId: function() {
+            try {
+                return kony.crypto.createHMacHash("SHA512", this.getDeviceOS().deviceid, "KonyAnalytics");
+            } catch (exception) {
+                kony.print(JSON.stringify(exception));
+            }
+        },
+        isItFirstTime: function() {
+            var bodyDetails = this.constructBody();
+            var assetVersion = kony.store.getItem(bodyDetails.assetName + "Version");
+            if (kony.sdk.isNullOrUndefined(assetVersion) || assetVersion != bodyDetails.assetVersion) {
+                kony.store.setItem(bodyDetails.assetName + "Version", bodyDetails.assetVersion);
+                return true;
+            } else {
+                return false;
+            }
+        },
+        checkInternetConnectivity: function() {
+            return kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY);
+        }
+    };
+});
+/**
+ * Created by Team Kony.
+ * Copyright (c) 2017 Kony Inc. All rights reserved.
+ */
+define('com/konymp/verticalbarCopy/konyLogger',[],function() {
+    /**
+     * @module KonyLogger v1.1
+     * @author AyyappaSwamy.Thatavarthy / Praharshita.Krishna
+     * @category functionality
+     * @description This module implements the KonyLogger class
+     * KonyLogger provides the functionality of 6 logging levels viz.,
+     * 1.TRACE	2.DEBUG	 3.INFO  4.WARN  5.ERROR 6.SILENT
+     * It also supports capturing events viz.,
+     * DEFAULT, FUNCTION_ENTRY, FUNCTION_EXIT, EXCEPTION, SUCCESS_CALLBACK, ERROR_CALLBACK, SERVICE_CALL, DATA_STORE
+     * 2020 HCL Inc. 
+     */
+    /**
+     * @member of  KonyLogger.js
+     * @function KonyLogger
+     * @param method - The function to be called to log the given message. 
+     * When no parameter is passed, kony.print is called by default.
+     * @returns an instance of KonyLogger class.
+     * @description - This is the constructor for KonyLogger. 
+     * This method initializes the instance created.
+     **/
+    var KonyLogger = function() {
+        this.printMethod = kony.print;
+        this.reuseableComponentName = arguments[0] || "appContext";
+        var loggerGenerator = function() {
+            this.trace = function(message, event) {
+                var caller;
+                try {
+                    caller = arguments.callee.caller.name;
+                } catch (err) {
+                    caller = "Global";
+                }
+                this.logMethod(caller, "TRACE", message, event);
+            };
+            this.debug = function(message, event) {
+                var caller;
+                try {
+                    caller = arguments.callee.caller.name;
+                } catch (err) {
+                    caller = "Global";
+                }
+                this.logMethod(caller, "DEBUG", message, event);
+            };
+            this.info = function(message, event) {
+                var caller;
+                try {
+                    caller = arguments.callee.caller.name;
+                } catch (err) {
+                    caller = "Global";
+                }
+                this.logMethod(caller, "INFO", message, event);
+            };
+            this.warn = function(message, event) {
+                var caller;
+                try {
+                    caller = arguments.callee.caller.name;
+                } catch (err) {
+                    caller = "Global";
+                }
+                this.logMethod(caller, "WARN", message, event);
+            };
+            this.error = function(message, event) {
+                var caller;
+                try {
+                    caller = arguments.callee.caller.name;
+                } catch (err) {
+                    caller = "Global";
+                }
+                this.logMethod(caller, "ERROR", message, event);
+            };
+        };
+        this.setLogLevel = function(logLevel) {
+            if (this.isValidLogLevel(logLevel)) {
+                if (typeof logLevel === "string") {
+                    this.currentLogLevel = this.logLevels[logLevel];
+                } else if (typeof logLevel === "number") {
+                    this.currentLogLevel = logLevel;
+                }
+                var logMethods = Object.keys(this.logLevels);
+                for (var i = 0; i < logMethods.length; i++) {
+                    var methodName = logMethods[i].toLowerCase();
+                    this[methodName] = (i < this.currentLogLevel) ? function() {} : (new loggerGenerator())[methodName];
+                }
+                return true;
+            } else {
+                return false;
+            }
+        };
+        this.enableServerLogging = false;
+        this.logMethod = function(functionName, logLevel, message, eventType) {
+            var logObj = {
+                "component": this.reuseableComponentName || "",
+                "event": this.supportedEventTypes[eventType] || this.supportedEventTypes[this.DEFAULT],
+                "function": functionName || "",
+                "timestamp": KonyLogger.Utils.getDateTimeStamp() || "",
+                "level": logLevel || "",
+                "message": message || ""
+            };
+            if (this.enableServerLogging === true) {
+                if ((KNYMetricsService !== undefined) && (KNYMetricsService !== null) && (KNYMetricsService !== "")) {
+                    if (typeof KNYMetricsService.sendEvent === "function") {
+                        /** sendEvent params - eventType, subEventType, formID, widgetID, flowTag, metaInfo{JSON} **/
+                        KNYMetricsService.sendEvent("Custom", "KonyLogger", "MarketPlaceComponent", logObj.component, null, logObj);
+                    }
+                }
+            }
+            this.printMethod(JSON.stringify(logObj, null, '\t'));
+        };
+        this.setLogLevel("TRACE");
+    };
+    /**
+     * @member of  KonyLogger
+     * @property logLevels - This enum holds the 6 levels of logging and their order.
+     **/
+    KonyLogger.prototype.logLevels = {
+        "TRACE": 0,
+        "DEBUG": 1,
+        "INFO": 2,
+        "WARN": 3,
+        "ERROR": 4,
+        "SILENT": 5
+    };
+    /**
+     * @member of  KonyLogger
+     * @property eventTypes - This array holds 8 types of events.
+     **/
+    KonyLogger.prototype.supportedEventTypes = ["DEFAULT", "FUNCTION_ENTRY", "FUNCTION_EXIT", "SUCCESS_CALLBACK", "ERROR_CALLBACK", "EXCEPTION", "SERVICE_CALL", "DATA_STORE"];
+    /** KonyLogger EventTypes**/
+    KonyLogger.prototype.DEFAULT = 0;
+    KonyLogger.prototype.FUNCTION_ENTRY = 1;
+    KonyLogger.prototype.FUNCTION_EXIT = 2;
+    KonyLogger.prototype.SUCCESS_CALLBACK = 3;
+    KonyLogger.prototype.ERROR_CALLBACK = 4;
+    KonyLogger.prototype.EXCEPTION = 5;
+    KonyLogger.prototype.SERVICE_CALL = 6;
+    KonyLogger.prototype.DATA_STORE = 7;
+    /**
+     * @member of  KonyLogger
+     * @property defaultLogLevel - This property holds the default logLevel
+     * It is intialised to "TRACE".
+     **/
+    KonyLogger.prototype.defaultLogLevel = KonyLogger.prototype.logLevels["TRACE"];
+    /**
+     * @member of  KonyLogger
+     * @function isValidLogLevel
+     * @param logLevel - (string or number)
+     * @description - This method validates the logLevel parameter with the enum logLevels
+     * @return boolean
+     **/
+    KonyLogger.prototype.isValidLogLevel = function(logLevel) {
+        if ((logLevel !== undefined) && (logLevel !== null) && (logLevel !== "")) {
+            if (typeof logLevel === "string") {
+                if (logLevel.toUpperCase() in this.logLevels) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else if (typeof logLevel === "number") {
+                for (var logLevelKey in this.logLevels) {
+                    if (logLevel === this.logLevels.logLevelKey) {
+                        return true;
+                    }
+                }
+                return false;
+            } else {
+                return false;
+            }
+        }
+    };
+    /**
+     * @member of  KonyLogger
+     * @function getLogLevel
+     * @param none
+     * @description - This method returns the current log level of the instance
+     * @return type number
+     **/
+    KonyLogger.prototype.getLogLevel = function() {
+        return this.currentLogLevel;
+    };
+    /**
+     * @member of  KonyLogger
+     * @function setPrintMethod
+     * @param method: type function - The method to print the log/message.
+     * The default value is kony.print
+     * @description - This method sets the current log method to 'method'
+     * @return none
+     **/
+    KonyLogger.prototype.setPrintMethod = function(method) {
+        if ((method !== undefined) && (method !== null) && (method !== "")) {
+            if (typeof method === "function") {
+                this.printMethod = method;
+            }
+        }
+    };
+    KonyLogger.Utils = {};
+    /**
+     * @member of  KonyLogger
+     * @function getDateTimeStamp
+     * @param none
+     * @description - It returns the current date and time stamp in "DD/MM/YY HH:MM AM/PM" format
+     * @return type string
+     **/
+    KonyLogger.Utils.getDateTimeStamp = function() {
+        var dateTimeStamp = "";
+        var currentDateObj = new Date();
+        dateTimeStamp += currentDateObj.getDate() + "/" + (currentDateObj.getMonth() + 1) + "/" + currentDateObj.getFullYear();
+        dateTimeStamp += " ";
+        var hours = currentDateObj.getHours();
+        if (hours > 12) {
+            dateTimeStamp += (hours - 12) + ":" + currentDateObj.getMinutes() + " PM";
+        } else {
+            dateTimeStamp += hours + ":" + currentDateObj.getMinutes() + " AM";
+        }
+        return dateTimeStamp;
+    };
+    return KonyLogger;
+});
+/**
+ * Created by Team Kony.
+ * Copyright (c) 2017 Kony Inc. All rights reserved.
+ */
+/**
+ * @controller: Vertical Bar Chart UDW
+ * @author: Sumeet Bartha and Tejaswini Tubati
+ * @category: Reusable Component
+ * @componentVersion: 1.0
+ * @description: Generates vertical bar chart by taking the data as input
+ */
+define("com/konymp/verticalbarCopy/userverticalbarCopyController", ['com/konymp/verticalbar/konyLogger'],function() {
+    var konyLoggerModule = require('com/konymp/verticalbar/konyLogger');
+    konymp = {};
+    konymp.logger = new konyLoggerModule("Vertical Bar Chart Component");
+    return {
+        /**
+         * @function constructor
+         * @private
+         * @params {Object} baseConfig, layoutConfig, pspConfig
+         */
+        constructor: function(baseConfig, layoutConfig, pspConfig) {
+            var analytics = require("com/konymp/" + "verticalbar" + "/analytics");
+            analytics.notifyAnalytics();
+            konymp.logger.trace("----------Entering constructor---------", konymp.logger.FUNCTION_ENTRY);
+            this._chartProperties = {
+                _titleFontSize: "12",
+                _titleFontColor: "#000000",
+                _bgColor: "#fff",
+                _lowValue: "0",
+                _highValue: "40",
+                _xAxisTitle: "",
+                _yAxisTitle: "",
+                _enableGrid: true,
+                _enableGridAnimation: true,
+                _enableChartAnimation: true
+            };
+            this._chartData = [];
+            this._chartTitle = "";
+            this._enableStaticPreview = true;
+            chart_barDS_defined_global = function(state) {
+                if (state === 'ready') {
+                    this.myPostShow();
+                }
+            }.bind(this);
+            konymp.logger.trace("----------Exiting constructor---------", konymp.logger.FUNCTION_EXIT);
+        },
+        /**
+         * @function initGetterSetters
+         * @private
+         * @description: Logic for getters/setters of custom properties
+         */
+        initGettersSetters: function() {
+            konymp.logger.trace("----------Entering initGettersSetters Function---------", konymp.logger.FUNCTION_ENTRY);
+            this.hexCodeFormat = /^(#)?([0-9a-fA-F]{3})([0-9a-fA-F]{3})?$/;
+            defineSetter(this, "enableStaticPreview", function(val) {
+                konymp.logger.trace("----------Entering enableStaticPreview Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._enableStaticPreview = val;
+                konymp.logger.trace("----------Exiting enableStaticPreview Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "enableGrid", function(val) {
+                konymp.logger.trace("----------Entering enableGrid Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._enableGrid = val;
+                konymp.logger.trace("----------Exiting enableGrid Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "enableGridAnimation", function(val) {
+                konymp.logger.trace("----------Entering enableGridAnimation Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._enableGridAnimation = val;
+                konymp.logger.trace("----------Exiting enableGridAnimation Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "enableChartAnimation", function(val) {
+                konymp.logger.trace("----------Entering enableChartAnimation Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._enableChartAnimation = val;
+                konymp.logger.trace("----------Exiting enableChartAnimation Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            konymp.logger.trace("----------Entering initGettersSetters Function---------", konymp.logger.FUNCTION_ENTRY);
+            defineSetter(this, "chartData", function(val) {
+                konymp.logger.trace("----------Entering chartData Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartData = val.data;
+                konymp.logger.trace("----------Exiting chartData Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "chartTitle", function(val) {
+                konymp.logger.trace("----------Entering chartTitle Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartTitle = val;
+                konymp.logger.trace("----------Exiting chartTitle Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "titleFontSize", function(val) {
+                konymp.logger.trace("----------Entering titleFontSize Setter---------", konymp.logger.FUNCTION_ENTRY);
+                try {
+                    if (!isNaN(parseInt(val))) {
+                        this._chartProperties._titleFontSize = val;
+                    } else {
+                        throw {
+                            "Error": "NotNumber",
+                            "message": "Title font size value should be a number"
+                        };
+                    }
+                } catch (exception) {
+                    konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                    if (exception.Error === "NotNumber") {
+                        throw (exception);
+                    }
+                }
+                konymp.logger.trace("----------Exiting titleFontSize Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "titleFontColor", function(val) {
+                konymp.logger.trace("----------Entering titleFontColor Setter---------", konymp.logger.FUNCTION_ENTRY);
+                try {
+                    if (this.hexCodeFormat.test(val)) {
+                        this._chartProperties._titleFontColor = val;
+                    } else {
+                        throw {
+                            "Error": "InvalidTitleFontColorCode",
+                            "message": "Title font color code must be in hex format. Eg.:#000000"
+                        };
+                    }
+                } catch (exception) {
+                    konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                    if (exception.Error === "InvalidTitleFontColorCode") {
+                        throw (exception);
+                    }
+                }
+                konymp.logger.trace("----------Exiting titleFontColor Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "lowValue", function(val) {
+                konymp.logger.trace("----------Entering lowValue Setter---------", konymp.logger.FUNCTION_ENTRY);
+                try {
+                    if (!isNaN(parseInt(val))) {
+                        this._chartProperties._lowValue = val;
+                    } else {
+                        throw {
+                            "Error": "NotNumber",
+                            "message": "Low/High value should be a number"
+                        };
+                    }
+                } catch (exception) {
+                    konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                    if (exception.Error === "NotNumber") {
+                        throw (exception);
+                    }
+                }
+                konymp.logger.trace("----------Exiting lowValue Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "highValue", function(val) {
+                konymp.logger.trace("----------Entering highValue Setter---------", konymp.logger.FUNCTION_ENTRY);
+                try {
+                    if (!isNaN(parseInt(val))) {
+                        this._chartProperties._highValue = val;
+                    } else {
+                        throw {
+                            "Error": "NotNumber",
+                            "message": "Low/High value should be a number"
+                        };
+                    }
+                } catch (exception) {
+                    konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                    if (exception.Error === "NotNumber") {
+                        throw (exception);
+                    }
+                }
+                konymp.logger.trace("----------Exiting highValue Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "bgColor", function(val) {
+                konymp.logger.trace("----------Entering bgColor Setter---------", konymp.logger.FUNCTION_ENTRY);
+                try {
+                    if (this.hexCodeFormat.test(val)) {
+                        this._chartProperties._bgColor = val;
+                    } else {
+                        throw {
+                            "Error": "InvalidBackgroundColorCode",
+                            "message": "Background color code must be in hex format. Eg.:#000000"
+                        };
+                    }
+                } catch (exception) {
+                    konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                    if (exception.Error === "InvalidBackgroundColorCode") {
+                        throw (exception);
+                    }
+                }
+                konymp.logger.trace("----------Exiting bgColor Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "xAxisTitle", function(val) {
+                konymp.logger.trace("----------Entering xAxisTitle Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._xAxisTitle = val;
+                konymp.logger.trace("----------Exiting xAxisTitle Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "yAxisTitle", function(val) {
+                konymp.logger.trace("----------Entering yAxisTitle Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._yAxisTitle = val;
+                konymp.logger.trace("----------Exiting yAxisTitle Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            defineSetter(this, "enableChartAnimation", function(val) {
+                konymp.logger.trace("----------Entering enableChartAnimation Setter---------", konymp.logger.FUNCTION_ENTRY);
+                this._chartProperties._enableChartAnimation = val;
+                konymp.logger.trace("----------Exiting enableChartAnimation Setter---------", konymp.logger.FUNCTION_EXIT);
+            });
+            this.view.verticalBarBrowser.onPageFinished = this.myPostShow.bind(this);
+            konymp.logger.trace("----------Exiting initGettersSetters Function---------", konymp.logger.FUNCTION_EXIT);
+        },
+        /**
+         * @function createDonutChart         
+         * @param {JSON array} dataSet - data for the chart
+         * @description: initiates the creation of doughnut chart
+         */
+        createChart: function(dataSet) {
+            konymp.logger.trace("----------Entering createChart Function---------", konymp.logger.FUNCTION_ENTRY);
+            try {
+                if (dataSet === undefined || dataSet === null) {
+                    throw {
+                        error: 'wrong dataType',
+                        message: "wrong datatype passed to createChart"
+                    };
+                }
+                var labels, colors, data, gridData;
+                if (dataSet !== null && dataSet !== undefined && dataSet !== "") {
+                    data = dataSet.map(function(obj) {
+                        return Number(obj.Value || obj.value);
+                    });
+                    labels = dataSet.map(function(obj) {
+                        return obj.label;
+                    });
+                    colors = dataSet.map(function(obj) {
+                        var regColorcode = /^(#)?([0-9a-fA-F]{3})([0-9a-fA-F]{3})?$/;
+                        if (obj.colorCode === null || obj.colorCode === "" || (!regColorcode.test(obj.colorCode))) {
+                            throw {
+                                error: "wrong dataType",
+                                message: "wrong colorCode for data " + JSON.stringify(obj.colorCode)
+                            };
+                        }
+                        return obj.colorCode;
+                    });
+                } else if (this._chartData !== null && this._chartData !== undefined && this._chartData !== "") {
+                    gridData = this._chartData;
+                    data = gridData.map(function(obj) {
+                        return Number(obj.Value || obj.value);
+                    });
+                    labels = gridData.map(function(obj) {
+                        return obj.label;
+                    });
+                    colors = gridData.map(function(obj) {
+                        return obj.colorCode;
+                    });
+                } else {
+                    return false;
+                }
+                if (this.validateAllParams(this._chartTitle, data, labels, colors, this._chartProperties)) {
+                    this.view.verticalBarBrowser.evaluateJavaScript('var chartObj = new konymp.charts.verticalBar(); chartObj.Generate_verticalChart(' + JSON.stringify(this._chartTitle) + ',' + JSON.stringify(labels) + ',' + JSON.stringify(data) + ',' + JSON.stringify(colors) + ',' + JSON.stringify(this._chartProperties) + ')');
+                }
+                konymp.logger.trace("----------Exiting createChart Function---------", konymp.logger.FUNCTION_EXIT);
+            } catch (exception) {
+                konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+                if (exception.error === "wrong dataType") {
+                    throw exception;
+                }
+            }
+        },
+        /**
+         * @function _validationData
+         * @private
+         * @param {String/js array} data - the paramater to be validated
+         * @param {String} type - the type in which the parameter should be
+         * @description: validates the datatype of a single paramater passed
+         */
+        validateData: function(data, type) {
+            konymp.logger.trace("----------Entering validateData Function---------", konymp.logger.FUNCTION_ENTRY);
+            if (type === 'array') {
+                konymp.logger.trace("----------Exiting validateData Function---------", konymp.logger.FUNCTION_EXIT);
+                return Array.isArray(data);
+            } else if (typeof data === type) {
+                konymp.logger.trace("----------Exiting validateData Function---------", konymp.logger.FUNCTION_EXIT);
+                return true;
+            } else {
+                konymp.logger.trace("----------Exiting validateData Function---------", konymp.logger.FUNCTION_EXIT);
+                return false;
+            }
+        },
+        /**
+         * @function validateAllParams
+         * @private
+         * @param {String} title 
+         * @param {js array} data 
+         * @param {js array} labels 
+         * @param {js array} colors 
+         * @description: validates the datatypes of all the paramaters
+         */
+        validateAllParams: function(title, data, labels, colors, properties) {
+            konymp.logger.trace("----------Entering validateAllParams Function---------", konymp.logger.FUNCTION_ENTRY);
+            if (!this.validateData(title, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong dataType for title " + title
+                };
+            }
+            if (!this.validateData(data, 'array')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong dataType for data " + JSON.stringify(data)
+                };
+            }
+            if (!this.validateData(labels, 'array')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong dataType for labels " + JSON.stringify(labels)
+                };
+            }
+            if (!this.validateData(colors, 'array')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong dataType for bgColor " + JSON.stringify(colors)
+                };
+            }
+            if (!this.validateData(properties._xAxisTitle, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for xAxisTitle " + JSON.stringify(properties._xAxisTitle)
+                };
+            }
+            if (!this.validateData(properties._yAxisTitle, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for yAxisTitle " + JSON.stringify(properties._yAxisTitle)
+                };
+            }
+            if (!this.validateData(properties._bgColor, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for bgColor " + JSON.stringify(properties._bgColor)
+                };
+            }
+            if (!this.validateData(properties._lowValue, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for lowValue " + JSON.stringify(properties._lowValue)
+                };
+            }
+            if (!this.validateData(properties._highValue, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for highValue " + JSON.stringify(properties._highValue)
+                };
+            }
+            if (!this.validateData(properties._titleFontSize, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for titleFontSize " + JSON.stringify(properties._titleFontSize)
+                };
+            }
+            if (!this.validateData(properties._titleFontColor, 'string')) {
+                throw {
+                    error: "wrong dataType",
+                    message: "Wrong datatype for titleFontColor " + JSON.stringify(properties._titleFontColor)
+                };
+            }
+            konymp.logger.trace("----------Exiting validateAllParams Function---------", konymp.logger.FUNCTION_EXIT);
+            return true;
+        },
+        myPostShow: function() {
+            try {
+                if (this._enableStaticPreview) {
+                    if (this._chartData !== undefined && this._chartData !== null && this._chartData.length > 0) this.createChart(this._chartData);
+                    return;
+                }
+            } catch (exception) {
+                konymp.logger.error(JSON.stringify(exception), konymp.logger.EXCEPTION);
+            }
+        }
+    };
+});
+define("com/konymp/verticalbarCopy/verticalbarCopyControllerActions", {
+    /*
+      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    */
+});
+define("com/konymp/verticalbarCopy/verticalbarCopyController", ["com/konymp/verticalbarCopy/userverticalbarCopyController", "com/konymp/verticalbarCopy/verticalbarCopyControllerActions"], function() {
+    var controller = require("com/konymp/verticalbarCopy/userverticalbarCopyController");
+    var actions = require("com/konymp/verticalbarCopy/verticalbarCopyControllerActions");
+    for (var key in actions) {
+        controller[key] = actions[key];
+    }
+    controller.initializeProperties = function() {
+        if (this.initGettersSetters) {
+            this.initGettersSetters.apply(this, arguments);
+        }
+    };
+    return controller;
+});
+
+define('com/konymp/verticalbarCopy/verticalbarCopy',[],function() {
+    return function(controller) {
+        var verticalbarCopy = new voltmx.ui.FlexContainer(extendConfig({
+            "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+            "clipBounds": true,
+            "isMaster": true,
+            "height": "100%",
+            "id": "verticalbarCopy",
+            "isVisible": true,
+            "layoutType": voltmx.flex.FREE_FORM,
+            "left": "0dp",
+            "isModalContainer": false,
+            "top": "0dp",
+            "width": "100%",
+            "appName": "SKU2"
+        }, controller.args[0], "verticalbarCopy"), extendConfig({
+            "paddingInPixel": false
+        }, controller.args[1], "verticalbarCopy"), extendConfig({}, controller.args[2], "verticalbarCopy"));
+        verticalbarCopy.setDefaultUnit(voltmx.flex.DP);
+        var verticalBarBrowser = new voltmx.ui.Browser(extendConfig({
+            "detectTelNumber": true,
+            "enableNativeCommunication": true,
+            "enableZoom": false,
+            "height": "100%",
+            "id": "verticalBarBrowser",
+            "isVisible": true,
+            "left": "0dp",
+            "setAsContent": false,
+            "requestURLConfig": {
+                "URL": "CopyChart_vertical3/verticalBarChartist.html",
+                "requestMethod": constants.BROWSER_REQUEST_METHOD_GET
+            },
+            "top": "0dp",
+            "width": "100%",
+            "zIndex": 1
+        }, controller.args[0], "verticalBarBrowser"), extendConfig({}, controller.args[1], "verticalBarBrowser"), extendConfig({}, controller.args[2], "verticalBarBrowser"));
+        verticalbarCopy.add(verticalBarBrowser);
+        return verticalbarCopy;
+    }
+});
+define('com/konymp/verticalbarCopy/verticalbarCopyConfig',[],function() {
     return {
         "properties": [{
             "name": "enableGrid",
@@ -4813,6 +5613,6 @@ define("navigation/NavigationController", {
     //Add your navigation controller code here.
 });
 
-require(['applicationController','com/hclsoftwareu/hamburgermenu/hamburgermenuController','com/hclsoftwareu/hamburgermenu/hamburgermenu','com/konymp/linechart/analytics','com/konymp/linechart/konyLogger','com/konymp/linechart/linechartController','com/konymp/linechart/linechart','com/konymp/linechart/linechartConfig','com/konymp/piechart/analytics','com/konymp/piechart/konyLogger','com/konymp/piechart/piechartController','com/konymp/piechart/piechart','com/konymp/piechart/piechartConfig','com/konymp/verticalbar/analytics','com/konymp/verticalbar/konyLogger','com/konymp/verticalbar/verticalbarController','com/konymp/verticalbar/verticalbar','com/konymp/verticalbar/verticalbarConfig','com/voltmxmp/multiseriesverticalbar/voltmxLogger','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarController','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbar','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarConfig','CopyFBoxDemandRequest0baf5ada8ae3645','CopyFBoxDemandRequest0c2c1c51673ed4d','CopyFBoxProductline0b4828ae3534343','CopyFBoxProductline0cfaf586391c248','CopyFBoxProductline0g693a35b70844a','CopyFBoxProductline0he56704eefde49','myflxSegRowWithImageAndLabel','flxSampleRowTemplate','flxSectionHeaderTemplate','Flex0f834108d4cc042','CopyFlex0ff43866586004c','CopyFBoxDemandRequest0baf5ada8ae3645Controller','CopyFBoxDemandRequest0c2c1c51673ed4dController','CopyFBoxProductline0b4828ae3534343Controller','CopyFBoxProductline0cfaf586391c248Controller','CopyFBoxProductline0g693a35b70844aController','CopyFBoxProductline0he56704eefde49Controller','myflxSegRowWithImageAndLabelController','flxSampleRowTemplateController','flxSectionHeaderTemplateController','Flex0f834108d4cc042Controller','CopyFlex0ff43866586004cController','navigation/NavigationModel','navigation/NavigationController'], function(){});
+require(['applicationController','com/hclsoftwareu/hamburgermenu/hamburgermenuController','com/hclsoftwareu/hamburgermenu/hamburgermenu','com/konymp/linechart/analytics','com/konymp/linechart/konyLogger','com/konymp/linechart/linechartController','com/konymp/linechart/linechart','com/konymp/linechart/linechartConfig','com/konymp/piechart/analytics','com/konymp/piechart/konyLogger','com/konymp/piechart/piechartController','com/konymp/piechart/piechart','com/konymp/piechart/piechartConfig','com/konymp/verticalbar/analytics','com/konymp/verticalbar/konyLogger','com/konymp/verticalbar/verticalbarController','com/konymp/verticalbar/verticalbar','com/konymp/verticalbar/verticalbarConfig','com/konymp/verticalbarCopy/analytics','com/konymp/verticalbarCopy/konyLogger','com/konymp/verticalbarCopy/verticalbarCopyController','com/konymp/verticalbarCopy/verticalbarCopy','com/konymp/verticalbarCopy/verticalbarCopyConfig','com/voltmxmp/multiseriesverticalbar/voltmxLogger','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarController','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbar','com/voltmxmp/multiseriesverticalbar/multiseriesverticalbarConfig','CopyFBoxDemandRequest0baf5ada8ae3645','CopyFBoxDemandRequest0c2c1c51673ed4d','CopyFBoxProductline0b4828ae3534343','CopyFBoxProductline0cfaf586391c248','CopyFBoxProductline0g693a35b70844a','CopyFBoxProductline0he56704eefde49','myflxSegRowWithImageAndLabel','flxSampleRowTemplate','flxSectionHeaderTemplate','Flex0f834108d4cc042','CopyFlex0ff43866586004c','CopyFBoxDemandRequest0baf5ada8ae3645Controller','CopyFBoxDemandRequest0c2c1c51673ed4dController','CopyFBoxProductline0b4828ae3534343Controller','CopyFBoxProductline0cfaf586391c248Controller','CopyFBoxProductline0g693a35b70844aController','CopyFBoxProductline0he56704eefde49Controller','myflxSegRowWithImageAndLabelController','flxSampleRowTemplateController','flxSectionHeaderTemplateController','Flex0f834108d4cc042Controller','CopyFlex0ff43866586004cController','navigation/NavigationModel','navigation/NavigationController'], function(){});
 define("sparequirefileslist", function(){});
 
