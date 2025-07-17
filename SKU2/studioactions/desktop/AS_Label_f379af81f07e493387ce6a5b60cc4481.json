@@ -13,7 +13,7 @@
             "name": "y"
         }],
         "contextObj": {
-            "name": "ProductLinefrm",
+            "name": "SOP",
             "type": "forms",
             "platform": "",
             "KUID": "b3c9856e04514d829f4c8106e7ce4669"
@@ -23,7 +23,7 @@
         "actions": [{
             "id": "NAVIGATE_TO_FORM__f4109db7e5e9453993efd724dc92df91",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "ProductLinefrm",
+            "formId": "SOP",
             "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
             "projectName": "SKU2",
             "mappings": {},

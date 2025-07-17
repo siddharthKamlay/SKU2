@@ -1,6 +1,6 @@
-define("DemandRequestFrm", function() {
+define("Overview", function() {
     return function(controller) {
-        function addWidgetsDemandRequestFrm() {
+        function addWidgetsOverview() {
             this.setDefaultUnit(voltmx.flex.DP);
             var FlexContainerPieChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
@@ -376,7 +376,7 @@ define("DemandRequestFrm", function() {
                 "id": "FlexContainerHeader",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "101dp",
+                "left": "80dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "0dp",
@@ -1210,7 +1210,7 @@ define("DemandRequestFrm", function() {
                 "isVisible": true,
                 "left": "31dp",
                 "skin": "CopydefLabel0c9e00abaf49641",
-                "text": "SKU Demand Requests",
+                "text": "Recent SKU Demand Requests",
                 "top": "18dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -1224,7 +1224,7 @@ define("DemandRequestFrm", function() {
                 "isVisible": true,
                 "left": "31dp",
                 "skin": "CopydefLabel0e6dd4a9eb46b40",
-                "text": "Detailed view of  all demand requests",
+                "text": "Overview of  latest demand requests across all SKUs",
                 "top": "62dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -1240,7 +1240,7 @@ define("DemandRequestFrm", function() {
                 "id": "TextFieldSearchBox",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-                "left": "31dp",
+                "left": "50dp",
                 "onTextChange": controller.AS_TextField_i399824987dc42e28a801263c10a9da3,
                 "placeholder": "Search",
                 "secureTextEntry": false,
@@ -1274,7 +1274,7 @@ define("DemandRequestFrm", function() {
                 ],
                 "onSelection": controller.AS_ListBox_cdfff7a0ec2b49099a32bd66ab80db6c,
                 "skin": "CopydefListBoxNormal0e2b722993c6543",
-                "top": "110dp",
+                "top": "108dp",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -1312,11 +1312,11 @@ define("DemandRequestFrm", function() {
             var Bars = new voltmx.ui.Label({
                 "id": "Bars",
                 "isVisible": true,
-                "left": "29dp",
+                "left": "17dp",
                 "onTouchEnd": controller.AS_Label_ccb1f37491fa443d8857b72030ce776a,
                 "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
                 "text": "",
-                "top": "44dp",
+                "top": "30dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1366,9 +1366,9 @@ define("DemandRequestFrm", function() {
             this.add(FlexContainerPieChart, FlexContainerchart, FlexContaineroverview, FlexContainerHeader, FlexSKUTable, Bars);
         };
         return [{
-            "addWidgets": addWidgetsDemandRequestFrm,
+            "addWidgets": addWidgetsOverview,
             "enabledForIdleTimeout": false,
-            "id": "DemandRequestFrm",
+            "id": "Overview",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
             "preShow": function(eventobject) {

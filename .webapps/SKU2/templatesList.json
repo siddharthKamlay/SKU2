@@ -2,10 +2,10 @@
     "desktopweb": {
         "formslist": {
             "mvcFormObjects": [
-                "DemandRequestFrm",
                 "LoginFrm",
-                "ProductLinefrm",
-                "SKUDemand"
+                "Overview",
+                "SKUDemand",
+                "SOP"
             ],
             "nonmvcFormObjects": []
         },

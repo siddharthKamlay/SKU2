@@ -106,44 +106,47 @@ define("SKUDemandControllerActions", {
                 voltmx.application.dismissLoadingScreen();
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection8212 = [];
-                var tempData5895 = DemandRequest.records;
-                for (var each9211 in tempData5895) {
-                    var shouldShow = typeof tempData5895[each9211]["x_0024FILES"] !== 'undefined' && tempData5895[each9211]["x_0024FILES"] && tempData5895[each9211]["x_0024FILES"].length > 0
-                    tempCollection8212.push({
+                var tempCollection4320 = [];
+                var tempData8219 = DemandRequest.records;
+                for (var each2331 in tempData8219) {
+                    var shouldShow = typeof tempData8219[each2331]["x_0024FILES"] !== 'undefined' && tempData8219[each2331]["x_0024FILES"] && tempData8219[each2331]["x_0024FILES"].length > 0
+                    tempCollection4320.push({
                         "lblSKUID1": {
-                            "text": tempData5895[each9211]["SKUID"]
+                            "text": tempData8219[each2331]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData5895[each9211]["Name"]
+                            "text": tempData8219[each2331]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData5895[each9211]["Category"]
+                            "text": tempData8219[each2331]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData5895[each9211]["Stock"]
+                            "text": tempData8219[each2331]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData5895[each9211]["Forecasted"]
+                            "text": tempData8219[each2331]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData5895[each9211]["EnrichedQTY"]
+                            "text": tempData8219[each2331]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData5895[each9211]["Requested"]
+                            "text": tempData8219[each2331]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData5895[each9211]["Status"]
+                            "text": tempData8219[each2331]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData5895[each9211]["RequestedBY"]
+                            "text": tempData8219[each2331]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData5895[each9211]["RequestDate"]
+                            "text": tempData8219[each2331]["RequestDate"]
+                        },
+                        "lblApprovedDate1": {
+                            "text": tempData8219[each2331]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection8212);
+                self.view.segDemandRequest.setData(tempCollection4320);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -231,7 +234,7 @@ define("SKUDemandControllerActions", {
     /** onTouchEnd defined for CopyLabel0c2616b70466946 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        var ntf = new voltmx.mvc.Navigation("Overview");
         ntf.navigate();
     },
     /** onTouchEnd defined for Label05 **/
@@ -243,7 +246,7 @@ define("SKUDemandControllerActions", {
     /** onTouchEnd defined for CopyLabel0a138d2c742a340 **/
     AS_Label_f70828358dce40018fdee062495dbbc7: function AS_Label_f70828358dce40018fdee062495dbbc7(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        var ntf = new voltmx.mvc.Navigation("SOP");
         ntf.navigate();
     },
     /** onTouchEnd defined for lblName **/

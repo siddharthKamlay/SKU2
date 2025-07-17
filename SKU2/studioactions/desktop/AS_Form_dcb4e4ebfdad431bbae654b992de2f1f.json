@@ -7,7 +7,7 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "DemandRequestFrm",
+            "name": "Overview",
             "type": "forms",
             "platform": "",
             "KUID": "a1716dc115ec46f7b708dd80999458a8"
@@ -17,7 +17,7 @@
         "actions": [{
             "id": "NAVIGATE_TO_FORM__d393bd6dd97443c2998f779d1096377e",
             "type": "NAVIGATE_TO_FORM",
-            "formId": "ProductLinefrm",
+            "formId": "SOP",
             "formKUID": "b3c9856e04514d829f4c8106e7ce4669",
             "projectName": "SKU2",
             "mappings": {},

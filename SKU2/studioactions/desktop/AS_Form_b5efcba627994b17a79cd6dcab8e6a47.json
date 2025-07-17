@@ -10,7 +10,7 @@
             "type": "forms",
             "platform": "",
             "KUID": "b3c9856e04514d829f4c8106e7ce4669",
-            "name": "ProductLinefrm"
+            "name": "SOP"
         },
         "language": "js",
         "eventType": "onMapping",
@@ -98,8 +98,194 @@
         }, {
             "id": "ADD_MAPPING_hd4484a007c941489ffa40dc5042f5ce",
             "type": "ADD_MAPPING",
-            "mappings": {},
-            "mappingsOrder": [],
+            "mappings": {
+                "ME_Mapping_f5c78268a6d7409b9bbcc266da019957": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_f5c78268a6d7409b9bbcc266da019957",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "records",
+                        "dataType": "collection",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "rowData",
+                        "widgetId": "segProductline",
+                        "widgetPath": "this.view.segProductline",
+                        "widgetType": "Segment",
+                        "dataType": "collection",
+                        "itemId": "SOP",
+                        "collectionId": "masterdata",
+                        "widgetKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ad041ebe8fea4715941d874803852b32": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ad041ebe8fea4715941d874803852b32",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ProductLine",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"ProductLine\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblProductLine1",
+                        "widgetPath": "this.view.lblProductLine1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "SOP",
+                        "parentMappingId": "ME_Mapping_f5c78268a6d7409b9bbcc266da019957",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "ibb9be82addd4a469aa6244487089de6",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_ee7a7e157af241b88ca15a50e8f2a3ea": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ee7a7e157af241b88ca15a50e8f2a3ea",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Forecasted",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Forecasted\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblForcasted1",
+                        "widgetPath": "this.view.lblForcasted1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "SOP",
+                        "parentMappingId": "ME_Mapping_f5c78268a6d7409b9bbcc266da019957",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "d0da7c35ac134841935c96d7cc61d384",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_jf2832944bdd4a8d99c0e2ee1a3e5a7e": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_jf2832944bdd4a8d99c0e2ee1a3e5a7e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Actual",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Actual\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblActual1",
+                        "widgetPath": "this.view.lblActual1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "SOP",
+                        "parentMappingId": "ME_Mapping_f5c78268a6d7409b9bbcc266da019957",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "b0a95728fb574116a3190b6a93ffc7ac",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_d56704bfebf5471f857a02b894f95db5": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_d56704bfebf5471f857a02b894f95db5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Variance",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Variance\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "Productline",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblVariance1",
+                        "widgetPath": "this.view.lblVariance1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "SOP",
+                        "parentMappingId": "ME_Mapping_f5c78268a6d7409b9bbcc266da019957",
+                        "segmentId": "segProductline",
+                        "segmentKUID": "c0e5cb11c162418192878d86a6a8bf0b",
+                        "widgetKUID": "b130dde57b96428389d9c36119824043",
+                        "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_f5c78268a6d7409b9bbcc266da019957", "ME_Mapping_ad041ebe8fea4715941d874803852b32", "ME_Mapping_ee7a7e157af241b88ca15a50e8f2a3ea", "ME_Mapping_jf2832944bdd4a8d99c0e2ee1a3e5a7e", "ME_Mapping_d56704bfebf5471f857a02b894f95db5"],
             "parentId": "_a51ec4391d9043c081fce152fc3f94f8",
             "callbackType": null,
             "enableMappingEditor": true

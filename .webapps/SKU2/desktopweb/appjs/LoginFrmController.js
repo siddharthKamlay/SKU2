@@ -20,7 +20,7 @@ define("LoginFrmControllerActions", {
 
         function INVOKE_SERVICE_c3601d82e2dc438a972f872ed33c5b6a_Success(response) {
             voltmx.application.dismissLoadingScreen();
-            var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+            var ntf = new voltmx.mvc.Navigation("Overview");
             ntf.navigate({
                 "txtUsername_text": self.view.txtUsername.text,
                 "_meta_": {

@@ -38,58 +38,46 @@
     },
     "controllerformInfoMapping": {
         "desktopweb": {
-            "DemandRequestFrmController_desktop": [
-                "DemandRequestFrmController"
-            ],
             "LoginFrmController_desktop": [
                 "LoginFrmController"
             ],
-            "ProductLinefrmController_desktop": [
-                "ProductLinefrmController"
+            "OverviewController_desktop": [
+                "OverviewController"
             ],
             "SKUDemandController_desktop": [
                 "SKUDemandController"
+            ],
+            "SOPController_desktop": [
+                "SOPController"
             ]
         }
     },
     "formControllerInfoMapping": {
         "desktopweb": {
-            "DemandRequestFrm": {
-                "controllerActionDir": "DemandRequestFrmController",
-                "controllerChannel": "desktop",
-                "controllerName": "DemandRequestFrmController"
-            },
             "LoginFrm": {
                 "controllerActionDir": "LoginFrmController",
                 "controllerChannel": "desktop",
                 "controllerName": "LoginFrmController"
             },
-            "ProductLinefrm": {
-                "controllerActionDir": "ProductLinefrmController",
+            "Overview": {
+                "controllerActionDir": "OverviewController",
                 "controllerChannel": "desktop",
-                "controllerName": "ProductLinefrmController"
+                "controllerName": "OverviewController"
             },
             "SKUDemand": {
                 "controllerActionDir": "SKUDemandController",
                 "controllerChannel": "desktop",
                 "controllerName": "SKUDemandController"
+            },
+            "SOP": {
+                "controllerActionDir": "SOPController",
+                "controllerChannel": "desktop",
+                "controllerName": "SOPController"
             }
         }
     },
     "formsifcMapping": {
         "desktopweb": {
-            "DemandRequestFrm": {
-                "ControllerExtensions": [],
-                "appName": "SKU2",
-                "controllerInfo": {
-                    "controllerActionName": "DemandRequestFrmController",
-                    "controllerChannel": "desktop",
-                    "controllerName": "DemandRequestFrmController"
-                },
-                "enableModelDriven": false,
-                "friendlyName": "DemandRequestFrm",
-                "isMDAForm": false
-            },
             "LoginFrm": {
                 "ControllerExtensions": [],
                 "appName": "SKU2",
@@ -102,16 +90,16 @@
                 "friendlyName": "LoginFrm",
                 "isMDAForm": false
             },
-            "ProductLinefrm": {
+            "Overview": {
                 "ControllerExtensions": [],
                 "appName": "SKU2",
                 "controllerInfo": {
-                    "controllerActionName": "ProductLinefrmController",
+                    "controllerActionName": "OverviewController",
                     "controllerChannel": "desktop",
-                    "controllerName": "ProductLinefrmController"
+                    "controllerName": "OverviewController"
                 },
                 "enableModelDriven": false,
-                "friendlyName": "ProductLinefrm",
+                "friendlyName": "Overview",
                 "isMDAForm": false
             },
             "SKUDemand": {
@@ -124,6 +112,18 @@
                 },
                 "enableModelDriven": false,
                 "friendlyName": "SKUDemand",
+                "isMDAForm": false
+            },
+            "SOP": {
+                "ControllerExtensions": [],
+                "appName": "SKU2",
+                "controllerInfo": {
+                    "controllerActionName": "SOPController",
+                    "controllerChannel": "desktop",
+                    "controllerName": "SOPController"
+                },
+                "enableModelDriven": false,
+                "friendlyName": "SOP",
                 "isMDAForm": false
             }
         }

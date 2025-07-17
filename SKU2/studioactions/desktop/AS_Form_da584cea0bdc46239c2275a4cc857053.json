@@ -7,7 +7,7 @@
             "name": "eventobject"
         }],
         "contextObj": {
-            "name": "ProductLinefrm",
+            "name": "SOP",
             "type": "forms",
             "platform": "",
             "KUID": "b3c9856e04514d829f4c8106e7ce4669"
@@ -18,7 +18,7 @@
             "id": "SET_FORM_WIDGET_PROPERTY_Untitled__c293d71505d24607822f7d27c7ab8d58",
             "type": "SET_WIDGET_PROPERTY",
             "itemType": "FORM",
-            "itemId": "ProductLinefrm",
+            "itemId": "SOP",
             "widgetId": "FlexContainerSideMenu",
             "propertyName": "left",
             "propertyValue": "-180%",

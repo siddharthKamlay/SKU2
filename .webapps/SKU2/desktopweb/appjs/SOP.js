@@ -1,6 +1,6 @@
-define("ProductLinefrm", function() {
+define("SOP", function() {
     return function(controller) {
-        function addWidgetsProductLinefrm() {
+        function addWidgetsSOP() {
             this.setDefaultUnit(voltmx.flex.DP);
             var FlexContainertable = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
@@ -838,7 +838,7 @@ define("ProductLinefrm", function() {
             var Bars = new voltmx.ui.Label({
                 "id": "Bars",
                 "isVisible": true,
-                "left": "39dp",
+                "left": "27dp",
                 "onTouchEnd": controller.AS_Label_i99a9cd8afc14c08bad313a16cd614b2,
                 "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
                 "text": "",
@@ -894,9 +894,9 @@ define("ProductLinefrm", function() {
             this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003, Imagemenu, FlexContainerSideMenu, Bars);
         };
         return [{
-            "addWidgets": addWidgetsProductLinefrm,
+            "addWidgets": addWidgetsSOP,
             "enabledForIdleTimeout": false,
-            "id": "ProductLinefrm",
+            "id": "SOP",
             "layoutType": voltmx.flex.FREE_FORM,
             "needAppMenu": false,
             "preShow": function(eventobject) {

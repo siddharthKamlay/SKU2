@@ -517,9 +517,47 @@
                         "itemKUID": "bb67880847304d79ab85353202f9a604",
                         "forkedPlatform": "all"
                     }
+                },
+                "ME_Mapping_ab4559e93c7d48b1ba5889ec03b3ebb1": {
+                    "channel": "desktop",
+                    "id": "ME_Mapping_ab4559e93c7d48b1ba5889ec03b3ebb1",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "ApprovedDate",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"ApprovedDate\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SKUDemandRequests",
+                            "type": "objectsvcs",
+                            "objectname": "DemandRequest",
+                            "serviceid": "5d4e511d-db69-4f7e-9f71-a0bfc8c87fcf",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblApprovedDate1",
+                        "widgetPath": "this.view.lblApprovedDate1",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "templateType": "rowTemplate",
+                        "itemId": "SKUDemand",
+                        "parentMappingId": "ME_Mapping_f779ebfe221541d9861e1b7f34b479ec",
+                        "segmentId": "segDemandRequest",
+                        "segmentKUID": "i1789355d0854e91882eb1921c521a22",
+                        "widgetKUID": "i8d9a9560aa3434488284102bdbc5edd",
+                        "itemKUID": "bb67880847304d79ab85353202f9a604",
+                        "forkedPlatform": "all"
+                    }
                 }
             },
-            "mappingsOrder": ["ME_Mapping_f779ebfe221541d9861e1b7f34b479ec", "ME_Mapping_c097fb896fd14fb6bba2051083e0c86e", "ME_Mapping_a91a47a23cd04a18925bd9c8bbb89429", "ME_Mapping_b15e69661e9b4f0bb02ae81edfdb37db", "ME_Mapping_af08f87d5182402d8aae7a708f488b36", "ME_Mapping_hef8e9c9a4d44c56ad5f320ee7696f54", "ME_Mapping_f16f50e62a3442cf9f905aba64e9afaf", "ME_Mapping_jc28547418fa4b21ad4d7ddefebf612d", "ME_Mapping_f087b5e7870f4b358284f8e919e60782", "ME_Mapping_d83fa3b60b1a400eb70e8569e3a972a7", "ME_Mapping_def1915bff084610b5dcdaf50a55909d"],
+            "mappingsOrder": ["ME_Mapping_f779ebfe221541d9861e1b7f34b479ec", "ME_Mapping_c097fb896fd14fb6bba2051083e0c86e", "ME_Mapping_a91a47a23cd04a18925bd9c8bbb89429", "ME_Mapping_b15e69661e9b4f0bb02ae81edfdb37db", "ME_Mapping_af08f87d5182402d8aae7a708f488b36", "ME_Mapping_hef8e9c9a4d44c56ad5f320ee7696f54", "ME_Mapping_f16f50e62a3442cf9f905aba64e9afaf", "ME_Mapping_jc28547418fa4b21ad4d7ddefebf612d", "ME_Mapping_f087b5e7870f4b358284f8e919e60782", "ME_Mapping_d83fa3b60b1a400eb70e8569e3a972a7", "ME_Mapping_def1915bff084610b5dcdaf50a55909d", "ME_Mapping_ab4559e93c7d48b1ba5889ec03b3ebb1"],
             "parentId": "_bbcb3e51a5294178997c556bf8d609ce",
             "callbackType": null,
             "enableMappingEditor": true

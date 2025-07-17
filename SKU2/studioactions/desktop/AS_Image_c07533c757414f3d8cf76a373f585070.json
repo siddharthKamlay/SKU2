@@ -13,7 +13,7 @@
             "name": "y"
         }],
         "contextObj": {
-            "name": "ProductLinefrm",
+            "name": "SOP",
             "type": "forms",
             "platform": "",
             "KUID": "b3c9856e04514d829f4c8106e7ce4669"
@@ -24,7 +24,7 @@
             "id": "MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8",
             "type": "MOVE_ACTION",
             "itemType": "FORM",
-            "itemId": "ProductLinefrm",
+            "itemId": "SOP",
             "widgetId": "FlexContainerSideMenu",
             "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
             "widgetKUID": "ja3002e9bbfb4c5a8f7583c358169698",

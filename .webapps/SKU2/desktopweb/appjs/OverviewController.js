@@ -1,4 +1,4 @@
-define("userDemandRequestFrmController", {
+define("userOverviewController", {
     pieChartFromSegment: function() {
         try {
             var rawData = this.view.segDemandRequest.data;
@@ -137,11 +137,11 @@ define("userDemandRequestFrmController", {
         this.view.segDemandRequest.setData(tempCollection9723);
     }
 });
-define("DemandRequestFrmControllerActions", {
+define("OverviewControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onMapping defined for DemandRequestFrm **/
+    /** onMapping defined for Overview **/
     AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07: function AS_Form_c9d44fb4d5ad4928932f0eeb9e353e07(eventobject) {
         var self = this;
 
@@ -152,44 +152,47 @@ define("DemandRequestFrmControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection8024 = [];
-                var tempData7316 = DemandRequest.records;
-                for (var each4876 in tempData7316) {
-                    var shouldShow = typeof tempData7316[each4876]["x_0024FILES"] !== 'undefined' && tempData7316[each4876]["x_0024FILES"] && tempData7316[each4876]["x_0024FILES"].length > 0
-                    tempCollection8024.push({
+                var tempCollection2524 = [];
+                var tempData5699 = DemandRequest.records;
+                for (var each5750 in tempData5699) {
+                    var shouldShow = typeof tempData5699[each5750]["x_0024FILES"] !== 'undefined' && tempData5699[each5750]["x_0024FILES"] && tempData5699[each5750]["x_0024FILES"].length > 0
+                    tempCollection2524.push({
                         "lblSKUID1": {
-                            "text": tempData7316[each4876]["SKUID"]
+                            "text": tempData5699[each5750]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData7316[each4876]["Name"]
+                            "text": tempData5699[each5750]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData7316[each4876]["Category"]
+                            "text": tempData5699[each5750]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData7316[each4876]["Stock"]
+                            "text": tempData5699[each5750]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData7316[each4876]["Forecasted"]
+                            "text": tempData5699[each5750]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData7316[each4876]["EnrichedQTY"]
+                            "text": tempData5699[each5750]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData7316[each4876]["Requested"]
+                            "text": tempData5699[each5750]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData7316[each4876]["Status"]
+                            "text": tempData5699[each5750]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData7316[each4876]["RequestedBY"]
+                            "text": tempData5699[each5750]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData7316[each4876]["RequestDate"]
+                            "text": tempData5699[each5750]["RequestDate"]
+                        },
+                        "lblApprovedDate1": {
+                            "text": tempData5699[each5750]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection8024);
+                self.view.segDemandRequest.setData(tempCollection2524);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -241,13 +244,13 @@ define("DemandRequestFrmControllerActions", {
     /** onTouchEnd defined for Label03 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        var ntf = new voltmx.mvc.Navigation("Overview");
         ntf.navigate();
     },
     /** onTouchEnd defined for Label04 **/
     AS_Label_f70828358dce40018fdee062495dbbc7: function AS_Label_f70828358dce40018fdee062495dbbc7(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        var ntf = new voltmx.mvc.Navigation("SOP");
         ntf.navigate();
     },
     /** onTouchEnd defined for Label05 **/
@@ -297,14 +300,14 @@ define("DemandRequestFrmControllerActions", {
             "animationEnd": _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback
         });
     },
-    /** preShow defined for DemandRequestFrm **/
+    /** preShow defined for Overview **/
     AS_Form_g59a2ef8557045418e7aecff9e8b333b: function AS_Form_g59a2ef8557045418e7aecff9e8b333b(eventobject) {
         var self = this;
         self.view.FlexContaineroverview.left = "-180%";
     }
 });
-define("DemandRequestFrmController", ["userDemandRequestFrmController", "DemandRequestFrmControllerActions"], function() {
-    var controller = require("userDemandRequestFrmController");
-    var controllerActions = ["DemandRequestFrmControllerActions"];
+define("OverviewController", ["userOverviewController", "OverviewControllerActions"], function() {
+    var controller = require("userOverviewController");
+    var controllerActions = ["OverviewControllerActions"];
     return voltmx.visualizer.mixinControllerActions(controller, controllerActions);
 });

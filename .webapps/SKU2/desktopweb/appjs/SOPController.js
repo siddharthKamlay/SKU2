@@ -1,4 +1,4 @@
-define("userProductLinefrmController", {
+define("userSOPController", {
     barChart: function() {
         var rawData = this.view.segProductline.data;
         // Print raw segment data for debugging
@@ -34,11 +34,11 @@ define("userProductLinefrmController", {
         this.view.barchart.createChart(chartData, barDetails);
     }
 });
-define("ProductLinefrmControllerActions", {
+define("SOPControllerActions", {
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onMapping defined for ProductLinefrm **/
+    /** onMapping defined for SOP **/
     AS_Form_b5efcba627994b17a79cd6dcab8e6a47: function AS_Form_b5efcba627994b17a79cd6dcab8e6a47(eventobject) {
         var self = this;
 
@@ -47,6 +47,26 @@ define("ProductLinefrmControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
+                var tempCollection546 = [];
+                var tempData8686 = Productline.records;
+                for (var each7757 in tempData8686) {
+                    var shouldShow = typeof tempData8686[each7757]["x_0024FILES"] !== 'undefined' && tempData8686[each7757]["x_0024FILES"] && tempData8686[each7757]["x_0024FILES"].length > 0
+                    tempCollection546.push({
+                        "lblProductLine1": {
+                            "text": tempData8686[each7757]["ProductLine"]
+                        },
+                        "lblForcasted1": {
+                            "text": tempData8686[each7757]["Forecasted"]
+                        },
+                        "lblActual1": {
+                            "text": tempData8686[each7757]["Actual"]
+                        },
+                        "lblVariance1": {
+                            "text": tempData8686[each7757]["Variance"]
+                        },
+                    });
+                }
+                self.view.segProductline.setData(tempCollection546);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {
@@ -95,7 +115,7 @@ define("ProductLinefrmControllerActions", {
         Productline_inputparam["httpconfig"] = Productline_httpconfigs;
         SKUDemandRequests$Productline$get = mfobjectsecureinvokerasync(Productline_inputparam, "SKUDemandRequests", "Productline", INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback);
     },
-    /** preShow defined for ProductLinefrm **/
+    /** preShow defined for SOP **/
     AS_Form_da584cea0bdc46239c2275a4cc857053: function AS_Form_da584cea0bdc46239c2275a4cc857053(eventobject) {
         var self = this;
         self.view.FlexContainerSideMenu.left = "-180%";
@@ -162,7 +182,7 @@ define("ProductLinefrmControllerActions", {
     /** onTouchEnd defined for CopyLabel0g28597a9261e4c **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("DemandRequestFrm");
+        var ntf = new voltmx.mvc.Navigation("Overview");
         ntf.navigate();
     },
     /** onTouchEnd defined for Label05 **/
@@ -174,7 +194,7 @@ define("ProductLinefrmControllerActions", {
     /** onTouchEnd defined for Label04 **/
     AS_Label_f379af81f07e493387ce6a5b60cc4481: function AS_Label_f379af81f07e493387ce6a5b60cc4481(eventobject, x, y) {
         var self = this;
-        var ntf = new voltmx.mvc.Navigation("ProductLinefrm");
+        var ntf = new voltmx.mvc.Navigation("SOP");
         ntf.navigate();
     },
     /** onTouchEnd defined for Bars **/
@@ -199,8 +219,8 @@ define("ProductLinefrmControllerActions", {
         });
     }
 });
-define("ProductLinefrmController", ["userProductLinefrmController", "ProductLinefrmControllerActions"], function() {
-    var controller = require("userProductLinefrmController");
-    var controllerActions = ["ProductLinefrmControllerActions"];
+define("SOPController", ["userSOPController", "SOPControllerActions"], function() {
+    var controller = require("userSOPController");
+    var controllerActions = ["SOPControllerActions"];
     return voltmx.visualizer.mixinControllerActions(controller, controllerActions);
 });
