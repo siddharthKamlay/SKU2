@@ -54,7 +54,8 @@
         "FlexContainerHeaders",
         "FlexSKUTable",
         "FlexContainerslidemenu",
-        "Image0dc6e78981a6c4f"
+        "Image0dc6e78981a6c4f",
+        "Bars"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -72,6 +73,7 @@
     "enabledforidletimeout": false,
     "id": "SKUDemand",
     "ide_onMapping": "AS_Form_c0dd210e25d54aff9eafc381b1dfe411",
+    "ide_preShow": "AS_Form_f7241cd1101c4c3db5efde669ef295a6",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

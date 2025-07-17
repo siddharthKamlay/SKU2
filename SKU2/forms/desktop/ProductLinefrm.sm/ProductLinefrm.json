@@ -56,7 +56,8 @@
         "FlexContainerHeader",
         "Label003",
         "Imagemenu",
-        "FlexContainerSideMenu"
+        "FlexContainerSideMenu",
+        "Bars"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -74,6 +75,7 @@
     "enabledforidletimeout": false,
     "id": "ProductLinefrm",
     "ide_onMapping": "AS_Form_b5efcba627994b17a79cd6dcab8e6a47",
+    "ide_preShow": "AS_Form_da584cea0bdc46239c2275a4cc857053",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

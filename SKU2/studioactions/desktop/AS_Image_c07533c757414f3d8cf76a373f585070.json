@@ -33,13 +33,14 @@
                 "anchorPoint": {},
                 "stepConfig": {
                     "timingFunction": "kony.anim.EASE"
-                }
+                },
+                "left": "0px"
             },
             "config": {
                 "delay": "0",
                 "iterationCount": 1,
                 "fillMode": "voltmx.anim.FILL_MODE_FORWARDS",
-                "duration": "250"
+                "duration": "1000"
             },
             "start": "Immediately",
             "animationId": "MOVE_ACTION_f60c16b1ef8f4d83a09fe0227a8cf9c8",

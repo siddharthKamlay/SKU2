@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "12dp"
+        "value": "46dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_src_": "screenshot_2025_07_15_205044.png",
     "_top_": {
         "type": "string",
-        "value": "14dp"
+        "value": "350dp"
     },
     "_width_": {
         "type": "string",
@@ -41,7 +41,7 @@
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "d5ada0897c7e430c8d690f7dc53cc4cb",
     "name": "kony.ui.Image2",
     "parent": "ProductLinefrm",

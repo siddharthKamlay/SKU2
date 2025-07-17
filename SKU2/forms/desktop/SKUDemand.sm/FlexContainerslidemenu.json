@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "-180%"
+        "value": "-90%"
     },
     "_margin_": [
         0,
@@ -60,5 +60,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 2
 }

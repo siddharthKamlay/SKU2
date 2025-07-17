@@ -1,6 +1,6 @@
 {
-    "AS_Image_c7585c90d380452cb53b81adc5cd4ae1": {
-        "id": "AS_Image_c7585c90d380452cb53b81adc5cd4ae1",
+    "AS_Label_c96160589cc7451a95930284c03e92d3": {
+        "id": "AS_Label_c96160589cc7451a95930284c03e92d3",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -21,7 +21,7 @@
         "language": "js",
         "eventType": "onTouchEnd",
         "actions": [{
-            "id": "MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8",
+            "id": "_c4ac45017f0949d59d62ad063ce4d2eb",
             "type": "MOVE_ACTION",
             "itemType": "FORM",
             "itemId": "SKUDemand",
@@ -43,9 +43,10 @@
                 "duration": "1000"
             },
             "start": "Immediately",
-            "animationId": "MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8",
+            "animationId": "_c4ac45017f0949d59d62ad063ce4d2eb",
             "displayAnimationId": "MOVE_ACTION_b24c885ae5eb46a1bfc0ec6594ce52d8",
             "forkedPlatform": "all",
+            "parentId": null,
             "widgetPath": "this.view.FlexContainerslidemenu"
         }]
     }

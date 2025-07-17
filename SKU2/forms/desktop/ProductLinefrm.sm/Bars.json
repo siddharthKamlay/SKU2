@@ -7,13 +7,13 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10dp"
+        "value": "39dp"
     },
     "_margin_": [
-        1,
-        1,
-        1,
-        1
+        0,
+        0,
+        0,
+        0
     ],
     "_padding_": [
         0,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "s6e6ce7a13fa42e7bb404df123e6fc8f",
-    "_text_": "SKU Demand",
+    "_skin_": "s49aed5c3d2945bc8dcb6ef1adb118d8",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "176dp"
+        "value": "44dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,12 +41,8 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "desktopweb": {
-        "zIndex": 1
-    },
-    "id": "Label05",
-    "ide_onTouchEnd": "AS_Label_ef28823a15424ff6b94cc4c23729f67a",
-    "ide_onTouchStart": "AS_Label_ad9133d4135c453f87290c089a74695a",
+    "id": "Bars",
+    "ide_onTouchEnd": "AS_Label_i99a9cd8afc14c08bad313a16cd614b2",
     "info": null,
     "ipad": {
         "psp": {
@@ -58,15 +54,13 @@
             "wrapping": 2
         }
     },
-    "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "af3cf81c924a4e8d94e9cf2d7f438d8b",
+    "kuid": "d0ded9c4b231439793851c048984ed57",
+    "masterType": 1,
     "name": "kony.ui.Label",
-    "parent": "FlexContainerslidemenu",
-    "pf": "SKUDemand",
-    "retaincontentalignment": false,
-    "retainflexpositionproperties": false,
+    "parent": "ProductLinefrm",
+    "pf": "ProductLinefrm",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 2
+    "zindex": 1
 }

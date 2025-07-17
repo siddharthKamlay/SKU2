@@ -1,0 +1,35 @@
+{
+    "AS_Form_da584cea0bdc46239c2275a4cc857053": {
+        "id": "AS_Form_da584cea0bdc46239c2275a4cc857053",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ProductLinefrm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3c9856e04514d829f4c8106e7ce4669"
+        },
+        "language": "js",
+        "eventType": "preShow",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__c293d71505d24607822f7d27c7ab8d58",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "ProductLinefrm",
+            "widgetId": "FlexContainerSideMenu",
+            "propertyName": "left",
+            "propertyValue": "-180%",
+            "itemKUID": "b3c9856e04514d829f4c8106e7ce4669",
+            "widgetKUID": "ja3002e9bbfb4c5a8f7583c358169698",
+            "isSkinProperty": false,
+            "wType": "FlexContainer",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.FlexContainerSideMenu"
+        }]
+    }
+}
