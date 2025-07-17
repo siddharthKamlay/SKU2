@@ -44,7 +44,7 @@ define({
       }
 
       // Assign data and config to pie chart
-      this.view.piechart.chartTitle = "Requested Quantity by Category";
+      this.view.piechart.chartTitle = "RequestedQTY by Category";
       this.view.piechart.enableStaticPreview = true;
       this.view.piechart.chartData = { data: chartData };
       this.view.piechart.chartConfig = {

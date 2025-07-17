@@ -9,11 +9,11 @@ define("Overview", function() {
                 "id": "FlexContainerPieChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "730dp",
+                "left": "860dp",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0e88f7dca09d544",
                 "top": "160dp",
-                "width": "41.35%",
+                "width": "28.99%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -21,22 +21,22 @@ define("Overview", function() {
             }, {});
             FlexContainerPieChart.setDefaultUnit(voltmx.flex.DP);
             var piechart = new com.konymp.piechart({
-                "bottom": "0",
+                "bottom": "0dp",
                 "centerX": "50%",
                 "height": "100%",
                 "id": "piechart",
                 "isVisible": true,
-                "left": "0dp",
+                "left": "0",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
+                "right": "0",
                 "skin": "sknComponentFlex",
                 "top": "0dp",
-                "width": "99.96%",
+                "width": "90%",
                 "appName": "SKU2",
                 "viewType": "piechart",
                 "overrides": {
                     "piechart": {
-                        "right": "viz.val_cleared",
                         "minWidth": "viz.val_cleared",
                         "minHeight": "viz.val_cleared",
                         "maxWidth": "viz.val_cleared",
@@ -104,8 +104,8 @@ define("Overview", function() {
                     "kuid": "f722303b71a8439eae528d9af9856f30"
                 }]
             };
-            piechart.titleFontSize = "12";
-            piechart.legendFontSize = "8";
+            piechart.titleFontSize = "5";
+            piechart.legendFontSize = "5";
             piechart.enableStaticPreview = true;
             piechart.titleFontColor = "#000000";
             piechart.legendFontColor = "#000000";
@@ -1345,7 +1345,6 @@ define("Overview", function() {
             }
             this.compInstData = {
                 "piechart": {
-                    "right": "",
                     "minWidth": "",
                     "minHeight": "",
                     "maxWidth": "",

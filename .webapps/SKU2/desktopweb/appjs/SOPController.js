@@ -47,26 +47,26 @@ define("SOPControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
-                var tempCollection546 = [];
-                var tempData8686 = Productline.records;
-                for (var each7757 in tempData8686) {
-                    var shouldShow = typeof tempData8686[each7757]["x_0024FILES"] !== 'undefined' && tempData8686[each7757]["x_0024FILES"] && tempData8686[each7757]["x_0024FILES"].length > 0
-                    tempCollection546.push({
+                var tempCollection5593 = [];
+                var tempData3543 = Productline.records;
+                for (var each4826 in tempData3543) {
+                    var shouldShow = typeof tempData3543[each4826]["x_0024FILES"] !== 'undefined' && tempData3543[each4826]["x_0024FILES"] && tempData3543[each4826]["x_0024FILES"].length > 0
+                    tempCollection5593.push({
                         "lblProductLine1": {
-                            "text": tempData8686[each7757]["ProductLine"]
+                            "text": tempData3543[each4826]["ProductLine"]
                         },
                         "lblForcasted1": {
-                            "text": tempData8686[each7757]["Forecasted"]
+                            "text": tempData3543[each4826]["Forecasted"]
                         },
                         "lblActual1": {
-                            "text": tempData8686[each7757]["Actual"]
+                            "text": tempData3543[each4826]["Actual"]
                         },
                         "lblVariance1": {
-                            "text": tempData8686[each7757]["Variance"]
+                            "text": tempData3543[each4826]["Variance"]
                         },
                     });
                 }
-                self.view.segProductline.setData(tempCollection546);
+                self.view.segProductline.setData(tempCollection5593);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {

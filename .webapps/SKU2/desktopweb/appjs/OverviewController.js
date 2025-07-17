@@ -36,7 +36,7 @@ define("userOverviewController", {
                 colorIndex++;
             }
             // Assign data and config to pie chart
-            this.view.piechart.chartTitle = "Requested Quantity by Category";
+            this.view.piechart.chartTitle = "RequestedQTY by Category";
             this.view.piechart.enableStaticPreview = true;
             this.view.piechart.chartData = {
                 data: chartData
@@ -152,47 +152,47 @@ define("OverviewControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection2524 = [];
-                var tempData5699 = DemandRequest.records;
-                for (var each5750 in tempData5699) {
-                    var shouldShow = typeof tempData5699[each5750]["x_0024FILES"] !== 'undefined' && tempData5699[each5750]["x_0024FILES"] && tempData5699[each5750]["x_0024FILES"].length > 0
-                    tempCollection2524.push({
+                var tempCollection2264 = [];
+                var tempData3258 = DemandRequest.records;
+                for (var each9591 in tempData3258) {
+                    var shouldShow = typeof tempData3258[each9591]["x_0024FILES"] !== 'undefined' && tempData3258[each9591]["x_0024FILES"] && tempData3258[each9591]["x_0024FILES"].length > 0
+                    tempCollection2264.push({
                         "lblSKUID1": {
-                            "text": tempData5699[each5750]["SKUID"]
+                            "text": tempData3258[each9591]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData5699[each5750]["Name"]
+                            "text": tempData3258[each9591]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData5699[each5750]["Category"]
+                            "text": tempData3258[each9591]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData5699[each5750]["Stock"]
+                            "text": tempData3258[each9591]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData5699[each5750]["Forecasted"]
+                            "text": tempData3258[each9591]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData5699[each5750]["EnrichedQTY"]
+                            "text": tempData3258[each9591]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData5699[each5750]["Requested"]
+                            "text": tempData3258[each9591]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData5699[each5750]["Status"]
+                            "text": tempData3258[each9591]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData5699[each5750]["RequestedBY"]
+                            "text": tempData3258[each9591]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData5699[each5750]["RequestDate"]
+                            "text": tempData3258[each9591]["RequestDate"]
                         },
                         "lblApprovedDate1": {
-                            "text": tempData5699[each5750]["ApprovedDate"]
+                            "text": tempData3258[each9591]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection2524);
+                self.view.segDemandRequest.setData(tempCollection2264);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -241,6 +241,32 @@ define("OverviewControllerActions", {
         DemandRequest_inputparam["httpconfig"] = DemandRequest_httpconfigs;
         SKUDemandRequests$DemandRequest$get = mfobjectsecureinvokerasync(DemandRequest_inputparam, "SKUDemandRequests", "DemandRequest", INVOKE_SERVICE_jaeb26165b184047aca6d7d11e45e1aa_Callback);
     },
+    /** preShow defined for Overview **/
+    AS_Form_g59a2ef8557045418e7aecff9e8b333b: function AS_Form_g59a2ef8557045418e7aecff9e8b333b(eventobject) {
+        var self = this;
+        self.view.FlexContaineroverview.left = "-180%";
+    },
+    /** onTouchEnd defined for Bars **/
+    AS_Label_ccb1f37491fa443d8857b72030ce776a: function AS_Label_ccb1f37491fa443d8857b72030ce776a(eventobject, x, y) {
+        var self = this;
+
+        function _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback() {}
+        self.view.FlexContaineroverview.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "0px",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 1
+        }, {
+            "animationEnd": _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback
+        });
+    },
     /** onTouchEnd defined for Label03 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
@@ -278,32 +304,6 @@ define("OverviewControllerActions", {
     AS_TextField_i399824987dc42e28a801263c10a9da3: function AS_TextField_i399824987dc42e28a801263c10a9da3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
-    },
-    /** onTouchEnd defined for Bars **/
-    AS_Label_ccb1f37491fa443d8857b72030ce776a: function AS_Label_ccb1f37491fa443d8857b72030ce776a(eventobject, x, y) {
-        var self = this;
-
-        function _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback() {}
-        self.view.FlexContaineroverview.animate(voltmx.ui.createAnimation({
-            "100": {
-                "left": "0px",
-                "stepConfig": {
-                    "timingFunction": voltmx.anim.EASE
-                }
-            }
-        }), {
-            "delay": 0,
-            "iterationCount": 1,
-            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
-            "duration": 1
-        }, {
-            "animationEnd": _ide_onTouchEnd_ia54d0f426044f22bd718b9f49eaa193_Callback
-        });
-    },
-    /** preShow defined for Overview **/
-    AS_Form_g59a2ef8557045418e7aecff9e8b333b: function AS_Form_g59a2ef8557045418e7aecff9e8b333b(eventobject) {
-        var self = this;
-        self.view.FlexContaineroverview.left = "-180%";
     }
 });
 define("OverviewController", ["userOverviewController", "OverviewControllerActions"], function() {

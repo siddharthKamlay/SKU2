@@ -106,47 +106,47 @@ define("SKUDemandControllerActions", {
                 voltmx.application.dismissLoadingScreen();
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection4320 = [];
-                var tempData8219 = DemandRequest.records;
-                for (var each2331 in tempData8219) {
-                    var shouldShow = typeof tempData8219[each2331]["x_0024FILES"] !== 'undefined' && tempData8219[each2331]["x_0024FILES"] && tempData8219[each2331]["x_0024FILES"].length > 0
-                    tempCollection4320.push({
+                var tempCollection1812 = [];
+                var tempData5113 = DemandRequest.records;
+                for (var each4300 in tempData5113) {
+                    var shouldShow = typeof tempData5113[each4300]["x_0024FILES"] !== 'undefined' && tempData5113[each4300]["x_0024FILES"] && tempData5113[each4300]["x_0024FILES"].length > 0
+                    tempCollection1812.push({
                         "lblSKUID1": {
-                            "text": tempData8219[each2331]["SKUID"]
+                            "text": tempData5113[each4300]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData8219[each2331]["Name"]
+                            "text": tempData5113[each4300]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData8219[each2331]["Category"]
+                            "text": tempData5113[each4300]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData8219[each2331]["Stock"]
+                            "text": tempData5113[each4300]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData8219[each2331]["Forecasted"]
+                            "text": tempData5113[each4300]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData8219[each2331]["EnrichedQTY"]
+                            "text": tempData5113[each4300]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData8219[each2331]["Requested"]
+                            "text": tempData5113[each4300]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData8219[each2331]["Status"]
+                            "text": tempData5113[each4300]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData8219[each2331]["RequestedBY"]
+                            "text": tempData5113[each4300]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData8219[each2331]["RequestDate"]
+                            "text": tempData5113[each4300]["RequestDate"]
                         },
                         "lblApprovedDate1": {
-                            "text": tempData8219[each2331]["ApprovedDate"]
+                            "text": tempData5113[each4300]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection4320);
+                self.view.segDemandRequest.setData(tempCollection1812);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -231,6 +231,27 @@ define("SKUDemandControllerActions", {
     AS_Label_ad9133d4135c453f87290c089a74695a: function AS_Label_ad9133d4135c453f87290c089a74695a(eventobject, x, y) {
         var self = this;
     },
+    /** onTouchEnd defined for Bars **/
+    AS_Label_adef7f078c76408e9c72b4a1031d80a1: function AS_Label_adef7f078c76408e9c72b4a1031d80a1(eventobject, x, y) {
+        var self = this;
+
+        function _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback() {}
+        self.view.FlexContainerslidemenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "0px",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 1
+        }, {
+            "animationEnd": _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback
+        });
+    },
     /** onTouchEnd defined for CopyLabel0c2616b70466946 **/
     AS_Label_e3a9d7a2b54f40e8bccae785c869feae: function AS_Label_e3a9d7a2b54f40e8bccae785c869feae(eventobject, x, y) {
         var self = this;
@@ -268,27 +289,6 @@ define("SKUDemandControllerActions", {
     AS_TextField_d001906d70c44fc2807c43c55b8d34a3: function AS_TextField_d001906d70c44fc2807c43c55b8d34a3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
-    },
-    /** onTouchEnd defined for Bars **/
-    AS_Label_adef7f078c76408e9c72b4a1031d80a1: function AS_Label_adef7f078c76408e9c72b4a1031d80a1(eventobject, x, y) {
-        var self = this;
-
-        function _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback() {}
-        self.view.FlexContainerslidemenu.animate(voltmx.ui.createAnimation({
-            "100": {
-                "left": "0px",
-                "stepConfig": {
-                    "timingFunction": voltmx.anim.EASE
-                }
-            }
-        }), {
-            "delay": 0,
-            "iterationCount": 1,
-            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
-            "duration": 1
-        }, {
-            "animationEnd": _ide_onTouchEnd_i29e669cb9c742e0aa48e0fa084cc5b5_Callback
-        });
     }
 });
 define("SKUDemandController", ["userSKUDemandController", "SKUDemandControllerActions"], function() {

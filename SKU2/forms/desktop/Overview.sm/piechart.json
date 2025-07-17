@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_bottom_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_children_": [],
     "_height_": {
@@ -12,7 +12,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -28,6 +28,10 @@
         0
     ],
     "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0"
+    },
     "_skin_": "s912bb86964f45a188586c8608e7e5ba",
     "_top_": {
         "type": "string",
@@ -35,7 +39,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "99.96%"
+        "value": "90%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -45,7 +49,10 @@
     "containerweight": 0,
     "data": {
         "enableLegend": true,
-        "enableStaticPreview": true
+        "enableStaticPreview": true,
+        "legendFontSize": "5",
+        "titleFontColor": "#000000",
+        "titleFontSize": "5"
     },
     "id": "piechart",
     "info": null,

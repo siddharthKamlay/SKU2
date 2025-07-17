@@ -30,13 +30,7 @@ $KW.TextArea = (function() {
 
                 case "maxtextlength":
                 case "length":
-                    if (propertyValue === null) {
-                        element.removeAttribute("maxlength");
-                    } else if (typeof propertyValue === "number" && propertyValue >= 0) {
-                        element.maxLength = propertyValue;
-                    } else {
-                        throw new Error(`Invalid maxTextLength value: ${propertyValue}`);
-                    }
+                    element.maxLength = propertyValue;
                     break;
 
                 case "placeholder":

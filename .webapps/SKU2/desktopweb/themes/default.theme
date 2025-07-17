@@ -1502,7 +1502,19 @@
     "CopyslForm0je5baca4810942": {
         "background_color": "ffffff00",
         "bg_type": "one",
-        "border_color": "ffffff00",
+        "border_bottom_color": "ffffff00",
+        "border_left_color": "ffffff00",
+        "border_right_color": "ffffff00",
+        "border_top_color": "ffffff00",
+        "forked": true,
+        "shadow": {
+            "br": 0,
+            "color": "00000000",
+            "inner": true,
+            "nm": 0,
+            "x": 0,
+            "y": 0
+        },
         "wType": "Form"
     },
     "CopyslImage0a90f686edfc64e": {

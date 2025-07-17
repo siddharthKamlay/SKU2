@@ -205,7 +205,7 @@ var requirejs, require, define;
                 //Defaults. Do not set a default for map
                 //config to speed up normalize(), which
                 //will run faster if there is no default.
-                waitSeconds: 120,
+                waitSeconds: 7,
                 baseUrl: './',
                 paths: {},
                 bundles: {},
@@ -1202,10 +1202,7 @@ var requirejs, require, define;
         function callGetModule(args) {
             //Skip modules already defined.
             if (!hasProp(defined, args[0])) {
-                // IMPORTANT: enabled: true ensures that all modules are added to the defined map for proper tracking of loaded modules.
-                getModule(makeModuleMap(args[0], null, true)).init(args[1], args[2], null, {
-                    enabled: true
-                });
+                getModule(makeModuleMap(args[0], null, true)).init(args[1], args[2]);
             }
         }
 
@@ -1438,21 +1435,11 @@ var requirejs, require, define;
                         id = map.id;
 
                         if (!hasProp(defined, id)) {
-                            if (isWebWorker) {
-                                requireMod = getModule(makeModuleMap(null, relMap));
-                                requireMod.init([id], function () { }, function () { }, {
-                                    enabled: true
-                                });
-                            } else {
-                                context.completeLoad(id);
-                                if (!defined[id]) {
-                                    return onError(makeError('notloaded', 'Module name "' +
+                            return onError(makeError('notloaded', 'Module name "' +
                                         id +
                                         '" has not been loaded yet for context: ' +
                                         contextName +
                                         (relMap ? '' : '. Use require([])')));
-                                }
-                            }
                         }
                         return defined[id];
                     }
@@ -1973,6 +1960,8 @@ var requirejs, require, define;
 
             if (voltmx.packageAsPortlet){
                 document.getElementsByTagName("voltmx-head")[0].appendChild(node);
+            } else if (baseElement) {
+                head.insertBefore(node, baseElement);
             } else {
                 head.appendChild(node);
             }
@@ -66204,12 +66193,6 @@ Object.defineProperty(voltmx.$kwebfw$, 'widget', {configurable:false, enumerable
                     flag = true;
                 }
 
-                if (!flag && $K.F.EIWP) {
-                    if ($KU.is(value, 'null')) {
-                        flag = ['', true];
-                    }
-                }
-
                 return flag;
             },
 
@@ -66460,19 +66443,7 @@ Object.defineProperty(voltmx.$kwebfw$, 'widget', {configurable:false, enumerable
             restrictCharactersSet: true,
 
             text: function TextArea2$_view_text(el/*, old*/) {
-                var $K = voltmx.$kwebfw$, $KD = $K.dom,
-                    value = $KD.getAttr(el.node, 'value'),
-                    maxLen = this.maxTextLength;
-                
-                if (value !== this.text) {
-                    let updatedText = this.text;
-                    // Truncate only if maxTextLength is a valid number (>= 0)
-                    if (typeof maxLen === 'number' && maxLen >= 0) {
-                        updatedText = updatedText.substring(0, maxLen);
-                    }
-                    $KD.setAttr(el.node, 'value', updatedText);
-                }
-                
+                el.node.value = this.text;
                 _autoResize.call(this, el);
             },
 
@@ -67476,16 +67447,11 @@ Object.defineProperty(voltmx.$kwebfw$, 'widget', {configurable:false, enumerable
 
             text: function TextBox2$_view_text(el/* , old */) {
                 var $K = voltmx.$kwebfw$, $KD = $K.dom,
-                    value = $KD.getAttr(el.node, 'value'),
-                    maxLen = this.maxTextLength;
+                    value = $KD.getAttr(el.node, 'value');
+
                 //This if condition handles setting of same text to the node value onInput(onTextChange) event
-                if (value !== this.text) {
-                    let updatedText = this.text;
-                    // Truncate only if maxTextLength is a valid number (>= 0)
-                    if (typeof maxLen === 'number' && maxLen >= 0) {
-                        updatedText = updatedText.substring(0, maxLen);
-                    }
-                    $KD.setAttr(el.node, 'value', updatedText);
+                if(value !== this.text) {
+                    $KD.setAttr(el.node, 'value', this.text);
                 }
             },
 
