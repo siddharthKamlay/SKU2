@@ -12,7 +12,7 @@ define("SKUDemand", function() {
                 "left": "6%",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "0%",
+                "top": "-1%",
                 "width": "86.38%",
                 "zIndex": 2,
                 "appName": "SKU2"
@@ -60,7 +60,7 @@ define("SKUDemand", function() {
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "15%",
-                "width": "94.02%",
+                "width": "93.27%",
                 "zIndex": 2,
                 "appName": "SKU2"
             }, {
@@ -901,10 +901,10 @@ define("SKUDemand", function() {
             var LabelID = new voltmx.ui.Label({
                 "id": "LabelID",
                 "isVisible": true,
-                "left": "31dp",
+                "left": "2%",
                 "skin": "CopydefLabel0c9e00abaf49641",
                 "text": "SKU Demand Requests",
-                "top": "18dp",
+                "top": "3%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -915,10 +915,10 @@ define("SKUDemand", function() {
             var LabelID1 = new voltmx.ui.Label({
                 "id": "LabelID1",
                 "isVisible": true,
-                "left": "31dp",
+                "left": "2%",
                 "skin": "CopydefLabel0e6dd4a9eb46b40",
                 "text": "Detailed view of  all demand requests",
-                "top": "62dp",
+                "top": "11%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -933,13 +933,13 @@ define("SKUDemand", function() {
                 "id": "TextFieldSearchBox",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-                "left": "31dp",
+                "left": "2%",
                 "onTextChange": controller.AS_TextField_d001906d70c44fc2807c43c55b8d34a3,
                 "placeholder": "Search",
                 "secureTextEntry": false,
                 "skin": "CopydefTextBoxNormal0ffc21e68237640",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-                "top": "108dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -956,7 +956,7 @@ define("SKUDemand", function() {
                 "height": "40dp",
                 "id": "ListBoxCategories",
                 "isVisible": true,
-                "left": "410dp",
+                "left": "32%",
                 "masterData": [
                     ["All_Categories", "All Categories"],
                     ["Clothing", "Clothing"],
@@ -967,7 +967,7 @@ define("SKUDemand", function() {
                 ],
                 "onSelection": controller.AS_ListBox_c9bd2ff52144480c955ead8257217004,
                 "skin": "CopydefListBoxNormal0e2b722993c6543",
-                "top": "110dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -982,7 +982,7 @@ define("SKUDemand", function() {
                 "height": "40dp",
                 "id": "ListBoxStatus",
                 "isVisible": true,
-                "left": "790dp",
+                "left": "62%",
                 "masterData": [
                     ["All_Status", "All Status"],
                     ["Approved", "Approved"],
@@ -991,7 +991,7 @@ define("SKUDemand", function() {
                 ],
                 "onSelection": controller.AS_ListBox_c927ae555a8444ddb905c8a59c786e27,
                 "skin": "CopydefListBoxNormal0d1b8af389ce64c",
-                "top": "108dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -1006,11 +1006,11 @@ define("SKUDemand", function() {
                 "height": "39dp",
                 "id": "BtnReset",
                 "isVisible": true,
-                "left": "1120dp",
+                "left": "88%",
                 "onClick": controller.AS_Button_d5adf419f25344bda4ff66cb60a5bb06,
                 "skin": "CopydefBtnNormal0ie6f7de736d049",
                 "text": "Reset all ",
-                "top": "108dp",
+                "top": "21%",
                 "width": "130dp",
                 "zIndex": 1
             }, {

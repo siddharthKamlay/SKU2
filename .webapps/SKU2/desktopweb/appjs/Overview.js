@@ -1142,10 +1142,10 @@ define("Overview", function() {
             var LabelID = new voltmx.ui.Label({
                 "id": "LabelID",
                 "isVisible": true,
-                "left": "31dp",
+                "left": "2%",
                 "skin": "CopydefLabel0c9e00abaf49641",
                 "text": "Recent SKU Demand Requests",
-                "top": "18dp",
+                "top": "2%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1156,10 +1156,10 @@ define("Overview", function() {
             var LabelID1 = new voltmx.ui.Label({
                 "id": "LabelID1",
                 "isVisible": true,
-                "left": "31dp",
+                "left": "2%",
                 "skin": "CopydefLabel0e6dd4a9eb46b40",
                 "text": "Overview of  latest demand requests across all SKUs",
-                "top": "62dp",
+                "top": "11%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -1174,13 +1174,13 @@ define("Overview", function() {
                 "id": "TextFieldSearchBox",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-                "left": "50dp",
+                "left": "2%",
                 "onTextChange": controller.AS_TextField_i399824987dc42e28a801263c10a9da3,
                 "placeholder": "Search",
                 "secureTextEntry": false,
                 "skin": "CopydefTextBoxNormal0ffc21e68237640",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-                "top": "108dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -1197,7 +1197,7 @@ define("Overview", function() {
                 "height": "40dp",
                 "id": "ListBoxCategories",
                 "isVisible": true,
-                "left": "410dp",
+                "left": "37%",
                 "masterData": [
                     ["All_Categories", "All Categories"],
                     ["Clothing", "Clothing"],
@@ -1208,7 +1208,7 @@ define("Overview", function() {
                 ],
                 "onSelection": controller.AS_ListBox_cdfff7a0ec2b49099a32bd66ab80db6c,
                 "skin": "CopydefListBoxNormal0e2b722993c6543",
-                "top": "108dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -1223,7 +1223,7 @@ define("Overview", function() {
                 "height": "40dp",
                 "id": "ListBoxStatus",
                 "isVisible": true,
-                "left": "790dp",
+                "left": "72%",
                 "masterData": [
                     ["All Status", "All Status"],
                     ["Approved", "Approved"],
@@ -1232,7 +1232,7 @@ define("Overview", function() {
                 ],
                 "onSelection": controller.AS_ListBox_e142ea5b752e4766817f055209389d11,
                 "skin": "CopydefListBoxNormal0d1b8af389ce64c",
-                "top": "108dp",
+                "top": "21%",
                 "width": "300dp",
                 "zIndex": 1
             }, {

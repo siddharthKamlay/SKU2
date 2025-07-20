@@ -5,7 +5,7 @@ define("SOP", function() {
             var FlexContainertable = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "370dp",
+                "height": "380dp",
                 "id": "FlexContainertable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
@@ -13,7 +13,7 @@ define("SOP", function() {
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0b75c50fb9d0e41",
-                "top": "520dp",
+                "top": "510dp",
                 "width": "87.13%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -24,7 +24,7 @@ define("SOP", function() {
             var flexHeaderProductline = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "76.09%",
+                "height": "69.23%",
                 "id": "flexHeaderProductline",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
@@ -32,7 +32,7 @@ define("SOP", function() {
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "slFbox0dfa9b4121ade47",
-                "top": "23.91%",
+                "top": "30.77%",
                 "width": "100.03%",
                 "appName": "SKU2"
             }, {
@@ -276,10 +276,10 @@ define("SOP", function() {
             var Label1 = new voltmx.ui.Label({
                 "id": "Label1",
                 "isVisible": true,
-                "left": "10dp",
+                "left": "1%",
                 "skin": "CopydefLabel0e19d9397d5b44d",
                 "text": "Product Line Comparision",
-                "top": "14dp",
+                "top": "3%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -290,10 +290,10 @@ define("SOP", function() {
             var Label2 = new voltmx.ui.Label({
                 "id": "Label2",
                 "isVisible": true,
-                "left": "10dp",
+                "left": "1%",
                 "skin": "CopydefLabel0eadcb933c28e4a",
                 "text": "Detailed comparison of  forecasted vs actual values",
-                "top": "58dp",
+                "top": "15%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
