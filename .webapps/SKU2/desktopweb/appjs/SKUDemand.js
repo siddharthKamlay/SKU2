@@ -9,10 +9,10 @@ define("SKUDemand", function() {
                 "id": "FlexContainer",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "100dp",
+                "left": "6%",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "2dp",
+                "top": "0%",
                 "width": "86.38%",
                 "zIndex": 2,
                 "appName": "SKU2"
@@ -56,11 +56,11 @@ define("SKUDemand", function() {
                 "id": "FlexContainerHeaders",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_HORIZONTAL,
-                "left": "46dp",
+                "left": "3.67%",
                 "isModalContainer": false,
                 "skin": "slFbox",
-                "top": "135dp",
-                "width": "100%",
+                "top": "15%",
+                "width": "94.02%",
                 "zIndex": 2,
                 "appName": "SKU2"
             }, {
@@ -69,12 +69,13 @@ define("SKUDemand", function() {
             FlexContainerHeaders.setDefaultUnit(voltmx.flex.DP);
             var FlexContainer0f33f26919d934e = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "80.42%",
                 "id": "FlexContainer0f33f26919d934e",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0.00%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFboxPurple",
                 "top": "21dp",
@@ -88,10 +89,10 @@ define("SKUDemand", function() {
             var Label00 = new voltmx.ui.Label({
                 "id": "Label00",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "15dp",
+                "top": "15%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -102,10 +103,10 @@ define("SKUDemand", function() {
             var LabelTotalRequests = new voltmx.ui.Label({
                 "id": "LabelTotalRequests",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Total Requests",
-                "top": "70dp",
+                "top": "57%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -116,12 +117,13 @@ define("SKUDemand", function() {
             FlexContainer0f33f26919d934e.add(Label00, LabelTotalRequests);
             var CopyFlexContainer0de1dbf6c79f442 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "80.42%",
                 "id": "CopyFlexContainer0de1dbf6c79f442",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3.00%",
+                "left": "6.666667311366672%",
                 "isModalContainer": false,
                 "skin": "slFboxYellow",
                 "top": "20dp",
@@ -135,10 +137,10 @@ define("SKUDemand", function() {
             var LabelPending = new voltmx.ui.Label({
                 "id": "LabelPending",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Pending",
-                "top": "73dp",
+                "top": "57%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -149,10 +151,10 @@ define("SKUDemand", function() {
             var Label01 = new voltmx.ui.Label({
                 "id": "Label01",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "15dp",
+                "top": "15%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -163,12 +165,13 @@ define("SKUDemand", function() {
             CopyFlexContainer0de1dbf6c79f442.add(LabelPending, Label01);
             var CopyFlexContainer0a81cef57546647 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "80.42%",
                 "id": "CopyFlexContainer0a81cef57546647",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3.00%",
+                "left": "6.666667311366672%",
                 "isModalContainer": false,
                 "skin": "slFboxgreen",
                 "top": "21dp",
@@ -182,10 +185,10 @@ define("SKUDemand", function() {
             var LabelApproved = new voltmx.ui.Label({
                 "id": "LabelApproved",
                 "isVisible": true,
-                "left": "19dp",
+                "left": 2,
                 "skin": "defLabel",
                 "text": "Approved",
-                "top": "73dp",
+                "top": "57%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -196,10 +199,10 @@ define("SKUDemand", function() {
             var Label03 = new voltmx.ui.Label({
                 "id": "Label03",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "15dp",
+                "top": "15%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -210,12 +213,13 @@ define("SKUDemand", function() {
             CopyFlexContainer0a81cef57546647.add(LabelApproved, Label03);
             var CopyFlexContainer0c5033b5aec0a42 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "80.42%",
                 "id": "CopyFlexContainer0c5033b5aec0a42",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3.00%",
+                "left": "6.666667311366672%",
                 "isModalContainer": false,
                 "skin": "slFboxRed",
                 "top": "20dp",
@@ -229,10 +233,10 @@ define("SKUDemand", function() {
             var labelRejected = new voltmx.ui.Label({
                 "id": "labelRejected",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Rejected",
-                "top": "71dp",
+                "top": "57%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -243,10 +247,10 @@ define("SKUDemand", function() {
             var label04 = new voltmx.ui.Label({
                 "id": "label04",
                 "isVisible": true,
-                "left": "20dp",
+                "left": "2%",
                 "skin": "defLabel",
                 "text": "Label",
-                "top": "15dp",
+                "top": "15%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -331,7 +335,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblSKUID",
                 "isVisible": true,
-                "left": "-2%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "SKUID",
                 "top": "0%",
@@ -353,7 +357,7 @@ define("SKUDemand", function() {
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "12%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -363,7 +367,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblName",
                 "isVisible": true,
-                "left": "10%",
+                "left": "1%",
                 "onTouchEnd": controller.AS_Label_g98ccbb79b5c4fda802abb12822b0b9b,
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Name",
@@ -382,11 +386,11 @@ define("SKUDemand", function() {
                 "id": "flexCategory",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-1%",
+                "left": "3.50%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "7%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -396,7 +400,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblCategory",
                 "isVisible": true,
-                "left": "121%",
+                "left": "-1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Category",
                 "top": "0%",
@@ -414,7 +418,7 @@ define("SKUDemand", function() {
                 "id": "flexStock",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "1%",
+                "left": "2%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -428,7 +432,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblStock",
                 "isVisible": true,
-                "left": "208%",
+                "left": "2%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Stock",
                 "top": "0%",
@@ -450,7 +454,7 @@ define("SKUDemand", function() {
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "6%",
+                "width": "6.35%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -460,11 +464,11 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblForecasted",
                 "isVisible": true,
-                "left": "169%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Forecasted",
                 "top": "0%",
-                "width": "121.62%"
+                "width": "100%"
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [3, 0, 0, 0],
@@ -478,7 +482,7 @@ define("SKUDemand", function() {
                 "id": "flexEnrichedQTY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "4%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -492,7 +496,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblEnrichedQTY",
                 "isVisible": true,
-                "left": "96%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "EnrichedQTY",
                 "top": "0%",
@@ -510,11 +514,11 @@ define("SKUDemand", function() {
                 "id": "flexRequested",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "7%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -524,7 +528,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblRequested",
                 "isVisible": true,
-                "left": "64%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Requested",
                 "top": "0%",
@@ -542,7 +546,7 @@ define("SKUDemand", function() {
                 "id": "flexStatus",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -556,7 +560,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblStatus",
                 "isVisible": true,
-                "left": "62%",
+                "left": "0%",
                 "skin": "lblStatusSkin0d1b3c7ffb10440",
                 "text": "Status",
                 "top": "0%",
@@ -574,7 +578,7 @@ define("SKUDemand", function() {
                 "id": "flexRequestedBY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-1%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -588,7 +592,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblRequestedBY",
                 "isVisible": true,
-                "left": "54%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "RequestedBY",
                 "top": "0%",
@@ -606,11 +610,11 @@ define("SKUDemand", function() {
                 "id": "flexRequestDate",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0%",
+                "left": "-1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "10%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -620,7 +624,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblRequestDate",
                 "isVisible": true,
-                "left": "37%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "RequestDate",
                 "top": "0%",
@@ -638,11 +642,11 @@ define("SKUDemand", function() {
                 "id": "flexApprovedDate",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "1%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "10%",
+                "width": "8.50%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -652,7 +656,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblApprovedDate",
                 "isVisible": true,
-                "left": "5%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Approved Date",
                 "top": "0%",
@@ -674,7 +678,7 @@ define("SKUDemand", function() {
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "7%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -684,7 +688,7 @@ define("SKUDemand", function() {
                 "height": "100%",
                 "id": "lblAtions",
                 "isVisible": true,
-                "left": "0%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Actions",
                 "top": "0%",
@@ -1114,11 +1118,11 @@ define("SKUDemand", function() {
             var Bars = new voltmx.ui.Label({
                 "id": "Bars",
                 "isVisible": true,
-                "left": "29dp",
+                "left": "2.00%",
                 "onTouchEnd": controller.AS_Label_adef7f078c76408e9c72b4a1031d80a1,
                 "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
                 "text": "",
-                "top": "44dp",
+                "top": "4%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {

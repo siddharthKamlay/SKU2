@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "632dp"
+        "value": "51.080741880468985%"
     },
     "_margin_": [
         0,
@@ -34,6 +34,10 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "Copylbl1",
         "Copylbl2",

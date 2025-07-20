@@ -25,7 +25,7 @@
     "_text_": "Revenue Gap",
     "_top_": {
         "type": "string",
-        "value": "9dp"
+        "value": "12dp"
     },
     "_width_": {
         "type": "ref",

@@ -305,15 +305,15 @@ define("SOP", function() {
             var FlexChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "315dp",
+                "height": "35%",
                 "id": "FlexChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "690dp",
+                "left": "50.52%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0acc280aa815740",
-                "top": "170dp",
-                "width": "45.39%",
+                "top": "17.83%",
+                "width": "44.69%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -324,11 +324,11 @@ define("SOP", function() {
                 "height": "100%",
                 "id": "barchart",
                 "isVisible": true,
-                "left": "0dp",
+                "left": "0%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyCopyslFbox0i9ba5738169540",
-                "top": "0dp",
+                "top": "0%",
                 "width": "100%",
                 "appName": "SKU2",
                 "viewType": "barchart",
@@ -486,14 +486,14 @@ define("SOP", function() {
             var FlexContainerLinechart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "35.19%",
+                "height": "35%",
                 "id": "FlexContainerLinechart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "120dp",
+                "left": "8.81%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0j91f9d0a0ef540",
-                "top": "170dp",
+                "top": "17.78%",
                 "width": "38.80%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -502,15 +502,15 @@ define("SOP", function() {
             }, {});
             FlexContainerLinechart.setDefaultUnit(voltmx.flex.DP);
             var linechart = new com.konymp.linechart({
-                "height": "99.82%",
+                "height": "100%",
                 "id": "linechart",
                 "isVisible": true,
-                "left": "0dp",
+                "left": "0%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0d79224d2c5f241",
-                "top": "0dp",
-                "width": "100.42%",
+                "top": "0%",
+                "width": "100%",
                 "appName": "SKU2",
                 "viewType": "linechart",
                 "overrides": {
@@ -599,12 +599,13 @@ define("SOP", function() {
             FlexContainerHeader.setDefaultUnit(voltmx.flex.DP);
             var FlexContainer1 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "100dp",
                 "id": "FlexContainer1",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "0dp",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0acf09a4b32db44",
                 "top": "16dp",
@@ -616,9 +617,9 @@ define("SOP", function() {
             }, {});
             FlexContainer1.setDefaultUnit(voltmx.flex.DP);
             var Label01 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label01",
                 "isVisible": true,
-                "left": "90dp",
                 "skin": "defLabel",
                 "text": "Alignment %",
                 "top": "12dp",
@@ -630,9 +631,9 @@ define("SOP", function() {
                 "paddingInPixel": false
             }, {});
             var Label001 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label001",
                 "isVisible": true,
-                "left": "133dp",
                 "skin": "defLabel",
                 "text": "99.4%",
                 "top": "56dp",
@@ -646,12 +647,13 @@ define("SOP", function() {
             FlexContainer1.add(Label01, Label001);
             var CopyFlexContainer1 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "100dp",
                 "id": "CopyFlexContainer1",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "433dp",
+                "left": "35.71518377662131%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0gf74b9b5ca0e48",
                 "top": "16dp",
@@ -668,7 +670,7 @@ define("SOP", function() {
                 "left": "80dp",
                 "skin": "defLabel",
                 "text": "Revenue Gap",
-                "top": "9dp",
+                "top": "12dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -677,12 +679,12 @@ define("SOP", function() {
                 "paddingInPixel": false
             }, {});
             var Label002 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label002",
                 "isVisible": true,
-                "left": "142dp",
                 "skin": "defLabel",
                 "text": "$-0k",
-                "top": "53dp",
+                "top": "56dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -693,12 +695,13 @@ define("SOP", function() {
             CopyFlexContainer1.add(Label02, Label002);
             var CopyFlexContainer2 = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "100dp",
                 "id": "CopyFlexContainer2",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "850dp",
+                "left": "71.43036755324262%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0fd3e435713e548",
                 "top": "16dp",
@@ -710,12 +713,12 @@ define("SOP", function() {
             }, {});
             CopyFlexContainer2.setDefaultUnit(voltmx.flex.DP);
             var Label03 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label03",
                 "isVisible": true,
-                "left": "80dp",
                 "skin": "defLabel",
                 "text": "Service Level",
-                "top": "9dp",
+                "top": "12dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -723,22 +726,22 @@ define("SOP", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            CopyFlexContainer2.add(Label03);
-            FlexContainerHeader.add(FlexContainer1, CopyFlexContainer1, CopyFlexContainer2);
             var Label003 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label003",
                 "isVisible": true,
-                "left": "1058dp",
                 "skin": "defLabel",
                 "text": "92.5%",
-                "top": "79dp",
+                "top": "56dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
-                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
+            CopyFlexContainer2.add(Label03, Label003);
+            FlexContainerHeader.add(FlexContainer1, CopyFlexContainer1, CopyFlexContainer2);
             var Imagemenu = new voltmx.ui.Image2({
                 "height": "67dp",
                 "id": "Imagemenu",
@@ -838,11 +841,11 @@ define("SOP", function() {
             var Bars = new voltmx.ui.Label({
                 "id": "Bars",
                 "isVisible": true,
-                "left": "27dp",
+                "left": "2%",
                 "onTouchEnd": controller.AS_Label_i99a9cd8afc14c08bad313a16cd614b2,
                 "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
                 "text": "",
-                "top": "44dp",
+                "top": "4%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
@@ -891,7 +894,7 @@ define("SOP", function() {
                     "centerY": ""
                 }
             }
-            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Label003, Imagemenu, FlexContainerSideMenu, Bars);
+            this.add(FlexContainertable, FlexChart, FlexContainerLinechart, FlexContainerHeader, Imagemenu, FlexContainerSideMenu, Bars);
         };
         return [{
             "addWidgets": addWidgetsSOP,

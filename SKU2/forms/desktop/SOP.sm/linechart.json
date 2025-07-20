@@ -4,11 +4,11 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "99.82%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_skin_": "s39234864f3c45928ed4e0327911c61f",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "100.42%"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "containerweight": 0,

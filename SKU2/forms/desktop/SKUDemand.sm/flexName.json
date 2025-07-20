@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "8%"
+        "value": "12%"
     },
     "actionsInfo": {
         "skipMapping": true

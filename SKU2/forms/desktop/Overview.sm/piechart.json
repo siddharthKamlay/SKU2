@@ -8,7 +8,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "98.84%"
     },
     "_left_": {
         "type": "string",
@@ -39,7 +39,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "82.50%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -48,6 +48,7 @@
     },
     "containerweight": 0,
     "data": {
+        "bgColor": "#ffffff",
         "enableLegend": true,
         "enableStaticPreview": true,
         "legendFontSize": "5",

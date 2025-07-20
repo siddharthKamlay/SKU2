@@ -5,14 +5,14 @@ define("Overview", function() {
             var FlexContainerPieChart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "28.90%",
+                "height": "29%",
                 "id": "FlexContainerPieChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "860dp",
+                "left": "67.50%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0e88f7dca09d544",
-                "top": "160dp",
+                "top": "17.50%",
                 "width": "28.99%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -23,7 +23,7 @@ define("Overview", function() {
             var piechart = new com.konymp.piechart({
                 "bottom": "0dp",
                 "centerX": "50%",
-                "height": "100%",
+                "height": "98.84%",
                 "id": "piechart",
                 "isVisible": true,
                 "left": "0",
@@ -32,7 +32,7 @@ define("Overview", function() {
                 "right": "0",
                 "skin": "sknComponentFlex",
                 "top": "0dp",
-                "width": "90%",
+                "width": "82.50%",
                 "appName": "SKU2",
                 "viewType": "piechart",
                 "overrides": {
@@ -113,14 +113,14 @@ define("Overview", function() {
             var FlexContainerchart = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "260dp",
+                "height": "29%",
                 "id": "FlexContainerchart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "90dp",
+                "left": "9.53%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0eeb6273f1e3345",
-                "top": "160dp",
+                "top": "17.509999999999998%",
                 "width": "41.30%",
                 "zIndex": 1,
                 "appName": "SKU2"
@@ -306,11 +306,11 @@ define("Overview", function() {
                 "id": "FlexContainerHeader",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "80dp",
+                "left": "9.50%",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "0dp",
-                "width": "86.97%",
+                "width": "87.23%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -319,12 +319,13 @@ define("Overview", function() {
             FlexContainerHeader.setDefaultUnit(voltmx.flex.DP);
             var flxforecast = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "110dp",
                 "id": "flxforecast",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "10dp",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0cf69183343c84b",
                 "top": "20dp",
@@ -380,12 +381,13 @@ define("Overview", function() {
             flxforecast.add(lbl1, lbl2, lbl3);
             var flxsuppy = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "110dp",
                 "id": "flxsuppy",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "300dp",
+                "left": "24.690497096226004%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0j5389f56cd2449",
                 "top": "20dp",
@@ -441,12 +443,13 @@ define("Overview", function() {
             flxsuppy.add(Copylbl01, Copylbl02, Copylbl03);
             var flxinventory = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "110dp",
                 "id": "flxinventory",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "632dp",
+                "left": "51.080741880468985%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0c3f8ae40a95946",
                 "top": "20dp",
@@ -502,12 +505,13 @@ define("Overview", function() {
             flxinventory.add(Copylbl1, Copylbl2, Copylbl3);
             var flxstock = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerY": "50%",
                 "clipBounds": false,
                 "height": "110dp",
                 "id": "flxstock",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FLOW_VERTICAL,
-                "left": "930dp",
+                "left": "77.47098666471196%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0b1e93838bc484a",
                 "top": "20dp",
@@ -569,7 +573,7 @@ define("Overview", function() {
                 "id": "FlexSKUTable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "6.52%",
+                "left": "9.52%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0i2f208e36e0f41",
@@ -610,7 +614,7 @@ define("Overview", function() {
                 "isModalContainer": false,
                 "skin": "defDataPanelFlexBorderSkinDW0a2758320af6449",
                 "top": "0%",
-                "width": "101.97%",
+                "width": "103.97%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -637,7 +641,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblSKUID",
                 "isVisible": true,
-                "left": "-4%",
+                "left": "0%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "SKUID",
                 "top": "0%",
@@ -655,11 +659,11 @@ define("Overview", function() {
                 "id": "flexName",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "12%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -669,7 +673,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblName",
                 "isVisible": true,
-                "left": "-8%",
+                "left": "1%",
                 "onTouchEnd": controller.AS_Label_g98ccbb79b5c4fda802abb12822b0b9b,
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Name",
@@ -688,11 +692,11 @@ define("Overview", function() {
                 "id": "flexCategory",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-2%",
+                "left": "2.50%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "7%",
+                "width": "8%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -702,7 +706,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblCategory",
                 "isVisible": true,
-                "left": "115%",
+                "left": "2.50%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Category",
                 "top": "0%",
@@ -720,7 +724,7 @@ define("Overview", function() {
                 "id": "flexStock",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "3%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -734,7 +738,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblStock",
                 "isVisible": true,
-                "left": "193%",
+                "left": "3%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Stock",
                 "top": "0%",
@@ -752,11 +756,11 @@ define("Overview", function() {
                 "id": "flexForecasted",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "6.30%",
+                "width": "7%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -766,11 +770,11 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblForecasted",
                 "isVisible": true,
-                "left": "142%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Forecasted",
                 "top": "0%",
-                "width": "111.06%"
+                "width": "100%"
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [3, 0, 0, 0],
@@ -784,7 +788,7 @@ define("Overview", function() {
                 "id": "flexEnrichedQTY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "0.50%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -798,7 +802,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblEnrichedQTY",
                 "isVisible": true,
-                "left": "90%",
+                "left": "0.50%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "EnrichedQTY",
                 "top": "0%",
@@ -816,7 +820,7 @@ define("Overview", function() {
                 "id": "flexRequested",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "3%",
+                "left": "1.50%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -830,7 +834,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblRequested",
                 "isVisible": true,
-                "left": "70%",
+                "left": "1.50%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Requested",
                 "top": "0%",
@@ -848,11 +852,11 @@ define("Overview", function() {
                 "id": "flexStatus",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "0%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "10%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -862,7 +866,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblStatus",
                 "isVisible": true,
-                "left": "45%",
+                "left": "0%",
                 "skin": "lblStatusSkin0d1b3c7ffb10440",
                 "text": "Status",
                 "top": "0%",
@@ -880,7 +884,7 @@ define("Overview", function() {
                 "id": "flexRequestedBY",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "-1%",
+                "left": "1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -894,7 +898,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblRequestedBY",
                 "isVisible": true,
-                "left": "71%",
+                "left": "1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "RequestedBY",
                 "top": "0%",
@@ -912,7 +916,7 @@ define("Overview", function() {
                 "id": "flexRequestDate",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "1%",
+                "left": "-1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
@@ -926,7 +930,7 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblRequestDate",
                 "isVisible": true,
-                "left": "57%",
+                "left": "-1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "RequestDate",
                 "top": "0%",
@@ -944,11 +948,11 @@ define("Overview", function() {
                 "id": "flexApproved",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "2%",
+                "left": "-1%",
                 "isModalContainer": false,
                 "skin": "slFbox0c447e39f18754f",
                 "top": "0%",
-                "width": "8%",
+                "width": "9%",
                 "appName": "SKU2"
             }, {
                 "paddingInPixel": false
@@ -958,11 +962,11 @@ define("Overview", function() {
                 "height": "100%",
                 "id": "lblApproveddate",
                 "isVisible": true,
-                "left": "32.26%",
+                "left": "-1%",
                 "skin": "defDataPanelLabelNormalSkinDW0c7b20c06c3214b",
                 "text": "Approved Date",
                 "top": "0%",
-                "width": "129.03%"
+                "width": "101.37%"
             }, {
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
                 "padding": [3, 0, 0, 0],
@@ -1242,11 +1246,11 @@ define("Overview", function() {
             var Bars = new voltmx.ui.Label({
                 "id": "Bars",
                 "isVisible": true,
-                "left": "17dp",
+                "left": "2%",
                 "onTouchEnd": controller.AS_Label_ccb1f37491fa443d8857b72030ce776a,
                 "skin": "CopyslFontAwesomeIcon0a2a3d24700e048",
                 "text": "",
-                "top": "30dp",
+                "top": "4%",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {

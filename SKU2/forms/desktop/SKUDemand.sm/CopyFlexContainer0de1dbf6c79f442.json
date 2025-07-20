@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "3.00%"
+        "value": "6.666667311366672%"
     },
     "_margin_": [
         0,
@@ -34,6 +34,10 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "LabelPending",
         "Label01"

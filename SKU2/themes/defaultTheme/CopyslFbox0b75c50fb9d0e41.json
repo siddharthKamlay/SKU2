@@ -2,7 +2,7 @@
   "android": {
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -25,7 +25,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -42,7 +42,7 @@
   "ipad": {
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -53,7 +53,7 @@
   "iphone": {
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -72,7 +72,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -95,7 +95,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -118,7 +118,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -141,7 +141,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -164,7 +164,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -187,7 +187,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -210,7 +210,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -233,7 +233,7 @@
     "bottom_right_border_width": "0",
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,
@@ -250,7 +250,7 @@
   "tabrcandroid": {
     "isForked": true,
     "shadow": {
-      "br": 10,
+      "br": 7,
       "color": "000000",
       "inner": false,
       "nm": 0,

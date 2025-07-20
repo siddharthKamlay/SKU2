@@ -5,10 +5,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "1058dp"
-    },
     "_margin_": [
         1,
         1,
@@ -25,7 +21,7 @@
     "_text_": "92.5%",
     "_top_": {
         "type": "string",
-        "value": "79dp"
+        "value": "56dp"
     },
     "_width_": {
         "type": "ref",
@@ -39,8 +35,12 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "Label003",
     "info": null,
     "ipad": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "debc7c19420747d2bcd635cefb1ec340",
+    "kuid": "ea6ace6e079449bc8af5863ac82c6e98",
     "name": "kony.ui.Label",
-    "parent": "SOP",
+    "parent": "CopyFlexContainer2",
     "pf": "SOP",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -791,7 +791,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -821,7 +821,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -853,7 +853,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -943,7 +943,7 @@
         "bottom_right_border_style": "plain",
         "forked": true,
         "shadow": {
-            "br": 10,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1029,7 +1029,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1070,7 +1070,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1198,7 +1198,7 @@
         "wType": "FlexContainer"
     },
     "CopyslFbox0e88f7dca09d544": {
-        "background_color": "00000064",
+        "background_color": "ffffff00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": "0",
@@ -1214,7 +1214,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 10,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1242,7 +1242,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 10,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1281,7 +1281,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1332,7 +1332,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1395,7 +1395,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 10,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1425,7 +1425,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 9,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1455,7 +1455,7 @@
         "font_name": "Helvetica",
         "forked": true,
         "shadow": {
-            "br": 10,
+            "br": 7,
             "color": "00000000",
             "inner": false,
             "nm": 0,
@@ -1494,13 +1494,13 @@
         "wType": "Form"
     },
     "CopyslForm0fb417bbb10d849": {
-        "background_color": "ffffff00",
+        "background_color": "f9fafb00",
         "bg_type": "one",
         "border_color": "ffffff00",
         "wType": "Form"
     },
     "CopyslForm0je5baca4810942": {
-        "background_color": "ffffff00",
+        "background_color": "f9fafb00",
         "bg_type": "one",
         "border_bottom_color": "ffffff00",
         "border_left_color": "ffffff00",
@@ -2399,7 +2399,7 @@
         "wType": "FlexContainer"
     },
     "sknComponentFlex": {
-        "background_color": "00000064",
+        "background_color": "f9fafb00",
         "bg_type": "one",
         "border_bottom_color": "00000064",
         "border_bottom_width": "0",
@@ -2970,7 +2970,7 @@
         "wType": "Form"
     },
     "slFormSkinCommon": {
-        "background_color": "ffffff00",
+        "background_color": "f9fafb00",
         "bg_type": "one",
         "border_bottom_color": "ffffff00",
         "border_left_color": "ffffff00",

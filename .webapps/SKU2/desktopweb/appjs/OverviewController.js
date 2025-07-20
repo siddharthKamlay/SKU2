@@ -152,47 +152,47 @@ define("OverviewControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection635 = [];
-                var tempData7942 = DemandRequest.records;
-                for (var each3648 in tempData7942) {
-                    var shouldShow = typeof tempData7942[each3648]["x_0024FILES"] !== 'undefined' && tempData7942[each3648]["x_0024FILES"] && tempData7942[each3648]["x_0024FILES"].length > 0
-                    tempCollection635.push({
+                var tempCollection2684 = [];
+                var tempData6790 = DemandRequest.records;
+                for (var each4037 in tempData6790) {
+                    var shouldShow = typeof tempData6790[each4037]["x_0024FILES"] !== 'undefined' && tempData6790[each4037]["x_0024FILES"] && tempData6790[each4037]["x_0024FILES"].length > 0
+                    tempCollection2684.push({
                         "lblSKUID1": {
-                            "text": tempData7942[each3648]["SKUID"]
+                            "text": tempData6790[each4037]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData7942[each3648]["Name"]
+                            "text": tempData6790[each4037]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData7942[each3648]["Category"]
+                            "text": tempData6790[each4037]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData7942[each3648]["Stock"]
+                            "text": tempData6790[each4037]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData7942[each3648]["Forecasted"]
+                            "text": tempData6790[each4037]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData7942[each3648]["EnrichedQTY"]
+                            "text": tempData6790[each4037]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData7942[each3648]["Requested"]
+                            "text": tempData6790[each4037]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData7942[each3648]["Status"]
+                            "text": tempData6790[each4037]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData7942[each3648]["RequestedBY"]
+                            "text": tempData6790[each4037]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData7942[each3648]["RequestDate"]
+                            "text": tempData6790[each4037]["RequestDate"]
                         },
                         "lblApprovedDate1": {
-                            "text": tempData7942[each3648]["ApprovedDate"]
+                            "text": tempData6790[each4037]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection635);
+                self.view.segDemandRequest.setData(tempCollection2684);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
