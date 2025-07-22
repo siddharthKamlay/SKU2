@@ -57,14 +57,14 @@ define("LoginFrm", function() {
             var lbl1 = new voltmx.ui.Label({
                 "id": "lbl1",
                 "isVisible": true,
-                "left": "380dp",
+                "left": "34%",
                 "skin": "CopydefLabel0a1a3e3b2909941",
                 "text": "SKU Demand Forecasting",
                 "top": "58dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
             }, {
-                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "contentAlignment": constants.CONTENT_ALIGN_CENTER,
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
