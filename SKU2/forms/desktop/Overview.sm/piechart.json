@@ -39,7 +39,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "82.50%"
+        "value": "77.50%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -51,7 +51,7 @@
         "bgColor": "#ffffff",
         "enableLegend": true,
         "enableStaticPreview": true,
-        "legendFontSize": "5",
+        "legendFontSize": "9",
         "titleFontColor": "#000000",
         "titleFontSize": "5"
     },

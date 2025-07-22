@@ -9,12 +9,12 @@ define("SOP", function() {
                 "id": "FlexContainertable",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "120dp",
+                "left": "129dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0b75c50fb9d0e41",
                 "top": "510dp",
-                "width": "87.13%",
+                "width": "87.32%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -309,11 +309,11 @@ define("SOP", function() {
                 "id": "FlexChart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "50.52%",
+                "left": "54%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0acc280aa815740",
                 "top": "17.83%",
-                "width": "44.69%",
+                "width": "39.58%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -328,8 +328,8 @@ define("SOP", function() {
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyCopyslFbox0i9ba5738169540",
-                "top": "0%",
-                "width": "100%",
+                "top": "0.00%",
+                "width": "100.00%",
                 "appName": "SKU2",
                 "viewType": "barchart",
                 "overrides": {
@@ -472,7 +472,7 @@ define("SOP", function() {
             barchart.xAxisTitle = "x-axis";
             barchart.lowValue = "0";
             barchart.highValue = "16000";
-            barchart.bgColor = "#FFFFFF";
+            barchart.bgColor = "#ffffff";
             barchart.enableChartAnimation = true;
             barchart.enableLegends = true;
             barchart.yAxisTitle = "y-axis";
@@ -490,7 +490,7 @@ define("SOP", function() {
                 "id": "FlexContainerLinechart",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "8.81%",
+                "left": "129dp",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0j91f9d0a0ef540",
                 "top": "17.78%",
@@ -505,11 +505,11 @@ define("SOP", function() {
                 "height": "100%",
                 "id": "linechart",
                 "isVisible": true,
-                "left": "0%",
+                "left": "-0.05%",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
                 "isModalContainer": false,
                 "skin": "CopyslFbox0d79224d2c5f241",
-                "top": "0%",
+                "top": "-0.03%",
                 "width": "100%",
                 "appName": "SKU2",
                 "viewType": "linechart",
@@ -575,7 +575,7 @@ define("SOP", function() {
             linechart.titleFontSize = "12";
             linechart.highValue = "40";
             linechart.lineColor = "#1B9ED9";
-            linechart.bgColor = "#FFFFFF";
+            linechart.bgColor = "#ffffff";
             linechart.enableChartAnimation = true;
             linechart.enableStaticPreview = true;
             FlexContainerLinechart.add(linechart);
@@ -586,7 +586,7 @@ define("SOP", function() {
                 "id": "FlexContainerHeader",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "120dp",
+                "left": "129dp",
                 "isModalContainer": false,
                 "skin": "slFbox",
                 "top": "9dp",

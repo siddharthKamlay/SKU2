@@ -35,15 +35,17 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
-    "id": "verticalbarCopy",
+    "data": {
+        "bgColor": "#ffffff"
+    },
+    "id": "verticalbar",
     "info": null,
     "isvisible": true,
-    "kuid": "a36b7223ca4e4efda44d9789692af22c",
+    "kuid": "b44d1ad594ba443f88c9e188eb3644b0",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "FlexContainerchart",
     "pf": "Overview",
-    "sourceUserWidget": "uffd1c206b994607b3fffbf71b2b4f24",
+    "sourceUserWidget": "u96899b41cc348bfa51030733ecd5f9c",
     "wType": "UserWidgetInstance"
 }

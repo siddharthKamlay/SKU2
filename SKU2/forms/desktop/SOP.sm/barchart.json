@@ -27,15 +27,16 @@
     "_skin_": "sdcf093a7fc94606a3baba9c909d8021",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0.00%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "100.00%"
     },
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
+        "bgColor": "#ffffff",
         "highValue": "16000"
     },
     "id": "barchart",

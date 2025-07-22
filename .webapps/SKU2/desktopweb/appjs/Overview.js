@@ -32,7 +32,7 @@ define("Overview", function() {
                 "right": "0",
                 "skin": "sknComponentFlex",
                 "top": "0dp",
-                "width": "82.50%",
+                "width": "77.50%",
                 "appName": "SKU2",
                 "viewType": "piechart",
                 "overrides": {
@@ -105,7 +105,7 @@ define("Overview", function() {
                 }]
             };
             piechart.titleFontSize = "5";
-            piechart.legendFontSize = "5";
+            piechart.legendFontSize = "9";
             piechart.enableStaticPreview = true;
             piechart.titleFontColor = "#000000";
             piechart.legendFontColor = "#000000";
@@ -128,9 +128,9 @@ define("Overview", function() {
                 "paddingInPixel": false
             }, {});
             FlexContainerchart.setDefaultUnit(voltmx.flex.DP);
-            var verticalbarCopy = new com.konymp.verticalbarCopy({
+            var verticalbar = new com.konymp.verticalbar({
                 "height": "100%",
-                "id": "verticalbarCopy",
+                "id": "verticalbar",
                 "isVisible": true,
                 "left": "0dp",
                 "masterType": constants.MASTER_TYPE_USERWIDGET,
@@ -138,9 +138,9 @@ define("Overview", function() {
                 "top": "0dp",
                 "width": "100%",
                 "appName": "SKU2",
-                "viewType": "verticalbarCopy",
+                "viewType": "verticalbar",
                 "overrides": {
-                    "verticalbarCopy": {
+                    "verticalbar": {
                         "right": "viz.val_cleared",
                         "bottom": "viz.val_cleared",
                         "minWidth": "viz.val_cleared",
@@ -157,8 +157,8 @@ define("Overview", function() {
             }, {
                 "overrides": {}
             });
-            verticalbarCopy.enableGrid = true;
-            verticalbarCopy.chartData = {
+            verticalbar.enableGrid = true;
+            verticalbar.chartData = {
                 "data": [{
                     "colorCode": "#1B9ED9",
                     "label": "Data1",
@@ -209,18 +209,18 @@ define("Overview", function() {
                     "kuid": "b59fe0cbc1394743a3214ea7583c0180"
                 }]
             };
-            verticalbarCopy.chartTitle = "Vertical Bar";
-            verticalbarCopy.xAxisTitle = "x-axis";
-            verticalbarCopy.lowValue = "0";
-            verticalbarCopy.enableGridAnimation = true;
-            verticalbarCopy.titleFontSize = "12";
-            verticalbarCopy.yAxisTitle = "y-axis";
-            verticalbarCopy.titleFontColor = "#000000";
-            verticalbarCopy.highValue = "40";
-            verticalbarCopy.bgColor = "#FFFFFF";
-            verticalbarCopy.enableChartAnimation = true;
-            verticalbarCopy.enableStaticPreview = true;
-            FlexContainerchart.add(verticalbarCopy);
+            verticalbar.chartTitle = "Vertical Bar";
+            verticalbar.xAxisTitle = "x-axis";
+            verticalbar.lowValue = "0";
+            verticalbar.enableGridAnimation = true;
+            verticalbar.titleFontSize = "12";
+            verticalbar.yAxisTitle = "y-axis";
+            verticalbar.titleFontColor = "#000000";
+            verticalbar.highValue = "40";
+            verticalbar.bgColor = "#ffffff";
+            verticalbar.enableChartAnimation = true;
+            verticalbar.enableStaticPreview = true;
+            FlexContainerchart.add(verticalbar);
             var FlexContaineroverview = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
@@ -1285,7 +1285,7 @@ define("Overview", function() {
                     "maxHeight": "",
                     "centerY": ""
                 },
-                "verticalbarCopy": {
+                "verticalbar": {
                     "right": "",
                     "bottom": "",
                     "minWidth": "",
