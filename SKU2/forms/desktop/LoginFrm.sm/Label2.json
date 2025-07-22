@@ -5,10 +5,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "43dp"
-    },
     "_margin_": [
         1,
         1,
@@ -22,7 +18,7 @@
         0
     ],
     "_skin_": "s0d9ca010ff94edc8c005c310ded4798",
-    "_text_": "Login to SKU Demand Dashboard",
+    "_text_": "Login Here",
     "_top_": {
         "type": "string",
         "value": "70dp"
@@ -39,6 +35,10 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "Label2",

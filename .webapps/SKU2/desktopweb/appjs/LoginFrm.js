@@ -2,18 +2,36 @@ define("LoginFrm", function() {
     return function(controller) {
         function addWidgetsLoginFrm() {
             this.setDefaultUnit(voltmx.flex.DP);
+            var FlexContainerheader = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "20%",
+                "id": "FlexContainerheader",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0f7646bc0d8a647",
+                "top": "0dp",
+                "width": "100%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerheader.setDefaultUnit(voltmx.flex.DP);
             var FlexContainerlogo = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": true,
-                "height": "160dp",
+                "height": "100%",
                 "id": "FlexContainerlogo",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "20dp",
+                "left": "10%",
                 "isModalContainer": false,
                 "skin": "CopyslFbox0h22d676da58b4a",
-                "top": "20dp",
-                "width": "160dp",
+                "top": "0dp",
+                "width": "15%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -21,7 +39,7 @@ define("LoginFrm", function() {
             }, {});
             FlexContainerlogo.setDefaultUnit(voltmx.flex.DP);
             var imgLogo = new voltmx.ui.Image2({
-                "height": "100%",
+                "height": "98%",
                 "id": "imgLogo",
                 "isVisible": true,
                 "left": 0,
@@ -39,9 +57,9 @@ define("LoginFrm", function() {
             var lbl1 = new voltmx.ui.Label({
                 "id": "lbl1",
                 "isVisible": true,
-                "left": "328dp",
+                "left": "380dp",
                 "skin": "CopydefLabel0a1a3e3b2909941",
-                "text": "Alphaleo Technology Pvt. Ltd",
+                "text": "SKU Demand Forecasting",
                 "top": "58dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -50,18 +68,130 @@ define("LoginFrm", function() {
                 "padding": [0, 0, 0, 0],
                 "paddingInPixel": false
             }, {});
-            var FlexContainerLogin = new voltmx.ui.FlexContainer({
+            FlexContainerheader.add(FlexContainerlogo, lbl1);
+            var FlexContainerSidebar = new voltmx.ui.FlexContainer({
                 "autogrowMode": voltmx.flex.AUTOGROW_NONE,
                 "clipBounds": false,
-                "height": "450dp",
+                "height": "81%",
+                "id": "FlexContainerSidebar",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "0dp",
+                "isModalContainer": false,
+                "skin": "CopyslFbox0ee58cca90d7346",
+                "top": "20%",
+                "width": "42.99%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerSidebar.setDefaultUnit(voltmx.flex.DP);
+            var ImageSku = new voltmx.ui.Image2({
+                "height": "50%",
+                "id": "ImageSku",
+                "isVisible": true,
+                "left": "5%",
+                "skin": "slImage",
+                "src": "demandforecast.png",
+                "top": "5%",
+                "width": "90%",
+                "zIndex": 1
+            }, {
+                "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Lbl11 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "Lbl11",
+                "isVisible": true,
+                "skin": "CopydefLabel0j52fb1de51bb41",
+                "text": "Innovating Digital Soluttions for Smarter Business",
+                "top": "424dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var lbl12 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "lbl12",
+                "isVisible": true,
+                "skin": "CopydefLabel0eebe600ee96b4f",
+                "text": "Empowering data - driven decisions with",
+                "top": "470dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var lbl13 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "lbl13",
+                "isVisible": true,
+                "skin": "CopydefLabel0e942550347b04c",
+                "text": "precision demand forecasting",
+                "top": "517dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            var Label0f91c1c7ceac847 = new voltmx.ui.Label({
+                "centerX": "50.00%",
+                "id": "Label0f91c1c7ceac847",
+                "isVisible": true,
+                "skin": "CopydefLabel0f20f86d5641e41",
+                "text": "Plan Better - Sell Smarter",
+                "top": "568dp",
+                "width": voltmx.flex.USE_PREFERRED_SIZE,
+                "zIndex": 1
+            }, {
+                "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+                "padding": [0, 0, 0, 0],
+                "paddingInPixel": false
+            }, {});
+            FlexContainerSidebar.add(ImageSku, Lbl11, lbl12, lbl13, Label0f91c1c7ceac847);
+            var FlexContainerRight = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "clipBounds": false,
+                "height": "81%",
+                "id": "FlexContainerRight",
+                "isVisible": true,
+                "layoutType": voltmx.flex.FREE_FORM,
+                "left": "43%",
+                "isModalContainer": false,
+                "skin": "slFbox",
+                "top": "20%",
+                "width": "57%",
+                "zIndex": 1,
+                "appName": "SKU2"
+            }, {
+                "paddingInPixel": false
+            }, {});
+            FlexContainerRight.setDefaultUnit(voltmx.flex.DP);
+            var FlexContainerLogin = new voltmx.ui.FlexContainer({
+                "autogrowMode": voltmx.flex.AUTOGROW_NONE,
+                "centerX": "50%",
+                "centerY": "50%",
+                "clipBounds": false,
+                "height": "60%",
                 "id": "FlexContainerLogin",
                 "isVisible": true,
                 "layoutType": voltmx.flex.FREE_FORM,
-                "left": "328dp",
+                "left": "0",
                 "isModalContainer": false,
+                "right": "0",
                 "skin": "CopyslFbox0bb3b537c4e2445",
-                "top": "270dp",
-                "width": "51.98%",
+                "top": "0dp",
+                "width": "80%",
                 "zIndex": 1,
                 "appName": "SKU2"
             }, {
@@ -69,11 +199,11 @@ define("LoginFrm", function() {
             }, {});
             FlexContainerLogin.setDefaultUnit(voltmx.flex.DP);
             var Label2 = new voltmx.ui.Label({
+                "centerX": "50%",
                 "id": "Label2",
                 "isVisible": true,
-                "left": "43dp",
                 "skin": "CopydefLabel0c66dd2f3c2fa43",
-                "text": "Login to SKU Demand Dashboard",
+                "text": "Login Here",
                 "top": "70dp",
                 "width": voltmx.flex.USE_PREFERRED_SIZE,
                 "zIndex": 1
@@ -84,17 +214,18 @@ define("LoginFrm", function() {
             }, {});
             var txtUsername = new voltmx.ui.TextBox2({
                 "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+                "centerX": "50%",
                 "focusSkin": "defTextBoxFocus",
-                "height": "40dp",
+                "height": "50dp",
                 "id": "txtUsername",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
                 "left": "198dp",
                 "placeholder": "Username",
                 "secureTextEntry": false,
-                "skin": "defTextBoxNormal",
+                "skin": "CopydefTextBoxNormal0e8a605bab8aa4d",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-                "top": "180dp",
+                "top": "165dp",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -108,17 +239,18 @@ define("LoginFrm", function() {
             });
             var txtPassword = new voltmx.ui.TextBox2({
                 "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+                "centerX": "50%",
                 "focusSkin": "defTextBoxFocus",
-                "height": "40dp",
+                "height": "50dp",
                 "id": "txtPassword",
                 "isVisible": true,
                 "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
                 "left": "198dp",
                 "placeholder": "Passsword",
                 "secureTextEntry": true,
-                "skin": "defTextBoxNormal",
+                "skin": "CopydefTextBoxNormal0c105da9f690e4c",
                 "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-                "top": "260dp",
+                "top": "239dp",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -131,15 +263,16 @@ define("LoginFrm", function() {
                 "placeholderSkin": "defTextBoxPlaceholder"
             });
             var btnLogin = new voltmx.ui.Button({
+                "centerX": "50%",
                 "focusSkin": "defBtnFocus",
                 "height": "50dp",
                 "id": "btnLogin",
                 "isVisible": true,
                 "left": "198dp",
-                "onClick": controller.AS_Button_je7479732d18461f8a986160b7b3c4c0,
+                "onClick": controller.AS_Button_j552308d32b14fcea290030d1c202d4d,
                 "skin": "CopydefBtnNormal0ccb5ff15ba0a42",
                 "text": "Login",
-                "top": "340dp",
+                "top": "317dp",
                 "width": "300dp",
                 "zIndex": 1
             }, {
@@ -149,8 +282,9 @@ define("LoginFrm", function() {
                 "paddingInPixel": false
             }, {});
             FlexContainerLogin.add(Label2, txtUsername, txtPassword, btnLogin);
+            FlexContainerRight.add(FlexContainerLogin);
             this.compInstData = {}
-            this.add(FlexContainerlogo, lbl1, FlexContainerLogin);
+            this.add(FlexContainerheader, FlexContainerSidebar, FlexContainerRight);
         };
         return [{
             "addWidgets": addWidgetsLoginFrm,

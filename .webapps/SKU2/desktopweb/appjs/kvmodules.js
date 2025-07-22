@@ -98,7 +98,7 @@ define('applicationController',{
     },
     postAppInitCallBack: function(eventObj) {},
     appmenuseq: function() {
-        new voltmx.mvc.Navigation("Overview").navigate();
+        new voltmx.mvc.Navigation("LoginFrm").navigate();
     }
 });
 define("com/hclsoftwareu/hamburgermenu/userhamburgermenuController", [],function() {
@@ -2414,8 +2414,8 @@ define("com/konymp/verticalbar/userverticalbarController", ['com/konymp/vertical
     };
 });
 define("com/konymp/verticalbar/verticalbarControllerActions", {
-    /*
-      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+    /* 
+    This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
 });
 define("com/konymp/verticalbar/verticalbarController", ["com/konymp/verticalbar/userverticalbarController", "com/konymp/verticalbar/verticalbarControllerActions"], function() {

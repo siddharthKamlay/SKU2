@@ -1886,12 +1886,3 @@ div[kdropdown] ul li.-voltmx-selected {
     background: blue;
     color: white;
 }
-
-@media print {
-    div[kr="app_forms"],
-    div[kr="app_forms"] > form[kw="Form2"],
-    div[kr="app_forms"] > form[kw="Form2"] > div[kr="viewport"] {
-        overflow: visible !important;
-        height: auto !important;
-    }
-}

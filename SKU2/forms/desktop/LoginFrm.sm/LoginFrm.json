@@ -56,9 +56,9 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "FlexContainerlogo",
-        "lbl1",
-        "FlexContainerLogin"
+        "FlexContainerheader",
+        "FlexContainerSidebar",
+        "FlexContainerRight"
     ],
     "containerweight": 100,
     "controllerInfo": {

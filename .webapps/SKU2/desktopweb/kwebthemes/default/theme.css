@@ -16,6 +16,7 @@
 .slWatchForm,
 .CopydefBtnNormal0ccb5ff15ba0a42,
 .CopydefBtnNormal0d4e959794f9c4b,
+.CopydefBtnNormal0ff0294eff58e42,
 .CopydefBtnNormal0ie6f7de736d049,
 .defBtnFocus,
 .defBtnNormal,
@@ -32,6 +33,7 @@
 .CopydefLabel0b97643da1d804c,
 .CopydefLabel0c1f52a402cfe47,
 .CopydefLabel0c26aec5fbc0740,
+.CopydefLabel0c4e4fc6faa7543,
 .CopydefLabel0c66dd2f3c2fa43,
 .CopydefLabel0c85f7f3632f247,
 .CopydefLabel0c9e00abaf49641,
@@ -45,7 +47,9 @@
 .CopydefLabel0d3f2b59491324d,
 .CopydefLabel0d58ecf7ede194c,
 .CopydefLabel0d834f17a354841,
+.CopydefLabel0d968a5183c3c42,
 .CopydefLabel0d9f56045d6f943,
+.CopydefLabel0dc80e9403ba946,
 .CopydefLabel0dff0a512056e4a,
 .CopydefLabel0e19d9397d5b44d,
 .CopydefLabel0e37d99e471f945,
@@ -53,13 +57,19 @@
 .CopydefLabel0e6472f5744614f,
 .CopydefLabel0e6ade8a8c97c4d,
 .CopydefLabel0e6dd4a9eb46b40,
+.CopydefLabel0e942550347b04c,
 .CopydefLabel0e9ecd4791be946,
 .CopydefLabel0eadcb933c28e4a,
 .CopydefLabel0eb185b43aedb42,
+.CopydefLabel0eebe600ee96b4f,
+.CopydefLabel0f20f86d5641e41,
+.CopydefLabel0fbcee0a7f95347,
 .CopydefLabel0fdef3af8f8ae47,
 .CopydefLabel0hba1267c8f024f,
 .CopydefLabel0i8a7b2a6a59f4b,
 .CopydefLabel0j1256387816f4b,
+.CopydefLabel0j157be72492749,
+.CopydefLabel0j52fb1de51bb41,
 .CopydefLabel0j936dd23cb674a,
 .CopyslFontAwesomeIcon0a2a3d24700e048,
 .defDataPanelLabelNormalSkinDW0c3de096c907b47,
@@ -93,7 +103,9 @@
 .CopydefListBoxNormal0e2b722993c6543,
 .defListBoxFocus,
 .defListBoxNormal,
+.CopydefTextBoxNormal0c105da9f690e4c,
 .CopydefTextBoxNormal0c2df2bde8faa46,
+.CopydefTextBoxNormal0e8a605bab8aa4d,
 .CopydefTextBoxNormal0ffc21e68237640,
 .defTextBoxFocus,
 .defTextBoxNormal,
@@ -101,6 +113,11 @@
 .sd63765c86af4a57aea8e99202871e4f,
 .sknLoginTextBox0a1c50fef13a24a,
 .sknLoginTextBoxPlaceholder0ge75010bf1814c,
+.CopyslCheckBoxGroup0eb3e735c033a4f,
+.slCheckBoxGroup,
+.defTextAreaFocus,
+.defTextAreaNormal,
+.defTextAreaPlaceholder,
 .slCalendar,
 .slRadioButtonGroup {
     -moz-border-radius: 0px;
@@ -556,6 +573,22 @@
 
 
 
+    border: 1px solid #ffffff;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -582,7 +615,7 @@
 
 
 
-    background: #7284a3;
+    background: #1c366b;
 
 
 
@@ -657,6 +690,80 @@
 
 
     background: #f24b4b;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefBtnNormal0ff0294eff58e42,
+[kw].CopydefBtnNormal0ff0294eff58e42-hover,
+[kw].CopydefBtnNormal0ff0294eff58e42-focus,
+[kw].CopydefBtnNormal0ff0294eff58e42-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 24.0px Helvetica;
+
+
+
+
+
+    color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+    background: #3c66ba;
 
 
 
@@ -1588,6 +1695,80 @@
 
 
 
+.CopydefLabel0c4e4fc6faa7543,
+[kw].CopydefLabel0c4e4fc6faa7543-hover,
+[kw].CopydefLabel0c4e4fc6faa7543-focus,
+[kw].CopydefLabel0c4e4fc6faa7543-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 23.2px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0c66dd2f3c2fa43,
 [kw].CopydefLabel0c66dd2f3c2fa43-hover,
 [kw].CopydefLabel0c66dd2f3c2fa43-focus,
@@ -1609,10 +1790,8 @@
 
 
 
-    font: bold 40.0px Helvetica;
+    font: normal normal 40.0px Helvetica;
 
-
-    text-decoration: underline;
 
 
 
@@ -2550,6 +2729,80 @@
 
 
 
+.CopydefLabel0d968a5183c3c42,
+[kw].CopydefLabel0d968a5183c3c42-hover,
+[kw].CopydefLabel0d968a5183c3c42-focus,
+[kw].CopydefLabel0d968a5183c3c42-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 35.2px Arial;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0d9f56045d6f943,
 [kw].CopydefLabel0d9f56045d6f943-hover,
 [kw].CopydefLabel0d9f56045d6f943-focus,
@@ -2572,6 +2825,80 @@
 
 
     font: normal 400 19.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0dc80e9403ba946,
+[kw].CopydefLabel0dc80e9403ba946-hover,
+[kw].CopydefLabel0dc80e9403ba946-focus,
+[kw].CopydefLabel0dc80e9403ba946-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 23.2px Helvetica;
 
 
 
@@ -3144,6 +3471,80 @@
 
 
 
+.CopydefLabel0e942550347b04c,
+[kw].CopydefLabel0e942550347b04c-hover,
+[kw].CopydefLabel0e942550347b04c-focus,
+[kw].CopydefLabel0e942550347b04c-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 24.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0e9ecd4791be946,
 [kw].CopydefLabel0e9ecd4791be946-hover,
 [kw].CopydefLabel0e9ecd4791be946-focus,
@@ -3316,6 +3717,228 @@
     font: normal 400 39.5px Helvetica;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0eebe600ee96b4f,
+[kw].CopydefLabel0eebe600ee96b4f-hover,
+[kw].CopydefLabel0eebe600ee96b4f-focus,
+[kw].CopydefLabel0eebe600ee96b4f-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 24.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0f20f86d5641e41,
+[kw].CopydefLabel0f20f86d5641e41-hover,
+[kw].CopydefLabel0f20f86d5641e41-focus,
+[kw].CopydefLabel0f20f86d5641e41-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 28.8px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0fbcee0a7f95347,
+[kw].CopydefLabel0fbcee0a7f95347-hover,
+[kw].CopydefLabel0fbcee0a7f95347-focus,
+[kw].CopydefLabel0fbcee0a7f95347-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 28.8px Helvetica;
+
+
+
+
+
+    color: rgba(26, 25, 26, 0.85);
 
 
 
@@ -3654,6 +4277,154 @@
 
 
 
+.CopydefLabel0j157be72492749,
+[kw].CopydefLabel0j157be72492749-hover,
+[kw].CopydefLabel0j157be72492749-focus,
+[kw].CopydefLabel0j157be72492749-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal bold 23.2px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopydefLabel0j52fb1de51bb41,
+[kw].CopydefLabel0j52fb1de51bb41-hover,
+[kw].CopydefLabel0j52fb1de51bb41-focus,
+[kw].CopydefLabel0j52fb1de51bb41-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 24.0px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopydefLabel0j936dd23cb674a,
 [kw].CopydefLabel0j936dd23cb674a-hover,
 [kw].CopydefLabel0j936dd23cb674a-focus,
@@ -3922,6 +4693,284 @@ div[kw='ListBox'][kv='editableview']~ul>li.CopydefListBoxNormal0e2b722993c6543-h
 
 
 
+.CopydefTextBoxNormal0c105da9f690e4c,
+[kw].CopydefTextBoxNormal0c105da9f690e4c-hover,
+[kw].CopydefTextBoxNormal0c105da9f690e4c-focus,
+[kw].CopydefTextBoxNormal0c105da9f690e4c-active {
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0c105da9f690e4c']::-webkit-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0c105da9f690e4c']::-moz-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0c105da9f690e4c']:-ms-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+
+
+
+
+
+
 .CopydefTextBoxNormal0c2df2bde8faa46,
 [kw].CopydefTextBoxNormal0c2df2bde8faa46-hover,
 [kw].CopydefTextBoxNormal0c2df2bde8faa46-focus,
@@ -4134,6 +5183,284 @@ input[kplaceholderskin='CopydefTextBoxNormal0c2df2bde8faa46']::-moz-placeholder 
 
 
 input[kplaceholderskin='CopydefTextBoxNormal0c2df2bde8faa46']:-ms-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+
+
+
+
+
+
+.CopydefTextBoxNormal0e8a605bab8aa4d,
+[kw].CopydefTextBoxNormal0e8a605bab8aa4d-hover,
+[kw].CopydefTextBoxNormal0e8a605bab8aa4d-focus,
+[kw].CopydefTextBoxNormal0e8a605bab8aa4d-active {
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0e8a605bab8aa4d']::-webkit-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0e8a605bab8aa4d']::-moz-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+input[kplaceholderskin='CopydefTextBoxNormal0e8a605bab8aa4d']:-ms-input-placeholder {
 
 
 
@@ -4470,6 +5797,82 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
     -webkit-appearance: none;
 
 }
+
+
+
+
+
+
+
+
+.CopyslCheckBoxGroup0eb3e735c033a4f,
+[kw=CheckBoxGroup]>div.CopyslCheckBoxGroup0eb3e735c033a4f-hover,
+[kw=CheckBoxGroup]>div.CopyslCheckBoxGroup0eb3e735c033a4f-focus,
+[kw=CheckBoxGroup].CopyslCheckBoxGroup0eb3e735c033a4f-active,
+[kw=CheckBoxGroup]>div.CopyslCheckBoxGroup0eb3e735c033a4f-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 19.2px Helvetica;
+
+
+
+
+
+    color: rgba(0, 0, 0, 0.8);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5322,6 +6725,121 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0b78305aec3a34a,
+[kw].CopyslFbox0b78305aec3a34a-hover,
+[kw].CopyslFbox0b78305aec3a34a-focus,
+[kw].CopyslFbox0b78305aec3a34a-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    box-shadow: 0px 0px 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0bb3b537c4e2445,
 [kw].CopyslFbox0bb3b537c4e2445-hover,
 [kw].CopyslFbox0bb3b537c4e2445-focus,
@@ -5371,6 +6889,32 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+
+
+
+
+    border: 1px solid #000000;
+
+
+
+    -moz-border-radius: 75px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     color: #000000;
 
 
@@ -5384,15 +6928,15 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: rgba(250, 250, 250, 0.8);
+    background-color: rgba(230, 233, 247, 0.8);
 
 
 
 
 
 
-    box-shadow: 5px 5px 25px #565b61;
-    -webkit-box-shadow: 5px 5px 25px #565b61;
+    box-shadow: 5px 5px 25px #081626;
+    -webkit-box-shadow: 5px 5px 25px #081626;
 
 
 
@@ -6533,6 +8077,87 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0ee58cca90d7346,
+[kw].CopyslFbox0ee58cca90d7346-hover,
+[kw].CopyslFbox0ee58cca90d7346-focus,
+[kw].CopyslFbox0ee58cca90d7346-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0eeb6273f1e3345,
 [kw].CopyslFbox0eeb6273f1e3345-hover,
 [kw].CopyslFbox0eeb6273f1e3345-focus,
@@ -6604,6 +8229,87 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.71);
     -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.71);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslFbox0f7646bc0d8a647,
+[kw].CopyslFbox0f7646bc0d8a647-hover,
+[kw].CopyslFbox0f7646bc0d8a647-focus,
+[kw].CopyslFbox0f7646bc0d8a647-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
 
 
 
@@ -7140,6 +8846,87 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
+.CopyslFbox0h03b8e9907f841,
+[kw].CopyslFbox0h03b8e9907f841-hover,
+[kw].CopyslFbox0h03b8e9907f841-focus,
+[kw].CopyslFbox0h03b8e9907f841-active {
+
+
+
+
+
+
+
+
+
+
+    border: 0px solid #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .CopyslFbox0h22d676da58b4a,
 [kw].CopyslFbox0h22d676da58b4a-hover,
 [kw].CopyslFbox0h22d676da58b4a-focus,
@@ -7174,32 +8961,6 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    border: 1px solid #000000;
-
-
-
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
 
 
 
@@ -7778,7 +9539,7 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    background-color: #ced8db;
+    background-color: #54678c;
 
 
 
@@ -8057,8 +9818,8 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-.CopyslImage0cc1d9251e8e74d,
-[kw='Image2']>img.CopyslImage0cc1d9251e8e74d-active {
+.CopyslImage0c9db9d3c1aa44f,
+[kw='Image2']>img.CopyslImage0c9db9d3c1aa44f-active {
 
 
 
@@ -8124,8 +9885,109 @@ input[kplaceholderskin='CopydefTextBoxNormal0ffc21e68237640']:-ms-input-placehol
 
 
 
-    box-shadow: 3px 0px 6px #000000;
-    -webkit-box-shadow: 3px 0px 6px #000000;
+    box-shadow: 0px 5px 15px #000000;
+    -webkit-box-shadow: 0px 5px 15px #000000;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CopyslImage0cc1d9251e8e74d,
+[kw='Image2']>img.CopyslImage0cc1d9251e8e74d-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    color: #000000;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+
+
 
 
 
@@ -11974,6 +13836,740 @@ div[kw='ListBox'][kv='editableview']~ul>li.defListBoxNormal-hover {
 
 
 
+
+
+
+
+
+
+
+.defTextAreaFocus,
+[kw].defTextAreaFocus-hover,
+[kw].defTextAreaFocus-focus,
+[kw].defTextAreaFocus-active {
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #4b88f1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+textarea[kplaceholderskin='defTextAreaFocus']::-webkit-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #4b88f1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaFocus']::-moz-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #4b88f1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaFocus']:-ms-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #4b88f1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+
+
+
+
+
+.defTextAreaNormal,
+[kw].defTextAreaNormal-hover,
+[kw].defTextAreaNormal-focus,
+[kw].defTextAreaNormal-active {
+
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+textarea[kplaceholderskin='defTextAreaNormal']::-webkit-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaNormal']::-moz-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaNormal']:-ms-input-placeholder {
+
+
+
+
+
+
+
+
+
+    border: 1px solid #333333;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #333333;
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+
+
+
+
+
+.defTextAreaPlaceholder,
+[kw].defTextAreaPlaceholder-hover,
+[kw].defTextAreaPlaceholder-focus,
+[kw].defTextAreaPlaceholder-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #999999;
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.0);
+
+
+
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+textarea[kplaceholderskin='defTextAreaPlaceholder']::-webkit-input-placeholder {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #999999;
+
+
+
+
+
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.0);
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaPlaceholder']::-moz-placeholder {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #999999;
+
+
+
+
+
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.0);
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
+
+
+textarea[kplaceholderskin='defTextAreaPlaceholder']:-ms-input-placeholder {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 17.1px Helvetica;
+
+
+
+
+
+    color: #999999;
+
+
+
+
+
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.0);
+
+
+
+
+
+
+    -webkit-appearance: none;
+
+}
 
 
 
@@ -16075,6 +18671,78 @@ div[kr='item'].sknseg-focus,
 
 
     -webkit-appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slCheckBoxGroup,
+[kw=CheckBoxGroup]>div.slCheckBoxGroup-hover,
+[kw=CheckBoxGroup]>div.slCheckBoxGroup-focus,
+[kw=CheckBoxGroup].slCheckBoxGroup-active,
+[kw=CheckBoxGroup]>div.slCheckBoxGroup-active {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font: normal 400 25.0px Helvetica;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-color: #ffffff;
+
+
+
+
+
+
+
+
 
 
 

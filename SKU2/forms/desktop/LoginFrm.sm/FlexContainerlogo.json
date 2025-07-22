@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "160dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "10%"
     },
     "_margin_": [
         0,
@@ -25,11 +25,11 @@
     "_skin_": "se8760b175884e129e1071d3b3dfcb1b",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "160dp"
+        "value": "15%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -47,7 +47,7 @@
     "kuid": "h8e30ae221724d92b712198f591f7f0b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "LoginFrm",
+    "parent": "FlexContainerheader",
     "pf": "LoginFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

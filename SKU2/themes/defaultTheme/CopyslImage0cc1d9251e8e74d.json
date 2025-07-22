@@ -21,11 +21,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -44,11 +44,11 @@
     "font_name": "System",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     }
   },
@@ -56,11 +56,11 @@
     "font_name": "System",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     }
   },
@@ -79,11 +79,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -103,11 +103,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -127,11 +127,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -151,11 +151,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -175,11 +175,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -199,11 +199,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -223,11 +223,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",
@@ -247,11 +247,11 @@
     "font_name": "Helvetica",
     "isForked": true,
     "shadow": {
-      "br": 6,
+      "br": 0,
       "color": "000000",
       "inner": false,
       "nm": 0,
-      "x": 3,
+      "x": 0,
       "y": 0
     },
     "top_left_border_color": "000000ff",

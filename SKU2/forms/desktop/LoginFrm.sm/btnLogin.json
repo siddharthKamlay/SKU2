@@ -25,19 +25,23 @@
     "_text_": "Login",
     "_top_": {
         "type": "string",
-        "value": "340dp"
+        "value": "317dp"
     },
     "_width_": {
         "type": "string",
         "value": "300dp"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "s03dc07b3c9645fb82a4fa30243c6677",
     "id": "btnLogin",
-    "ide_onClick": "AS_Button_je7479732d18461f8a986160b7b3c4c0",
+    "ide_onClick": "AS_Button_j552308d32b14fcea290030d1c202d4d",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

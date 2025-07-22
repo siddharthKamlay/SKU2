@@ -45,8 +45,7 @@ $KW.TextField = (function() {
             switch(propertyName) {
                 case "text":
                     if(propertyValue) {
-                        const maxLen = widgetModel.maxTextLength;
-                        element.value = (typeof maxLen === "number" && maxLen >= 0) ? propertyValue.substring(0, maxLen) : propertyValue;
+                        element.value = propertyValue;
                     }
                     else {
                         element.value = "";
@@ -79,13 +78,7 @@ $KW.TextField = (function() {
                     break;
 
                 case "maxtextlength":
-                    if (propertyValue === null) {
-                        element.removeAttribute("maxlength");
-                    } else if (typeof propertyValue === "number" && propertyValue >= 0) {
-                        element.maxLength = propertyValue;
-                    } else {
-                        throw new Error(`Invalid maxTextLength value: ${propertyValue}`);
-                    }
+                    element.maxLength = propertyValue;
                     break;
 
                 case "pattern":

@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "328dp"
+        "value": "460dp"
     },
     "_margin_": [
         1,
@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "se7e06897a7a4557bec3dd0d9b34a3c1",
-    "_text_": "Alphaleo Technology Pvt. Ltd",
+    "_text_": "SKU Demand Forecasting",
     "_top_": {
         "type": "string",
         "value": "58dp"
@@ -40,7 +40,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lbl1",
     "info": null,
     "ipad": {
@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "fa6fab48a2744ee6a529567f83b7d612",
     "name": "kony.ui.Label",
-    "parent": "LoginFrm",
+    "parent": "FlexContainerheader",
     "pf": "LoginFrm",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

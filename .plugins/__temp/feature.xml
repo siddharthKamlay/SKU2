@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<feature
+      id="com.kony.visualizer.win"
+      label="%featureName"
+      version="9.5.52.v202504080856"
+      provider-name="%providerName">
+
+	<description>
+      %description
+	</description>
+
+	<copyright>
+      %copyright
+	</copyright>
+
+	<license url="%licenseURL">
+      %license
+	</license>
+
+	<url>
+      <update label="%updateSiteName" url="http://download.kony.com/visualizer_enterprise/9.0"/>
+      <discovery label="%updateSiteName" url="http://download.kony.com/visualizer_enterprise/9.0"/>
+	</url>
+	
+	<plugin id="com.kony.studio.viz.core.win64"	version="9.5.52.v202503261346" unpack="false"/>		
+	<plugin id="com.pat.tool.keditor" version="9.5.43.v202411071635" unpack="false"/>	
+
+	<plugin id="com.pat.android" version="9.5.52.v202504081156" unpack="false"/>
+	<plugin id="com.pat.tabrcandroid" version="9.5.52.v202504081156" unpack="false"/>
+	<plugin id="com.kony.ios" version="9.5.52.v202503250832" unpack="false"/>
+
+	<plugin id="com.kony.spa" version="9.5.52.v202503251059" unpack="false"/>
+	<plugin id="com.kony.desktopweb" version="9.5.52.v202503251056" unpack="false"/>
+	<plugin id="com.kony.desktopnative" version="9.5.47.v202501090755" unpack="false"/>
+	<plugin id="com.kony.webcommons" version="9.5.52.202503251057" unpack="false"/>
+
+	<plugin id="com.kony.thirdparty.jars" version="9.5.30.v202404260932" unpack="false"/>
+	<plugin id="com.kony.referencearchitecture" version="9.5.35.v202407180603" unpack="false" />
+
+	<plugin id="com.kony.mobile.fabric.client.sdk" version="9.5.51.v202502281124" unpack="false"/>
+	<plugin id="com.kony.cloudmiddleware" version="9.5.20.GA_v202503251036_r0" unpack="false"/>
+	<plugin id="com.kony.cloudthirdparty" version="9.5.20.GA_v202503251036_r0" unpack="false"/>
+</feature>
