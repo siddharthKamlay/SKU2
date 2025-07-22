@@ -44,6 +44,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "FlexContainerSideMenu",
+    "ide_onTouchEnd": "AS_FlexContainer_c8c6814312ba4ec087d06aea627ed1f4",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

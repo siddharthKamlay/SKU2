@@ -1,0 +1,52 @@
+{
+    "AS_FlexContainer_dd612b19076045b582dae85ccc93faa6": {
+        "id": "AS_FlexContainer_dd612b19076045b582dae85ccc93faa6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "Overview",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1716dc115ec46f7b708dd80999458a8"
+        },
+        "language": "js",
+        "eventType": "onTouchEnd",
+        "actions": [{
+            "id": "MOVE_ACTION_i2fbfa00cd6449f0a63311ff284a5cf6",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "Overview",
+            "widgetId": "FlexContaineroverview",
+            "itemKUID": "a1716dc115ec46f7b708dd80999458a8",
+            "widgetKUID": "d0e10688d0254674ba0930502bedf219",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "-180%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "voltmx.anim.FILL_MODE_FORWARDS",
+                "duration": "1000"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_i2fbfa00cd6449f0a63311ff284a5cf6",
+            "displayAnimationId": "MOVE_ACTION_i2fbfa00cd6449f0a63311ff284a5cf6",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.FlexContaineroverview"
+        }]
+    }
+}

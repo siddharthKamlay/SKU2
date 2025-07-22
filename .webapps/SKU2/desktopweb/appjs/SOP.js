@@ -768,6 +768,7 @@ define("SOP", function() {
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "-180%",
                 "isModalContainer": false,
+                "onTouchEnd": controller.AS_FlexContainer_c8c6814312ba4ec087d06aea627ed1f4,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
                 "width": "17.52%",

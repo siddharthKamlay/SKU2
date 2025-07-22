@@ -230,6 +230,7 @@ define("Overview", function() {
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "-180%",
                 "isModalContainer": false,
+                "onTouchEnd": controller.AS_FlexContainer_dd612b19076045b582dae85ccc93faa6,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
                 "width": "18.39%",

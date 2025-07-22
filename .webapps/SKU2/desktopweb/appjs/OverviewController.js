@@ -152,47 +152,47 @@ define("OverviewControllerActions", {
             if (DemandRequest.opstatus == 0) {
                 taskData = DemandRequest.records;
                 kony.print("taskData" + JSON.stringify(taskData));
-                var tempCollection9467 = [];
-                var tempData9074 = DemandRequest.records;
-                for (var each4862 in tempData9074) {
-                    var shouldShow = typeof tempData9074[each4862]["x_0024FILES"] !== 'undefined' && tempData9074[each4862]["x_0024FILES"] && tempData9074[each4862]["x_0024FILES"].length > 0
-                    tempCollection9467.push({
+                var tempCollection1963 = [];
+                var tempData2223 = DemandRequest.records;
+                for (var each901 in tempData2223) {
+                    var shouldShow = typeof tempData2223[each901]["x_0024FILES"] !== 'undefined' && tempData2223[each901]["x_0024FILES"] && tempData2223[each901]["x_0024FILES"].length > 0
+                    tempCollection1963.push({
                         "lblSKUID1": {
-                            "text": tempData9074[each4862]["SKUID"]
+                            "text": tempData2223[each901]["SKUID"]
                         },
                         "lblName1": {
-                            "text": tempData9074[each4862]["Name"]
+                            "text": tempData2223[each901]["Name"]
                         },
                         "lblCategory1": {
-                            "text": tempData9074[each4862]["Category"]
+                            "text": tempData2223[each901]["Category"]
                         },
                         "lblStock1": {
-                            "text": tempData9074[each4862]["Stock"]
+                            "text": tempData2223[each901]["Stock"]
                         },
                         "lblForecasted1": {
-                            "text": tempData9074[each4862]["Forecasted"]
+                            "text": tempData2223[each901]["Forecasted"]
                         },
                         "lblEnrichedQTY1": {
-                            "text": tempData9074[each4862]["EnrichedQTY"]
+                            "text": tempData2223[each901]["EnrichedQTY"]
                         },
                         "lblRequested1": {
-                            "text": tempData9074[each4862]["Requested"]
+                            "text": tempData2223[each901]["Requested"]
                         },
                         "lblStatus1": {
-                            "text": tempData9074[each4862]["Status"]
+                            "text": tempData2223[each901]["Status"]
                         },
                         "lblRequestedBY1": {
-                            "text": tempData9074[each4862]["RequestedBY"]
+                            "text": tempData2223[each901]["RequestedBY"]
                         },
                         "lblRequestDate1": {
-                            "text": tempData9074[each4862]["RequestDate"]
+                            "text": tempData2223[each901]["RequestDate"]
                         },
                         "lblApprovedDate1": {
-                            "text": tempData9074[each4862]["ApprovedDate"]
+                            "text": tempData2223[each901]["ApprovedDate"]
                         },
                     });
                 }
-                self.view.segDemandRequest.setData(tempCollection9467);
+                self.view.segDemandRequest.setData(tempCollection1963);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segDemandRequest.rowTemplate;
                     self.view.segDemandRequest.data.forEach(function(row) {
@@ -304,6 +304,27 @@ define("OverviewControllerActions", {
     AS_TextField_i399824987dc42e28a801263c10a9da3: function AS_TextField_i399824987dc42e28a801263c10a9da3(eventobject, changedtext) {
         var self = this;
         return self.filterData.call(this);
+    },
+    /** onTouchEnd defined for FlexContaineroverview **/
+    AS_FlexContainer_dd612b19076045b582dae85ccc93faa6: function AS_FlexContainer_dd612b19076045b582dae85ccc93faa6(eventobject, x, y) {
+        var self = this;
+
+        function MOVE_ACTION_i2fbfa00cd6449f0a63311ff284a5cf6_Callback() {}
+        self.view.FlexContaineroverview.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "-180%",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 1
+        }, {
+            "animationEnd": MOVE_ACTION_i2fbfa00cd6449f0a63311ff284a5cf6_Callback
+        });
     }
 });
 define("OverviewController", ["userOverviewController", "OverviewControllerActions"], function() {

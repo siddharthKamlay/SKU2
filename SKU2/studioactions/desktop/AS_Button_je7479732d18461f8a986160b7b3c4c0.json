@@ -179,7 +179,7 @@
             "enableMappingEditor": true,
             "package": "",
             "enableNavigationObj": true,
-            "navigationObj": "{\n    \"txtUsername_text\": self.view.txtUsername.text,\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnLogin\"\n    }\n}",
+            "navigationObj": "{\n    \"txtUsername_text\": self.view.txtUsername.text,\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
             "isCustomInput": false
         }]
     }

@@ -1,0 +1,52 @@
+{
+    "AS_FlexContainer_j770084fb3a64e1198a8e38a606a4617": {
+        "id": "AS_FlexContainer_j770084fb3a64e1198a8e38a606a4617",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "SKUDemand",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bb67880847304d79ab85353202f9a604"
+        },
+        "language": "js",
+        "eventType": "onTouchEnd",
+        "actions": [{
+            "id": "MOVE_ACTION_d8ae6f0981824ccb87c2270c86b05d92",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "SKUDemand",
+            "widgetId": "FlexContainerslidemenu",
+            "itemKUID": "bb67880847304d79ab85353202f9a604",
+            "widgetKUID": "ab7bab27135549199887c2cd5af64f30",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "-180%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "voltmx.anim.FILL_MODE_FORWARDS",
+                "duration": "1000"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_d8ae6f0981824ccb87c2270c86b05d92",
+            "displayAnimationId": "MOVE_ACTION_d8ae6f0981824ccb87c2270c86b05d92",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.FlexContainerslidemenu"
+        }]
+    }
+}

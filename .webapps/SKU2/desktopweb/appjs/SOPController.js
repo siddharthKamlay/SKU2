@@ -47,26 +47,26 @@ define("SOPControllerActions", {
         function INVOKE_SERVICE_j9260bc7feed4f0784e30f5319b2030f_Callback(Productline) {
             voltmx.application.dismissLoadingScreen();
             if (Productline.opstatus == 0) {
-                var tempCollection730 = [];
-                var tempData9939 = Productline.records;
-                for (var each8193 in tempData9939) {
-                    var shouldShow = typeof tempData9939[each8193]["x_0024FILES"] !== 'undefined' && tempData9939[each8193]["x_0024FILES"] && tempData9939[each8193]["x_0024FILES"].length > 0
-                    tempCollection730.push({
+                var tempCollection7197 = [];
+                var tempData3874 = Productline.records;
+                for (var each6957 in tempData3874) {
+                    var shouldShow = typeof tempData3874[each6957]["x_0024FILES"] !== 'undefined' && tempData3874[each6957]["x_0024FILES"] && tempData3874[each6957]["x_0024FILES"].length > 0
+                    tempCollection7197.push({
                         "lblProductLine1": {
-                            "text": tempData9939[each8193]["ProductLine"]
+                            "text": tempData3874[each6957]["ProductLine"]
                         },
                         "lblForcasted1": {
-                            "text": tempData9939[each8193]["Forecasted"]
+                            "text": tempData3874[each6957]["Forecasted"]
                         },
                         "lblActual1": {
-                            "text": tempData9939[each8193]["Actual"]
+                            "text": tempData3874[each6957]["Actual"]
                         },
                         "lblVariance1": {
-                            "text": tempData9939[each8193]["Variance"]
+                            "text": tempData3874[each6957]["Variance"]
                         },
                     });
                 }
-                self.view.segProductline.setData(tempCollection730);
+                self.view.segProductline.setData(tempCollection7197);
                 if ([640].indexOf(kony.application.getCurrentBreakpoint()) !== -1) {
                     var templateId = self.view.segProductline.rowTemplate;
                     self.view.segProductline.data.forEach(function(row) {
@@ -216,6 +216,27 @@ define("SOPControllerActions", {
             "duration": 0.25
         }, {
             "animationEnd": _a9f423b228fb463186e1094c88010403_Callback
+        });
+    },
+    /** onTouchEnd defined for FlexContainerSideMenu **/
+    AS_FlexContainer_c8c6814312ba4ec087d06aea627ed1f4: function AS_FlexContainer_c8c6814312ba4ec087d06aea627ed1f4(eventobject, x, y) {
+        var self = this;
+
+        function MOVE_ACTION_c3ec2dea827b4f96bb008b6d6ac360fe_Callback() {}
+        self.view.FlexContainerSideMenu.animate(voltmx.ui.createAnimation({
+            "100": {
+                "left": "-180%",
+                "stepConfig": {
+                    "timingFunction": voltmx.anim.EASE
+                }
+            }
+        }), {
+            "delay": 0,
+            "iterationCount": 1,
+            "fillMode": voltmx.anim.FILL_MODE_FORWARDS,
+            "duration": 10
+        }, {
+            "animationEnd": MOVE_ACTION_c3ec2dea827b4f96bb008b6d6ac360fe_Callback
         });
     }
 });

@@ -20349,6 +20349,11 @@ var appConfig = {
             "url": "https://100004609.auth.demo-hclvoltmx.net"
         }],
         "services_meta": {
+            "SKUGet": {
+                "type": "integsvc",
+                "version": "1.0",
+                "url": "https://m100004609002.demo-hclvoltmx.net/services/SKUGet"
+            },
             "SKUDemandRequestsSid": {
                 "offline": false,
                 "metadata_url": "https://m100004609002.demo-hclvoltmx.net/services/metadata/v1/SKUDemandRequestsSid",
@@ -20366,9 +20371,10 @@ var appConfig = {
         },
         "selflink": "https://100004609.auth.demo-hclvoltmx.net/appconfig",
         "integsvc": {
-            "_internal_logout": "https://m100004609002.demo-hclvoltmx.net/services/IST"
+            "_internal_logout": "https://m100004609002.demo-hclvoltmx.net/services/IST",
+            "SKUGet": "https://m100004609002.demo-hclvoltmx.net/services/SKUGet"
         },
-        "service_doc_etag": "0000019826F043E8",
+        "service_doc_etag": "0000019830E38978",
         "appId": "f6d7779f-9f00-4e51-9a53-83684bb70e20",
         "identity_features": {
             "reporting_params_header_allowed": true
@@ -20410,7 +20416,7 @@ function themeCallBack() {
                 init: applicationController.appInit,
                 postappinit: applicationController.postAppInitCallBack,
                 showstartupform: function() {
-                    new voltmx.mvc.Navigation("LoginFrm").navigate();
+                    new voltmx.mvc.Navigation("Overview").navigate();
                 }
             });
         });

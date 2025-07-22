@@ -1029,6 +1029,7 @@ define("SKUDemand", function() {
                 "layoutType": voltmx.flex.FREE_FORM,
                 "left": "-180%",
                 "isModalContainer": false,
+                "onTouchEnd": controller.AS_FlexContainer_j770084fb3a64e1198a8e38a606a4617,
                 "skin": "CopyslFbox0gae0f93674bb43",
                 "top": "0dp",
                 "width": "17.52%",
